@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <script src="./doc-page.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    body{background:#eef0f3;margin:0}
+    .wp, .wp *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .wp p{text-wrap:pretty}
+    .wp a{color:#137B8F;text-decoration:none}
+    .pg{display:flex;flex-direction:column;position:relative}
+    .brk{break-before:page}
+    .eyb{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#137B8F}
+    .h2{font-size:28px;line-height:1.08;font-weight:700;color:#153E5A;margin:8px 0 0;letter-spacing:-.01em}
+    .h3{font-size:16px;font-weight:700;color:#153E5A;margin:18px 0 6px}
+    .rule{height:3px;width:46px;background:#137B8F;border-radius:2px;margin:10px 0 16px}
+    .lead{font-size:14.5px;line-height:1.6;color:#475761;margin:0}
+    .bd{font-size:12.5px;line-height:1.6;color:#475761;margin:0 0 10px}
+    .tile{background:#fff;border:1px solid #e6e9ec;border-radius:10px;padding:14px 16px}
+    .cap{font-size:10.5px;color:#8a97a0;margin:8px 0 0}
+    .ftr{margin-top:auto;padding-top:18px;display:flex;justify-content:space-between;font-size:10.5px;color:#8a97a0;border-top:1px solid #e6e9ec}
+    .bz-pagebreak{height:30px;margin:0 -1cm;background:#d6d9db;box-shadow:inset 0 7px 7px -7px rgba(0,0,0,.28),inset 0 -7px 7px -7px rgba(0,0,0,.28)}
+    @media print{.bz-pagebreak{display:none}}
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    * { animation-delay:-99s !important; animation-duration:.001s !important; animation-iteration-count:1 !important; animation-fill-mode:both !important; animation-play-state:running !important; transition-duration:0s !important; }
+    .bz-backhub{position:absolute;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}
+    @media print{.bz-backhub{display:none!important}}
+  </style>
+</helmet>
+<a href="BZ%20-%20GM%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>GM Hub</a>
+
+<doc-page size="a4" orientation="portrait" margin="1cm">
+
+  <!-- ============ 1 · COVER ============ -->
+  <section class="page wp pg" style="color:#3f4a52;background:linear-gradient(155deg,#153E5A 0%,#284B63 56%,#1c5560 100%);color:#fff;padding:68px 58px 50px;overflow:hidden;">
+    <div style="position:absolute;inset:0;background:url('assets/wp-people-01.png') center 28%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 8%,rgba(0,0,0,1) 62%);mask-image:linear-gradient(180deg,rgba(0,0,0,0) 8%,rgba(0,0,0,1) 62%);opacity:.5;pointer-events:none"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(175deg,rgba(21,62,90,.55) 0%,rgba(21,62,90,.72) 45%,rgba(21,62,90,.95) 100%);pointer-events:none"></div>
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-140px;top:190px;width:540px;opacity:.08;pointer-events:none">
+    <img src="assets/logo-white.png" alt="bluezoo" style="width:176px;position:relative">
+    <div style="margin-top:auto;position:relative">
+      <div class="eyb" style="color:#7aa9ab;margin-bottom:18px">White paper &middot; Governance Manager</div>
+      <h1 style="font-size:46px;line-height:1.05;font-weight:700;margin:0;color:#fff;letter-spacing:-.5px;max-width:620px">The common language of good governance</h1>
+      <p style="font-size:17px;line-height:1.5;max-width:540px;margin:22px 0 0;color:#c3d0d8">Why a consistent, strategic approach to governance culture, language and measurement outperforms compliance &mdash; and how to build one.</p>
+    </div>
+    <div style="margin-top:40px;position:relative;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:flex-end;font-size:13px;color:#93aab6">
+      <div><div style="color:#fff;font-weight:700;font-size:15px">Blue Zoo</div>Governance &middot; Strategy &middot; Risk &middot; Resilience</div>
+      <span>governancemanager.org</span>
+    </div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Contents</div>
+    <h2 class="h2">What this paper covers</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px;margin-bottom:18px">The paper moves from the value case for governance, through culture and language, into the mechanics of maturity measurement and reporting &mdash; and closes with the role peak bodies can play in lifting a whole sector.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 34px">
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Executive summary</span><span style="color:#8a97a0;font-weight:700">03</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>One · The value of robust governance</span><span style="color:#8a97a0;font-weight:700">04</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>How governance creates value</span><span style="color:#8a97a0;font-weight:700">05</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>The cost of getting it wrong</span><span style="color:#8a97a0;font-weight:700">06</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Two · The compliance plateau</span><span style="color:#8a97a0;font-weight:700">07</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Three · Culture as ordinary practice</span><span style="color:#8a97a0;font-weight:700">08</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Building a governance culture</span><span style="color:#8a97a0;font-weight:700">09</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Four · Language and one definition</span><span style="color:#8a97a0;font-weight:700">10</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Topics, elements and questions</span><span style="color:#8a97a0;font-weight:700">11</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Five · A defined maturity scale</span><span style="color:#8a97a0;font-weight:700">12</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>How maturity models measure value</span><span style="color:#8a97a0;font-weight:700">13</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Current, desired and the gap</span><span style="color:#8a97a0;font-weight:700">14</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Minimum standards and breaches</span><span style="color:#8a97a0;font-weight:700">15</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>One framework, every domain</span><span style="color:#8a97a0;font-weight:700">16</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Six · Reporting to the board</span><span style="color:#8a97a0;font-weight:700">17</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Benchmarking: compared to what?</span><span style="color:#8a97a0;font-weight:700">18</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Reading the distribution</span><span style="color:#8a97a0;font-weight:700">19</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Seven · The governance aggregator</span><span style="color:#8a97a0;font-weight:700">20</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Building a sector benchmark</span><span style="color:#8a97a0;font-weight:700">21</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Excellence and common weakness</span><span style="color:#8a97a0;font-weight:700">22</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>The sector development plan</span><span style="color:#8a97a0;font-weight:700">23</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>Eight · From score to roadmap</span><span style="color:#8a97a0;font-weight:700">24</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>What actually changes</span><span style="color:#8a97a0;font-weight:700">25</span></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #eef1f3;padding:6px 0;font-size:12px;color:#475761"><span>In closing · Consistency is the strategy</span><span style="color:#8a97a0;font-weight:700">26</span></div>
+    </div>
+    <div style="break-inside:avoid;margin-top:auto;background:#f4f8f9;border-left:4px solid #137B8F;border-radius:0 10px 10px 0;padding:15px 20px">
+      <p style="margin:0;font-size:13px;line-height:1.55;color:#153E5A">Written for directors, chief executives, company secretaries, governance managers and peak-body leaders in both public sector and corporate environments.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Contents</span><span>02</span></div>
+  </section>
+
+  <!-- ============ EXECUTIVE SUMMARY ============ -->
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Executive summary</div>
+    <h2 class="h2">Governance is a capability, not a control set</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Most organisations can prove they are compliant. Very few can describe, in consistent language and with evidence, how well they are actually governed &mdash; or whether that is improving. This paper argues that the difference between the two is culture, language and measurement, applied consistently over time.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0">
+      <div class="tile" style="border-top:3px solid #137B8F"><div style="font-size:15px;font-weight:700;color:#137B8F">Culture</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Governance endures only when it is part of how people work &mdash; not a separate activity performed for an auditor.</p></div>
+      <div class="tile" style="border-top:3px solid #153E5A"><div style="font-size:15px;font-weight:700;color:#153E5A">Language</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">A shared vocabulary lets a board, an executive and a frontline manager mean the same thing by &ldquo;managed&rdquo;.</p></div>
+      <div class="tile" style="border-top:3px solid #4B6969"><div style="font-size:15px;font-weight:700;color:#4B6969">Measurement</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Repeatable, evidenced scoring turns governance from opinion into a managed line of sight.</p></div>
+    </div>
+    <h3 class="h3" style="margin-top:6px">What this paper sets out</h3>
+    <div style="columns:2;column-gap:26px">
+      <p class="bd">Section one examines why compliance-led governance plateaus, and what a capability-led alternative looks like in both public sector and corporate settings. Section two addresses the language problem &mdash; the single most common reason governance conversations go in circles at board level.</p>
+      <p class="bd">Sections three and four set out a measurement model: maturity levels, evidence confidence, and the gap between the two. Section five turns scores into board reporting and benchmarking, and section six offers a practical ninety-day path to establish the approach.</p>
+      <p class="bd">Throughout, we reference <b style="color:#153E5A">Governance Manager</b>, Blue Zoo's capability intelligence platform, as one way to operationalise the model &mdash; but the argument stands independently of any tool.</p>
+    </div>
+    <div style="break-inside:avoid;margin-top:14px;background:#f4f8f9;border-left:4px solid #137B8F;border-radius:0 10px 10px 0;padding:15px 20px">
+      <p style="margin:0;font-size:14px;line-height:1.55;color:#153E5A;font-style:italic">Compliance answers &ldquo;did we follow the rule?&rdquo; Capability answers &ldquo;are we getting better at deciding, anticipating and recovering?&rdquo; Only the second question improves an organisation.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>The common language of good governance</span><span>03</span></div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section one</div>
+    <h2 class="h2">The value of robust governance</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">It is no longer sufficient to operate on good intentions alone. Regulatory frameworks are becoming more stringent, stakeholder expectations are rising, and ethical considerations sit closer to the centre of every material decision. Organisations that do not adapt carry reputational, financial and confidence risk they cannot see.</p>
+    <div aria-hidden="true" style="position:absolute;left:-1cm;right:-1cm;bottom:-1cm;height:280px;background:url('assets/wp-people-02.png') center 30%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);opacity:.5;pointer-events:none;z-index:0"></div>
+    <p class="bd" style="margin-top:16px">Governance is often defended on the grounds of obligation &mdash; we must, therefore we do. That argument wins budget but loses attention, because it frames governance as a cost of being in business rather than a source of advantage. The stronger argument is that robust governance produces measurable organisational benefits, and that those benefits can be tracked deliberately.</p>
+    <h3 class="h3">Six returns organisations actually realise</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="tile" style="border-top:3px solid #137B8F"><div style="font-size:14px;font-weight:700;color:#137B8F">Stronger internal control</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Clear delegations, thresholds and decision records reduce error, duplication and the quiet accumulation of unmanaged exposure.</p></div>
+      <div class="tile" style="border-top:3px solid #153E5A"><div style="font-size:14px;font-weight:700;color:#153E5A">Lower legal and compliance risk</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Obligations are mapped, owned and evidenced, so exposure is managed before it becomes a finding, a penalty or a claim.</p></div>
+      <div class="tile" style="border-top:3px solid #4B6969"><div style="font-size:14px;font-weight:700;color:#4B6969">A culture of accountability</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Named ownership at every level changes behaviour more reliably than policy does, because responsibility becomes visible.</p></div>
+      <div class="tile" style="border-top:3px solid #6C793C"><div style="font-size:14px;font-weight:700;color:#6C793C">Talent attraction and retention</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Capable people choose organisations where decisions are made well. Poor governance is felt first by the staff who work inside it.</p></div>
+      <div class="tile" style="border-top:3px solid #137B8F"><div style="font-size:14px;font-weight:700;color:#137B8F">Stakeholder trust</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Funders, regulators, members and communities extend more latitude to organisations that can demonstrate how they govern themselves.</p></div>
+      <div class="tile" style="border-top:3px solid #153E5A"><div style="font-size:14px;font-weight:700;color:#153E5A">Reputation and market position</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Governance maturity is increasingly an entry condition &mdash; in procurement, in partnerships, and in the award of public funding.</p></div>
+    </div>
+    <p class="bd" style="margin-top:16px">Each of these is an outcome, not an activity &mdash; which is precisely why they are so rarely measured. The remainder of this paper is concerned with making them measurable, because a benefit that cannot be evidenced will eventually lose its funding.</p>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section one &middot; The value of governance</span><span>04</span></div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section one continued</div>
+    <h2 class="h2">How governance creates value</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">The mechanism is not mysterious. Governance improves the quality of decisions; better decisions produce better outcomes; evidenced outcomes build the confidence that grants an organisation more freedom to act. Each link in that chain can be observed.</p>
+    <div style="margin:22px 0 6px">
+      <svg viewBox="0 0 700 210" style="width:100%;height:auto">
+        <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#9aa6ad"></path></marker></defs>
+        <rect x="6" y="60" width="124" height="72" rx="9" fill="#153E5A"></rect>
+        <text x="68" y="88" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Governance</text>
+        <text x="68" y="106" text-anchor="middle" fill="#a9c0cc" font-size="10">structure &amp; clarity</text>
+        <line x1="136" y1="96" x2="166" y2="96" stroke="#9aa6ad" stroke-width="2" marker-end="url(#ar)"></line>
+        <rect x="172" y="60" width="124" height="72" rx="9" fill="#1d4a63"></rect>
+        <text x="234" y="88" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Better decisions</text>
+        <text x="234" y="106" text-anchor="middle" fill="#a9c0cc" font-size="10">informed &amp; defensible</text>
+        <line x1="302" y1="96" x2="332" y2="96" stroke="#9aa6ad" stroke-width="2" marker-end="url(#ar)"></line>
+        <rect x="338" y="60" width="124" height="72" rx="9" fill="#26637f"></rect>
+        <text x="400" y="88" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Better outcomes</text>
+        <text x="400" y="106" text-anchor="middle" fill="#c3e0e6" font-size="10">service, cost, risk</text>
+        <line x1="468" y1="96" x2="498" y2="96" stroke="#9aa6ad" stroke-width="2" marker-end="url(#ar)"></line>
+        <rect x="504" y="60" width="124" height="72" rx="9" fill="#137B8F"></rect>
+        <text x="566" y="88" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Confidence</text>
+        <text x="566" y="106" text-anchor="middle" fill="#dcf0f3" font-size="10">licence to operate</text>
+        <path d="M566 140 C 566 182, 300 190, 68 168 L68 142" fill="none" stroke="#137B8F" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ar)"></path>
+        <text x="330" y="198" text-anchor="middle" fill="#137B8F" font-size="10.5" font-weight="700">confidence funds further governance investment</text>
+      </svg>
+      <p class="cap">The governance value chain. The feedback loop is what makes governance compound rather than plateau &mdash; demonstrated outcomes justify the next round of investment.</p>
+    </div>
+    <div style="columns:2;column-gap:26px;margin-top:14px">
+      <p class="bd"><b style="color:#153E5A">Where value leaks.</b> The chain breaks most often at the third link. Organisations improve structure and even improve decisions, but never connect either to an outcome a board would recognise &mdash; a waiting time that fell, an error rate that dropped, a project that landed. Without that connection, governance remains an act of faith.</p>
+      <p class="bd"><b style="color:#153E5A">Public sector emphasis.</b> Value is expressed as public benefit, service reliability and stewardship of funds. The chain is identical; the outcome measures are simply different, and the accountability for demonstrating them is personal and statutory.</p>
+      <p class="bd"><b style="color:#4B6969">Corporate emphasis.</b> Value appears as cost of capital, insurability, deal readiness and customer trust. Boards in listed environments increasingly find governance maturity raised in due diligence and by institutional investors as a proxy for management quality.</p>
+      <p class="bd"><b style="color:#4B6969">The common requirement.</b> In both settings, the value case rests on being able to show movement. That is a measurement problem, and it is the reason a defined maturity model matters more than any individual control.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section one &middot; The value chain</span><span>05</span></div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section one continued</div>
+    <h2 class="h2">The cost of getting it wrong</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Governance failures are rarely single events. They are the accumulation of small unmanaged gaps that become visible all at once &mdash; and the cost is almost never limited to the financial loss that is eventually reported.</p>
+    <div style="margin:20px 0 4px">
+      <svg viewBox="0 0 700 230" style="width:100%;height:auto">
+        <g font-size="11" fill="#5b7480">
+          <text x="0" y="30">Direct financial loss</text><text x="0" y="70">Remediation &amp; legal cost</text><text x="0" y="110">Management distraction</text><text x="0" y="150">Lost trust &amp; standing</text><text x="0" y="190">Constrained future freedom</text>
+        </g>
+        <rect x="185" y="18" width="90" height="16" rx="3" fill="#c3d0d0"></rect>
+        <rect x="185" y="58" width="150" height="16" rx="3" fill="#9db3b3"></rect>
+        <rect x="185" y="98" width="235" height="16" rx="3" fill="#6d8a8a"></rect>
+        <rect x="185" y="138" width="360" height="16" rx="3" fill="#4B6969"></rect>
+        <rect x="185" y="178" width="470" height="16" rx="3" fill="#153E5A"></rect>
+        <g font-size="10" fill="#8a97a0">
+          <text x="285" y="31">visible immediately</text><text x="345" y="71">reported, but partial</text><text x="430" y="111">rarely quantified</text><text x="555" y="151">felt for years</text>
+          <text x="185" y="218" fill="#153E5A" font-weight="700">Relative total cost &mdash; the reported number is the smallest part</text>
+        </g>
+      </svg>
+      <p class="cap">Illustrative distribution of the true cost of a governance failure. The parts that are hardest to measure are consistently the largest.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px">
+      <div class="tile" style="border-left:4px solid #153E5A;border-radius:0 10px 10px 0"><div style="font-size:14px;font-weight:700;color:#153E5A">The recurrence signal</div><p style="font-size:11.5px;line-height:1.55;color:#475761;margin:5px 0 0">A finding that reappears is no longer a technical gap; it is evidence that oversight is not translating into action. Repeat findings are the single most reliable predictor of a larger failure to come, and the cheapest one to act on.</p></div>
+      <div class="tile" style="border-left:4px solid #137B8F;border-radius:0 10px 10px 0"><div style="font-size:14px;font-weight:700;color:#137B8F">The prevention arithmetic</div><p style="font-size:11.5px;line-height:1.55;color:#475761;margin:5px 0 0">Closing a governance gap before it is found is almost always an order of magnitude cheaper than remediating it afterwards &mdash; and it is the only version of the work that also produces a capability the organisation keeps.</p></div>
+    </div>
+    <p class="bd" style="margin-top:16px">This is the honest commercial case for measurement. An organisation that knows where its governance is weak can choose where to spend; an organisation that does not know is effectively self-insuring against exposures it has never named. The maturity model exists to remove that blind spot &mdash; not to generate a score.</p>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section one &middot; The cost of failure</span><span>06</span></div>
+  </section>
+
+
+  <!-- ============ THE COMPLIANCE PLATEAU ============ -->
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section two</div>
+    <h2 class="h2">The compliance plateau</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Compliance-led governance improves quickly, then stops. Once the registers exist and the obligations are met, further effort produces more documentation rather than better decisions. The organisation is safe, but it is not improving &mdash; and the board cannot tell the difference.</p>
+    <div aria-hidden="true" style="position:absolute;left:-1cm;right:-1cm;bottom:-1cm;height:280px;background:url('assets/wp-people-03.png') center 30%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);opacity:.5;pointer-events:none;z-index:0"></div>
+    <div style="margin:22px 0 4px">
+      <svg viewBox="0 0 700 250" style="width:100%;height:auto">
+        <line x1="60" y1="210" x2="670" y2="210" stroke="#dbe2e6" stroke-width="1.5"></line>
+        <line x1="60" y1="30" x2="60" y2="210" stroke="#dbe2e6" stroke-width="1.5"></line>
+        <text x="52" y="36" text-anchor="end" fill="#8a97a0" font-size="11">High</text>
+        <text x="52" y="212" text-anchor="end" fill="#8a97a0" font-size="11">Low</text>
+        <text x="365" y="238" text-anchor="middle" fill="#8a97a0" font-size="11">Governance effort invested over time</text>
+        <path d="M60 200 C 150 120, 200 92, 300 88 C 420 84, 540 84, 670 84" fill="none" stroke="#9aa6ad" stroke-width="3.5" stroke-dasharray="7 5"></path>
+        <path d="M60 200 C 150 150, 230 120, 330 100 C 450 76, 560 58, 670 40" fill="none" stroke="#137B8F" stroke-width="3.5"></path>
+        <circle cx="330" cy="100" r="5" fill="#137B8F"></circle>
+        <text x="676" y="88" fill="#7d8b93" font-size="11.5" font-weight="700" text-anchor="end" transform="translate(-6,0)"></text>
+        <text x="500" y="76" fill="#7d8b93" font-size="11.5" font-weight="700">Compliance-led &mdash; plateaus</text>
+        <text x="360" y="132" fill="#137B8F" font-size="11.5" font-weight="700">Capability-led &mdash; compounds</text>
+        <text x="330" y="88" fill="#137B8F" font-size="10.5" text-anchor="middle">shared language adopted</text>
+      </svg>
+      <p class="cap">Both paths satisfy the obligations. Only one keeps improving the quality of decisions after the registers are complete.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px">
+      <div class="tile" style="border-left:4px solid #9aa6ad;border-radius:0 10px 10px 0"><div style="font-size:14px;font-weight:700;color:#5b7480">Symptoms of the plateau</div><div style="font-size:11.5px;line-height:1.75;color:#475761;margin-top:6px">Registers updated on a cycle, not consulted<br>The same findings recur each audit cycle<br>Board papers confirm process, not reasoning<br>Governance owned by one function<br>&ldquo;Are we well governed?&rdquo; answered by opinion</div></div>
+      <div class="tile" style="border-left:4px solid #137B8F;border-radius:0 10px 10px 0"><div style="font-size:14px;font-weight:700;color:#137B8F">Signs of capability</div><div style="font-size:11.5px;line-height:1.75;color:#475761;margin-top:6px">Risks acted on before they materialise<br>Findings fall in severity and recurrence<br>Papers set out options and trade-offs<br>Line managers use the same vocabulary<br>Maturity trend reported alongside finance</div></div>
+    </div>
+    <p class="bd" style="margin-top:16px">In the public sector the plateau is reinforced by an accountability environment that rewards demonstrable compliance; in the corporate environment it is reinforced by assurance mapping that proves control coverage. Neither is wrong. Both are incomplete, because neither measures whether judgement across the organisation is improving.</p>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section two &middot; The compliance plateau</span><span>07</span></div>
+  </section>
+
+  <!-- ============ 4 · CULTURE ============ -->
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section three</div>
+    <h2 class="h2">Culture: governance as ordinary practice</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Controls set the floor; culture determines what happens when no one is watching. A governance culture is not a values statement &mdash; it is the observable habit of raising issues early, documenting reasoning, and treating oversight as useful rather than punitive.</p>
+    <div aria-hidden="true" style="position:absolute;left:-1cm;right:-1cm;bottom:-1cm;height:280px;background:url('assets/wp-people-04.png') center 30%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);opacity:.5;pointer-events:none;z-index:0"></div>
+    <div style="display:flex;align-items:stretch;gap:8px;margin:22px 0 6px">
+      <div style="flex:1;background:#eef2f4;color:#5b7480;border-radius:8px 0 0 8px;padding:14px 13px"><div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a97a0">Stage 01</div><div style="font-size:14.5px;font-weight:700;margin-top:4px;color:#5b7480">Imposed</div><p style="font-size:10.5px;line-height:1.45;margin:6px 0 0">Governance is something done to the business by a central team.</p></div>
+      <div style="flex:1;background:#3a5c6a;color:#fff;padding:14px 13px"><div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#a9c4cc">Stage 02</div><div style="font-size:14.5px;font-weight:700;margin-top:4px">Accepted</div><p style="font-size:10.5px;line-height:1.45;color:#d3e2e6;margin:6px 0 0">Obligations are understood and met, but seen as overhead.</p></div>
+      <div style="flex:1.1;background:#1d4a63;color:#fff;padding:14px 13px"><div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8fbfc4">Stage 03</div><div style="font-size:14.5px;font-weight:700;margin-top:4px">Used</div><p style="font-size:10.5px;line-height:1.45;color:#d3e2e6;margin:6px 0 0">Managers consult risk and performance information before deciding.</p></div>
+      <div style="flex:1.2;background:#137B8F;color:#fff;border-radius:0 8px 8px 0;padding:14px 13px"><div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#bfe4ea">Stage 04</div><div style="font-size:14.5px;font-weight:700;margin-top:4px">Owned</div><p style="font-size:10.5px;line-height:1.45;color:#dcf0f3;margin:6px 0 0">People surface problems unprompted; improvement continues without a program.</p></div>
+    </div>
+    <p class="cap" style="margin-bottom:16px">Culture progression: each stage widens as ownership moves from the centre out into the business.</p>
+    <div style="columns:2;column-gap:26px">
+      <p class="bd"><b style="color:#153E5A">The honest test.</b> Ask whether the organisation discovers most of its own problems before anyone else does. An organisation whose issues are found by auditors, regulators or the media has a control system but not a governance culture. One that surfaces its own problems early has both.</p>
+      <p class="bd"><b style="color:#153E5A">Why it travels badly.</b> Culture is usually strongest where governance is most visible &mdash; the board table, the risk function &mdash; and weakest two levels down, where most decisions are actually made. Closing that distance requires the same language and the same measures to be used at every level.</p>
+      <p class="bd"><b style="color:#4B6969">Public sector nuance.</b> Public officers carry statutory accountability personally, which can make candour feel risky. Cultures improve fastest where leadership demonstrably treats an early disclosure as a good outcome rather than a failure.</p>
+      <p class="bd"><b style="color:#4B6969">Corporate nuance.</b> In listed environments, the pressure runs the other way: governance can become an investor-relations narrative. The discipline is to hold internal measures to the same standard as external disclosure.</p>
+    </div>
+    <div style="break-inside:avoid;margin-top:14px;background:#153E5A;color:#fff;border-radius:10px;padding:18px 22px">
+      <p style="margin:0;font-size:14.5px;line-height:1.5;font-style:italic;color:#fff">&ldquo;You can measure compliance by what an organisation reports. You measure culture by what it catches before anyone has to report it.&rdquo;</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section three &middot; Culture</span><span>08</span></div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section three continued</div>
+    <h2 class="h2">Building a governance culture deliberately</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Culture is often described as the hardest thing to change and is therefore left alone. In practice it responds to a small number of deliberate, visible acts by leadership &mdash; each of which can be scheduled, assigned and observed.</p>
+    <div style="border:1px solid #e6e9ec;border-radius:10px;overflow:hidden;margin:20px 0 6px;font-size:11.5px">
+      <div style="display:grid;grid-template-columns:1.15fr 1.6fr 1fr;background:#153E5A;color:#fff">
+        <div style="padding:9px 14px;font-weight:700;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase">Lever</div>
+        <div style="padding:9px 14px;font-weight:700;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.15)">The deliberate act</div>
+        <div style="padding:9px 14px;font-weight:700;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.15);color:#b9e0e6">Observable when working</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1.15fr 1.6fr 1fr;border-bottom:1px solid #eef1f3"><div style="padding:10px 14px;font-weight:700;color:#153E5A">Tone from the top</div><div style="padding:10px 14px;color:#475761;border-left:1px solid #eef1f3">Leadership publicly thanks the person who raised a problem early.</div><div style="padding:10px 14px;color:#7d8b93;border-left:1px solid #eef1f3">Disclosure rate rises</div></div>
+      <div style="display:grid;grid-template-columns:1.15fr 1.6fr 1fr;border-bottom:1px solid #eef1f3;background:#fafbfc"><div style="padding:10px 14px;font-weight:700;color:#153E5A">Named ownership</div><div style="padding:10px 14px;color:#475761;border-left:1px solid #eef1f3">Every governance domain has one accountable owner, published.</div><div style="padding:10px 14px;color:#7d8b93;border-left:1px solid #eef1f3">Fewer orphaned actions</div></div>
+      <div style="display:grid;grid-template-columns:1.15fr 1.6fr 1fr;border-bottom:1px solid #eef1f3"><div style="padding:10px 14px;font-weight:700;color:#153E5A">Shared vocabulary</div><div style="padding:10px 14px;color:#475761;border-left:1px solid #eef1f3">The same maturity definitions used at board, executive and team level.</div><div style="padding:10px 14px;color:#7d8b93;border-left:1px solid #eef1f3">Scores agree on review</div></div>
+      <div style="display:grid;grid-template-columns:1.15fr 1.6fr 1fr;border-bottom:1px solid #eef1f3;background:#fafbfc"><div style="padding:10px 14px;font-weight:700;color:#153E5A">Visible measurement</div><div style="padding:10px 14px;color:#475761;border-left:1px solid #eef1f3">Maturity trend reported to the board alongside finance, every cycle.</div><div style="padding:10px 14px;color:#7d8b93;border-left:1px solid #eef1f3">Governance on the agenda</div></div>
+      <div style="display:grid;grid-template-columns:1.15fr 1.6fr 1fr;border-bottom:1px solid #eef1f3"><div style="padding:10px 14px;font-weight:700;color:#153E5A">Learning from failure</div><div style="padding:10px 14px;color:#475761;border-left:1px solid #eef1f3">Post-incident reviews look for the governance gap, not the individual.</div><div style="padding:10px 14px;color:#7d8b93;border-left:1px solid #eef1f3">Repeat findings fall</div></div>
+      <div style="display:grid;grid-template-columns:1.15fr 1.6fr 1fr;background:#fafbfc"><div style="padding:10px 14px;font-weight:700;color:#153E5A">Capability building</div><div style="padding:10px 14px;color:#475761;border-left:1px solid #eef1f3">Managers are trained to use the framework, not just to comply with it.</div><div style="padding:10px 14px;color:#7d8b93;border-left:1px solid #eef1f3">Self-assessment quality rises</div></div>
+    </div>
+    <p class="cap" style="margin-bottom:16px">Six levers, each with an act that can be scheduled and an indicator that shows whether it worked.</p>
+    <div style="columns:2;column-gap:26px">
+      <p class="bd">The pattern across these levers is that culture follows attention. Practices that are measured and discussed regularly become normal; practices that are documented once and revisited annually do not. This is why measurement is not a separate workstream from culture &mdash; it is the mechanism by which culture is signalled.</p>
+      <p class="bd">It is also why self-assessment, done well, is a cultural intervention rather than an administrative one. Asking a manager to rate their own domain against defined criteria requires them to read the criteria, look for their own evidence, and form a view they can defend. The score is a by-product; the thinking is the point.</p>
+    </div>
+    <div style="break-inside:avoid;margin-top:14px;background:#f4f8f9;border-left:4px solid #137B8F;border-radius:0 10px 10px 0;padding:15px 20px">
+      <p style="margin:0;font-size:13.5px;line-height:1.55;color:#153E5A">Building and maintaining a strong governance framework is not a one-off event. A culture of continuous improvement makes adaptation and learning ordinary &mdash; which is what keeps an organisation agile as circumstances change.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section three &middot; Building culture</span><span>09</span></div>
+  </section>
+
+
+  <!-- ============ LANGUAGE ============ -->
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section four</div>
+    <h2 class="h2">Language: one definition of &ldquo;managed&rdquo;</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Ask five executives how well the organisation is governed and you will get five answers, each shaped by where the person sits. The problem is rarely disagreement about facts &mdash; it is that the words carry different meanings at different levels.</p>
+    <div aria-hidden="true" style="position:absolute;left:-1cm;right:-1cm;bottom:-1cm;height:280px;background:url('assets/wp-people-05.png') center 30%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);opacity:.5;pointer-events:none;z-index:0"></div>
+    <div style="margin:20px 0 4px">
+      <div style="display:grid;grid-template-columns:82px 1fr 1fr;gap:0;border:1px solid #e6e9ec;border-radius:10px;overflow:hidden;font-size:11.5px">
+        <div style="background:#153E5A;color:#fff;padding:9px 12px;font-weight:700;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase">Term</div>
+        <div style="background:#153E5A;color:#fff;padding:9px 12px;font-weight:700;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.15)">Without a shared definition</div>
+        <div style="background:#153E5A;color:#b9e0e6;padding:9px 12px;font-weight:700;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.15)">With a shared definition</div>
+        <div style="padding:9px 12px;font-weight:700;color:#153E5A;border-top:1px solid #eef1f3">Managed</div><div style="padding:9px 12px;color:#7d8b93;border-top:1px solid #eef1f3;border-left:1px solid #eef1f3">&ldquo;Someone is looking after it&rdquo;</div><div style="padding:9px 12px;color:#475761;border-top:1px solid #eef1f3;border-left:1px solid #eef1f3">Monitored against measures, with improvement evidenced</div>
+        <div style="padding:9px 12px;font-weight:700;color:#153E5A;border-top:1px solid #eef1f3;background:#fafbfc">Compliant</div><div style="padding:9px 12px;color:#7d8b93;border-top:1px solid #eef1f3;border-left:1px solid #eef1f3;background:#fafbfc">&ldquo;No findings against us&rdquo;</div><div style="padding:9px 12px;color:#475761;border-top:1px solid #eef1f3;border-left:1px solid #eef1f3;background:#fafbfc">Obligation met and demonstrable on request</div>
+        <div style="padding:9px 12px;font-weight:700;color:#153E5A;border-top:1px solid #eef1f3">Assured</div><div style="padding:9px 12px;color:#7d8b93;border-top:1px solid #eef1f3;border-left:1px solid #eef1f3">&ldquo;Internal audit reviewed it&rdquo;</div><div style="padding:9px 12px;color:#475761;border-top:1px solid #eef1f3;border-left:1px solid #eef1f3">Independently tested against defined criteria</div>
+        <div style="padding:9px 12px;font-weight:700;color:#153E5A;border-top:1px solid #eef1f3;background:#fafbfc">Embedded</div><div style="padding:9px 12px;color:#7d8b93;border-top:1px solid #eef1f3;border-left:1px solid #eef1f3;background:#fafbfc">&ldquo;It's in the policy&rdquo;</div><div style="padding:9px 12px;color:#475761;border-top:1px solid #eef1f3;border-left:1px solid #eef1f3;background:#fafbfc">Practised consistently without prompting</div>
+        <div style="padding:9px 12px;font-weight:700;color:#153E5A;border-top:1px solid #eef1f3">Mature</div><div style="padding:9px 12px;color:#7d8b93;border-top:1px solid #eef1f3;border-left:1px solid #eef1f3">&ldquo;We've done it for years&rdquo;</div><div style="padding:9px 12px;color:#475761;border-top:1px solid #eef1f3;border-left:1px solid #eef1f3">Rated against a defined level, with evidence</div>
+      </div>
+      <p class="cap">The same five words, before and after a common vocabulary is adopted. The right-hand column is what makes a rating comparable between assessors and across years.</p>
+    </div>
+    <div style="columns:2;column-gap:26px;margin-top:14px">
+      <p class="bd">A shared vocabulary does not remove judgement &mdash; it disciplines it. When every domain is described against the same defined terms, a rating means the same thing this year as next, in one business unit as in another, and to a board member as to the manager who submitted it.</p>
+      <p class="bd">This is also where a platform earns its place. <b style="color:#153E5A">Governance Manager</b> holds the definitions centrally and presents them at the point of assessment, so the person scoring a practice reads the same criteria as the person reviewing it. Consistency stops depending on who happened to run the exercise.</p>
+      <p class="bd">In our experience the language step is the cheapest intervention available and the most frequently skipped. It requires no new system, no additional headcount and no external assurance &mdash; only agreement, written down and used.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section four &middot; Language</span><span>10</span></div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section four continued</div>
+    <h2 class="h2">Topics, elements and questions</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">A shared vocabulary needs structure as well as definitions. Well-built frameworks decompose a governance domain into topics, each topic into elements, and each element into a small number of assessable questions &mdash; so a rating is always traceable to something specific.</p>
+    <div style="margin:20px 0 6px">
+      <svg viewBox="0 0 700 245" style="width:100%;height:auto">
+        <rect x="250" y="6" width="200" height="42" rx="8" fill="#153E5A"></rect>
+        <text x="350" y="27" text-anchor="middle" fill="#fff" font-size="12.5" font-weight="700">Framework / standard</text>
+        <text x="350" y="41" text-anchor="middle" fill="#a9c0cc" font-size="9.5">e.g. ISO 22301, WA PS Governance Framework</text>
+        <g stroke="#cdd5da" stroke-width="1.5" fill="none">
+          <path d="M350 48 L350 62 M120 62 L580 62 M120 62 L120 76 M235 62 L235 76 M350 62 L350 76 M465 62 L465 76 M580 62 L580 76"></path>
+        </g>
+        <g>
+          <rect x="66" y="76" width="108" height="34" rx="6" fill="#1d4a63"></rect><text x="120" y="97" text-anchor="middle" fill="#fff" font-size="10.5" font-weight="700">Topic 1</text>
+          <rect x="181" y="76" width="108" height="34" rx="6" fill="#1d4a63"></rect><text x="235" y="97" text-anchor="middle" fill="#fff" font-size="10.5" font-weight="700">Topic 2</text>
+          <rect x="296" y="76" width="108" height="34" rx="6" fill="#1d4a63"></rect><text x="350" y="97" text-anchor="middle" fill="#fff" font-size="10.5" font-weight="700">Topic 3</text>
+          <rect x="411" y="76" width="108" height="34" rx="6" fill="#1d4a63"></rect><text x="465" y="97" text-anchor="middle" fill="#fff" font-size="10.5" font-weight="700">Topic 4</text>
+          <rect x="526" y="76" width="108" height="34" rx="6" fill="#1d4a63"></rect><text x="580" y="97" text-anchor="middle" fill="#fff" font-size="10.5" font-weight="700">Topic n</text>
+        </g>
+        <g stroke="#cdd5da" stroke-width="1.5" fill="none">
+          <path d="M350 110 L350 124 M300 124 L400 124 M300 124 L300 138 M350 124 L350 138 M400 124 L400 138"></path>
+        </g>
+        <g>
+          <rect x="252" y="138" width="96" height="30" rx="5" fill="#26637f"></rect><text x="300" y="157" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Element</text>
+          <rect x="302" y="138" width="96" height="30" rx="5" fill="#26637f" opacity="0"></rect>
+          <rect x="352" y="138" width="96" height="30" rx="5" fill="#26637f"></rect><text x="400" y="157" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Element</text>
+        </g>
+        <g stroke="#cdd5da" stroke-width="1.5" fill="none"><path d="M400 168 L400 182 M340 182 L520 182 M340 182 L340 194 M430 182 L430 194 M520 182 L520 194"></path></g>
+        <g>
+          <rect x="290" y="194" width="100" height="26" rx="5" fill="#137B8F"></rect><text x="340" y="211" text-anchor="middle" fill="#fff" font-size="9.5" font-weight="700">Question</text>
+          <rect x="380" y="194" width="100" height="26" rx="5" fill="#137B8F"></rect><text x="430" y="211" text-anchor="middle" fill="#fff" font-size="9.5" font-weight="700">Question</text>
+          <rect x="470" y="194" width="100" height="26" rx="5" fill="#137B8F"></rect><text x="520" y="211" text-anchor="middle" fill="#fff" font-size="9.5" font-weight="700">Question</text>
+        </g>
+        <text x="350" y="238" text-anchor="middle" fill="#8a97a0" font-size="10">Each question carries defined maturity descriptors &mdash; so a score always points to specific evidence</text>
+      </svg>
+      <p class="cap">A worked framework structure. A single governance domain typically resolves into eight or so topics and several hundred assessable questions.</p>
+    </div>
+    <div style="columns:2;column-gap:26px;margin-top:12px">
+      <p class="bd"><b style="color:#153E5A">Why the decomposition matters.</b> A domain-level score is useful for a board but useless for improvement &mdash; nobody can act on &ldquo;risk management is 2.4&rdquo;. An element-level score points at the practice that needs work, and the question behind it names the evidence that is missing.</p>
+      <p class="bd"><b style="color:#153E5A">Why it must be reused.</b> The same structure applied year after year is what allows trend, comparison and benchmarking. Rewriting the questions each cycle produces a fresh opinion, not a measurement.</p>
+      <p class="bd"><b style="color:#4B6969">Standards as the reference.</b> Where a recognised standard exists &mdash; ISO 22301 for business continuity, ISO/IEC 42001 for AI management, the Essential Eight for cyber &mdash; adopting its structure means the assessment can double as a readiness position for conformity, and the language is already defensible to an external party.</p>
+      <p class="bd"><b style="color:#4B6969">Where the platform helps.</b> <b style="color:#153E5A">Governance Manager</b> ships a library of these frameworks and maturity-based scoring models, so an organisation can deploy the references that matter to it rather than authoring a framework from scratch.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section four &middot; Framework structure</span><span>11</span></div>
+  </section>
+
+
+  <!-- ============ MATURITY MODEL ============ -->
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section five</div>
+    <h2 class="h2">Measurement: a defined maturity scale</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">A maturity model describes what good looks like at successive stages, from informal and reactive through to embedded and self-improving. Each governance domain is rated against those stages &mdash; so leaders see not just whether a practice exists, but how well it has taken hold.</p>
+    <div aria-hidden="true" style="position:absolute;left:-1cm;right:-1cm;bottom:-1cm;height:280px;background:url('assets/wp-people-06.png') center 30%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);opacity:.5;pointer-events:none;z-index:0"></div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:22px 0 6px">
+      <div style="border:1px solid #e6e9ec;border-top:3px solid #c3d0d0;border-radius:8px;padding:11px 12px"><div style="font-size:10.5px;font-weight:700;color:#137B8F">Level 1</div><div style="font-size:12.5px;font-weight:700;color:#153E5A;margin:2px 0 4px">Initial</div><p style="font-size:10px;line-height:1.4;color:#7d8b93;margin:0">Informal and person-dependent; little documentation.</p></div>
+      <div style="border:1px solid #e6e9ec;border-top:3px solid #9db3b3;border-radius:8px;padding:11px 12px"><div style="font-size:10.5px;font-weight:700;color:#137B8F">Level 2</div><div style="font-size:12.5px;font-weight:700;color:#153E5A;margin:2px 0 4px">Developing</div><p style="font-size:10px;line-height:1.4;color:#7d8b93;margin:0">Basic processes exist but are applied inconsistently.</p></div>
+      <div style="border:1px solid #e6e9ec;border-top:3px solid #6d8a8a;border-radius:8px;padding:11px 12px"><div style="font-size:10.5px;font-weight:700;color:#137B8F">Level 3</div><div style="font-size:12.5px;font-weight:700;color:#153E5A;margin:2px 0 4px">Established</div><p style="font-size:10px;line-height:1.4;color:#7d8b93;margin:0">Documented, consistent and backed by reliable evidence.</p></div>
+      <div style="border:1px solid #e6e9ec;border-top:3px solid #4B6969;border-radius:8px;padding:11px 12px"><div style="font-size:10.5px;font-weight:700;color:#137B8F">Level 4</div><div style="font-size:12.5px;font-weight:700;color:#153E5A;margin:2px 0 4px">Managed</div><p style="font-size:10px;line-height:1.4;color:#7d8b93;margin:0">Monitored with measures; improvement is continuous.</p></div>
+      <div style="border:1px solid #e6e9ec;border-top:3px solid #35504f;border-radius:8px;padding:11px 12px"><div style="font-size:10.5px;font-weight:700;color:#137B8F">Level 5</div><div style="font-size:12.5px;font-weight:700;color:#153E5A;margin:2px 0 4px">Leading</div><p style="font-size:10px;line-height:1.4;color:#7d8b93;margin:0">Embedded in culture; benchmarked to leading practice.</p></div>
+    </div>
+    <p class="cap" style="margin-bottom:18px">Five defined levels. The target is rarely level 5 everywhere &mdash; it is a consistent, well-evidenced level 3 or 4 across the domains that matter most.</p>
+    <h3 class="h3" style="margin-top:0">Scoring twice: capability and evidence</h3>
+    <p class="bd">The feature that separates a credible model from a self-flattering one is dual scoring. Every element is rated once for <b style="color:#137B8F">capability maturity</b> &mdash; how well the practice is designed and embedded &mdash; and once for <b style="color:#4B6969">evidence confidence</b> &mdash; how readily the organisation could prove it. The gap between the two is often the most useful finding of all.</p>
+    <div style="margin:14px 0 0">
+      <svg viewBox="0 0 700 210" style="width:100%;height:auto">
+        <g font-size="11" fill="#5b7480">
+          <text x="0" y="24">Strategic oversight</text><text x="0" y="63">Risk management</text><text x="0" y="102">Assurance &amp; audit</text><text x="0" y="141">Performance reporting</text><text x="0" y="180">Decision records</text>
+        </g>
+        <g>
+          <rect x="150" y="12" width="330" height="12" rx="3" fill="#137B8F"></rect><rect x="150" y="27" width="300" height="12" rx="3" fill="#4B6969"></rect>
+          <rect x="150" y="51" width="390" height="12" rx="3" fill="#137B8F"></rect><rect x="150" y="66" width="240" height="12" rx="3" fill="#4B6969"></rect>
+          <rect x="150" y="90" width="300" height="12" rx="3" fill="#137B8F"></rect><rect x="150" y="105" width="285" height="12" rx="3" fill="#4B6969"></rect>
+          <rect x="150" y="129" width="420" height="12" rx="3" fill="#137B8F"></rect><rect x="150" y="144" width="195" height="12" rx="3" fill="#4B6969"></rect>
+          <rect x="150" y="168" width="255" height="12" rx="3" fill="#137B8F"></rect><rect x="150" y="183" width="240" height="12" rx="3" fill="#4B6969"></rect>
+        </g>
+        <g font-size="10.5" font-weight="700">
+          <text x="150" y="205" fill="#137B8F">Capability maturity</text><text x="290" y="205" fill="#4B6969">Evidence confidence</text>
+        </g>
+      </svg>
+      <p class="cap">Illustrative dual-score profile. Risk management and performance reporting show the widest gaps &mdash; practices believed to be strong that the organisation would struggle to prove.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section five &middot; Measurement</span><span>12</span></div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section five continued</div>
+    <h2 class="h2">How maturity models measure value</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Maturity models are frequently mistaken for scoring exercises. Their real function is to convert a qualitative judgement about organisational capability into a quantity that can be compared &mdash; between domains, between years, and between organisations.</p>
+    <h3 class="h3">The five mechanisms</h3>
+    <div style="display:flex;flex-direction:column;gap:9px">
+      <div style="display:flex;gap:12px;align-items:flex-start"><div style="flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:#153E5A;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">1</div><div style="font-size:12px;line-height:1.55;color:#475761"><b style="color:#153E5A">Defined stages.</b> Each level carries written descriptors of what practice looks like at that stage, so a rating is an act of comparison against criteria rather than an expression of confidence.</div></div>
+      <div style="display:flex;gap:12px;align-items:flex-start"><div style="flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:#1d4a63;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">2</div><div style="font-size:12px;line-height:1.55;color:#475761"><b style="color:#153E5A">Scored elements.</b> Every element is scored on the presence and effectiveness of its key governance components, which makes the aggregate traceable to specific practices rather than an overall impression.</div></div>
+      <div style="display:flex;gap:12px;align-items:flex-start"><div style="flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:#26637f;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">3</div><div style="font-size:12px;line-height:1.55;color:#475761"><b style="color:#153E5A">A declared desired state.</b> Alongside the current score, the organisation records the level it intends to reach. Value is measured as movement toward a target that leadership has consciously set.</div></div>
+      <div style="display:flex;gap:12px;align-items:flex-start"><div style="flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:#137B8F;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">4</div><div style="font-size:12px;line-height:1.55;color:#475761"><b style="color:#153E5A">Quantified gaps.</b> The arithmetic difference between current and desired turns a vague concern into a ranked list of the most consequential shortfalls &mdash; the basis of a defensible improvement plan.</div></div>
+      <div style="display:flex;gap:12px;align-items:flex-start"><div style="flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:#4B6969;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">5</div><div style="font-size:12px;line-height:1.55;color:#475761"><b style="color:#153E5A">Comparability.</b> Because the criteria are fixed, the same score means the same thing across business units, across years and &mdash; where a common model is used &mdash; across organisations.</div></div>
+    </div>
+    <div style="break-inside:avoid;margin-top:18px;background:#153E5A;color:#fff;border-radius:10px;padding:18px 22px">
+      <p style="margin:0;font-size:14px;line-height:1.55;color:#fff">A focus on achieving the highest maturity level in every domain is usually unrealistic and occasionally wasteful. The strategic approach prioritises the most impactful gaps &mdash; where weakness carries the greatest consequence for the organisation's purpose.</p>
+    </div>
+    <p class="bd" style="margin-top:18px">This is also where maturity measurement differs from audit. An audit answers whether a control operated; a maturity assessment answers how capable the organisation is, and what the next level would require. The two are complementary, and the second is what informs investment.</p>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section five &middot; Measurement mechanics</span><span>13</span></div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section five continued</div>
+    <h2 class="h2">Current, desired and the gap</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">The most actionable output of a maturity assessment is not the overall score. It is the ranked table of gaps &mdash; the elements where existing practice falls furthest short of the level the organisation has decided it needs.</p>
+    <div style="margin:20px 0 6px">
+      <svg viewBox="0 0 700 200" style="width:100%;height:auto">
+        <g stroke="#eef1f3" stroke-width="1">
+          <line x1="250" y1="6" x2="250" y2="164"></line><line x1="340" y1="6" x2="340" y2="164"></line><line x1="430" y1="6" x2="430" y2="164"></line><line x1="520" y1="6" x2="520" y2="164"></line><line x1="610" y1="6" x2="610" y2="164"></line>
+        </g>
+        <g font-size="11" fill="#5b7480">
+          <text x="0" y="26">Context of the organisation</text><text x="0" y="60">Leadership</text><text x="0" y="94">Planning</text><text x="0" y="128">Performance evaluation</text><text x="0" y="158">Improvement</text>
+        </g>
+        <g>
+          <rect x="250" y="16" width="180" height="13" rx="3" fill="#137B8F"></rect><rect x="430" y="16" width="90" height="13" rx="3" fill="#e3e9ec"></rect>
+          <rect x="250" y="50" width="90" height="13" rx="3" fill="#137B8F"></rect><rect x="340" y="50" width="180" height="13" rx="3" fill="#e3e9ec"></rect>
+          <rect x="250" y="84" width="180" height="13" rx="3" fill="#137B8F"></rect><rect x="430" y="84" width="90" height="13" rx="3" fill="#e3e9ec"></rect>
+          <rect x="250" y="118" width="270" height="13" rx="3" fill="#137B8F"></rect><rect x="520" y="118" width="90" height="13" rx="3" fill="#e3e9ec"></rect>
+          <rect x="250" y="148" width="180" height="13" rx="3" fill="#137B8F"></rect><rect x="430" y="148" width="180" height="13" rx="3" fill="#e3e9ec"></rect>
+        </g>
+        <g font-size="10.5" fill="#8a97a0">
+          <text x="250" y="180">1</text><text x="340" y="180">2</text><text x="430" y="180">3</text><text x="520" y="180">4</text><text x="610" y="180">5</text>
+        </g>
+        <g font-size="10.5" font-weight="700"><text x="250" y="196" fill="#137B8F">Current maturity</text><text x="380" y="196" fill="#9aa6ad">Gap to desired</text></g>
+      </svg>
+      <p class="cap">Illustrative current-versus-desired profile across the topics of a single standard. Leadership and Improvement carry the widest gaps &mdash; and would head the improvement plan.</p>
+    </div>
+    <div style="border:1px solid #e6e9ec;border-radius:10px;overflow:hidden;font-size:11.5px;margin-top:14px">
+      <div style="display:grid;grid-template-columns:56px 1.7fr 66px 66px;background:#153E5A;color:#fff">
+        <div style="padding:9px 12px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase">Gap</div>
+        <div style="padding:9px 12px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.15)">Element</div>
+        <div style="padding:9px 12px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.15);text-align:center">Now</div>
+        <div style="padding:9px 12px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.15);text-align:center;color:#b9e0e6">Target</div>
+      </div>
+      <div style="display:grid;grid-template-columns:56px 1.7fr 66px 66px;border-bottom:1px solid #eef1f3"><div style="padding:9px 12px;font-weight:700;color:#c4622d;text-align:center">2</div><div style="padding:9px 12px;color:#475761;border-left:1px solid #eef1f3">Organisational roles, responsibilities and authorities</div><div style="padding:9px 12px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">1</div><div style="padding:9px 12px;text-align:center;font-weight:700;color:#137B8F;border-left:1px solid #eef1f3">3</div></div>
+      <div style="display:grid;grid-template-columns:56px 1.7fr 66px 66px;border-bottom:1px solid #eef1f3;background:#fafbfc"><div style="padding:9px 12px;font-weight:700;color:#c4622d;text-align:center">2</div><div style="padding:9px 12px;color:#475761;border-left:1px solid #eef1f3">Leadership and management commitment</div><div style="padding:9px 12px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">1</div><div style="padding:9px 12px;text-align:center;font-weight:700;color:#137B8F;border-left:1px solid #eef1f3">3</div></div>
+      <div style="display:grid;grid-template-columns:56px 1.7fr 66px 66px;border-bottom:1px solid #eef1f3"><div style="padding:9px 12px;font-weight:700;color:#4B6969;text-align:center">1</div><div style="padding:9px 12px;color:#475761;border-left:1px solid #eef1f3">Actions to address risks and opportunities</div><div style="padding:9px 12px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">2</div><div style="padding:9px 12px;text-align:center;font-weight:700;color:#137B8F;border-left:1px solid #eef1f3">3</div></div>
+      <div style="display:grid;grid-template-columns:56px 1.7fr 66px 66px;border-bottom:1px solid #eef1f3;background:#fafbfc"><div style="padding:9px 12px;font-weight:700;color:#4B6969;text-align:center">1</div><div style="padding:9px 12px;color:#475761;border-left:1px solid #eef1f3">Objectives and plans to achieve them</div><div style="padding:9px 12px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">2</div><div style="padding:9px 12px;text-align:center;font-weight:700;color:#137B8F;border-left:1px solid #eef1f3">3</div></div>
+      <div style="display:grid;grid-template-columns:56px 1.7fr 66px 66px"><div style="padding:9px 12px;font-weight:700;color:#4B6969;text-align:center">1</div><div style="padding:9px 12px;color:#475761;border-left:1px solid #eef1f3">Scope of the management system</div><div style="padding:9px 12px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">2</div><div style="padding:9px 12px;text-align:center;font-weight:700;color:#137B8F;border-left:1px solid #eef1f3">3</div></div>
+    </div>
+    <p class="bd" style="margin-top:14px">A table of this kind is what makes the value case concrete: it names the shortfall, quantifies it, and implies the work. It also gives the board a defensible basis for saying no to effort elsewhere &mdash; the ranked gaps are where the next dollar demonstrably belongs.</p>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section five &middot; Gap analysis</span><span>14</span></div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section five continued</div>
+    <h2 class="h2">Minimum standards and breaches</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Alongside the desired state, mature frameworks declare a minimum acceptable level for each element. Anything below that line is not a development opportunity &mdash; it is a breach of the organisation's own standard, and it should be reported as such.</p>
+    <div style="margin:20px 0 6px">
+      <svg viewBox="0 0 700 190" style="width:100%;height:auto">
+        <line x1="330" y1="6" x2="330" y2="150" stroke="#c4622d" stroke-width="2" stroke-dasharray="5 4"></line>
+        <text x="336" y="16" fill="#c4622d" font-size="10.5" font-weight="700">minimum acceptable level</text>
+        <g font-size="11" fill="#5b7480">
+          <text x="0" y="34">Clarity of mission</text><text x="0" y="66">Member meetings</text><text x="0" y="98">Resource allocation</text><text x="0" y="130">Reporting to members</text>
+        </g>
+        <g>
+          <rect x="200" y="24" width="100" height="14" rx="3" fill="#c4622d"></rect><text x="310" y="35" font-size="10" fill="#c4622d" text-anchor="end">66%</text>
+          <rect x="200" y="56" width="100" height="14" rx="3" fill="#c4622d"></rect><text x="310" y="67" font-size="10" fill="#c4622d" text-anchor="end">54%</text>
+          <rect x="200" y="88" width="100" height="14" rx="3" fill="#d98a5c"></rect><text x="310" y="99" font-size="10" fill="#c4622d" text-anchor="end">48%</text>
+          <rect x="200" y="120" width="100" height="14" rx="3" fill="#e0a883"></rect><text x="310" y="131" font-size="10" fill="#c4622d" text-anchor="end">34%</text>
+        </g>
+        <g>
+          <rect x="340" y="24" width="120" height="14" rx="3" fill="#dfe6e9"></rect>
+          <rect x="340" y="56" width="150" height="14" rx="3" fill="#dfe6e9"></rect>
+          <rect x="340" y="88" width="190" height="14" rx="3" fill="#dfe6e9"></rect>
+          <rect x="340" y="120" width="240" height="14" rx="3" fill="#dfe6e9"></rect>
+        </g>
+        <text x="200" y="172" fill="#c4622d" font-size="10.5" font-weight="700">Proportion of assessed organisations below the minimum</text>
+        <text x="470" y="172" fill="#9aa6ad" font-size="10.5" font-weight="700">at or above</text>
+      </svg>
+      <p class="cap">Illustrative breach profile across a cohort. Two thirds of assessed organisations fall below the minimum standard on clarity of mission &mdash; a sector-level finding, not an individual one.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px">
+      <div class="tile" style="border-top:3px solid #c4622d"><div style="font-size:14px;font-weight:700;color:#c4622d">Why a minimum line matters</div><p style="font-size:11.5px;line-height:1.55;color:#475761;margin:5px 0 0">Without it, every score is relative and nothing is ever urgent. With it, the organisation has a self-declared threshold that turns a weak rating into an obligation to act &mdash; and gives assurance a defined test to apply.</p></div>
+      <div class="tile" style="border-top:3px solid #137B8F"><div style="font-size:14px;font-weight:700;color:#137B8F">Breach reporting done well</div><p style="font-size:11.5px;line-height:1.55;color:#475761;margin:5px 0 0">Report breaches by count and by proportion of assessments, with the element named. Trend them. A falling breach count is the clearest single evidence that governance investment is working.</p></div>
+    </div>
+    <p class="bd" style="margin-top:14px">Reported this way, the assessment produces three distinct outputs for three distinct audiences: a maturity trend for the board, a ranked gap list for the executive, and a breach register for assurance. All three come from one exercise, which is what makes the discipline affordable.</p>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section five &middot; Minimum standards</span><span>15</span></div>
+  </section>
+
+
+  <!-- ============ DOMAIN HEATMAP ============ -->
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section five continued</div>
+    <h2 class="h2">One framework, applied across every domain</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Consistency matters more than coverage. When the same scale is applied to every governance domain, an organisation can compare across areas, see where effort is best directed, and track movement over time without re-litigating the method each cycle.</p>
+    <div style="margin:22px 0 4px">
+      <div style="display:grid;grid-template-columns:150px repeat(5,1fr);gap:5px;font-size:10.5px">
+        <div></div>
+        <div style="text-align:center;font-weight:700;color:#153E5A;padding-bottom:4px">Corporate</div>
+        <div style="text-align:center;font-weight:700;color:#153E5A;padding-bottom:4px">Finance</div>
+        <div style="text-align:center;font-weight:700;color:#153E5A;padding-bottom:4px">ICT &amp; cyber</div>
+        <div style="text-align:center;font-weight:700;color:#153E5A;padding-bottom:4px">People</div>
+        <div style="text-align:center;font-weight:700;color:#153E5A;padding-bottom:4px">Delivery</div>
+
+        <div style="color:#5b7480;display:flex;align-items:center">Direction &amp; strategy</div>
+        <div style="background:#4B6969;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">4</div>
+        <div style="background:#4B6969;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">4</div>
+        <div style="background:#6d8a8a;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">3</div>
+        <div style="background:#6d8a8a;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">3</div>
+        <div style="background:#9db3b3;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">2</div>
+
+        <div style="color:#5b7480;display:flex;align-items:center">Oversight &amp; accountability</div>
+        <div style="background:#35504f;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">5</div>
+        <div style="background:#4B6969;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">4</div>
+        <div style="background:#9db3b3;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">2</div>
+        <div style="background:#6d8a8a;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">3</div>
+        <div style="background:#6d8a8a;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">3</div>
+
+        <div style="color:#5b7480;display:flex;align-items:center">Risk &amp; resilience</div>
+        <div style="background:#6d8a8a;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">3</div>
+        <div style="background:#4B6969;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">4</div>
+        <div style="background:#c3d0d0;color:#3f4a52;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">1</div>
+        <div style="background:#9db3b3;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">2</div>
+        <div style="background:#9db3b3;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">2</div>
+
+        <div style="color:#5b7480;display:flex;align-items:center">Assurance</div>
+        <div style="background:#4B6969;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">4</div>
+        <div style="background:#35504f;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">5</div>
+        <div style="background:#9db3b3;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">2</div>
+        <div style="background:#6d8a8a;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">3</div>
+        <div style="background:#6d8a8a;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">3</div>
+
+        <div style="color:#5b7480;display:flex;align-items:center">Transparency &amp; reporting</div>
+        <div style="background:#6d8a8a;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">3</div>
+        <div style="background:#4B6969;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">4</div>
+        <div style="background:#9db3b3;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">2</div>
+        <div style="background:#9db3b3;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">2</div>
+        <div style="background:#6d8a8a;color:#fff;text-align:center;padding:9px 0;border-radius:4px;font-weight:700">3</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:10px;color:#8a97a0">
+        <span>Level 1</span>
+        <span style="width:22px;height:11px;background:#c3d0d0;border-radius:2px"></span>
+        <span style="width:22px;height:11px;background:#9db3b3;border-radius:2px"></span>
+        <span style="width:22px;height:11px;background:#6d8a8a;border-radius:2px"></span>
+        <span style="width:22px;height:11px;background:#4B6969;border-radius:2px"></span>
+        <span style="width:22px;height:11px;background:#35504f;border-radius:2px"></span>
+        <span>Level 5</span>
+      </div>
+      <p class="cap">Illustrative maturity heatmap. The pattern &mdash; strong corporate and finance governance, weak ICT and cyber &mdash; is the most common profile we encounter in both sectors.</p>
+    </div>
+    <div style="columns:2;column-gap:26px;margin-top:16px">
+      <p class="bd">Read as a grid rather than a list, the assessment answers a question no single report can: where is governance genuinely strong, and where is the organisation relying on the assumption that it is? Columns expose domains carried by one capable individual; rows expose practices that are strong in the centre but absent at the edges.</p>
+      <p class="bd"><b style="color:#153E5A">Governance Manager</b> maintains this view continuously rather than annually, with each domain's score traceable to the assessment responses and evidence behind it &mdash; so a challenge from the board or an auditor can be answered from the record rather than from memory.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section five &middot; Framework</span><span>16</span></div>
+  </section>
+
+  <!-- ============ 8 · REPORTING ============ -->
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section six</div>
+    <h2 class="h2">Reporting: governance on the board dashboard</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Boards receive a financial dashboard every month and rarely receive an equivalent measure of how well the organisation is governed. Governance quality stays a matter of opinion &mdash; confident in some rooms, anxious in others, and almost never comparable from one year to the next.</p>
+    <div aria-hidden="true" style="position:absolute;left:-1cm;right:-1cm;bottom:-1cm;height:280px;background:url('assets/wp-people-07.png') center 30%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);opacity:.5;pointer-events:none;z-index:0"></div>
+    <div style="margin:20px 0 4px;border:1px solid #e6e9ec;border-radius:12px;overflow:hidden">
+      <div style="background:#153E5A;color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:center">
+        <div style="font-size:13px;font-weight:700">Governance performance &mdash; board summary</div>
+        <div style="font-size:10.5px;color:#a9c0cc">Quarter to date</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#eef1f3">
+        <div style="background:#fff;padding:14px 16px"><div style="font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#8a97a0">Overall maturity</div><div style="font-size:26px;font-weight:700;color:#153E5A;line-height:1.1;margin-top:4px">3.2</div><div style="font-size:10.5px;color:#137B8F;font-weight:700">&uarr; 0.4 on prior year</div></div>
+        <div style="background:#fff;padding:14px 16px"><div style="font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#8a97a0">Evidence confidence</div><div style="font-size:26px;font-weight:700;color:#4B6969;line-height:1.1;margin-top:4px">2.7</div><div style="font-size:10.5px;color:#c4622d;font-weight:700">gap of 0.5 to capability</div></div>
+        <div style="background:#fff;padding:14px 16px"><div style="font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#8a97a0">Domains below target</div><div style="font-size:26px;font-weight:700;color:#153E5A;line-height:1.1;margin-top:4px">4</div><div style="font-size:10.5px;color:#8a97a0">of 25 assessed</div></div>
+        <div style="background:#fff;padding:14px 16px"><div style="font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#8a97a0">Actions on track</div><div style="font-size:26px;font-weight:700;color:#137B8F;line-height:1.1;margin-top:4px">82%</div><div style="font-size:10.5px;color:#8a97a0">18 of 22 initiatives</div></div>
+      </div>
+      <div style="background:#fff;padding:16px 18px;border-top:1px solid #eef1f3">
+        <div style="font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#8a97a0;margin-bottom:10px">Maturity trend by year</div>
+        <svg viewBox="0 0 660 130" style="width:100%;height:auto">
+          <line x1="30" y1="112" x2="650" y2="112" stroke="#e6e9ec" stroke-width="1.5"></line>
+          <g>
+            <rect x="70" y="76" width="58" height="36" rx="3" fill="#c3d0d0"></rect><text x="99" y="128" text-anchor="middle" font-size="10.5" fill="#8a97a0">FY23</text><text x="99" y="70" text-anchor="middle" font-size="11" font-weight="700" fill="#5b7480">2.1</text>
+            <rect x="188" y="62" width="58" height="50" rx="3" fill="#9db3b3"></rect><text x="217" y="128" text-anchor="middle" font-size="10.5" fill="#8a97a0">FY24</text><text x="217" y="56" text-anchor="middle" font-size="11" font-weight="700" fill="#5b7480">2.4</text>
+            <rect x="306" y="46" width="58" height="66" rx="3" fill="#6d8a8a"></rect><text x="335" y="128" text-anchor="middle" font-size="10.5" fill="#8a97a0">FY25</text><text x="335" y="40" text-anchor="middle" font-size="11" font-weight="700" fill="#5b7480">2.8</text>
+            <rect x="424" y="32" width="58" height="80" rx="3" fill="#4B6969"></rect><text x="453" y="128" text-anchor="middle" font-size="10.5" fill="#8a97a0">FY26</text><text x="453" y="26" text-anchor="middle" font-size="11" font-weight="700" fill="#5b7480">3.2</text>
+            <rect x="542" y="20" width="58" height="92" rx="3" fill="none" stroke="#137B8F" stroke-width="2" stroke-dasharray="4 4"></rect><text x="571" y="128" text-anchor="middle" font-size="10.5" fill="#8a97a0">FY27 target</text><text x="571" y="14" text-anchor="middle" font-size="11" font-weight="700" fill="#137B8F">3.6</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <p class="cap" style="margin-bottom:14px">An illustrative board view: four headline measures, a trend, and a target &mdash; the same discipline applied to governance that finance has had for decades.</p>
+    <p class="bd">The point of reporting is not the number. It is that the number is defined, repeatable and traceable, so the conversation moves from &ldquo;do we think we are well governed?&rdquo; to &ldquo;here is where we are, here is where we are heading, and here is the evidence.&rdquo; A dashboard generated from a single assessment record &mdash; as <b style="color:#153E5A">Governance Manager</b> produces &mdash; removes the manual reconciliation that usually makes governance reporting late and contestable.</p>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section six &middot; Reporting</span><span>17</span></div>
+  </section>
+
+  <!-- ============ 9 · BENCHMARKING ============ -->
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section six continued</div>
+    <h2 class="h2">Benchmarking: compared to what?</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">A score in isolation invites the obvious question. Anonymised benchmarking against comparable organisations answers it &mdash; turning an internal number into context a board can weigh, and often revealing that a comfortable rating sits behind the field.</p>
+    <div style="margin:22px 0 4px">
+      <svg viewBox="0 0 700 250" style="width:100%;height:auto">
+        <g stroke="#eef1f3" stroke-width="1">
+          <line x1="160" y1="10" x2="160" y2="215"></line><line x1="270" y1="10" x2="270" y2="215"></line>
+          <line x1="380" y1="10" x2="380" y2="215"></line><line x1="490" y1="10" x2="490" y2="215"></line><line x1="600" y1="10" x2="600" y2="215"></line>
+        </g>
+        <g font-size="10.5" fill="#8a97a0">
+          <text x="160" y="232" text-anchor="middle">1</text><text x="270" y="232" text-anchor="middle">2</text><text x="380" y="232" text-anchor="middle">3</text><text x="490" y="232" text-anchor="middle">4</text><text x="600" y="232" text-anchor="middle">5</text>
+          <text x="380" y="248" text-anchor="middle">Maturity level</text>
+        </g>
+        <g font-size="11" fill="#5b7480">
+          <text x="0" y="34">Corporate governance</text><text x="0" y="74">Risk management</text><text x="0" y="114">Assurance &amp; audit</text><text x="0" y="154">ICT &amp; cyber governance</text><text x="0" y="194">Transparency</text>
+        </g>
+        <g>
+          <rect x="160" y="22" width="330" height="15" rx="3" fill="#dfe6e9"></rect><rect x="160" y="22" width="385" height="15" rx="3" fill="#137B8F"></rect>
+          <rect x="160" y="62" width="275" height="15" rx="3" fill="#dfe6e9"></rect><rect x="160" y="62" width="220" height="15" rx="3" fill="#137B8F"></rect>
+          <rect x="160" y="102" width="330" height="15" rx="3" fill="#dfe6e9"></rect><rect x="160" y="102" width="330" height="15" rx="3" fill="#137B8F"></rect>
+          <rect x="160" y="142" width="275" height="15" rx="3" fill="#dfe6e9"></rect><rect x="160" y="142" width="110" height="15" rx="3" fill="#137B8F"></rect>
+          <rect x="160" y="182" width="245" height="15" rx="3" fill="#dfe6e9"></rect><rect x="160" y="182" width="220" height="15" rx="3" fill="#137B8F"></rect>
+        </g>
+        <g font-size="10.5" font-weight="700">
+          <text x="160" y="14" fill="#137B8F">Your organisation</text><text x="290" y="14" fill="#9aa6ad">Peer median</text>
+        </g>
+      </svg>
+      <p class="cap">Illustrative benchmark. Corporate governance leads the field; ICT and cyber governance sits well behind it &mdash; the finding most likely to change where next year's effort goes.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px">
+      <div class="tile" style="border-top:3px solid #137B8F"><div style="font-size:14px;font-weight:700;color:#153E5A">What benchmarking settles</div><p style="font-size:11.5px;line-height:1.55;color:#475761;margin:5px 0 0">Whether a rating is genuinely good or merely familiar; which gaps are sector-wide and which are ours alone; and where an investment case can be justified on comparative rather than anecdotal grounds.</p></div>
+      <div class="tile" style="border-top:3px solid #4B6969"><div style="font-size:14px;font-weight:700;color:#153E5A">What it cannot do</div><p style="font-size:11.5px;line-height:1.55;color:#475761;margin:5px 0 0">Benchmarks describe the field, not the right answer for this organisation. Maturity is about the appropriate level for the risk carried &mdash; not simply the highest available score in every domain.</p></div>
+    </div>
+    <p class="bd" style="margin-top:16px">Benchmarking only works where definitions are held constant across participants. This is the practical argument for a common platform: <b style="color:#153E5A">Governance Manager</b>'s benchmark reports compare like with like because every participant is scored against the same criteria, and results are reported anonymously so organisations can be candid.</p>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section six &middot; Benchmarking</span><span>18</span></div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section six continued</div>
+    <h2 class="h2">Reading the distribution, not just the average</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">A cohort average conceals as much as it reveals. The useful questions are how tightly the cohort clusters, where the outliers sit, and whether the typical organisation is near the mean or dragged there by a handful of strong performers.</p>
+    <div style="border:1px solid #e6e9ec;border-radius:10px;overflow:hidden;font-size:11.5px;margin:20px 0 6px">
+      <div style="display:grid;grid-template-columns:1.6fr 62px 62px 62px 88px;background:#153E5A;color:#fff">
+        <div style="padding:9px 12px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase">Element</div>
+        <div style="padding:9px 8px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;text-align:center;border-left:1px solid rgba(255,255,255,.15)">Mean</div>
+        <div style="padding:9px 8px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;text-align:center;border-left:1px solid rgba(255,255,255,.15)">Median</div>
+        <div style="padding:9px 8px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;text-align:center;border-left:1px solid rgba(255,255,255,.15)">Mode</div>
+        <div style="padding:9px 8px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;text-align:center;border-left:1px solid rgba(255,255,255,.15);color:#b9e0e6">Std dev</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1.6fr 62px 62px 62px 88px;border-bottom:1px solid #eef1f3"><div style="padding:9px 12px;color:#475761">Board composition &amp; skills</div><div style="padding:9px 8px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">2.8</div><div style="padding:9px 8px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">3.0</div><div style="padding:9px 8px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">3</div><div style="padding:9px 8px;text-align:center;font-weight:700;color:#137B8F;border-left:1px solid #eef1f3">0.4</div></div>
+      <div style="display:grid;grid-template-columns:1.6fr 62px 62px 62px 88px;border-bottom:1px solid #eef1f3;background:#fafbfc"><div style="padding:9px 12px;color:#475761">Risk oversight</div><div style="padding:9px 8px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">2.2</div><div style="padding:9px 8px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">2.0</div><div style="padding:9px 8px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">2</div><div style="padding:9px 8px;text-align:center;font-weight:700;color:#c4622d;border-left:1px solid #eef1f3">1.1</div></div>
+      <div style="display:grid;grid-template-columns:1.6fr 62px 62px 62px 88px;border-bottom:1px solid #eef1f3"><div style="padding:9px 12px;color:#475761">Financial stewardship</div><div style="padding:9px 8px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">3.4</div><div style="padding:9px 8px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">3.4</div><div style="padding:9px 8px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">3</div><div style="padding:9px 8px;text-align:center;font-weight:700;color:#137B8F;border-left:1px solid #eef1f3">0.3</div></div>
+      <div style="display:grid;grid-template-columns:1.6fr 62px 62px 62px 88px;background:#fafbfc"><div style="padding:9px 12px;color:#475761">Cyber &amp; information governance</div><div style="padding:9px 8px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">1.7</div><div style="padding:9px 8px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">1.4</div><div style="padding:9px 8px;text-align:center;color:#5b7480;border-left:1px solid #eef1f3">1</div><div style="padding:9px 8px;text-align:center;font-weight:700;color:#c4622d;border-left:1px solid #eef1f3">0.9</div></div>
+    </div>
+    <p class="cap" style="margin-bottom:16px">Illustrative cohort statistics. Where the mean sits well above the median and mode &mdash; as in cyber governance &mdash; a small number of strong performers is masking a weak typical position.</p>
+    <div style="columns:2;column-gap:26px">
+      <p class="bd"><b style="color:#153E5A">A wide standard deviation is a development opportunity.</b> It means capability exists somewhere in the cohort. The fastest sector-level improvement usually comes from connecting the organisations at the top of that spread with those at the bottom, not from external training.</p>
+      <p class="bd"><b style="color:#153E5A">A narrow spread at a low level is a structural problem.</b> When everyone scores the same and the score is poor, the cause is rarely individual capability &mdash; it is a missing standard, an absent tool, or a requirement nobody has resourced. That is a policy or funding conversation.</p>
+      <p class="bd"><b style="color:#4B6969">Small cohorts need care.</b> Benchmarks should suppress results where too few organisations sit in a filter selection, both for statistical honesty and to protect participant anonymity. Five is a reasonable practical floor.</p>
+      <p class="bd"><b style="color:#4B6969">Report the shape.</b> Presenting mean, median, mode and standard deviation together takes little extra space and prevents the most common misreading of a benchmark &mdash; that being near the average is the same as being adequate.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section six &middot; Distribution</span><span>19</span></div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section seven</div>
+    <h2 class="h2">Peak bodies as governance aggregators</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Individual organisations can only ever compare themselves with themselves. A peak body sits in the one position from which a whole cohort can be measured on the same basis &mdash; and that vantage point is a governance asset most peak bodies have not yet used.</p>
+    <div aria-hidden="true" style="position:absolute;left:-1cm;right:-1cm;bottom:-1cm;height:280px;background:url('assets/wp-people-08.png') center 30%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);opacity:.5;pointer-events:none;z-index:0"></div>
+    <p class="bd" style="margin-top:16px">The logic is straightforward. If every member assesses itself against the same framework, with the same definitions and the same minimum standards, the peak body holds something no individual member and no regulator possesses: an evidenced, anonymised picture of how governance actually operates across the sector. That picture supports three things at once &mdash; a credible benchmark, recognition of genuine excellence, and a targeted development agenda.</p>
+    <div style="margin:20px 0 6px">
+      <svg viewBox="0 0 700 235" style="width:100%;height:auto">
+        <defs><marker id="ar2" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#9aa6ad"></path></marker></defs>
+        <g>
+          <rect x="10" y="16" width="120" height="30" rx="6" fill="#eef2f4" stroke="#dbe2e6"></rect><text x="70" y="35" text-anchor="middle" font-size="10.5" fill="#5b7480">Member org</text>
+          <rect x="10" y="54" width="120" height="30" rx="6" fill="#eef2f4" stroke="#dbe2e6"></rect><text x="70" y="73" text-anchor="middle" font-size="10.5" fill="#5b7480">Member org</text>
+          <rect x="10" y="92" width="120" height="30" rx="6" fill="#eef2f4" stroke="#dbe2e6"></rect><text x="70" y="111" text-anchor="middle" font-size="10.5" fill="#5b7480">Member org</text>
+          <rect x="10" y="130" width="120" height="30" rx="6" fill="#eef2f4" stroke="#dbe2e6"></rect><text x="70" y="149" text-anchor="middle" font-size="10.5" fill="#5b7480">Member org</text>
+          <rect x="10" y="168" width="120" height="30" rx="6" fill="#eef2f4" stroke="#dbe2e6"></rect><text x="70" y="187" text-anchor="middle" font-size="10.5" fill="#5b7480">Member org</text>
+        </g>
+        <g stroke="#cdd5da" stroke-width="1.5" fill="none" marker-end="url(#ar2)">
+          <path d="M134 31 C 180 31, 190 90, 230 100"></path><path d="M134 69 C 180 69, 195 92, 230 103"></path><path d="M134 107 L 230 107"></path><path d="M134 145 C 180 145, 195 122, 230 111"></path><path d="M134 183 C 180 183, 190 124, 230 114"></path>
+        </g>
+        <rect x="236" y="76" width="150" height="66" rx="9" fill="#153E5A"></rect>
+        <text x="311" y="103" text-anchor="middle" fill="#fff" font-size="12.5" font-weight="700">Peak body</text>
+        <text x="311" y="121" text-anchor="middle" fill="#a9c0cc" font-size="9.5">common framework &amp; scale</text>
+        <g stroke="#137B8F" stroke-width="1.8" fill="none" marker-end="url(#ar2)">
+          <path d="M392 92 C 440 92, 450 44, 496 40"></path><path d="M392 109 L 496 109"></path><path d="M392 126 C 440 126, 450 174, 496 178"></path>
+        </g>
+        <g>
+          <rect x="502" y="20" width="192" height="42" rx="8" fill="#1d4a63"></rect><text x="598" y="39" text-anchor="middle" fill="#fff" font-size="11.5" font-weight="700">Sector benchmark</text><text x="598" y="53" text-anchor="middle" fill="#a9c0cc" font-size="9">anonymised, comparable</text>
+          <rect x="502" y="88" width="192" height="42" rx="8" fill="#26637f"></rect><text x="598" y="107" text-anchor="middle" fill="#fff" font-size="11.5" font-weight="700">Pockets of excellence</text><text x="598" y="121" text-anchor="middle" fill="#c3e0e6" font-size="9">identified and celebrated</text>
+          <rect x="502" y="158" width="192" height="42" rx="8" fill="#137B8F"></rect><text x="598" y="177" text-anchor="middle" fill="#fff" font-size="11.5" font-weight="700">Common weaknesses</text><text x="598" y="191" text-anchor="middle" fill="#dcf0f3" font-size="9">where support pays best</text>
+        </g>
+        <text x="350" y="226" text-anchor="middle" fill="#8a97a0" font-size="10">Members retain their own results; the peak body sees only the aggregate</text>
+      </svg>
+      <p class="cap">The aggregator model. Individual results stay with the member; the sector view is built from anonymised aggregate.</p>
+    </div>
+    <div style="break-inside:avoid;background:#f4f8f9;border-left:4px solid #137B8F;border-radius:0 10px 10px 0;padding:15px 20px;margin-top:12px">
+      <p style="margin:0;font-size:13.5px;line-height:1.55;color:#153E5A">Members get a free, credible self-assessment and a peer comparison they cannot obtain alone. The peak body gets an evidence base for advocacy, program design and funding submissions. Neither outcome is available from a survey of opinions.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section seven &middot; The aggregator model</span><span>20</span></div>
+  </section>
+
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section seven continued</div>
+    <h2 class="h2">Building a sector benchmark</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">A benchmark is only as good as its participation and its consistency. The peak body's practical task is to get enough members assessed against the same framework, then to report the aggregate in a way members will act on rather than dispute.</p>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0 6px">
+      <div class="tile" style="border-top:3px solid #153E5A;text-align:center;padding:16px 10px"><div style="font-size:28px;font-weight:700;color:#153E5A;line-height:1">99</div><div style="font-size:10.5px;color:#7d8b93;margin-top:4px;line-height:1.35">members invited</div></div>
+      <div class="tile" style="border-top:3px solid #1d4a63;text-align:center;padding:16px 10px"><div style="font-size:28px;font-weight:700;color:#1d4a63;line-height:1">66</div><div style="font-size:10.5px;color:#7d8b93;margin-top:4px;line-height:1.35">assessments started</div></div>
+      <div class="tile" style="border-top:3px solid #137B8F;text-align:center;padding:16px 10px"><div style="font-size:28px;font-weight:700;color:#137B8F;line-height:1">33</div><div style="font-size:10.5px;color:#7d8b93;margin-top:4px;line-height:1.35">assessments completed</div></div>
+      <div class="tile" style="border-top:3px solid #4B6969;text-align:center;padding:16px 10px"><div style="font-size:28px;font-weight:700;color:#4B6969;line-height:1">33%</div><div style="font-size:10.5px;color:#7d8b93;margin-top:4px;line-height:1.35">cohort coverage</div></div>
+    </div>
+    <p class="cap" style="margin-bottom:18px">Illustrative participation funnel. Coverage, not perfection, is the first-year objective &mdash; a third of a cohort is enough to establish a defensible baseline.</p>
+    <h3 class="h3" style="margin-top:0">Four design decisions that determine whether it works</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="tile" style="border-left:4px solid #137B8F;border-radius:0 10px 10px 0"><div style="font-size:13.5px;font-weight:700;color:#137B8F">Anonymity is guaranteed</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Members will only be candid if their individual result is theirs alone. Publish aggregates, suppress small selections, and never identify a low scorer.</p></div>
+      <div class="tile" style="border-left:4px solid #153E5A;border-radius:0 10px 10px 0"><div style="font-size:13.5px;font-weight:700;color:#153E5A">The member gets value first</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Each participant receives its own maturity profile, gap list and improvement suggestions immediately. Participation must be worth the hour it costs.</p></div>
+      <div class="tile" style="border-left:4px solid #4B6969;border-radius:0 10px 10px 0"><div style="font-size:13.5px;font-weight:700;color:#4B6969">One framework, unchanged</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Resist customisation requests. Comparability across members and across years depends entirely on the questions and descriptors staying fixed.</p></div>
+      <div class="tile" style="border-left:4px solid #6C793C;border-radius:0 10px 10px 0"><div style="font-size:13.5px;font-weight:700;color:#6C793C">An annual rhythm</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Run it at the same point each year and report at the same forum. The second cycle is where the sector trend &mdash; and the peak body's credibility &mdash; appears.</p></div>
+    </div>
+    <p class="bd" style="margin-top:16px">This is precisely the function of the oversight reporting in <b style="color:#153E5A">Governance Manager</b>: members complete assessments in their own accounts, and the peak body sees completion status, aggregate maturity, sector gaps and the improvements members are choosing &mdash; without ever handling an individual member's raw responses.</p>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section seven &middot; Sector benchmark</span><span>21</span></div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section seven continued</div>
+    <h2 class="h2">Excellence and common weakness</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Once a cohort is measured, two findings emerge that no member could have produced alone: where genuine excellence already exists in the sector, and which weaknesses are so widespread that a shared intervention would outperform anything an individual organisation could do.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0 6px">
+      <div style="border:1px solid #e6e9ec;border-radius:10px;overflow:hidden">
+        <div style="background:#137B8F;color:#fff;padding:9px 14px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase">Pockets of excellence</div>
+        <div style="padding:12px 14px;font-size:11.5px;color:#475761;line-height:1.6">
+          <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #eef1f3"><span>Financial stewardship</span><b style="color:#137B8F">4.6</b></div>
+          <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #eef1f3"><span>Board composition</span><b style="color:#137B8F">4.3</b></div>
+          <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #eef1f3"><span>Conflict of interest</span><b style="color:#137B8F">4.1</b></div>
+          <div style="display:flex;justify-content:space-between;padding:5px 0"><span>Member communication</span><b style="color:#137B8F">4.0</b></div>
+          <p style="margin:10px 0 0;font-size:11px;color:#7d8b93;line-height:1.5">Highest-scoring elements across the cohort. These identify members worth showcasing &mdash; and practices worth documenting as sector exemplars.</p>
+        </div>
+      </div>
+      <div style="border:1px solid #e6e9ec;border-radius:10px;overflow:hidden">
+        <div style="background:#c4622d;color:#fff;padding:9px 14px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase">Largest sector gaps</div>
+        <div style="padding:12px 14px;font-size:11.5px;color:#475761;line-height:1.6">
+          <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #eef1f3"><span>Clarity of mission</span><b style="color:#c4622d">2.3</b></div>
+          <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #eef1f3"><span>Member meetings</span><b style="color:#c4622d">2.2</b></div>
+          <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #eef1f3"><span>Resource allocation</span><b style="color:#c4622d">1.9</b></div>
+          <div style="display:flex;justify-content:space-between;padding:5px 0"><span>Monitoring &amp; impact reporting</span><b style="color:#c4622d">1.7</b></div>
+          <p style="margin:10px 0 0;font-size:11px;color:#7d8b93;line-height:1.5">Average gap between current and desired maturity. These are the elements where sector development effort yields the greatest aggregate return.</p>
+        </div>
+      </div>
+    </div>
+    <h3 class="h3">Celebrating excellence is a governance mechanism</h3>
+    <div style="columns:2;column-gap:26px">
+      <p class="bd">Recognition is usually treated as marketing. In an aggregated cohort it is closer to a control: publicly celebrating a member whose practice sits at level four sets a visible, achievable standard, and it converts an abstract descriptor into a real example other members can copy.</p>
+      <p class="bd">It also solves the credibility problem that afflicts sector development programs. A peak body advocating better governance in general is easy to ignore; a peak body pointing to three named members who demonstrably do a specific thing well is offering something practical.</p>
+      <p class="bd">The corollary is that common weaknesses should be published without attribution. &ldquo;Two thirds of our sector is below the minimum standard on mission clarity&rdquo; is a statement about the sector, and it invites collective action rather than defensiveness.</p>
+      <p class="bd">Handled this way, the aggregate becomes a shared asset: excellence is visible and copyable, weakness is visible and blameless, and the peak body's development effort is directed by evidence rather than by whoever asked loudest.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section seven &middot; Excellence &amp; weakness</span><span>22</span></div>
+  </section>
+
+
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section seven continued</div>
+    <h2 class="h2">The sector development plan</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">The point of the aggregate is a plan. Once the largest common gaps are known, a peak body can design a small number of interventions that lift many members at once &mdash; and can report the movement the following year.</p>
+    <div style="border:1px solid #e6e9ec;border-radius:10px;overflow:hidden;font-size:11.5px;margin:20px 0 6px">
+      <div style="display:grid;grid-template-columns:1.35fr 1.45fr 1fr 66px;background:#153E5A;color:#fff">
+        <div style="padding:9px 12px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase">Common gap</div>
+        <div style="padding:9px 12px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.15)">Sector intervention</div>
+        <div style="padding:9px 12px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.15)">Delivery</div>
+        <div style="padding:9px 8px;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.15);text-align:center;color:#b9e0e6">Members</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1.35fr 1.45fr 1fr 66px;border-bottom:1px solid #eef1f3"><div style="padding:9px 12px;font-weight:700;color:#153E5A">Clarity of mission</div><div style="padding:9px 12px;color:#475761;border-left:1px solid #eef1f3">Mission statement template and drafting clinic</div><div style="padding:9px 12px;color:#7d8b93;border-left:1px solid #eef1f3">Toolkit + workshop</div><div style="padding:9px 8px;text-align:center;font-weight:700;color:#137B8F;border-left:1px solid #eef1f3">35</div></div>
+      <div style="display:grid;grid-template-columns:1.35fr 1.45fr 1fr 66px;border-bottom:1px solid #eef1f3;background:#fafbfc"><div style="padding:9px 12px;font-weight:700;color:#153E5A">Resource allocation</div><div style="padding:9px 12px;color:#475761;border-left:1px solid #eef1f3">Allocation calendar and prioritisation method</div><div style="padding:9px 12px;color:#7d8b93;border-left:1px solid #eef1f3">Template + guidance</div><div style="padding:9px 8px;text-align:center;font-weight:700;color:#137B8F;border-left:1px solid #eef1f3">32</div></div>
+      <div style="display:grid;grid-template-columns:1.35fr 1.45fr 1fr 66px;border-bottom:1px solid #eef1f3"><div style="padding:9px 12px;font-weight:700;color:#153E5A">Member meetings</div><div style="padding:9px 12px;color:#475761;border-left:1px solid #eef1f3">Facilitator training and meeting standards</div><div style="padding:9px 12px;color:#7d8b93;border-left:1px solid #eef1f3">Training program</div><div style="padding:9px 8px;text-align:center;font-weight:700;color:#137B8F;border-left:1px solid #eef1f3">30</div></div>
+      <div style="display:grid;grid-template-columns:1.35fr 1.45fr 1fr 66px;border-bottom:1px solid #eef1f3;background:#fafbfc"><div style="padding:9px 12px;font-weight:700;color:#153E5A">Impact reporting</div><div style="padding:9px 12px;color:#475761;border-left:1px solid #eef1f3">Shared outcome measures and reporting pack</div><div style="padding:9px 12px;color:#7d8b93;border-left:1px solid #eef1f3">Standard + exemplars</div><div style="padding:9px 8px;text-align:center;font-weight:700;color:#137B8F;border-left:1px solid #eef1f3">27</div></div>
+      <div style="display:grid;grid-template-columns:1.35fr 1.45fr 1fr 66px"><div style="padding:9px 12px;font-weight:700;color:#153E5A">Reporting to members</div><div style="padding:9px 12px;color:#475761;border-left:1px solid #eef1f3">Annual report template and disclosure checklist</div><div style="padding:9px 12px;color:#7d8b93;border-left:1px solid #eef1f3">Template</div><div style="padding:9px 8px;text-align:center;font-weight:700;color:#137B8F;border-left:1px solid #eef1f3">25</div></div>
+    </div>
+    <p class="cap" style="margin-bottom:16px">Illustrative sector development plan. The right-hand column &mdash; the number of members who selected each improvement &mdash; is what turns a gap list into a resourcing case.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+      <div class="tile" style="border-top:3px solid #137B8F"><div style="font-size:13.5px;font-weight:700;color:#137B8F">Why this beats general training</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">Each intervention addresses a named element with a measured shortfall across a known number of members. Attendance, uptake and the following year's score all become evidence of effect.</p></div>
+      <div class="tile" style="border-top:3px solid #153E5A"><div style="font-size:13.5px;font-weight:700;color:#153E5A">Why funders respond to it</div><p style="font-size:11.5px;line-height:1.5;color:#475761;margin:5px 0 0">A submission that states the gap, the cohort size, the intervention and the measurement method is a fundamentally stronger case than an assertion that the sector needs capability support.</p></div>
+    </div>
+    <p class="bd" style="margin-top:16px">The peak body's role, put plainly, is to make governance improvement cheaper for every member than it would be alone &mdash; by holding the framework, absorbing the measurement effort, and directing shared resources to where the evidence says they will do the most good.</p>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section seven &middot; Sector development</span><span>23</span></div>
+  </section>
+
+
+  <!-- ============ FROM SCORE TO ROADMAP ============ -->
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">Section eight</div>
+    <h2 class="h2">From score to roadmap</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">A maturity score is a diagnosis, not a destination. Its purpose is to generate a small number of prioritised actions that move a domain from one level to the next &mdash; sequenced by risk and effort, each with a named owner and a date.</p>
+    <div aria-hidden="true" style="position:absolute;left:-1cm;right:-1cm;bottom:-1cm;height:280px;background:url('assets/wp-people-09.png') center 30%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);opacity:.5;pointer-events:none;z-index:0"></div>
+    <div style="display:flex;align-items:stretch;gap:8px;margin:22px 0 6px">
+      <div style="flex:1;background:#153E5A;color:#fff;border-radius:8px 0 0 8px;padding:15px 14px"><div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#7aa9ab">Step 01</div><div style="font-size:15px;font-weight:700;margin-top:4px">Baseline</div><p style="font-size:10.5px;line-height:1.45;color:#c3d0d8;margin:6px 0 0">Assess honestly. The first score locates the starting line, not the desired answer.</p></div>
+      <div style="flex:1;background:#1d4a63;color:#fff;padding:15px 14px"><div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8fbfc4">Step 02</div><div style="font-size:15px;font-weight:700;margin-top:4px">Prioritise</div><p style="font-size:10.5px;line-height:1.45;color:#d3e2e6;margin:6px 0 0">Target the domains where weakness carries the most consequence, not the easiest wins.</p></div>
+      <div style="flex:1;background:#26637f;color:#fff;padding:15px 14px"><div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#a9d3da">Step 03</div><div style="font-size:15px;font-weight:700;margin-top:4px">Act</div><p style="font-size:10.5px;line-height:1.45;color:#dcf0f3;margin:6px 0 0">A handful of owned actions per domain, each moving it one defined level.</p></div>
+      <div style="flex:1;background:#137B8F;color:#fff;border-radius:0 8px 8px 0;padding:15px 14px"><div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#bfe4ea">Step 04</div><div style="font-size:15px;font-weight:700;margin-top:4px">Re-measure</div><p style="font-size:10.5px;line-height:1.45;color:#dcf0f3;margin:6px 0 0">Re-run the same assessment. The second score is where the value appears.</p></div>
+    </div>
+    <p class="cap" style="margin-bottom:18px">The cycle matters more than the instrument: honest baseline, risk-led priorities, owned actions, and the same assessment run again.</p>
+    <h3 class="h3" style="margin-top:0">A ninety-day path to establish the approach</h3>
+    <div style="border:1px solid #e6e9ec;border-radius:10px;overflow:hidden;font-size:11.5px">
+      <div style="display:grid;grid-template-columns:92px 1fr;background:#f7f9fa;border-bottom:1px solid #eef1f3"><div style="padding:9px 14px;font-weight:700;color:#153E5A;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase">Days</div><div style="padding:9px 14px;font-weight:700;color:#153E5A;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;border-left:1px solid #eef1f3">Focus</div></div>
+      <div style="display:grid;grid-template-columns:92px 1fr;border-bottom:1px solid #eef1f3"><div style="padding:10px 14px;font-weight:700;color:#137B8F">1&ndash;15</div><div style="padding:10px 14px;color:#475761;border-left:1px solid #eef1f3">Agree the vocabulary and the maturity scale. Publish the definitions. Nominate a single owner for each governance domain.</div></div>
+      <div style="display:grid;grid-template-columns:92px 1fr;border-bottom:1px solid #eef1f3;background:#fafbfc"><div style="padding:10px 14px;font-weight:700;color:#137B8F">16&ndash;45</div><div style="padding:10px 14px;color:#475761;border-left:1px solid #eef1f3">Run the baseline assessment across all domains, scoring capability and evidence separately. Resist the urge to score aspirationally.</div></div>
+      <div style="display:grid;grid-template-columns:92px 1fr;border-bottom:1px solid #eef1f3"><div style="padding:10px 14px;font-weight:700;color:#137B8F">46&ndash;70</div><div style="padding:10px 14px;color:#475761;border-left:1px solid #eef1f3">Review the profile with the executive. Select the four to six domains that will be moved this year, and write the actions that move them.</div></div>
+      <div style="display:grid;grid-template-columns:92px 1fr;background:#fafbfc"><div style="padding:10px 14px;font-weight:700;color:#137B8F">71&ndash;90</div><div style="padding:10px 14px;color:#475761;border-left:1px solid #eef1f3">Table the baseline, target and roadmap with the board. Agree the reporting cadence and the date of the next assessment.</div></div>
+    </div>
+    <p class="bd" style="margin-top:16px">None of this requires a large program. It requires agreement on words, one honest assessment, and the discipline to repeat it &mdash; which is precisely why organisations that adopt the approach tend to keep it.</p>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Section eight &middot; Roadmap</span><span>24</span></div>
+  </section>
+
+  <!-- ============ 11 · WHAT CHANGES ============ -->
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">The return</div>
+    <h2 class="h2">What actually changes</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">The case for a consistent approach is not tidiness. It is that decisions improve, surprises reduce, and the organisation can demonstrate both &mdash; to a board, a regulator, an auditor or the public it serves.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:22px 0">
+      <div class="tile" style="border-top:3px solid #137B8F"><div style="font-size:14.5px;font-weight:700;color:#137B8F">Decisions carry reasoning</div><p style="font-size:11.5px;line-height:1.55;color:#475761;margin:5px 0 0">Papers set out options, trade-offs and the basis for the recommendation &mdash; because the framework asks for it and the record shows whether it was provided.</p></div>
+      <div class="tile" style="border-top:3px solid #153E5A"><div style="font-size:14.5px;font-weight:700;color:#153E5A">Findings stop recurring</div><p style="font-size:11.5px;line-height:1.55;color:#475761;margin:5px 0 0">Root causes are addressed at the level the framework identifies, so the same issue does not reappear next cycle in different words.</p></div>
+      <div class="tile" style="border-top:3px solid #4B6969"><div style="font-size:14.5px;font-weight:700;color:#4B6969">Assurance goes where the risk is</div><p style="font-size:11.5px;line-height:1.55;color:#475761;margin:5px 0 0">Audit and review effort follows the maturity profile rather than spreading evenly, which raises the value of every assurance dollar spent.</p></div>
+      <div class="tile" style="border-top:3px solid #6C793C"><div style="font-size:14.5px;font-weight:700;color:#6C793C">Recovery is faster</div><p style="font-size:11.5px;line-height:1.55;color:#475761;margin:5px 0 0">Resilience is capability under stress. Organisations that measure governance recover more quickly, because responsibilities and thresholds were settled beforehand.</p></div>
+    </div>
+    <h3 class="h3" style="margin-top:4px">The dual-scoring test</h3>
+    <div style="break-inside:avoid;background:#eef1f1;border-left:4px solid #4B6969;border-radius:0 10px 10px 0;padding:15px 20px;margin-bottom:16px">
+      <p style="margin:0;font-size:13.5px;line-height:1.55;color:#33494a">Take any governance practice you are confident about and ask: <b>if a regulator or the Auditor General asked us to prove this today, what would we hand over?</b> A strong capability score with a weak evidence score is not good governance yet &mdash; it is good intentions waiting to be documented.</p>
+    </div>
+    <div style="columns:2;column-gap:26px">
+      <p class="bd">Used well, the approach changes the governance conversation from a defensive one into a managed one. The board stops asking whether the organisation is compliant and starts asking what it can do now that it could not do three years ago &mdash; a question that has an evidenced answer under this model and no answer at all without it.</p>
+      <p class="bd">That is the shift from opinion to measurement, and it is what allows governance to be managed like any other material part of the organisation: with a baseline, a target, an owner, a trend line and a record.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>The return</span><span>25</span></div>
+  </section>
+
+  <!-- ============ 12 · CONCLUSION + CTA ============ -->
+  <section class="page wp pg brk" style="color:#3f4a52">
+    <div class="eyb">In closing</div>
+    <h2 class="h2">Consistency is the strategy</h2>
+    <div class="rule"></div>
+    <div style="columns:2;column-gap:26px">
+      <p class="bd">Governance rarely fails for want of frameworks. It fails because the words mean different things in different rooms, because the culture treats oversight as an imposition, and because no one can say with evidence whether things are getting better.</p>
+    <div aria-hidden="true" style="position:absolute;left:-1cm;right:-1cm;bottom:-1cm;height:280px;background:url('assets/wp-people-10.png') center 30%/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);opacity:.5;pointer-events:none;z-index:0"></div>
+      <p class="bd">Culture, language and measurement are the three levers that address all three failures at once, and they reinforce one another: shared language makes measurement possible, measurement makes culture visible, and culture is what keeps the measurement honest.</p>
+      <p class="bd">None of it requires perfection. A consistent, well-evidenced level three across the domains that matter is a more valuable and more defensible position than isolated excellence surrounded by assumption &mdash; and it is achievable within a single reporting year.</p>
+      <p class="bd">The organisations that do this well are not the ones with the thickest frameworks. They are the ones that can explain, in plain terms and from the record, how they are governed and where they are heading next.</p>
+    </div>
+    <div style="break-inside:avoid;margin-top:18px;background:linear-gradient(135deg,#153E5A,#1c5560);color:#fff;border-radius:12px;padding:22px 26px">
+      <div class="eyb" style="color:rgba(255,255,255,.75);margin-bottom:6px">Governance Manager</div>
+      <div style="font-size:20px;font-weight:700;color:#fff;line-height:1.2">Measure governance with evidence rather than opinion.</div>
+      <p style="margin:8px 0 0;font-size:13px;line-height:1.55;color:#c3d0d8;max-width:600px">Governance Manager is Blue Zoo's capability intelligence platform. It holds the definitions, runs the assessments, scores capability and evidence separately, generates board-ready dashboards, and benchmarks results anonymously against comparable organisations &mdash; so the approach in this paper becomes ordinary practice rather than an annual project.</p>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.16);font-size:12.5px;color:#a9c0cc">Complete a Governance Health Check in under 30 minutes &middot; governancemanager.org</div>
+    </div>
+    <div style="break-inside:avoid;margin-top:20px;border-top:2px solid #e6e9ec;padding-top:16px;display:flex;gap:20px;align-items:flex-start">
+      <img src="assets/logo-mark.png" alt="" style="width:56px;height:56px;flex:0 0 56px;object-fit:contain">
+      <div>
+        <div class="eyb" style="color:#8a97a0;margin-bottom:5px">About Blue Zoo</div>
+        <p style="font-size:11.5px;line-height:1.55;color:#475761;margin:0">Blue Zoo is an Australian professional services firm providing specialist governance, strategy, risk and resilience advisory to boards and executives. Our advisors have held senior executive roles in state and local government and served as non-executive directors across public, corporate and not-for-profit organisations. We helped draft the WA Public Sector Governance Framework, and have spent close to two decades helping organisations strengthen governance, oversight and resilience.</p>
+      </div>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>&copy; 2026 Blue Zoo &middot; governancemanager.org</span><span>26</span></div>
+  </section>
+
+
+</doc-page>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    .bf, .bf *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .bf p{margin:0}
+    .bf input, .bf textarea{font-family:'Carlito','Calibri',sans-serif;color:var(--bz-grey-900)}
+    .bf input:focus, .bf textarea:focus{outline:none;border-color:#153E5A;box-shadow:0 0 0 2px rgba(21,62,90,.12)}
+    .bz-page{min-height:980px}
+    .bz-break{break-before:page}
+    .fld{width:100%;border:1px solid var(--bz-grey-300);border-radius:6px;padding:8px 11px;font-size:12.5px;background:#fff}
+    .fld::placeholder,.ta::placeholder,.cellinput::placeholder{color:var(--bz-grey-400)}
+    .lbl{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--bz-grey-500);margin-bottom:5px;display:block}
+    .sec{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#153E5A;display:flex;align-items:center;gap:11px;margin:0 0 6px}
+    .sec::after{content:"";flex:1;height:1px;background:var(--bz-grey-200)}
+    .ta{width:100%;border:1px solid var(--bz-grey-300);border-radius:8px;padding:10px 12px;font-size:13px;line-height:1.45;resize:vertical;background:#fff}
+    .rt{display:flex;gap:6px;margin-top:8px}
+    .rt label{flex:1;display:flex;align-items:center;justify-content:center;border:1px solid var(--bz-grey-200);border-radius:6px;padding:9px 2px;font-size:0;cursor:pointer;color:var(--bz-grey-600);background:#fff;transition:all .15s ease}
+    .rt input{display:none}
+    .dot{width:14px;height:14px;border-radius:50%;border:2px solid currentColor;flex:0 0 auto}
+    .rt .g{color:#3f8a53}.rt .a{color:#c08a1e}.rt .r{color:#b8402a}
+    .rt label:has(input:checked).g{background:#eaf3ec;border-color:#3f8a53}
+    .rt label:has(input:checked).a{background:#f7efdd;border-color:#c08a1e}
+    .rt label:has(input:checked).r{background:#f6e4de;border-color:#b8402a}
+    .rt label:has(input:checked) .dot{background:currentColor}
+    .rtbl{width:100%;border-collapse:collapse}
+    .rtbl th{background:#284B63;color:#fff;font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;text-align:left;padding:7px 11px}
+    .rtbl td{padding:4px 11px;font-size:12px;color:var(--bz-grey-800);border-bottom:1px solid var(--bz-grey-100)}
+    .cellinput{width:100%;border:1px solid var(--bz-grey-300);border-radius:5px;padding:5px 8px;font-size:12px;text-align:right}
+    .cellinput.l{text-align:left}
+    .ck{width:17px;height:17px;border:1px solid var(--bz-grey-300);border-radius:4px;accent-color:#153E5A;cursor:pointer}
+    .tbar{position:fixed;top:14px;right:16px;z-index:50;display:flex;gap:10px}
+    .btn{border:none;border-radius:7px;padding:9px 16px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:'Carlito',sans-serif;box-shadow:0 2px 8px rgba(40,75,99,.18)}
+    .btn-p{background:#153E5A;color:#fff}
+    .btn-p:hover{background:#0f2e44}
+    .btn-g{background:#fff;color:var(--bz-grey-600);border:1px solid var(--bz-grey-300)}
+    .btn-g:hover{background:var(--bz-grey-50)}
+    .ftr{display:flex;justify-content:space-between;font-size:9.5px;color:var(--bz-grey-500);border-top:1px solid var(--bz-grey-200);padding-top:9px}
+    .bz-pagebreak{height:30px;margin:30px -1cm;background:#d6d9db;box-shadow:inset 0 7px 7px -7px rgba(0,0,0,.28),inset 0 -7px 7px -7px rgba(0,0,0,.28)}
+    @media print{.bz-pagebreak,.tbar{display:none}}
+  </style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="a4" orientation="portrait" margin="1cm" hint-size="100%,100%">
+<div class="bf" style="color:var(--bz-grey-800)">
+
+  <div class="tbar">
+    <button class="btn btn-g" onclick="{{ onClear }}">Clear</button>
+    <button class="btn btn-p" onclick="{{ onPrint }}">Print / PDF</button>
+  </div>
+
+  <!-- ============ PAGE 1 ============ -->
+  <section class="bz-page">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2.5px solid #153E5A;padding-bottom:11px;margin-bottom:13px">
+      <img src="assets/logo-primary.png" alt="bluezoo" style="height:42px">
+      <div style="text-align:right">
+        <div style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--bz-grey-400)">CEO → Board · Monthly</div>
+        <h1 style="font-size:25px;font-weight:700;color:#153E5A;margin:3px 0 2px;letter-spacing:-.4px">Monthly Board Report</h1>
+        <div style="font-size:12.5px;font-weight:700;color:var(--bz-green)">Progress against the FY27 Strategy</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:12px;margin-bottom:11px">
+      <div><span class="lbl">Reporting month</span><input class="fld" data-k="reporting_month" placeholder="e.g. October 2026"></div>
+      <div><span class="lbl">Prepared by (CEO)</span><input class="fld" data-k="prepared_by" placeholder="Name"></div>
+      <div><span class="lbl">Date submitted</span><input class="fld" data-k="date_submitted" placeholder="DD / MM / YYYY"></div>
+      <div><span class="lbl">Board meeting date</span><input class="fld" data-k="board_date" placeholder="DD / MM / YYYY"></div>
+    </div>
+
+    <!-- 1 · SCORECARD -->
+    <div class="sec">1 · Strategic scorecard — key success indicators</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:7px">
+      <div style="border:1px solid var(--bz-grey-200);border-radius:9px;overflow:hidden">
+        <div style="background:#284B63;color:#fff;padding:9px 13px"><div style="font-size:13px;font-weight:700">Revenue YTD</div><div style="font-size:10px;color:#a9c0cc">Stretch $1.44M</div></div>
+        <div style="padding:11px 13px"><span class="lbl">Actual ($) / % to target</span><input class="fld" data-k="rev_actual" placeholder="$0 · 0%">
+          <div class="rt"><label class="g"><input type="radio" name="rev_rag" value="on"><span class="dot"></span>On track</label><label class="a"><input type="radio" name="rev_rag" value="risk"><span class="dot"></span>At risk</label><label class="r"><input type="radio" name="rev_rag" value="off"><span class="dot"></span>Off track</label></div>
+        </div>
+      </div>
+      <div style="border:1px solid var(--bz-grey-200);border-radius:9px;overflow:hidden">
+        <div style="background:#3C6E71;color:#fff;padding:9px 13px"><div style="font-size:13px;font-weight:700">EBITDA</div><div style="font-size:10px;color:#c2d6d3">≥$375K · 25%</div></div>
+        <div style="padding:11px 13px"><span class="lbl">Actual ($) / margin %</span><input class="fld" data-k="ebitda_actual" placeholder="$0 · 0%">
+          <div class="rt"><label class="g"><input type="radio" name="ebitda_rag" value="on"><span class="dot"></span>On track</label><label class="a"><input type="radio" name="ebitda_rag" value="risk"><span class="dot"></span>At risk</label><label class="r"><input type="radio" name="ebitda_rag" value="off"><span class="dot"></span>Off track</label></div>
+        </div>
+      </div>
+      <div style="border:1px solid var(--bz-grey-200);border-radius:9px;overflow:hidden">
+        <div style="background:#4B6969;color:#fff;padding:9px 13px"><div style="font-size:13px;font-weight:700">Team</div><div style="font-size:10px;color:#c3d0d0">6 FTE</div></div>
+        <div style="padding:11px 13px"><span class="lbl">FTE in seat / vacancies</span><input class="fld" data-k="team_actual" placeholder="0 FTE · 0 open">
+          <div class="rt"><label class="g"><input type="radio" name="team_rag" value="on"><span class="dot"></span>On track</label><label class="a"><input type="radio" name="team_rag" value="risk"><span class="dot"></span>At risk</label><label class="r"><input type="radio" name="team_rag" value="off"><span class="dot"></span>Off track</label></div>
+        </div>
+      </div>
+      <div style="border:1px solid var(--bz-grey-200);border-radius:9px;overflow:hidden">
+        <div style="background:linear-gradient(120deg,#5f7060,#6C793C);color:#fff;padding:9px 13px"><div style="font-size:13px;font-weight:700">Utilisation</div><div style="font-size:10px;color:#e2e7d5">≥70%</div></div>
+        <div style="padding:11px 13px"><span class="lbl">Firm-wide billable %</span><input class="fld" data-k="util_actual" placeholder="0%">
+          <div class="rt"><label class="g"><input type="radio" name="util_rag" value="on"><span class="dot"></span>On track</label><label class="a"><input type="radio" name="util_rag" value="risk"><span class="dot"></span>At risk</label><label class="r"><input type="radio" name="util_rag" value="off"><span class="dot"></span>Off track</label></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SALES ACTIVITY -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:6px">
+      <div style="border:1px solid var(--bz-grey-200);border-radius:8px;padding:8px 13px;display:flex;align-items:center;gap:12px">
+        <div style="flex:1"><div style="font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--bz-grey-500);margin-bottom:5px">Proactive sales meetings <span style="color:var(--bz-grey-400)">(target 2/wk)</span></div><input class="cellinput l" data-k="sa_meetings" placeholder="0 this month"></div>
+      </div>
+      <div style="border:1px solid var(--bz-grey-200);border-radius:8px;padding:9px 13px;display:flex;align-items:center;gap:12px">
+        <div style="flex:1"><div style="font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--bz-grey-500);margin-bottom:5px">New business dev. meetings <span style="color:var(--bz-grey-400)">(target 6/mth)</span></div><input class="cellinput l" data-k="sa_bd" placeholder="0 this month"></div>
+      </div>
+    </div>
+
+    <!-- 2 · REVENUE STREAMS -->
+    <div class="sec">2 · Revenue streams — YTD vs target</div>
+    <table class="rtbl" style="margin-bottom:6px">
+      <thead><tr><th>Stream</th><th style="text-align:right;width:150px">FY27 target</th><th style="text-align:right;width:160px">YTD actual</th><th style="text-align:center;width:88px">On track</th></tr></thead>
+      <tbody>
+        <tr><td>Advisory — staff</td><td style="text-align:right;font-weight:700">$952,664</td><td><input class="cellinput" data-k="rs1"></td><td style="text-align:center"><input type="checkbox" class="ck" data-k="rs1_ok"></td></tr>
+        <tr><td>Advisory — consultants &amp; casual</td><td style="text-align:right;font-weight:700">$205,977</td><td><input class="cellinput" data-k="rs2"></td><td style="text-align:center"><input type="checkbox" class="ck" data-k="rs2_ok"></td></tr>
+        <tr><td>GM — subscription (VMIA + new)</td><td style="text-align:right;font-weight:700">$141,171</td><td><input class="cellinput" data-k="rs3"></td><td style="text-align:center"><input type="checkbox" class="ck" data-k="rs3_ok"></td></tr>
+        <tr><td>GM — services</td><td style="text-align:right;font-weight:700">$75,000</td><td><input class="cellinput" data-k="rs4"></td><td style="text-align:center"><input type="checkbox" class="ck" data-k="rs4_ok"></td></tr>
+        <tr><td>GM — channel</td><td style="text-align:right;font-weight:700">$58,873</td><td><input class="cellinput" data-k="rs5"></td><td style="text-align:center"><input type="checkbox" class="ck" data-k="rs5_ok"></td></tr>
+        <tr style="background:#284B63"><td style="color:#fff;font-weight:700;border:none">Total FY27 (stretch)</td><td style="text-align:right;color:#fff;font-weight:700;border:none">$1,440,685</td><td style="border:none"><input class="cellinput" data-k="rs_total" style="background:var(--bz-grey-50)"></td><td style="border:none"></td></tr>
+      </tbody>
+    </table>
+
+    <!-- 3 · BUDGET COMPLIANCE -->
+    <div class="sec">3 · Budget compliance — YTD vs budget</div>
+    <table class="rtbl" style="margin-bottom:8px">
+      <thead><tr><th>P&amp;L line</th><th style="text-align:right;width:118px">YTD budget</th><th style="text-align:right;width:118px">YTD actual</th><th style="text-align:right;width:110px">Variance</th><th style="text-align:center;width:84px">On budget</th></tr></thead>
+      <tbody>
+        <tr><td>Total revenue</td><td><input class="cellinput" data-k="bc1b"></td><td><input class="cellinput" data-k="bc1a"></td><td><input class="cellinput" data-k="bc1v"></td><td style="text-align:center"><input type="checkbox" class="ck" data-k="bc1_ok"></td></tr>
+        <tr><td>Cost of sales</td><td><input class="cellinput" data-k="bc2b"></td><td><input class="cellinput" data-k="bc2a"></td><td><input class="cellinput" data-k="bc2v"></td><td style="text-align:center"><input type="checkbox" class="ck" data-k="bc2_ok"></td></tr>
+        <tr><td style="font-weight:700">Gross profit</td><td><input class="cellinput" data-k="bc3b"></td><td><input class="cellinput" data-k="bc3a"></td><td><input class="cellinput" data-k="bc3v"></td><td style="text-align:center"><input type="checkbox" class="ck" data-k="bc3_ok"></td></tr>
+        <tr><td>Operating expenses</td><td><input class="cellinput" data-k="bc4b"></td><td><input class="cellinput" data-k="bc4a"></td><td><input class="cellinput" data-k="bc4v"></td><td style="text-align:center"><input type="checkbox" class="ck" data-k="bc4_ok"></td></tr>
+        <tr><td style="font-weight:700">EBITDA</td><td><input class="cellinput" data-k="bc5b"></td><td><input class="cellinput" data-k="bc5a"></td><td><input class="cellinput" data-k="bc5v"></td><td style="text-align:center"><input type="checkbox" class="ck" data-k="bc5_ok"></td></tr>
+        <tr style="background:#284B63"><td style="color:#fff;font-weight:700;border:none">Net profit before tax</td><td style="border:none"><input class="cellinput" data-k="bc6b" style="background:var(--bz-grey-50)"></td><td style="border:none"><input class="cellinput" data-k="bc6a" style="background:var(--bz-grey-50)"></td><td style="border:none"><input class="cellinput" data-k="bc6v" style="background:var(--bz-grey-50)"></td><td style="border:none;text-align:center"><input type="checkbox" class="ck" data-k="bc6_ok"></td></tr>
+      </tbody>
+    </table>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:11px">
+      <div style="border:1px solid var(--bz-grey-200);border-radius:8px;padding:9px 12px"><div style="font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--bz-grey-500);margin-bottom:5px">Cash at bank</div><input class="cellinput l" data-k="cs_cash" placeholder="$0"></div>
+      <div style="border:1px solid var(--bz-grey-200);border-radius:8px;padding:9px 12px"><div style="font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--bz-grey-500);margin-bottom:5px">Future Fund (&gt;$250K)</div><input class="cellinput l" data-k="cs_ff" placeholder="$0"></div>
+    </div>
+
+  </section>
+
+  <!-- ============ PAGE 2 ============ -->
+  <div class="bz-pagebreak" aria-hidden="true"></div>
+  <section class="bz-page bz-break">
+    <!-- 4 · MILESTONES -->
+    <div class="sec">4 · This month's milestone status</div>
+    <table class="rtbl" style="margin-bottom:18px">
+      <thead><tr><th style="width:56px">Qtr</th><th>Initiative due / in progress this month</th><th style="width:44%">Status &amp; result</th></tr></thead>
+      <tbody>
+        <tr><td><input class="cellinput l" data-k="m1q"></td><td><input class="cellinput l" data-k="m1i"></td><td><input class="cellinput l" data-k="m1s"></td></tr>
+        <tr><td><input class="cellinput l" data-k="m2q"></td><td><input class="cellinput l" data-k="m2i"></td><td><input class="cellinput l" data-k="m2s"></td></tr>
+        <tr><td><input class="cellinput l" data-k="m3q"></td><td><input class="cellinput l" data-k="m3i"></td><td><input class="cellinput l" data-k="m3s"></td></tr>
+        <tr><td><input class="cellinput l" data-k="m4q"></td><td><input class="cellinput l" data-k="m4i"></td><td><input class="cellinput l" data-k="m4s"></td></tr>
+      </tbody>
+    </table>
+
+    <!-- 5 · COMMENTARY -->
+    <div class="sec">5 · Commentary &amp; highlights</div>
+    <textarea class="ta" data-k="commentary" rows="4" style="margin-bottom:14px" placeholder="Wins, progress narrative, what changed this month…"></textarea>
+
+    <!-- 6 · RISKS -->
+    <div class="sec">6 · Risks &amp; escalations to Board</div>
+    <textarea class="ta" data-k="risks" rows="4" style="margin-bottom:16px" placeholder="Items requiring a Board decision, off-track measures, recovery plans…"></textarea>
+
+    <!-- 6 · BUDGET COMPLIANCE (moved to page 1) -->
+    <!-- 5 · COMMENTARY duplicate marker removed -->
+    <div class="sec">7 · CEO attestation of solvency</div>
+    <div style="border:1px solid var(--bz-grey-200);border-radius:9px;padding:14px 18px;margin-bottom:16px">
+      <p style="font-size:12px;line-height:1.45;color:var(--bz-grey-700);margin-bottom:11px">As Chief Executive Officer, and having made due enquiry into the company's financial position for the reporting period, I attest to the Board that:</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 26px;margin-bottom:12px">
+        <label style="display:flex;gap:9px;align-items:flex-start;font-size:11.5px;line-height:1.4;color:var(--bz-grey-800);cursor:pointer"><input type="checkbox" class="ck" data-k="att1" style="margin-top:1px;flex:0 0 auto">The company can pay its debts as and when they become due and payable.</label>
+        <label style="display:flex;gap:9px;align-items:flex-start;font-size:11.5px;line-height:1.4;color:var(--bz-grey-800);cursor:pointer"><input type="checkbox" class="ck" data-k="att2" style="margin-top:1px;flex:0 0 auto">The financial records accurately reflect the company's financial position and performance.</label>
+        <label style="display:flex;gap:9px;align-items:flex-start;font-size:11.5px;line-height:1.4;color:var(--bz-grey-800);cursor:pointer"><input type="checkbox" class="ck" data-k="att3" style="margin-top:1px;flex:0 0 auto">There are reasonable grounds to believe the company will remain solvent over the next 12 months.</label>
+        <label style="display:flex;gap:9px;align-items:flex-start;font-size:11.5px;line-height:1.4;color:var(--bz-grey-800);cursor:pointer"><input type="checkbox" class="ck" data-k="att4" style="margin-top:1px;flex:0 0 auto">Statutory obligations (PAYG, superannuation, GST and tax) are up to date, except as noted below.</label>
+      </div>
+      <span class="lbl">Qualifications or exceptions (if any)</span>
+      <textarea class="ta" data-k="att_notes" rows="2" placeholder="Note any exceptions to the statements above, or 'None'…"></textarea>
+    </div>
+
+    <!-- 8 · SIGN-OFF -->
+    <div class="sec">8 · CEO sign-off</div>
+    <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:14px">
+      <div><span class="lbl">Signature</span><div style="height:56px;border:1px solid var(--bz-grey-300);border-radius:8px;background:var(--bz-grey-50)"></div></div>
+      <div><span class="lbl">Name</span><input class="fld" data-k="signoff_name" style="height:56px"></div>
+      <div><span class="lbl">Date</span><input class="fld" data-k="signoff_date" style="height:56px" placeholder="DD / MM / YYYY"></div>
+    </div>
+
+  </section>
+
+</div>
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    this.KEY = "bz_board_report_v1";
+    const root = this.el || document;
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(this.KEY) || "{}"); } catch(e) {}
+    root.querySelectorAll("[data-k]").forEach(el => {
+      const k = el.getAttribute("data-k");
+      if (saved[k] === undefined) return;
+      if (el.type === "checkbox") el.checked = !!saved[k];
+      else el.value = saved[k];
+    });
+    root.querySelectorAll("input[type=radio]").forEach(el => {
+      if (saved["rag_" + el.name] === el.value) el.checked = true;
+    });
+    const save = () => {
+      const data = {};
+      root.querySelectorAll("[data-k]").forEach(el => {
+        const k = el.getAttribute("data-k");
+        data[k] = el.type === "checkbox" ? el.checked : el.value;
+      });
+      root.querySelectorAll("input[type=radio]:checked").forEach(el => {
+        data["rag_" + el.name] = el.value;
+      });
+      try { localStorage.setItem(this.KEY, JSON.stringify(data)); } catch(e) {}
+    };
+    root.addEventListener("input", save);
+    root.addEventListener("change", save);
+  }
+  renderVals() {
+    return {
+      onPrint: () => window.print(),
+      onClear: () => {
+        if (!confirm("Clear all fields on this form?")) return;
+        const root = this.el || document;
+        root.querySelectorAll("[data-k]").forEach(el => {
+          if (el.type === "checkbox") el.checked = false; else el.value = "";
+        });
+        root.querySelectorAll("input[type=radio]").forEach(el => el.checked = false);
+        try { localStorage.removeItem("bz_board_report_v1"); } catch(e) {}
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

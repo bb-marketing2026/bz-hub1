@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+<script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+<style>
+  @page { size: A4; margin: 0; }
+  html, body { margin: 0; padding: 0; }
+  body { background: #5a6770; font-family: 'Carlito','Calibri','Segoe UI',system-ui,sans-serif; color: #353535; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  .ad { max-width: 8.27in; margin: 0 auto; background: #fff; }
+  h1, h2, h3 { margin: 0; text-wrap: balance; }
+  p, li { text-wrap: pretty; }
+  .avoid { break-inside: avoid; }
+  @media screen {
+    body { padding: 28px 0 80px; }
+    .ad { box-shadow: 0 6px 34px rgba(0,0,0,.28); }
+  }
+  @media print {
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { background: #fff; padding: 0; }
+    .ad { max-width: none; box-shadow: none; }
+    .screen-only { display: none !important; }
+    h1, h2, h3 { break-after: avoid; }
+    .avoid { break-inside: avoid; }
+    p, li { orphans: 3; widows: 3; }
+  }
+</style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20GM%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>GM Hub</a>
+
+<button class="screen-only" onClick="{{ print }}" style="position:fixed;right:22px;bottom:22px;z-index:50;border:none;border-radius:6px;background:#284B63;color:#fff;font:700 13px/1 'Carlito';letter-spacing:.03em;padding:13px 18px;cursor:pointer;box-shadow:0 4px 14px rgba(21,62,90,.4);">Print / Save as PDF</button>
+
+<main class="ad">
+
+  <!-- HEADER -->
+  <section class="avoid" style="position:relative;overflow:hidden;background:linear-gradient(150deg,#153E5A 0%,#284B63 60%,#2f595c 100%);color:#fff;padding:0.7in 0.8in 0.6in;">
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-1.6in;top:-0.6in;width:5.4in;opacity:0.08;pointer-events:none;">
+    <img src="assets/logo-white.png" alt="bluezoo" style="width:1.6in;display:block;">
+    <div style="position:relative;z-index:2;margin-top:0.42in;">
+      <div style="font:700 12px/1 'Carlito';letter-spacing:.18em;text-transform:uppercase;color:#93aab6;margin-bottom:12px;">We&rsquo;re hiring &middot; Remote (Philippines)</div>
+      <h1 style="font:700 36px/1.1 'Carlito';letter-spacing:-0.01em;color:#fff;max-width:8in;">Business Development Manager</h1>
+      <p style="font:400 16px/1.45 'Carlito';color:#c3d0d8;margin:10px 0 0;max-width:6.4in;">Sales lead for Governance Manager &mdash; own the commercial growth of an established governance software platform across direct, partner and international distribution.</p>
+    </div>
+    <div style="position:relative;z-index:2;margin-top:0.42in;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;border-top:1px solid rgba(255,255,255,.18);padding-top:18px;">
+      <div><div style="font:400 10.5px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;">Location</div><div style="font:700 14px/1.35 'Carlito';color:#fff;margin-top:4px;">Remote &middot; Philippines</div></div>
+      <div><div style="font:400 10.5px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;">Type</div><div style="font:700 14px/1.35 'Carlito';color:#fff;margin-top:4px;">Full-time</div></div>
+      <div><div style="font:400 10.5px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;">Salary</div><div style="font:700 14px/1.35 'Carlito';color:#fff;margin-top:4px;">&#8369;100,000&ndash;120,000 / month</div></div>
+      <div><div style="font:400 10.5px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;">Reports to</div><div style="font:700 14px/1.35 'Carlito';color:#fff;margin-top:4px;">Director, bluezoo</div></div>
+    </div>
+  </section>
+
+  <div style="padding:0.5in 0.8in 0.55in;">
+
+    <!-- ABOUT -->
+    <section class="avoid" style="margin-bottom:24px;">
+      <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:10px;">About bluezoo &amp; Governance Manager</div>
+      <p style="font:400 14px/1.62 'Carlito';color:#353535;margin:0 0 10px;">bluezoo is a recognised international governance firm. Our software platform, <strong>Governance Manager</strong>, helps organisations measure, manage and improve governance and capability maturity &mdash; with an extensive library of frameworks, benchmarking, improvement planning and reporting. It is established, proven and trusted by government and corporate clients, and has been deployed at whole-of-sector scale.</p>
+      <p style="font:400 14px/1.62 'Carlito';color:#353535;margin:0;">We are entering an ambitious growth phase and are looking for a driven Business Development Manager to take the lead on sales worldwide.</p>
+    </section>
+
+    <!-- THE ROLE -->
+    <section class="avoid" style="margin-bottom:24px;">
+      <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:10px;">The role</div>
+      <h2 style="font:700 19px/1.3 'Carlito';color:#284B63;margin-bottom:10px;">Own the growth of a proven product</h2>
+      <p style="font:400 14px/1.62 'Carlito';color:#353535;margin:0 0 12px;">As our sales lead, you will own the commercial growth of Governance Manager end to end. You will sell through three motions &mdash; direct clients, channel partners (consulting and audit firms), and international software distributors &mdash; supported by local Australian product leadership for demonstrations and technical depth. This is a hands-on, target-driven role with real ownership and a clear growth mandate.</p>
+      <ul style="font:400 13.5px/1.62 'Carlito';color:#353535;margin:0;padding-left:20px;">
+        <li style="margin-bottom:6px;">Build and convert a qualified pipeline across direct, partner and distributor channels.</li>
+        <li style="margin-bottom:6px;">Run discovery and product demonstrations, prepare proposals, negotiate and close.</li>
+        <li style="margin-bottom:6px;">Recruit, enable and manage channel partners and international distributors.</li>
+        <li style="margin-bottom:6px;">Pursue whole-of-sector and government programs, and expand existing accounts into multi-year, recurring contracts.</li>
+        <li style="margin-bottom:6px;">Maintain disciplined CRM hygiene, accurate forecasting and KPI reporting (HubSpot).</li>
+        <li style="margin-bottom:0;">Work closely with the Director and product leadership to hit aggressive growth targets.</li>
+      </ul>
+    </section>
+
+    <!-- ESSENTIAL -->
+    <section class="avoid" style="margin-bottom:22px;">
+      <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:10px;">Essential experience</div>
+      <div class="avoid" style="background:#e7f0f0;border-left:3px solid #137B8F;border-radius:0 6px 6px 0;padding:16px 20px;margin-bottom:14px;">
+        <p style="font:400 14.5px/1.6 'Carlito';color:#284B63;margin:0;"><strong>You must have direct, recent and verifiable experience selling software (SaaS) solutions to Australian and/or US distributors, partners and/or direct clients.</strong> This is a non-negotiable requirement; applications will be assessed on demonstrable, checkable results.</p>
+      </div>
+      <ul style="font:400 13.5px/1.62 'Carlito';color:#353535;margin:0;padding-left:20px;">
+        <li style="margin-bottom:6px;">A proven track record of meeting or exceeding B2B software sales targets.</li>
+        <li style="margin-bottom:6px;">Experience building and managing partner, reseller or distributor channels.</li>
+        <li style="margin-bottom:6px;">Full-cycle sales capability: prospecting, qualification, demonstration, proposal, negotiation and close.</li>
+        <li style="margin-bottom:6px;">Excellent written and spoken English, and confidence engaging Australian and US executives.</li>
+        <li style="margin-bottom:6px;">Strong CRM discipline (HubSpot or equivalent) and accurate forecasting.</li>
+        <li style="margin-bottom:0;">A self-managed remote worker able to maintain a working-hours overlap with Australian business hours.</li>
+      </ul>
+    </section>
+
+    <!-- ALSO VALUABLE -->
+    <section class="avoid" style="margin-bottom:24px;">
+      <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:10px;">Also valuable</div>
+      <ul style="font:400 13.5px/1.62 'Carlito';color:#353535;margin:0;padding-left:20px;column-count:2;column-gap:32px;">
+        <li style="margin-bottom:6px;break-inside:avoid;">Governance, risk, compliance or audit domain knowledge.</li>
+        <li style="margin-bottom:6px;break-inside:avoid;">Selling into government and not-for-profit sectors.</li>
+        <li style="margin-bottom:6px;break-inside:avoid;">Whole-of-sector or enterprise deal experience.</li>
+        <li style="margin-bottom:0;break-inside:avoid;">An existing Australian and/or US network.</li>
+      </ul>
+    </section>
+
+    <!-- WHAT WE OFFER -->
+    <section class="avoid" style="margin-bottom:24px;">
+      <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">What we offer</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #137B8F;border-radius:6px;padding:15px 16px;background:#fff;"><div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:5px;">Competitive salary</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">&#8369;100,000&ndash;120,000 per month, depending on experience.</p></div>
+        <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #153E5A;border-radius:6px;padding:15px 16px;background:#fff;"><div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:5px;">Fully remote</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Work from anywhere in the Philippines, with overlap to Australian hours.</p></div>
+        <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #4B6969;border-radius:6px;padding:15px 16px;background:#fff;"><div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:5px;">A recognised brand</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Sell an established, proven product for an international governance firm.</p></div>
+        <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #6C793C;border-radius:6px;padding:15px 16px;background:#fff;"><div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:5px;">Real ownership</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Lead the sales function with direct access to the Director and product leadership.</p></div>
+      </div>
+    </section>
+
+    <!-- HOW TO APPLY -->
+    <section class="avoid">
+      <div style="background:linear-gradient(150deg,#153E5A 0%,#284B63 70%);border-radius:8px;padding:24px 28px;color:#fff;">
+        <div style="font:700 17px/1.3 'Carlito';color:#fff;margin-bottom:8px;">How to apply</div>
+        <p style="font:400 13.5px/1.6 'Carlito';color:#c3d0d8;margin:0 0 12px;">Send your CV and a short cover note that <strong style="color:#fff;">evidences recent, verifiable software sales to Australian and/or US distributors, partners or direct clients</strong> &mdash; include named results, indicative deal sizes and contactable references. Please note that experience and references will be verified as part of selection.</p>
+        <div style="display:flex;gap:28px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.18);padding-top:14px;">
+          <div><div style="font:400 10.5px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Apply to</div><div style="font:700 14px/1.4 'Carlito';color:#fff;">tonyf@bluezoo.com.au</div></div>
+          <div><div style="font:400 10.5px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Subject line</div><div style="font:700 14px/1.4 'Carlito';color:#fff;">BDM &mdash; Governance Manager</div></div>
+          <div><div style="font:400 10.5px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Applications close</div><div style="font:700 14px/1.4 'Carlito';color:#fff;">[date &mdash; to confirm]</div></div>
+        </div>
+      </div>
+      <p style="font:400 11px/1.5 'Carlito';color:#9aa0a3;margin:14px 0 0;">bluezoo is an equal-opportunity employer. We thank all applicants; only shortlisted candidates will be contacted.</p>
+    </section>
+
+  </div>
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return { print: () => window.print() };
+  }
+}
+</script>
+</body>
+</html>

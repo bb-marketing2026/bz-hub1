@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    body{background:#eef0f3;margin:0}
+    .cs, .cs *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .cs p{text-wrap:pretty}
+    .cs a{color:#137B8F;text-decoration:none}
+    .cs a:hover{text-decoration:underline}
+    .pg{box-sizing:border-box;display:flex;flex-direction:column}
+    .brk{break-before:page;padding-top:20px}
+    .eyb{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#137B8F}
+    .h2{font-size:29px;line-height:1.08;font-weight:700;color:#153E5A;margin:8px 0 0;letter-spacing:-.01em}
+    .rule{height:3px;width:46px;background:#137B8F;border-radius:2px;margin:10px 0 16px}
+    .lead{font-size:14px;line-height:1.6;color:#475761;margin:0}
+    .tile{background:#fff;border:1px solid #e6e9ec;border-radius:10px;padding:14px 16px}
+    .flow{display:flex;align-items:stretch;gap:12px;margin:22px 0 8px;break-inside:avoid}
+    .ph{flex:1;min-width:0;border:1px solid #e6e9ec;border-radius:10px;padding:14px 15px;background:#fff}
+    .ph-lbl{font-size:9.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+    .ph-title{font-size:15px;font-weight:700;color:#153E5A;line-height:1.2;margin:4px 0 10px}
+    .stp{display:flex;gap:8px;align-items:flex-start;margin-bottom:7px}
+    .num{flex:0 0 20px;width:20px;height:20px;border-radius:50%;color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
+    .stp-t{font-size:11.5px;line-height:1.32;color:#334;padding-top:2px}
+    .ftr{margin-top:auto;padding-top:20px;padding-bottom:26px;display:flex;justify-content:space-between;font-size:10.5px;color:#8a97a0;border-top:1px solid #e6e9ec}
+    .bz-pagebreak{height:30px;margin:0 -1cm;background:#d6d9db;box-shadow:inset 0 7px 7px -7px rgba(0,0,0,.28),inset 0 -7px 7px -7px rgba(0,0,0,.28)}
+    @media print{.bz-pagebreak{display:none}}
+    .bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}
+    .bz-backhub:hover{background:#153E5A}
+    @media print{.bz-backhub{display:none!important}}
+  </style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="a4" orientation="portrait" margin="1cm" hint-size="100%,100%">
+
+  <!-- ============ 1 · COVER ============ -->
+  <section class="page cs pg" style="color:#3f4a52;background:linear-gradient(155deg,#153E5A 0%,#284B63 58%,#1c5560 100%);color:#fff;padding:70px 60px 52px;overflow:hidden;position:relative">
+    <div style="position:absolute;inset:0;background:url('assets/cs-cover.jpg') center top/cover no-repeat;pointer-events:none"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(170deg,rgba(21,62,90,.62) 0%,rgba(21,62,90,.30) 34%,rgba(21,62,90,.72) 72%,rgba(21,62,90,.94) 100%);pointer-events:none"></div>
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-150px;top:180px;width:560px;opacity:.08;pointer-events:none">
+    <img src="assets/logo-white.png" alt="bluezoo" style="width:180px;position:relative">
+    <div style="margin-top:auto;position:relative">
+      <div class="eyb" style="color:#7aa9ab;margin-bottom:18px">Capability statement</div>
+      <h1 style="font-size:50px;line-height:1.04;font-weight:700;margin:0;color:#fff;letter-spacing:-.5px;max-width:600px">Governance, Strategy, Risk &amp; Sustainability</h1>
+      <p style="font-size:17px;line-height:1.5;max-width:540px;margin:22px 0 0;color:#c3d0d8">A strategic performance consultancy helping organisations analyse and build the right capabilities for sustainable success.</p>
+    </div>
+    <div style="margin-top:42px;position:relative;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:flex-end;font-size:13px;color:#93aab6">
+      <div><div style="color:#fff;font-weight:700;font-size:15px">Blue Zoo</div>896 Beaufort Street, Inglewood WA 6052</div>
+      <span>bluezoo.com.au &middot; +61 8 9321 2525</span>
+    </div>
+  </section>
+
+  <!-- ============ 2 · THE FIRM ============ -->
+  <section class="page cs pg brk" style="color:#3f4a52">
+    <div style="display:grid;grid-template-columns:1.35fr 1fr;gap:24px;align-items:stretch;margin-bottom:24px">
+      <div>
+        <div class="eyb">Who we are</div>
+        <h2 class="h2">We see things differently</h2>
+        <div class="rule"></div>
+        <p class="lead">Blue Zoo is an established Australian professional services firm providing specialist advisory services to boards and executives. We help boards, executives, management and their key stakeholders solve messy problems together &mdash; through creative, pragmatic and fit-for-purpose solutions that evolve a balanced decision-making appetite across the areas of business competency that matter.</p>
+        <p style="font-size:12.5px;line-height:1.6;color:#475761;margin:10px 0 0">Board advisory is our forte. We have advised all levels of government, peak bodies and regulators, Fortune 500 and ASX-listed companies &mdash; and served as an approved vendor on numerous federal, state and local government procurement panels.</p>
+      </div>
+      <div style="position:relative;min-height:250px;border-radius:12px;overflow:hidden">
+        <div style="position:absolute;inset:0;background:url('assets/cs-people-02.png') center 24%/cover no-repeat"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(155deg,rgba(21,62,90,.34) 0%,rgba(21,62,90,.06) 46%,rgba(28,85,96,.28) 100%)"></div>
+        <div style="position:absolute;left:0;right:0;bottom:0;height:46%;background:linear-gradient(180deg,rgba(21,62,90,0) 0%,rgba(21,62,90,.82) 100%)"></div>
+        <div style="position:absolute;left:16px;right:16px;bottom:14px">
+          <div style="height:2px;width:34px;background:#7aa9ab;border-radius:2px;margin-bottom:8px"></div>
+          <div style="font-size:12.5px;line-height:1.4;color:#fff;font-weight:700">Steady counsel for an uncertain world.</div>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0 26px">
+      <div class="tile" style="border-top:3px solid #153E5A;text-align:center;padding:18px 10px"><div style="font-size:32px;font-weight:700;color:#153E5A;line-height:1">2006</div><div style="font-size:11.5px;color:#6b7a82;margin-top:5px;line-height:1.35">advising boards since</div></div>
+      <div class="tile" style="border-top:3px solid #137B8F;text-align:center;padding:18px 10px"><div style="font-size:32px;font-weight:700;color:#137B8F;line-height:1">700+</div><div style="font-size:11.5px;color:#6b7a82;margin-top:5px;line-height:1.35">projects delivered</div></div>
+      <div class="tile" style="border-top:3px solid #4B6969;text-align:center;padding:18px 10px"><div style="font-size:32px;font-weight:700;color:#4B6969;line-height:1">10+</div><div style="font-size:11.5px;color:#6b7a82;margin-top:5px;line-height:1.35">countries served</div></div>
+      <div class="tile" style="border-top:3px solid #6C793C;text-align:center;padding:18px 10px"><div style="font-size:32px;font-weight:700;color:#6C793C;line-height:1">4</div><div style="font-size:11.5px;color:#6b7a82;margin-top:5px;line-height:1.35">service pillars</div></div>
+    </div>
+
+    <div class="eyb">Our service pillars</div>
+    <h2 class="h2" style="font-size:24px">Four competencies, held in balance</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Our four service pillars represent the core competencies of great organisations &mdash; each required in appropriate balance to deliver sustained success. The pages that follow set out the service suite behind each pillar as a delivery flow.</p>
+    <div class="flow">
+      <div class="ph" style="border-top:3px solid #137B8F"><div class="ph-lbl" style="color:#137B8F">Pillar 01</div><div class="ph-title">Governance</div><p style="font-size:11.5px;line-height:1.45;color:#475761;margin:0">Guiding principles, empowering boards. Governance endures when it is part of the culture, not a separate activity.</p></div>
+      <div class="ph" style="border-top:3px solid #153E5A"><div class="ph-lbl" style="color:#153E5A">Pillar 02</div><div class="ph-title">Strategy</div><p style="font-size:11.5px;line-height:1.45;color:#475761;margin:0">Vision to action, strategy that wins. We bridge the gap between ambition and a concrete roadmap.</p></div>
+      <div class="ph" style="border-top:3px solid #4B6969"><div class="ph-lbl" style="color:#4B6969">Pillar 03</div><div class="ph-title">Risk</div><p style="font-size:11.5px;line-height:1.45;color:#475761;margin:0">Mitigating risk, building resilience. Confidence in the unknown, through frameworks people actually use.</p></div>
+      <div class="ph" style="border-top:3px solid #6C793C"><div class="ph-lbl" style="color:#6C793C">Pillar 04</div><div class="ph-title">Sustainability</div><p style="font-size:11.5px;line-height:1.45;color:#475761;margin:0">Thriving today, protecting tomorrow. Long-term thinking that protects what the organisation values.</p></div>
+    </div>
+    <p style="font-size:11px;color:#8a97a0;margin:0">Fifty-two services across four pillars, delivered by advisors who are specialists and skilled change agents.</p>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Capability statement</span><span>02</span></div>
+  </section>
+
+  <!-- ============ 3 · GOVERNANCE ============ -->
+  <section class="page cs pg brk" style="color:#3f4a52">
+    <div class="eyb">Service pillar 01</div>
+    <h2 class="h2">Governance service suite</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">Governance is the system of rules, relationships and practices that determine the direction and control of an organisation. Good governance enables an organisation to define what it will achieve and how it will create value &mdash; whilst addressing uncertainty, protecting value, and staying within the boundaries.</p>
+    <div class="flow">
+      <div class="ph" style="border-top:3px solid #153E5A">
+        <div class="ph-lbl" style="color:#153E5A">Phase 01</div><div class="ph-title">Set the frame</div>
+        <div class="stp"><span class="num" style="background:#153E5A">1</span><span class="stp-t">Corporate Governance</span></div>
+        <div class="stp"><span class="num" style="background:#153E5A">2</span><span class="stp-t">Policy &amp; Standards</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#153E5A">3</span><span class="stp-t">Compliance Governance</span></div>
+      </div>
+      <div class="ph" style="border-top:3px solid #137B8F">
+        <div class="ph-lbl" style="color:#137B8F">Phase 02</div><div class="ph-title">Oversee delivery</div>
+        <div class="stp"><span class="num" style="background:#137B8F">4</span><span class="stp-t">Project &amp; Portfolio Governance</span></div>
+        <div class="stp"><span class="num" style="background:#137B8F">5</span><span class="stp-t">ICT Governance &amp; Management</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#137B8F">6</span><span class="stp-t">Cyber Governance</span></div>
+      </div>
+      <div class="ph" style="border-top:3px solid #4B6969">
+        <div class="ph-lbl" style="color:#4B6969">Phase 03</div><div class="ph-title">Hold to account</div>
+        <div class="stp"><span class="num" style="background:#4B6969">7</span><span class="stp-t">Integrity &amp; Misconduct</span></div>
+        <div class="stp"><span class="num" style="background:#4B6969">8</span><span class="stp-t">Workplace Health &amp; Safety</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#4B6969">9</span><span class="stp-t">Benchmarking</span></div>
+      </div>
+      <div class="ph" style="border-top:3px solid #6C793C">
+        <div class="ph-lbl" style="color:#6C793C">Phase 04</div><div class="ph-title">Improve &amp; renew</div>
+        <div class="stp"><span class="num" style="background:#6C793C">10</span><span class="stp-t">Transformation</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#6C793C">11</span><span class="stp-t">Solution Sourcing &amp; Evaluation</span></div>
+      </div>
+    </div>
+    <p style="font-size:11px;color:#8a97a0;margin:0 0 18px">Eleven governance services, sequenced from setting the frame through to renewal.</p>
+    <div style="columns:2;column-gap:26px;font-size:11.5px;line-height:1.5;color:#475761">
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#153E5A">Culture, not paperwork.</b> To be most effective, good governance should become part of an organisation's culture &mdash; embedded into its philosophy, practices and business processes rather than viewed or practised as a separate activity.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#137B8F">Specialists and change agents.</b> All of our advisors are both governance specialists and skilled change agents, backed by the full capability available from across the firm.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#4B6969">Proven with government.</b> In working with leading companies and government agencies, Blue Zoo understands how to build well-governed enterprises that align objectives, strategy and culture to create a more certain future.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#153E5A">Fit for the organisation.</b> Governance is not a template exercise. We calibrate the framework to the size, maturity and risk appetite of the organisation, so that the reporting a board receives is proportionate to the decisions it must actually make &mdash; enough to govern with confidence, without burying the executive in process.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#137B8F">Evidence a regulator would accept.</b> We are equally comfortable on either side of the assurance line. That experience means the artefacts we help you build &mdash; charters, delegations, registers, papers and minutes &mdash; hold up when they are examined by an auditor, a regulator or a commission of inquiry.</p>
+      <p style="break-inside:avoid;margin:0"><b style="color:#6C793C">Capability that stays behind.</b> Our aim is to leave the organisation better able to govern itself. We transfer method and language as we go, coaching directors and executives so that the improvement continues long after the engagement closes.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Governance</span><span>03</span></div>
+  </section>
+
+  <!-- ============ 4 · STRATEGY ============ -->
+  <section class="page cs pg brk" style="color:#3f4a52">
+    <div class="eyb" style="color:#153E5A">Service pillar 02</div>
+    <h2 class="h2">Strategy service suite</h2>
+    <div class="rule" style="background:#153E5A"></div>
+    <p class="lead" style="max-width:660px">Organisations of every size increasingly have to make major decisions in response to the changes taking place around them, and successfully execute a process of self-renewal. We don't just create theoretical plans &mdash; we break them into actionable steps, identify key performance indicators, and equip you with the tools to achieve your goals.</p>
+    <div class="flow">
+      <div class="ph" style="border-top:3px solid #153E5A">
+        <div class="ph-lbl" style="color:#153E5A">Phase 01</div><div class="ph-title">Vision</div>
+        <div class="stp"><span class="num" style="background:#153E5A">1</span><span class="stp-t">Advanced Facilitation</span></div>
+        <div class="stp"><span class="num" style="background:#153E5A">2</span><span class="stp-t">Strategic Planning &amp; Growth</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#153E5A">3</span><span class="stp-t">Strategic Reviews</span></div>
+      </div>
+      <div class="ph" style="border-top:3px solid #1d4a63">
+        <div class="ph-lbl" style="color:#1d4a63">Phase 02</div><div class="ph-title">Strategy</div>
+        <div class="stp"><span class="num" style="background:#1d4a63">4</span><span class="stp-t">Business Case Development / Review</span></div>
+        <div class="stp"><span class="num" style="background:#1d4a63">5</span><span class="stp-t">ICT Strategy</span></div>
+        <div class="stp"><span class="num" style="background:#1d4a63">6</span><span class="stp-t">Cyber Strategy</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#1d4a63">7</span><span class="stp-t">Balanced Scorecard</span></div>
+      </div>
+      <div class="ph" style="border-top:3px solid #137B8F">
+        <div class="ph-lbl" style="color:#137B8F">Phase 03</div><div class="ph-title">Design</div>
+        <div class="stp"><span class="num" style="background:#137B8F">8</span><span class="stp-t">Business Operating Model</span></div>
+        <div class="stp"><span class="num" style="background:#137B8F">9</span><span class="stp-t">Enterprise Architecture</span></div>
+        <div class="stp"><span class="num" style="background:#137B8F">10</span><span class="stp-t">Sourcing &amp; Shared Services</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#137B8F">11</span><span class="stp-t">IT Disaster Recovery Planning</span></div>
+      </div>
+      <div class="ph" style="border-top:3px solid #6C793C">
+        <div class="ph-lbl" style="color:#6C793C">Phase 04</div><div class="ph-title">Execution</div>
+        <div class="stp"><span class="num" style="background:#6C793C">12</span><span class="stp-t">Organisational Change</span></div>
+        <div class="stp"><span class="num" style="background:#6C793C">13</span><span class="stp-t">Software Selection</span></div>
+        <div class="stp"><span class="num" style="background:#6C793C">14</span><span class="stp-t">Sourcing &amp; Selection</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#6C793C">15</span><span class="stp-t">ICT Performance Management</span></div>
+      </div>
+    </div>
+    <p style="font-size:11px;color:#8a97a0;margin:0 0 18px">Fifteen strategy services, carrying an organisation from vision through to execution.</p>
+    <div style="columns:2;column-gap:26px;font-size:11.5px;line-height:1.5;color:#475761">
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#153E5A">Owned, not imposed.</b> In today's knowledge economy an organisation's value rests largely within intangible assets &mdash; its people. Strategy cannot be a top-down imposition; it must be owned by the employees who hold the intellectual property.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#137B8F">Planned for the change journey.</b> We unlock that asset and forge a platform for success by foreseeing and planning for the change journey required of each employee to realise it.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#6C793C">Measurable, not aspirational.</b> With our guidance, your vision becomes more than a dream &mdash; it becomes a measurable reality, with indicators the board can actually track.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#153E5A">Owned by the people who deliver it.</b> Strategy cannot be a top-down imposition. It must be owned by the people who hold the organisation's intellectual property, so we plan for the change journey required of each employee to realise it &mdash; and design the communication that carries it.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#137B8F">Choices, not wish lists.</b> A strategy that funds everything decides nothing. We help leadership teams make the hard trade-offs explicit &mdash; what will be stopped, deferred or resourced differently &mdash; and record the reasoning so the decision remains defensible as circumstances shift.</p>
+      <p style="break-inside:avoid;margin:0"><b style="color:#4B6969">Connected to delivery.</b> We link the plan to the operating model, the portfolio and the budget, so intent survives contact with the organisation. Where technology is central, our enterprise architecture and sourcing experience keeps the roadmap achievable.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Strategy</span><span>04</span></div>
+  </section>
+
+  <!-- ============ 5 · RISK ============ -->
+  <section class="page cs pg brk" style="color:#3f4a52">
+    <div class="eyb" style="color:#4B6969">Service pillar 03</div>
+    <h2 class="h2">Risk service suite</h2>
+    <div class="rule" style="background:#4B6969"></div>
+    <p class="lead" style="max-width:660px">Successful risk management is a living and dynamic process, embedded within an organisation and recognised by everyone simply as 'the way we do business'. Our approach achieves an appropriate balance between seeing opportunities for gains while minimising losses.</p>
+    <div class="flow">
+      <div class="ph" style="border-top:3px solid #153E5A">
+        <div class="ph-lbl" style="color:#153E5A">Phase 01</div><div class="ph-title">Frame</div>
+        <div class="stp"><span class="num" style="background:#153E5A">1</span><span class="stp-t">Risk Management Frameworks</span></div>
+        <div class="stp"><span class="num" style="background:#153E5A">2</span><span class="stp-t">Risk Governance</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#153E5A">3</span><span class="stp-t">Risk Management Systems</span></div>
+      </div>
+      <div class="ph" style="border-top:3px solid #4B6969">
+        <div class="ph-lbl" style="color:#4B6969">Phase 02</div><div class="ph-title">Assess</div>
+        <div class="stp"><span class="num" style="background:#4B6969">4</span><span class="stp-t">Risk Assessment &amp; Facilitation</span></div>
+        <div class="stp"><span class="num" style="background:#4B6969">5</span><span class="stp-t">Business Impact Assessments</span></div>
+        <div class="stp"><span class="num" style="background:#4B6969">6</span><span class="stp-t">Cyber Risk</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#4B6969">7</span><span class="stp-t">Technology Risk</span></div>
+      </div>
+      <div class="ph" style="border-top:3px solid #137B8F">
+        <div class="ph-lbl" style="color:#137B8F">Phase 03</div><div class="ph-title">Assure</div>
+        <div class="stp"><span class="num" style="background:#137B8F">8</span><span class="stp-t">Audit &amp; Assurance Services</span></div>
+        <div class="stp"><span class="num" style="background:#137B8F">9</span><span class="stp-t">ICT Audit &amp; Assurance</span></div>
+        <div class="stp"><span class="num" style="background:#137B8F">10</span><span class="stp-t">Compliance</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#137B8F">11</span><span class="stp-t">Probity</span></div>
+      </div>
+      <div class="ph" style="border-top:3px solid #6C793C">
+        <div class="ph-lbl" style="color:#6C793C">Phase 04</div><div class="ph-title">Recover</div>
+        <div class="stp"><span class="num" style="background:#6C793C">12</span><span class="stp-t">Business Continuity Planning</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#6C793C">13</span><span class="stp-t">Due Diligence</span></div>
+      </div>
+    </div>
+    <p style="font-size:11px;color:#8a97a0;margin:0 0 18px">Thirteen risk services across four modes of work &mdash; frame, assess, assure and recover.</p>
+    <div style="columns:2;column-gap:26px;font-size:11.5px;line-height:1.5;color:#475761">
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#153E5A">Confidence in the unknown.</b> The future is inherently uncertain, but navigating uncertainty shouldn't paralyse an organisation. Robust frameworks let you identify and assess challenges before they become roadblocks.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#4B6969">Tools, not just findings.</b> We don't just point out risks; we equip you with the tools and strategies to mitigate them &mdash; a proactive approach that builds real resilience.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#137B8F">Essential to governance.</b> Risk management is an integral part of good management practice and an essential element of good corporate governance &mdash; and, to be most effective, part of the culture.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#153E5A">Opportunity as well as exposure.</b> Well-run risk work is not only about avoiding loss. Our approach achieves an appropriate balance between seeing opportunities for gain and minimising the downside, so the organisation can move decisively where the reward justifies it.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#6C793C">Frameworks people actually use.</b> A register that is updated to satisfy a cycle changes nothing. We design frameworks and systems that fit existing rhythms of management, so risk is discussed before events rather than reconstructed afterwards.</p>
+      <p style="break-inside:avoid;margin:0"><b style="color:#4B6969">Independent where it counts.</b> Our audit, probity and due diligence work gives boards a clear, unvarnished view &mdash; and, when something does go wrong, our continuity and recovery planning shortens the time it takes to return to normal service.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Risk</span><span>05</span></div>
+  </section>
+
+  <!-- ============ 6 · SUSTAINABILITY ============ -->
+  <section class="page cs pg brk" style="color:#3f4a52">
+    <div class="eyb" style="color:#6C793C">Service pillar 04</div>
+    <h2 class="h2">Sustainability service suite</h2>
+    <div class="rule" style="background:#6C793C"></div>
+    <p class="lead" style="max-width:660px">Environmental and social sustainability has become a key issue for organisations to address in order to survive, succeed and thrive. More than ever, organisations must connect people and business objectives with governance and community stakeholder needs.</p>
+    <div class="flow">
+      <div class="ph" style="border-top:3px solid #153E5A">
+        <div class="ph-lbl" style="color:#153E5A">Phase 01</div><div class="ph-title">Understand</div>
+        <div class="stp"><span class="num" style="background:#153E5A">1</span><span class="stp-t">Capability Maturity Reviews</span></div>
+        <div class="stp"><span class="num" style="background:#153E5A">2</span><span class="stp-t">Impact Assessment</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#153E5A">3</span><span class="stp-t">Value for Money Assessments</span></div>
+      </div>
+      <div class="ph" style="border-top:3px solid #4B6969">
+        <div class="ph-lbl" style="color:#4B6969">Phase 02</div><div class="ph-title">Engage</div>
+        <div class="stp"><span class="num" style="background:#4B6969">4</span><span class="stp-t">Community Engagement</span></div>
+        <div class="stp"><span class="num" style="background:#4B6969">5</span><span class="stp-t">Stakeholder Engagement</span></div>
+        <div class="stp"><span class="num" style="background:#4B6969">6</span><span class="stp-t">Diversity &amp; Inclusion</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#4B6969">7</span><span class="stp-t">Human Capital Management</span></div>
+      </div>
+      <div class="ph" style="border-top:3px solid #6C793C">
+        <div class="ph-lbl" style="color:#6C793C">Phase 03</div><div class="ph-title">Strengthen</div>
+        <div class="stp"><span class="num" style="background:#6C793C">8</span><span class="stp-t">Organisational Resilience</span></div>
+        <div class="stp"><span class="num" style="background:#6C793C">9</span><span class="stp-t">Cyber Resilience</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#6C793C">10</span><span class="stp-t">ICT Resilience &amp; Recovery</span></div>
+      </div>
+      <div class="ph" style="border-top:3px solid #137B8F">
+        <div class="ph-lbl" style="color:#137B8F">Phase 04</div><div class="ph-title">Prove value</div>
+        <div class="stp"><span class="num" style="background:#137B8F">11</span><span class="stp-t">Benefits Realisation</span></div>
+        <div class="stp"><span class="num" style="background:#137B8F">12</span><span class="stp-t">Program Effectiveness Reviews</span></div>
+        <div class="stp" style="margin-bottom:0"><span class="num" style="background:#137B8F">13</span><span class="stp-t">Sustainability Assurance</span></div>
+      </div>
+    </div>
+    <p style="font-size:11px;color:#8a97a0;margin:0 0 18px">Thirteen sustainability services, from understanding impact through to proving value.</p>
+    <div style="columns:2;column-gap:26px;font-size:11.5px;line-height:1.5;color:#475761">
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#153E5A">Long-term thinking.</b> Long-term thinking is required to retain customers, differentiate from competitors and develop a robust, sustainable organisation that can create value over time.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#6C793C">Value defined and protected.</b> Together we define what you want to achieve and how value will be created, while addressing inevitable uncertainties and protecting existing value.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#137B8F">Built on the other pillars.</b> Success is increasingly linked to non-financial measures of performance. These specialised services build upon and enhance our governance, risk and strategy work.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#153E5A">People and community, connected.</b> More than ever, organisations must connect their people and business objectives with governance and the needs of community stakeholders. We design engagement that is genuine rather than performative, and report it in terms a board and a community can both follow.</p>
+      <p style="break-inside:avoid;margin:0 0 9px"><b style="color:#4B6969">Resilience as a discipline.</b> Sustainability and resilience are the same question asked over different horizons: can the organisation keep delivering? We test that assumption through capability maturity reviews, cyber and ICT resilience work, and honest assessment of recovery time.</p>
+      <p style="break-inside:avoid;margin:0"><b style="color:#6C793C">Proof, not claims.</b> Benefits realisation, impact assessment and value-for-money review turn intent into evidence &mdash; so the organisation can demonstrate, with data, that what it committed to has actually been achieved.</p>
+    </div>
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Sustainability</span><span>06</span></div>
+  </section>
+
+  <!-- ============ GOVERNMENT CLIENTS ============ -->
+  <section class="page cs pg brk" style="color:#3f4a52">
+    <div class="eyb">Public sector provenance</div>
+    <h2 class="h2">Services for government clients</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:680px">With almost 20 years of service to Australian Government, Blue Zoo has amassed a deep level of government domain expertise. Blue Zoo personnel have contributed to Cabinet submissions, appeared as expert witnesses before Parliamentary Committees, and contributed to both governance and policy for Ministers, First Secretaries and Directors General.</p>
+    <p style="font-size:12.5px;line-height:1.6;color:#475761;margin:10px 0 18px;max-width:680px">Blue Zoo participates in a number of government panels and procurement programs. Where this is the case, preferential rates may apply and government agencies are encouraged to purchase via a panel arrangement where available.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start">
+      <div>
+        <div style="font-size:12.5px;font-weight:700;color:#137B8F;letter-spacing:.02em;border-bottom:2px solid #cfe0e4;padding-bottom:4px;margin-bottom:8px">Federal agencies</div>
+        <div style="font-size:10.5px;line-height:1.55;color:#475761">Australian Federal Police<br>Australian Maritime Safety Authority<br>Australian Taxation Office<br>Commercialisation Australia<br>Commonwealth Employment Service<br>Commonwealth Grants Commission<br>Department of Health and Ageing<br>National Offshore Petroleum Safety Authority<br>AusAID<br>Australian National Audit Office<br>Australian Building Commission</div>
+
+        <div style="font-size:12.5px;font-weight:700;color:#137B8F;letter-spacing:.02em;border-bottom:2px solid #cfe0e4;padding-bottom:4px;margin:16px 0 8px">Western Australian agencies</div>
+        <div style="font-size:10.5px;line-height:1.55;color:#475761">Office of the Auditor General<br>AqWest<br>Art Gallery of Western Australia<br>Bunbury Port Authority<br>Central Institute of Technology<br>Curriculum Council<br>Department for Child Protection<br>Department of Agriculture and Food<br>Department of Biodiversity, Conservation and Attractions<br>Department of Commerce<br>Department of Communities<br>Department of Education<br>Department of Environment and Conservation<br>Department of Finance<br>Department of Health<br>Department of Housing<br>Department of Local Government<br>Department of Mines, Industry Regulation and Safety<br>Department of Primary Industries and Regional Development</div>
+      </div>
+      <div>
+        <div style="font-size:12.5px;font-weight:700;color:#137B8F;letter-spacing:.02em;border-bottom:2px solid #cfe0e4;padding-bottom:4px;margin-bottom:8px">Western Australian agencies (continued)</div>
+        <div style="font-size:10.5px;line-height:1.55;color:#475761">Department of Regional Development and Lands<br>Department of Sport and Recreation<br>Department of State Development<br>Department of the Premier and Cabinet<br>Department of Training and Workforce Development<br>Department of Transport<br>Department of Environment and Water Regulation<br>Development WA<br>Forest Products Commission<br>Gaming and Wagering Commission<br>Gold Corporation<br>Insurance Commission of WA<br>Independent Market Operator<br>Legal Aid<br>LotteryWest<br>Mental Health Commission<br>Metropolitan Cemeteries Board<br>MidWest Ports Authority<br>Office of Energy<br>Office of the Director of Public Prosecutions<br>Ombudsman WA<br>Perth Zoo<br>Public Sector Commission<br>Venues West<br>WA Police<br>Western Power<br>WorkCover</div>
+        <div class="tile" style="border-left:4px solid #137B8F;border-radius:0 10px 10px 0;margin-top:14px;padding:12px 14px">
+          <p style="font-size:11.5px;line-height:1.55;color:#475761;margin:0">Blue Zoo has worked with many other State and Local Government agencies around Australia. A comprehensive list is available upon request.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ftr"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>Government clients</span><span>07</span></div>
+  </section>
+
+  <!-- ============ 7 · CLOSING ============ -->
+  <section class="page cs pg brk" style="color:#3f4a52">
+    <div class="eyb">Why Blue Zoo</div>
+    <h2 class="h2">Sharper insights. Smarter decisions.</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:660px">We dare to be different in our approach. Rather than predict the future, we aim to collaboratively create it. We thrive on being different from the global advisory firms &mdash; in cost, quality, specialist focus, senior resource deployment and practical advice.</p>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:22px 0">
+      <div class="tile" style="border-top:3px solid #137B8F"><div style="font-size:14px;font-weight:700;color:#153E5A">Senior people on the work</div><p style="font-size:12px;line-height:1.5;color:#475761;margin:4px 0 0">Our advisors have served on boards and as senior executives themselves &mdash; deep expertise in both business and technology, applied directly rather than delegated.</p></div>
+      <div class="tile" style="border-top:3px solid #153E5A"><div style="font-size:14px;font-weight:700;color:#153E5A">Capability that stays behind</div><p style="font-size:12px;line-height:1.5;color:#475761;margin:4px 0 0">We build internal capacity, facilitate skills and knowledge transfer, and lift communication across board, executive, managerial and operational levels.</p></div>
+      <div class="tile" style="border-top:3px solid #4B6969"><div style="font-size:14px;font-weight:700;color:#153E5A">Trusted at the top</div><p style="font-size:12px;line-height:1.5;color:#475761;margin:4px 0 0">Government, peak bodies and regulators, Fortune 500 and ASX-listed organisations &mdash; with a reputation in cyber governance, transformation, business continuity and portfolio reviews.</p></div>
+      <div class="tile" style="border-top:3px solid #6C793C"><div style="font-size:14px;font-weight:700;color:#153E5A">Technology that compounds it</div><p style="font-size:12px;line-height:1.5;color:#475761;margin:4px 0 0">Our award-winning capability intelligence platform, Governance Manager, complements the practice and lifts our clients' internal capacity sustainably.</p></div>
+    </div>
+    <div style="break-inside:avoid;background:#f4f8f9;border-left:4px solid #137B8F;border-radius:0 10px 10px 0;padding:16px 20px">
+      <p style="font-size:14px;line-height:1.5;color:#153E5A;font-style:italic;margin:0">"We make the complexities of governance, risk and compliance simple. Simplicity comes from exhaustive clarity."</p>
+    </div>
+    <div style="margin-top:auto">
+      <div style="position:relative;border-radius:12px;overflow:hidden;color:#fff">
+        <div style="position:absolute;inset:0;background:url('assets/cs-people-04.png') center 30%/cover no-repeat"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(100deg,#153E5A 0%,rgba(21,62,90,.94) 42%,rgba(28,85,96,.72) 72%,rgba(28,85,96,.42) 100%)"></div>
+        <div style="position:relative;padding:24px 28px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px">
+          <div>
+            <div class="eyb" style="color:rgba(255,255,255,.72)">Let's start the conversation today</div>
+            <div style="font-size:22px;font-weight:700;color:#fff;margin-top:8px;line-height:1.2">Talk to us about your next decision.</div>
+            <div style="font-size:13px;line-height:1.8;color:#c3d0d8;margin-top:12px">896 Beaufort Street, Inglewood WA 6052<br>+61 8 9321 2525 &middot; info@bluezoo.com.au &middot; bluezoo.com.au</div>
+          </div>
+          <img src="assets/logo-white.png" alt="bluezoo" style="width:130px;flex:0 0 auto">
+        </div>
+      </div>
+      <div style="padding-top:16px;padding-bottom:26px;display:flex;justify-content:space-between;font-size:10.5px;color:#8a97a0;border-top:1px solid #e6e9ec;margin-top:20px"><span style="font-weight:700;color:#153E5A">Blue Zoo</span><span>&copy; 2026 Blue Zoo &middot; Governance &middot; Strategy &middot; Risk &middot; Sustainability</span><span>08</span></div>
+    </div>
+  </section>
+
+
+</x-import>
+</x-dc>
+</body>
+</html>

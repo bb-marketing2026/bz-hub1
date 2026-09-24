@@ -1,0 +1,60 @@
+/* ============================================================
+   bluezoo — Base element defaults & helpers
+   Light reset + brand typographic defaults. Kept minimal so it
+   layers cleanly onto product styles.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  color: var(--text-body);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-head);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  margin: 0 0 var(--space-3);
+  text-wrap: balance;
+}
+h1 { font-size: var(--fs-h1); color: var(--text-heading); }
+h2 { font-size: var(--fs-h2); color: var(--text-subhead); }
+h3 { font-size: var(--fs-h3); color: var(--text-strong); }
+
+p { margin: 0 0 var(--space-4); text-wrap: pretty; }
+
+a { color: var(--text-link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+small { font-size: var(--fs-caption); color: var(--text-muted); }
+
+/* Quote — brand guide: Calibri Light Italic, BZ Grey */
+blockquote {
+  margin: 0;
+  font-style: italic;
+  color: var(--text-muted);
+  border-left: 3px solid var(--bz-teal-600);
+  padding-left: var(--space-4);
+}
+
+/* Eyebrow / service-line label utility */
+.bz-eyebrow {
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--text-subhead);
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring-focus);
+  border-radius: var(--radius-sm);
+}

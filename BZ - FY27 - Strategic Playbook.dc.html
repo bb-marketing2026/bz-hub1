@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    .sp, .sp *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .sp p{text-wrap:pretty;margin:0}
+    .sp a{color:var(--bz-blue-600);text-decoration:none}
+    .sp-page{display:flex;flex-direction:column;position:relative}
+    .sp-break{break-before:page}
+    .sp-content{padding:46px 60px}
+    .eyb{font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+    .h2{font-size:26px;line-height:1.1;font-weight:700;color:var(--bz-blue-700);margin:0 0 6px}
+    .lead{font-size:14px;line-height:1.55;color:var(--bz-grey-700)}
+    .foot{display:flex;justify-content:space-between;align-items:center;font-size:10.5px;color:var(--bz-grey-500);border-top:1px solid var(--bz-grey-200);padding-top:10px;margin-top:auto}
+    .sp-pagebreak{height:30px;margin:0 -1cm;background:#d6d9db;box-shadow:inset 0 7px 7px -7px rgba(0,0,0,.28),inset 0 -7px 7px -7px rgba(0,0,0,.28)}
+    @media print{.sp-pagebreak{display:none}}
+    .card{border:1px solid var(--bz-grey-200);border-radius:8px;padding:15px 18px;break-inside:avoid}
+    .kpiwrap{border:1px solid var(--bz-grey-200);border-radius:8px;overflow:hidden;margin-bottom:11px;break-inside:avoid}
+    .kpihead{display:flex;justify-content:space-between;align-items:center;background:var(--bz-blue-900);color:#fff;padding:7px 14px}
+    .kpirow{display:grid;grid-template-columns:1fr 96px;border-top:1px solid var(--bz-grey-100)}
+    .kpirow>div{padding:6px 14px;font-size:11.5px;line-height:1.3;color:var(--bz-grey-700)}
+    .kpirow>div:last-child{border-left:1px solid var(--bz-grey-100);color:var(--bz-blue-700);font-weight:700;font-size:11px}
+    .li{padding:5px 0;border-bottom:1px solid var(--bz-grey-100);font-size:12.5px;line-height:1.4;color:var(--bz-grey-700)}
+    .li:last-child{border-bottom:none}
+    .rr{display:grid;grid-template-columns:1.6fr .8fr .8fr 2fr;border-top:1px solid var(--bz-grey-100)}
+    .rr>div{padding:8px 12px;font-size:11px;line-height:1.35;color:var(--bz-grey-700)}
+  </style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="a4" orientation="portrait" margin="1cm" hint-size="100%,100%">
+
+  <!-- ============ 1 · COVER ============ -->
+  <section class="page sp sp-page" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55;background:linear-gradient(155deg,#0e2d43 0%,#153E5A 55%,#1d4a66 100%);color:#fff;padding:72px 60px 48px;overflow:hidden;">
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-140px;top:170px;width:540px;opacity:.08;pointer-events:none">
+    <img src="assets/logo-white.png" alt="bluezoo" style="width:172px;position:relative">
+    <div style="margin-top:auto;position:relative">
+      <div class="eyb" style="color:#7aa9ab;margin-bottom:20px">Strategy · Executive</div>
+      <h1 style="font-size:52px;line-height:1.04;font-weight:700;margin:0;color:#fff;letter-spacing:-.6px">Strategic Playbook</h1>
+      <div style="font-size:22px;font-weight:700;color:#9db6c6;margin-top:10px;letter-spacing:.02em">FY27</div>
+      <p style="font-size:16.5px;line-height:1.45;max-width:580px;margin:24px 0 0;color:#c3d0d8">The firm's direction for the year — who we are, the market we serve, how we will grow, and the numbers, people and risks behind the plan.</p>
+    </div>
+    <div style="margin-top:40px;position:relative;padding-top:18px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:flex-end;font-size:13px;color:#93aab6">
+      <div><span style="display:inline-block;background:rgba(255,255,255,.14);border-radius:4px;padding:4px 10px;font-size:11px;font-weight:700;letter-spacing:.08em">CONFIDENTIAL · BOARD &amp; EXECUTIVE</span></div>
+      <span>Governance · Strategy · Risk · Resilience</span>
+    </div>
+  </section>
+
+  <!-- ============ 2 · CONTENTS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">Contents</div>
+    <h2 class="h2">What's inside</h2>
+    <p class="lead" style="max-width:820px;margin:0 0 22px">The plan runs from identity and market through to the growth engine, the people and systems that deliver it, and the financial, risk and governance controls that hold it together.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 44px">
+      <div class="li" style="display:flex;justify-content:space-between"><span>Vision, mission &amp; positioning</span><span style="font-weight:700;color:var(--bz-grey-500)">03</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>People &amp; organisation</span><span style="font-weight:700;color:var(--bz-grey-500)">11</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Context &amp; intent</span><span style="font-weight:700;color:var(--bz-grey-500)">04</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Systems, delivery &amp; AI</span><span style="font-weight:700;color:var(--bz-grey-500)">12</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Market &amp; operating environment</span><span style="font-weight:700;color:var(--bz-grey-500)">05</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Revenue plan</span><span style="font-weight:700;color:var(--bz-grey-500)">13</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>SWOT</span><span style="font-weight:700;color:var(--bz-grey-500)">06</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Financial strategy</span><span style="font-weight:700;color:var(--bz-grey-500)">14</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Services &amp; target segments</span><span style="font-weight:700;color:var(--bz-grey-500)">07</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Strategic risk register</span><span style="font-weight:700;color:var(--bz-grey-500)">15</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Client, pipeline &amp; partnerships</span><span style="font-weight:700;color:var(--bz-grey-500)">08</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Key performance indicators</span><span style="font-weight:700;color:var(--bz-grey-500)">16</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Governance Manager roadmap</span><span style="font-weight:700;color:var(--bz-grey-500)">09</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Operating assumptions</span><span style="font-weight:700;color:var(--bz-grey-500)">17</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Transformation initiatives</span><span style="font-weight:700;color:var(--bz-grey-500)">10</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Governance, review &amp; 90-day plan</span><span style="font-weight:700;color:var(--bz-grey-500)">18</span></div>
+    </div>
+    <div style="margin-top:26px;background:var(--bz-blue-100);border-left:4px solid var(--bz-green);border-radius:0 6px 6px 0;padding:14px 18px">
+      <p style="margin:0;font-size:12.5px;line-height:1.5;color:var(--bz-blue-800)">This plan is reviewed at each monthly Board meeting through the Strategy Progress Report and refreshed in full each June.</p>
+    </div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>02</span></div>
+  </section>
+
+  <!-- ============ 3 · VISION, MISSION & POSITIONING ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">Who we are</div>
+    <h2 class="h2">Vision, mission &amp; positioning</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Blue Zoo advises boards and executives across Governance, Strategy, Risk and Resilience, backed by its proprietary platform, Governance Manager. We see things differently — senior counsel and specialist focus, without the big-firm price tag.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:20px">
+      <div class="card" style="border-top:3px solid #153E5A"><div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:8px">Vision</div><p style="font-size:12.5px;line-height:1.5;color:var(--bz-grey-700)">Steady growth over the next three to five years toward a fully managed model — allowing the Managing Director to retire while the business continues to deliver a dividend stream for shareholders.</p></div>
+      <div class="card" style="border-top:3px solid var(--bz-green)"><div class="eyb" style="font-size:10px;color:var(--bz-green);margin-bottom:8px">Mission</div><p style="font-size:12.5px;line-height:1.5;color:var(--bz-grey-700)">Make the complexities of governance and strategy simple — fit-for-purpose advice that builds internal capability and leaves organisations stronger and self-sufficient.</p></div>
+      <div class="card" style="border-top:3px solid #6C793C"><div class="eyb" style="font-size:10px;color:#6C793C;margin-bottom:8px">Value</div><p style="font-size:12.5px;line-height:1.5;color:var(--bz-grey-700)">We live the Brainbox Group corporate value of <strong style="color:var(--bz-grey-900)">'Always Be Kind'</strong> — in how we work with clients, partners and each other.</p></div>
+    </div>
+
+    <div class="eyb" style="color:#153E5A;margin-bottom:12px">Why clients choose Blue Zoo</div>
+    <div style="display:grid;grid-template-columns:1.15fr 1fr;gap:20px;align-items:start">
+      <div>
+        <ul style="margin:0;padding:0;list-style:none">
+          <li class="li"><strong style="color:var(--bz-grey-900)">Mid-market rates</strong> — senior specialists without the global-firm premium.</li>
+          <li class="li"><strong style="color:var(--bz-grey-900)">Nearly 20 years</strong> active on WA public-sector procurement panels.</li>
+          <li class="li"><strong style="color:var(--bz-grey-900)">Well regarded in Western Australia</strong> — including landmark work codifying the WA public-sector governance framework.</li>
+          <li class="li"><strong style="color:var(--bz-grey-900)">Proprietary technology</strong> — Governance Manager, in market since 2009.</li>
+          <li class="li"><strong style="color:var(--bz-grey-900)">Practical, not templated</strong> — advice tailored to each organisation.</li>
+        </ul>
+      </div>
+      <div class="card" style="background:var(--bz-grey-50)">
+        <div class="eyb" style="font-size:10px;color:var(--bz-grey-500);margin-bottom:10px">Where we sit in the market</div>
+        <div style="position:relative;height:190px;border-left:2px solid var(--bz-grey-300);border-bottom:2px solid var(--bz-grey-300);margin:0 0 6px">
+          <span style="position:absolute;left:6px;top:-4px;font-size:9px;color:var(--bz-grey-500);transform:rotate(0)">High price</span>
+          <span style="position:absolute;left:6px;bottom:-2px;font-size:9px;color:var(--bz-grey-500)">Low price</span>
+          <span style="position:absolute;right:2px;bottom:-16px;font-size:9px;color:var(--bz-grey-500)">Brand weight →</span>
+          <div style="position:absolute;right:14px;top:18px;text-align:center"><span style="display:inline-block;width:13px;height:13px;border-radius:50%;background:var(--bz-grey-400)"></span><div style="font-size:9.5px;color:var(--bz-grey-600);margin-top:2px;width:78px">KPMG · Deloitte<br>PwC · BCG</div></div>
+          <div style="position:absolute;left:26px;bottom:26px;text-align:center"><span style="display:inline-block;width:15px;height:15px;border-radius:50%;background:#153E5A"></span><div style="font-size:10px;font-weight:700;color:#153E5A;margin-top:2px">Blue Zoo</div></div>
+        </div>
+        <p style="font-size:10.5px;line-height:1.4;color:var(--bz-grey-600);margin-top:12px">We win on price and specialist, senior-led delivery; the global firms win on brand and market weight. Our strategy widens that value gap rather than competing on scale.</p>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>03</span></div>
+  </section>
+
+  <!-- ============ 4 · CONTEXT & INTENT ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">Where we stand · Where we're going</div>
+    <h2 class="h2">Context &amp; intent</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">FY27 builds on a year of strong advisory activity, with a deliberate shift toward proactive sales and subscription revenue.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:22px">
+      <div class="card" style="border-top:3px solid #153E5A">
+        <div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:9px">The context</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12.5px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">FY26 revenue below budget but profit above FY25, aided by the PH advisor from Jan 26.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Strong advisory in Q3–Q4, but a limited sales pipeline entering Q1 FY27.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Loss of FPC as a GM client softened by a long transition out.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Slow progress selling GM; no GM-for-Auditors sales yet.</li>
+          <li style="padding:5px 0">VMIA contract continues — extension decision due April 27 for a further two years.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid var(--bz-green)">
+        <div class="eyb" style="font-size:10px;color:var(--bz-green);margin-bottom:9px">The intent</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12.5px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Revenue in excess of <strong style="color:var(--bz-grey-900)">$1,000,000</strong> excl GST (stretch <strong style="color:var(--bz-grey-900)">$1,500,000</strong>).</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Grow the team to <strong style="color:var(--bz-grey-900)">6 FTE</strong> (2 AUS, 4 PH; stretch 2 AUS, 5 PH).</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Hold the cash position — overdraft in no more than two months per year.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Continue reducing key-person risk across the business.</li>
+          <li style="padding:5px 0">Focus on subscription revenue streams wherever possible.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="eyb" style="color:#153E5A;margin-bottom:12px">The year in numbers</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:23px;font-weight:700;line-height:1">$1.0M+</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">revenue goal excl GST</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:23px;font-weight:700;line-height:1">6 FTE</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">team size (from 4.0)</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:23px;font-weight:700;line-height:1">25%</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">target gross profit</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:23px;font-weight:700;line-height:1">&gt;$250K</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">Future Fund by EOFY</p></div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700);white-space:nowrap">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>04</span></div>
+  </section>
+
+  <!-- ============ 5 · MARKET & OPERATING ENVIRONMENT ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">The market we serve</div>
+    <h2 class="h2">Market &amp; operating environment</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Blue Zoo's core market is the Western Australian public sector — state agencies, statutory authorities, local government and their boards. The current environment is unusually favourable for governance advice.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px">
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:22px;font-weight:700;line-height:1">138+</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">WA local government entities, plus state agencies &amp; authorities</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:22px;font-weight:700;line-height:1">2025–30</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">OAG strategic plan raising the accountability &amp; performance bar</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:22px;font-weight:700;line-height:1">1 Jul 25</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">machinery-of-government reform reshaping agencies</p></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+      <div class="card" style="border-top:3px solid var(--bz-green)">
+        <div class="eyb" style="font-size:10px;color:var(--bz-green);margin-bottom:9px">Tailwinds</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Public-sector reform (MoG changes) is disrupting agencies and lifting demand for governance and control uplift.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Auditor General focus on cyber, fraud, performance audits and AI governance.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Rising board-level demand for AI governance and assurance.</li>
+          <li style="padding:5px 0">Growing appetite for measurable governance maturity and benchmarking.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #C4622D">
+        <div class="eyb" style="font-size:10px;color:#C4622D;margin-bottom:9px">Headwinds</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Tight public-sector budgets constrain discretionary advisory spend.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Procurement panels (CUAs) gate access and compress rates.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Global firms carry brand weight and scale we cannot match.</li>
+          <li style="padding:5px 0">Reform can delay procurement decisions as agencies restructure.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="font-size:10px;color:var(--bz-grey-400);margin-top:16px">Sources: WA Office of the Auditor General Strategic Plan 2025–30; State &amp; Local Government 2025 audit results; Public Sector Reform (machinery of government), effective 1 July 2025.</p>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>05</span></div>
+  </section>
+
+  <!-- ============ 6 · SWOT ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">Honest self-assessment</div>
+    <h2 class="h2">SWOT</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Where the firm is strong, where it is exposed, and the moves the rest of this plan makes in response.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+      <div class="card" style="border-top:3px solid var(--bz-green)">
+        <div class="eyb" style="font-size:10px;color:var(--bz-green);margin-bottom:8px">Strengths</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:11.5px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">~20 years' WA public-sector track record and panel presence</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Proprietary Governance Manager platform (since 2009, global clients)</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Senior, board-experienced advisors delivering the work</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Mid-market pricing with a blended AU/PH model</li>
+          <li style="padding:4px 0">Strong reputation and reference clients in WA</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #C4622D">
+        <div class="eyb" style="font-size:10px;color:#C4622D;margin-bottom:8px">Weaknesses</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:11.5px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Heavy reliance on the Managing Director (key-person risk)</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Small team with limited delivery bandwidth</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Historically reactive sales; thin forward pipeline</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Slow GM sales progress outside anchor contracts</li>
+          <li style="padding:4px 0">Revenue concentration in a small number of clients</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #153E5A">
+        <div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:8px">Opportunities</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:11.5px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">AI governance demand across the public sector</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Performance-audit readiness and GM for Audit</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">WALGA panel and reseller / channel growth</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">MoG reform driving governance uplift work</li>
+          <li style="padding:4px 0">Scaling the PH team into delivery, not just support</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #4B6969">
+        <div class="eyb" style="font-size:10px;color:#4B6969;margin-bottom:8px">Threats</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:11.5px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">VMIA contract not extended (April 2027 decision)</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Failure to hire the right Senior Advisor in time</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Competition and brand weight of global firms</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Public-sector budget cuts and procurement delays</li>
+          <li style="padding:4px 0">FX exposure on PH costs; cyber &amp; compliance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>06</span></div>
+  </section>
+
+  <!-- ============ 7 · SERVICES & SEGMENTS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">What we sell &amp; to whom</div>
+    <h2 class="h2">Services &amp; target segments</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Four advisory pillars, delivered alongside the Governance Manager platform. Full service detail is maintained at bluezoo.com.au.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px">
+      <div class="card" style="border-top:3px solid #137B8F"><div style="font-size:14px;font-weight:700;color:#137B8F">Governance</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">Processes and culture for effective decisions and lasting performance.</p></div>
+      <div class="card" style="border-top:3px solid #153E5A"><div style="font-size:14px;font-weight:700;color:#153E5A">Strategy</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">Clear direction, measurable outcomes and a blueprint to achieve them.</p></div>
+      <div class="card" style="border-top:3px solid #4B6969"><div style="font-size:14px;font-weight:700;color:#4B6969">Risk</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">Living risk management embedded as 'the way we do business'.</p></div>
+      <div class="card" style="border-top:3px solid #6C793C"><div style="font-size:14px;font-weight:700;color:#6C793C">Resilience</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">Protecting what the organisation values to create sustainable value.</p></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:20px">
+      <div>
+        <div class="eyb" style="color:#153E5A;margin-bottom:10px">The offer ladder</div>
+        <ul style="margin:0;padding:0;list-style:none">
+          <li class="li"><strong style="color:var(--bz-grey-900)">Advisory</strong> — day-rate and fixed-price engagements (avg target $35k; one &gt;$50k running at a time)</li>
+          <li class="li"><strong style="color:var(--bz-grey-900)">GM Subscription</strong> — recurring SaaS access to Governance Manager</li>
+          <li class="li"><strong style="color:var(--bz-grey-900)">GM Services</strong> — implementation, configuration and support</li>
+          <li class="li"><strong style="color:var(--bz-grey-900)">GM Channel</strong> — reseller and partner-led sales</li>
+          <li class="li"><strong style="color:var(--bz-grey-900)">Assessments</strong> — Performance Audit Readiness, AI Governance, Governance Health Check</li>
+        </ul>
+      </div>
+      <div class="card" style="background:var(--bz-grey-50)">
+        <div class="eyb" style="font-size:10px;color:var(--bz-grey-500);margin-bottom:10px">Target segments</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12.5px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-200)">WA state government agencies</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-200)">Local government</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-200)">Statutory authorities</li>
+          <li style="padding:5px 0">Boards &amp; audit / risk committees</li>
+        </ul>
+        <p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:12px">Selected private-sector and not-for-profit clients where governance needs align with our strengths.</p>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>07</span></div>
+  </section>
+
+  <!-- ============ 8 · CLIENT, PIPELINE & PARTNERSHIPS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">Winning &amp; keeping work</div>
+    <h2 class="h2">Client, pipeline &amp; partnerships</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Growth comes from three moves — protecting and expanding anchor clients, building a proactive new-business pipeline, and opening channels that carry Governance Manager beyond direct sales.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+      <div class="card" style="border-top:3px solid #153E5A">
+        <div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:9px">Retain &amp; grow anchor clients</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)"><strong style="color:var(--bz-grey-900)">VMIA</strong> — secure the extension (Apr 27) and expand use during advisory engagements.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)"><strong style="color:var(--bz-grey-900)">FPC</strong> — manage the transition through to September 26.</li>
+          <li style="padding:5px 0">Deepen existing agency relationships into repeat and multi-year work.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid var(--bz-green)">
+        <div class="eyb" style="font-size:10px;color:var(--bz-green);margin-bottom:9px">Build the pipeline</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Two proactive sales meetings per week, public &amp; private sector.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Six new business-development meetings per month.</li>
+          <li style="padding:5px 0">Maintain an adjusted pipeline &gt; $200K closing within 30 days.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:3px solid #6C793C;margin-bottom:16px">
+      <div class="eyb" style="font-size:10px;color:#6C793C;margin-bottom:10px">Partnerships &amp; channel</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+        <div><strong style="color:var(--bz-grey-900)">WALGA panel</strong><br>Secure a place on the panel to access local-government procurement.</div>
+        <div><strong style="color:var(--bz-grey-900)">GM resellers</strong><br>Sign one new reseller; grow channel revenue toward the stretch target.</div>
+        <div><strong style="color:var(--bz-grey-900)">Referral partners</strong><br>Continue Leigh Farnell channel sales and build referral relationships.</div>
+      </div>
+    </div>
+
+    <div style="background:var(--bz-blue-100);border-left:4px solid #153E5A;border-radius:0 6px 6px 0;padding:12px 18px">
+      <p style="margin:0;font-size:12px;line-height:1.5;color:var(--bz-blue-800)"><strong>Placeholder:</strong> named target-account list to be added once the FY27 target client shortlist is confirmed.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>08</span></div>
+  </section>
+
+  <!-- ============ 9 · GOVERNANCE MANAGER ROADMAP ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">The platform</div>
+    <h2 class="h2">Governance Manager roadmap</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Governance Manager is central to both the revenue plan and the firm's biggest strategic risk. The FY27 development roadmap will be confirmed with the product team — placeholders below.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px">
+      <div class="card" style="border-top:3px solid #153E5A;background:var(--bz-grey-50)"><div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:6px">Q1</div><p style="font-size:11.5px;color:var(--bz-grey-500);line-height:1.4">[Placeholder — roadmap item to be confirmed]</p></div>
+      <div class="card" style="border-top:3px solid #153E5A;background:var(--bz-grey-50)"><div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:6px">Q2</div><p style="font-size:11.5px;color:var(--bz-grey-500);line-height:1.4">[Placeholder — roadmap item to be confirmed]</p></div>
+      <div class="card" style="border-top:3px solid #153E5A;background:var(--bz-grey-50)"><div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:6px">Q3</div><p style="font-size:11.5px;color:var(--bz-grey-500);line-height:1.4">[Placeholder — roadmap item to be confirmed]</p></div>
+      <div class="card" style="border-top:3px solid #153E5A;background:var(--bz-grey-50)"><div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:6px">Q4</div><p style="font-size:11.5px;color:var(--bz-grey-500);line-height:1.4">[Placeholder — roadmap item to be confirmed]</p></div>
+    </div>
+
+    <div class="eyb" style="color:#153E5A;margin-bottom:10px">Candidate themes for the roadmap</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+      <div class="card">
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)"><strong style="color:var(--bz-grey-900)">AI Governance module</strong> aligned to ISO/IEC 42001 — maturity scoring, action plans, benchmarking <span style="color:var(--bz-grey-400)">[placeholder scope]</span></li>
+          <li style="padding:5px 0">‌<strong style="color:var(--bz-grey-900)">GM for Audit</strong> — assessment workflow for audit engagements <span style="color:var(--bz-grey-400)">[placeholder scope]</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)"><strong style="color:var(--bz-grey-900)">Reseller enablement</strong> — packaging to support channel growth <span style="color:var(--bz-grey-400)">[placeholder]</span></li>
+          <li style="padding:5px 0">‌<strong style="color:var(--bz-grey-900)">VMIA ongoing development</strong> — continued two-monthly release cadence</li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:16px;background:var(--bz-blue-100);border-left:4px solid var(--bz-green);border-radius:0 6px 6px 0;padding:12px 18px">
+      <p style="margin:0;font-size:12px;line-height:1.5;color:var(--bz-blue-800)">Owner: Marvin (GM Developer). To be scoped and dated with Pat before the next Board meeting.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>09</span></div>
+  </section>
+
+  <!-- ============ 10 · INITIATIVES ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">How we get there</div>
+    <h2 class="h2">Transformation initiatives</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Three transformations underpin the year — reshaping the workforce, lifting capability through AI, and moving sales from reactive to proactive.</p>
+
+    <div style="display:flex;flex-direction:column;gap:13px">
+      <div style="border:1px solid var(--bz-grey-200);border-radius:8px;overflow:hidden;break-inside:avoid">
+        <div style="background:#153E5A;color:#fff;padding:10px 20px;display:flex;align-items:center;gap:12px"><span style="font-size:19px;font-weight:700">01</span><span style="font-size:15px;font-weight:700">Transform workforce</span></div>
+        <ul style="margin:0;padding:12px 20px 12px 38px;font-size:12.5px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="margin-bottom:4px">Second Philippines-based Auditor / Advisor in Q2, and an additional Australian-based Advisor in Q4.</li>
+          <li style="margin-bottom:4px">Start recruitment for the Senior Advisor in July, assuming an extended search for the right resource.</li>
+          <li style="margin-bottom:4px">Extend Karylle to advisory projects (~25% utilisation on advisory, remainder on GM).</li>
+          <li>Targeted use of casual employees and contractors.</li>
+        </ul>
+      </div>
+      <div style="border:1px solid var(--bz-grey-200);border-radius:8px;overflow:hidden;break-inside:avoid">
+        <div style="background:#22516a;color:#fff;padding:10px 20px;display:flex;align-items:center;gap:12px"><span style="font-size:19px;font-weight:700">02</span><span style="font-size:15px;font-weight:700">Transform capability</span></div>
+        <ul style="margin:0;padding:12px 20px 12px 38px;font-size:12.5px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="margin-bottom:4px">Expand use of AI, with a focus on <strong style="color:var(--bz-grey-900)">AI for Consulting</strong> and <strong style="color:var(--bz-grey-900)">AI for Sales</strong>.</li>
+          <li style="margin-bottom:4px">Increase advisor efficiency, reducing costs on fixed-price projects.</li>
+          <li>Broaden the use of PH-based resources to drive project delivery, not simply support engagements — moving beyond taking notes.</li>
+        </ul>
+      </div>
+      <div style="border:1px solid var(--bz-grey-200);border-radius:8px;overflow:hidden;break-inside:avoid">
+        <div style="background:#2f6280;color:#fff;padding:10px 20px;display:flex;align-items:center;gap:12px"><span style="font-size:19px;font-weight:700">03</span><span style="font-size:15px;font-weight:700">Transform sales</span></div>
+        <ul style="margin:0;padding:12px 20px 12px 38px;font-size:12.5px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="margin-bottom:4px">Move sales from reactive to proactive — two sales meetings per week across public and private sector.</li>
+          <li style="margin-bottom:4px">Increase the size and profitability of engagements.</li>
+          <li style="margin-bottom:4px">Lift average advisory project size from <strong style="color:var(--bz-grey-900)">$25k to $35k</strong>, with at least one large project (&gt;$50k) running at any time.</li>
+          <li style="margin-bottom:4px">Increase the hourly rate for time-and-materials projects by 5%.</li>
+          <li>Maintain sales efficiency by automating proposal development and marketing content generation.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>10</span></div>
+  </section>
+
+  <!-- ============ 11 · PEOPLE & ORGANISATION ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">The team</div>
+    <h2 class="h2">People &amp; organisation</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">A lean, blended Australia–Philippines team, growing deliberately to reduce key-person reliance and build delivery capacity.</p>
+
+    <div class="eyb" style="color:#153E5A;margin-bottom:12px">Current team</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px">
+      <div class="card" style="border-top:3px solid #153E5A"><div style="font-size:13.5px;font-weight:700;color:var(--bz-grey-900)">Pat Scally</div><div style="font-size:11px;color:#153E5A;font-weight:700;margin:2px 0 4px">Managing Director</div><p style="font-size:10.5px;color:var(--bz-grey-500)">Australia</p></div>
+      <div class="card" style="border-top:3px solid #4B6969"><div style="font-size:13.5px;font-weight:700;color:var(--bz-grey-900)">Marvin</div><div style="font-size:11px;color:#4B6969;font-weight:700;margin:2px 0 4px">GM Developer</div><p style="font-size:10.5px;color:var(--bz-grey-500)">Philippines</p></div>
+      <div class="card" style="border-top:3px solid #4B6969"><div style="font-size:13.5px;font-weight:700;color:var(--bz-grey-900)">Karylle</div><div style="font-size:11px;color:#4B6969;font-weight:700;margin:2px 0 4px">GM Support → Advisory</div><p style="font-size:10.5px;color:var(--bz-grey-500)">Philippines</p></div>
+      <div class="card" style="border-top:3px solid #4B6969"><div style="font-size:13.5px;font-weight:700;color:var(--bz-grey-900)">Hazel</div><div style="font-size:11px;color:#4B6969;font-weight:700;margin:2px 0 4px">Advisor</div><p style="font-size:10.5px;color:var(--bz-grey-500)">Philippines</p></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+      <div>
+        <div class="eyb" style="color:#153E5A;margin-bottom:10px">Growing to 6 FTE</div>
+        <ul style="margin:0;padding:0;list-style:none">
+          <li class="li"><strong style="color:var(--bz-grey-900)">+ Senior Advisor (AUS)</strong> — recruitment from July; profit-share offered to attract the right candidate.</li>
+          <li class="li"><strong style="color:var(--bz-grey-900)">+ 2nd Advisor / Auditor (PH)</strong> — added in Q2 to build delivery capacity.</li>
+          <li class="li"><strong style="color:var(--bz-grey-900)">Karylle → advisory</strong> — ~25% on advisory, remainder on GM.</li>
+          <li class="li">Casual employees and contractors used to flex around demand.</li>
+        </ul>
+      </div>
+      <div class="card" style="background:var(--bz-grey-50)">
+        <div class="eyb" style="font-size:10px;color:var(--bz-grey-500);margin-bottom:10px">Reducing key-person risk</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-200)">Build a Senior Advisor who can carry delivery and sales alongside the MD.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-200)">Move PH resources into delivery, not just support.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-200)">Document methods and IP so the firm is less person-dependent.</li>
+          <li style="padding:5px 0">Progress toward the fully managed model underpinning the MD's succession.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>11</span></div>
+  </section>
+
+  <!-- ============ 12 · SYSTEMS, DELIVERY & AI ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">How the work gets done</div>
+    <h2 class="h2">Systems, delivery &amp; AI</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">A light, modern toolset supports a senior-led, blended delivery model — with AI applied deliberately to lift both consulting efficiency and sales capacity.</p>
+
+    <div class="eyb" style="color:#153E5A;margin-bottom:12px">Core systems</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px">
+      <div class="card" style="border-top:3px solid #153E5A"><div style="font-size:14px;font-weight:700;color:var(--bz-grey-900)">HubSpot</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">CRM, marketing, meetings &amp; pipeline — the sales and campaign engine.</p></div>
+      <div class="card" style="border-top:3px solid var(--bz-green)"><div style="font-size:14px;font-weight:700;color:var(--bz-grey-900)">Xero</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">Finance, invoicing and reporting — the source of the monthly numbers.</p></div>
+      <div class="card" style="border-top:3px solid #4B6969"><div style="font-size:14px;font-weight:700;color:var(--bz-grey-900)">Governance Manager</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">The proprietary platform for assessments, dashboards and delivery.</p></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+      <div class="card" style="border-top:3px solid #22516a">
+        <div class="eyb" style="font-size:10px;color:#22516a;margin-bottom:9px">Delivery model</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Senior-led engagements, fit-for-purpose rather than templated.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Blended AU/PH teams — PH resources moving into delivery.</li>
+          <li style="padding:5px 0">Knowledge transfer built in, so clients are left more capable.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #6C793C">
+        <div class="eyb" style="font-size:10px;color:#6C793C;margin-bottom:9px">AI plan</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)"><strong style="color:var(--bz-grey-900)">AI for Consulting</strong> — speed research, drafting and analysis to cut fixed-price delivery cost.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)"><strong style="color:var(--bz-grey-900)">AI for Sales</strong> — automate proposals and marketing content.</li>
+          <li style="padding:5px 0">Govern our own AI use to the standard we advise clients to adopt.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>12</span></div>
+  </section>
+
+  <!-- ============ 13 · REVENUE PLAN ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">The revenue plan</div>
+    <h2 class="h2">Projected revenue breakdown</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Advisory remains the engine — around 80% of revenue — while Governance Manager subscription, services and channel provide the recurring base we are working to grow.</p>
+
+    <div style="border:1px solid var(--bz-grey-200);border-radius:8px;overflow:hidden;margin-bottom:18px">
+      <div style="display:grid;grid-template-columns:1.7fr 1fr .7fr 1fr .7fr;background:var(--bz-blue-900);color:#fff">
+        <div style="padding:10px 16px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase">Revenue stream</div>
+        <div style="padding:10px 12px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-align:right">Goal</div>
+        <div style="padding:10px 8px;font-size:10.5px;font-weight:700;text-align:right;color:#9db6c6">%</div>
+        <div style="padding:10px 12px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-align:right;color:#b9c66a">Stretch</div>
+        <div style="padding:10px 8px;font-size:10.5px;font-weight:700;text-align:right;color:#9db6c6">%</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1.7fr 1fr .7fr 1fr .7fr;border-top:1px solid var(--bz-grey-100)"><div style="padding:9px 16px;font-size:12.5px;font-weight:700;color:var(--bz-grey-900)">Advisory — Staff</div><div style="padding:9px 12px;font-size:12.5px;text-align:right;color:var(--bz-grey-700)">$721,500</div><div style="padding:9px 8px;font-size:11px;text-align:right;color:var(--bz-grey-500)">—</div><div style="padding:9px 12px;font-size:12.5px;text-align:right;color:var(--bz-grey-700)">$952,664</div><div style="padding:9px 8px;font-size:11px;text-align:right;color:var(--bz-grey-500)">—</div></div>
+      <div style="display:grid;grid-template-columns:1.7fr 1fr .7fr 1fr .7fr;border-top:1px solid var(--bz-grey-100);background:var(--bz-grey-50)"><div style="padding:9px 16px;font-size:12.5px;color:var(--bz-grey-800)">Advisory — Consultants &amp; Casual</div><div style="padding:9px 12px;font-size:12.5px;text-align:right;color:var(--bz-grey-700)">$135,000</div><div style="padding:9px 8px;font-size:11px;text-align:right;font-weight:700;color:#153E5A">79.2%</div><div style="padding:9px 12px;font-size:12.5px;text-align:right;color:var(--bz-grey-700)">$205,977</div><div style="padding:9px 8px;font-size:11px;text-align:right;font-weight:700;color:#153E5A">80.4%</div></div>
+      <div style="display:grid;grid-template-columns:1.7fr 1fr .7fr 1fr .7fr;border-top:1px solid var(--bz-grey-100)"><div style="padding:9px 16px;font-size:12.5px;color:var(--bz-grey-800)">GM Subscription</div><div style="padding:9px 12px;font-size:12.5px;text-align:right;color:var(--bz-grey-700)">$148,171</div><div style="padding:9px 8px;font-size:11px;text-align:right;color:var(--bz-grey-500)">13.7%</div><div style="padding:9px 12px;font-size:12.5px;text-align:right;color:var(--bz-grey-700)">$141,171</div><div style="padding:9px 8px;font-size:11px;text-align:right;color:var(--bz-grey-500)">10.3%</div></div>
+      <div style="display:grid;grid-template-columns:1.7fr 1fr .7fr 1fr .7fr;border-top:1px solid var(--bz-grey-100);background:var(--bz-grey-50)"><div style="padding:9px 16px;font-size:12.5px;color:var(--bz-grey-800)">GM Services</div><div style="padding:9px 12px;font-size:12.5px;text-align:right;color:var(--bz-grey-700)">$68,182</div><div style="padding:9px 8px;font-size:11px;text-align:right;color:var(--bz-grey-500)">6.3%</div><div style="padding:9px 12px;font-size:12.5px;text-align:right;color:var(--bz-grey-700)">$75,000</div><div style="padding:9px 8px;font-size:11px;text-align:right;color:var(--bz-grey-500)">5.2%</div></div>
+      <div style="display:grid;grid-template-columns:1.7fr 1fr .7fr 1fr .7fr;border-top:1px solid var(--bz-grey-100)"><div style="padding:9px 16px;font-size:12.5px;color:var(--bz-grey-800)">GM Channel</div><div style="padding:9px 12px;font-size:12.5px;text-align:right;color:var(--bz-grey-700)">$8,000</div><div style="padding:9px 8px;font-size:11px;text-align:right;color:var(--bz-grey-500)">0.7%</div><div style="padding:9px 12px;font-size:12.5px;text-align:right;color:var(--bz-grey-700)">$58,873</div><div style="padding:9px 8px;font-size:11px;text-align:right;color:var(--bz-grey-500)">4.1%</div></div>
+      <div style="display:grid;grid-template-columns:1.7fr 1fr .7fr 1fr .7fr;border-top:2px solid var(--bz-blue-900)"><div style="padding:10px 16px;font-size:13px;font-weight:700;color:var(--bz-blue-900)">Total</div><div style="padding:10px 12px;font-size:13px;text-align:right;font-weight:700;color:var(--bz-blue-900)">$1,080,853</div><div style="padding:10px 8px"></div><div style="padding:10px 12px;font-size:13px;text-align:right;font-weight:700;color:var(--bz-blue-900)">$1,440,685</div><div style="padding:10px 8px"></div></div>
+    </div>
+
+    <div class="eyb" style="color:#153E5A;margin-bottom:12px">Revenue mix — goal</div>
+    <div style="display:flex;height:34px;border-radius:6px;overflow:hidden;margin-bottom:8px;font-size:10px;font-weight:700;color:#fff">
+      <div style="width:79.2%;background:#153E5A;display:flex;align-items:center;justify-content:center">Advisory 79.2%</div>
+      <div style="width:13.7%;background:#3C6E71;display:flex;align-items:center;justify-content:center">GM Sub 13.7%</div>
+      <div style="width:6.3%;background:#4B6969;display:flex;align-items:center;justify-content:center;font-size:9px">Svc</div>
+      <div style="width:0.7%;background:#6C793C"></div>
+    </div>
+    <p style="font-size:11px;color:var(--bz-grey-500);margin-bottom:16px">Advisory (staff + consultants) · GM Subscription · GM Services · GM Channel</p>
+
+    <div style="background:var(--bz-blue-100);border-left:4px solid #153E5A;border-radius:0 6px 6px 0;padding:12px 18px;break-inside:avoid">
+      <p style="margin:0;font-size:12.5px;line-height:1.5;color:var(--bz-blue-800)">The stretch goal grows GM Channel almost eight-fold ($8k → $58.9k) — reflecting the strategic push to build recurring, lower-key-person-risk revenue beyond direct advisory.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>13</span></div>
+  </section>
+
+  <!-- ============ 14 · FINANCIAL STRATEGY ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">Managing the money</div>
+    <h2 class="h2">Financial strategy</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Beyond the revenue plan, FY27 is about protecting margin and cash, growing the reserve, and managing the exposures that come with a cross-border team.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px">
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:22px;font-weight:700;line-height:1">25%</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">gross profit target</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:22px;font-weight:700;line-height:1">&lt;2 mths</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">in overdraft per year</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:22px;font-weight:700;line-height:1">&gt;$250K</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">Future Fund by EOFY</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:22px;font-weight:700;line-height:1">±10%</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">revenue forecast accuracy</p></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+      <div class="card" style="border-top:3px solid #153E5A">
+        <div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:9px">Margin &amp; cash</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Protect a 25% gross-profit floor through rate uplift and delivery efficiency.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Manage working capital so the business goes into overdraft in no more than two months a year.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Grow the Future Fund reserve beyond $250K by EOFY.</li>
+          <li style="padding:5px 0">Forecast revenue more than a month ahead within ±10%.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #C4622D">
+        <div class="eyb" style="font-size:10px;color:#C4622D;margin-bottom:9px">Exposures to manage</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)"><strong style="color:var(--bz-grey-900)">FX:</strong> PH salary costs in pesos against AUD revenue — monitor and budget conservatively.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)"><strong style="color:var(--bz-grey-900)">Concentration:</strong> reduce reliance on VMIA and a few large clients.</li>
+          <li style="padding:5px 0"><strong style="color:var(--bz-grey-900)">Seasonality:</strong> half-month revenue in Dec &amp; Jan planned for in cash flow.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:16px;background:var(--bz-grey-50);border:1px solid var(--bz-grey-200);border-radius:8px;padding:13px 18px;break-inside:avoid">
+      <p style="margin:0;font-size:12px;line-height:1.5;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">Revenue quality:</strong> at least 20% of revenue delivered as NfN and at least 20% as NfE — diversifying the base and supporting the shift toward recurring, subscription-led income.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>14</span></div>
+  </section>
+
+  <!-- ============ 15 · RISK REGISTER ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">What could derail the year</div>
+    <h2 class="h2">Strategic risk register</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 16px">Two risks dominate the outlook; a further set is tracked and reviewed monthly. Mitigation for the top risks is owned at CEO level.</p>
+
+    <div style="border:1px solid var(--bz-grey-200);border-left:4px solid #C4622D;border-radius:0 8px 8px 0;padding:14px 20px;margin-bottom:12px;break-inside:avoid">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:7px">
+        <div style="font-size:15px;font-weight:700;color:var(--bz-grey-900)">1 · VMIA contract extension (March 2027)</div>
+        <div style="flex:0 0 auto;display:flex;gap:6px">
+          <span style="font-size:9.5px;font-weight:700;background:#eaf1e9;color:#5b6e3a;border-radius:4px;padding:3px 7px">Likelihood: Low</span>
+          <span style="font-size:9.5px;font-weight:700;background:#f6e3da;color:#a8481f;border-radius:4px;padding:3px 7px">Impact: Very high</span>
+        </div>
+      </div>
+      <p style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">Mitigation:</strong> Greater stakeholder engagement, including travelling to Melbourne twice; proactive management with key decision-makers (Lilly and Jacquie); alternative GM revenue via advisory use, sale to Audit and targeted sales to alternate major clients.</p>
+    </div>
+
+    <div style="border:1px solid var(--bz-grey-200);border-left:4px solid #C4622D;border-radius:0 8px 8px 0;padding:14px 20px;margin-bottom:14px;break-inside:avoid">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:7px">
+        <div style="font-size:15px;font-weight:700;color:var(--bz-grey-900)">2 · Not finding the right Senior Advisor in time</div>
+        <div style="flex:0 0 auto;display:flex;gap:6px">
+          <span style="font-size:9.5px;font-weight:700;background:#f6e3da;color:#a8481f;border-radius:4px;padding:3px 7px">Likelihood: Med–High</span>
+          <span style="font-size:9.5px;font-weight:700;background:#f6e3da;color:#a8481f;border-radius:4px;padding:3px 7px">Impact: High</span>
+        </div>
+      </div>
+      <p style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700)">Impact of ~$15k/month lost profit and the CEO drawn into delivery, reducing sales. <strong style="color:var(--bz-grey-900)">Mitigation:</strong> attractive offer with potential profit share; willingness to wait for the right candidate.</p>
+    </div>
+
+    <div class="eyb" style="color:#153E5A;margin-bottom:8px">Broader risk register</div>
+    <div style="border:1px solid var(--bz-grey-200);border-radius:8px;overflow:hidden">
+      <div class="rr" style="background:var(--bz-blue-900);color:#fff;border-top:none">
+        <div style="color:#fff;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase">Risk</div>
+        <div style="color:#9db6c6;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase">Likelihood</div>
+        <div style="color:#9db6c6;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase">Impact</div>
+        <div style="color:#fff;font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase">Mitigation</div>
+      </div>
+      <div class="rr"><div style="font-weight:700;color:var(--bz-grey-900)">Client concentration</div><div>Medium</div><div>High</div><div>Diversify pipeline; grow GM channel &amp; subscription base.</div></div>
+      <div class="rr" style="background:var(--bz-grey-50)"><div style="font-weight:700;color:var(--bz-grey-900)">MD key-person reliance</div><div>Medium</div><div>High</div><div>Senior Advisor hire; document IP; move toward managed model.</div></div>
+      <div class="rr"><div style="font-weight:700;color:var(--bz-grey-900)">GM platform dependency</div><div>Low</div><div>High</div><div>Maintain roadmap &amp; support; broaden GM client base.</div></div>
+      <div class="rr" style="background:var(--bz-grey-50)"><div style="font-weight:700;color:var(--bz-grey-900)">FX on PH costs</div><div>Medium</div><div>Medium</div><div>Conservative budgeting; monitor AUD/PHP.</div></div>
+      <div class="rr"><div style="font-weight:700;color:var(--bz-grey-900)">Cyber &amp; data security</div><div>Medium</div><div>High</div><div>Maintain controls; align to the standards we advise.</div></div>
+      <div class="rr" style="background:var(--bz-grey-50)"><div style="font-weight:700;color:var(--bz-grey-900)">Compliance / regulatory</div><div>Low</div><div>Medium</div><div>Maintain BZ Compliance Register; monthly Board oversight.</div></div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>15</span></div>
+  </section>
+
+  <!-- ============ 16 · KPIs ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">What we hold ourselves to</div>
+    <h2 class="h2">Key performance indicators</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 14px">KPIs are grouped by function. Each carries an intent and the cadence at which it is measured.</p>
+
+    <div style="columns:2;column-gap:22px">
+      <div class="kpiwrap"><div class="kpihead"><span style="font-size:13px;font-weight:700">Governance</span><span style="font-size:10px;color:#9db6c6">No surprises to the Board</span></div>
+        <div class="kpirow"><div>Develop and maintain the BZ Business Plan, presented to Board in June</div><div>Ongoing</div></div>
+        <div class="kpirow"><div>Develop and maintain the BZ Compliance Register</div><div>Ongoing</div></div>
+        <div class="kpirow"><div>Manage Board meetings — schedule, agenda, reports, minutes, actions</div><div>Monthly</div></div>
+      </div>
+      <div class="kpiwrap"><div class="kpihead"><span style="font-size:13px;font-weight:700">Finance</span><span style="font-size:10px;color:#9db6c6">Budgeted revenue, new &amp; existing</span></div>
+        <div class="kpirow"><div>Reach $1.0M turnover @ 25% GP</div><div>Annually</div></div>
+        <div class="kpirow"><div>Grow Future Fund value to &gt; $250K by EOFY</div><div>Annually</div></div>
+        <div class="kpirow"><div>Accurately predict revenue &gt; 1 month ahead by ±10%</div><div>Monthly</div></div>
+        <div class="kpirow"><div>Deliver &gt; 20% of revenue as NfN</div><div>Annually</div></div>
+        <div class="kpirow"><div>Deliver &gt; 20% of revenue as NfE</div><div>Annually</div></div>
+      </div>
+      <div class="kpiwrap"><div class="kpihead"><span style="font-size:13px;font-weight:700">Sales &amp; Marketing</span><span style="font-size:10px;color:#9db6c6">Present &amp; promote the brand</span></div>
+        <div class="kpirow"><div>Become part of the WALGA panel</div><div>—</div></div>
+        <div class="kpirow"><div>Deliver two significant BZ campaigns</div><div>End Q2</div></div>
+        <div class="kpirow"><div>Deliver two significant GM campaigns</div><div>End Q3</div></div>
+        <div class="kpirow"><div>Attend 6 new business development meetings</div><div>Monthly</div></div>
+        <div class="kpirow"><div>Maintain adjusted pipeline &gt; $200K closing in &lt; 30 days</div><div>Ongoing</div></div>
+        <div class="kpirow"><div>Provide 4 pieces of relevant social content to marketing</div><div>Monthly</div></div>
+        <div class="kpirow"><div>Increase hourly rate card by ~5% on CUAs</div><div>End Q2</div></div>
+      </div>
+      <div class="kpiwrap"><div class="kpihead"><span style="font-size:13px;font-weight:700">People</span><span style="font-size:10px;color:#9db6c6">Lead &amp; develop the team</span></div>
+        <div class="kpirow"><div>Each team member has had a professional development opportunity</div><div>Annually</div></div>
+        <div class="kpirow"><div>Set and assess individual KPIs for all team members</div><div>Annually</div></div>
+        <div class="kpirow"><div>Meet with all team members to ensure focus on outcomes</div><div>Weekly</div></div>
+      </div>
+      <div class="kpiwrap"><div class="kpihead"><span style="font-size:13px;font-weight:700">Transform Delivery</span><span style="font-size:10px;color:#9db6c6">Radically improve delivery</span></div>
+        <div class="kpirow"><div>Maintain adjusted individual billable utilisation of staff &gt; 75%</div><div>Monthly</div></div>
+        <div class="kpirow"><div>Set and assess individual KPIs for all team members</div><div>End Q1</div></div>
+        <div class="kpirow"><div>Meet with all team members to ensure focus on outcomes</div><div>Weekly</div></div>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>16</span></div>
+  </section>
+
+  <!-- ============ 17 · OPERATING ASSUMPTIONS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">The maths behind the plan</div>
+    <h2 class="h2">Operating assumptions</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 16px">Two scenarios sit behind the revenue plan — the base goal and the stretch — differing mainly in recruitment pace, rate uplift and Governance Manager channel growth.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:14px">
+      <div class="card" style="border-top:3px solid #153E5A">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:9px"><div class="eyb" style="font-size:11px;color:#153E5A">Goal</div><div style="font-size:15px;font-weight:700;color:var(--bz-grey-900)">$1,011,535</div></div>
+        <table style="width:100%;border-collapse:collapse;font-size:11px;color:var(--bz-grey-700)">
+          <tr><td style="padding:3px 0;color:var(--bz-grey-500);width:40%">Team size</td><td style="padding:3px 0">4.0 → 6 FTE; 2 → 3 casual/contractors</td></tr>
+          <tr><td style="padding:3px 0;color:var(--bz-grey-500)">Inflation</td><td style="padding:3px 0">5%</td></tr>
+          <tr><td style="padding:3px 0;color:var(--bz-grey-500);vertical-align:top">Recruitment</td><td style="padding:3px 0">2nd PH Advisor Oct 2026; AUS Advisor Apr 2027</td></tr>
+        </table>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#153E5A;margin:10px 0 5px">Rates &amp; utilisation</div>
+        <table style="width:100%;border-collapse:collapse;font-size:10.5px;color:var(--bz-grey-700)">
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:3px 0">CEO <span style="color:var(--bz-grey-500)">50% (35% Adv/15% GM)</span></td><td style="padding:3px 0;text-align:right;font-weight:700">$250</td></tr>
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:3px 0">Advisor (PH) <span style="color:var(--bz-grey-500)">80%</span></td><td style="padding:3px 0;text-align:right;font-weight:700">$191</td></tr>
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:3px 0">Junior Advisor <span style="color:var(--bz-grey-500)">25%</span></td><td style="padding:3px 0;text-align:right;font-weight:700">$114</td></tr>
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:3px 0">Senior Advisor (AUS) <span style="color:var(--bz-grey-500)">80%</span></td><td style="padding:3px 0;text-align:right;font-weight:700">$214</td></tr>
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:3px 0">Contractors <span style="color:var(--bz-grey-500)">100% · 4h pw</span></td><td style="padding:3px 0;text-align:right;font-weight:700">$250</td></tr>
+          <tr><td style="padding:3px 0">Casual Advisors <span style="color:var(--bz-grey-500)">100% · 10h pw</span></td><td style="padding:3px 0;text-align:right;font-weight:700">$250</td></tr>
+        </table>
+      </div>
+      <div class="card" style="border-top:3px solid #6C793C">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:9px"><div class="eyb" style="font-size:11px;color:#6C793C">Stretch</div><div style="font-size:15px;font-weight:700;color:var(--bz-grey-900)">$1,434,958</div></div>
+        <table style="width:100%;border-collapse:collapse;font-size:11px;color:var(--bz-grey-700)">
+          <tr><td style="padding:3px 0;color:var(--bz-grey-500);width:40%">Team size</td><td style="padding:3px 0">4.0 → 7 FTE; 2 → 3 casual/contractors</td></tr>
+          <tr><td style="padding:3px 0;color:var(--bz-grey-500)">Inflation</td><td style="padding:3px 0">5%</td></tr>
+          <tr><td style="padding:3px 0;color:var(--bz-grey-500);vertical-align:top">Recruitment</td><td style="padding:3px 0">AUS Advisor Oct 2026 or earlier; 2nd PH Jul 2026; 3rd PH Mar 2027</td></tr>
+        </table>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6C793C;margin:10px 0 5px">Rates &amp; utilisation</div>
+        <table style="width:100%;border-collapse:collapse;font-size:10.5px;color:var(--bz-grey-700)">
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:3px 0">CEO <span style="color:var(--bz-grey-500)">50% (35% Adv/15% GM)</span></td><td style="padding:3px 0;text-align:right;font-weight:700">$259</td></tr>
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:3px 0">Advisor (PH) <span style="color:var(--bz-grey-500)">80%</span></td><td style="padding:3px 0;text-align:right;font-weight:700">$200</td></tr>
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:3px 0">Junior Advisor <span style="color:var(--bz-grey-500)">25%</span></td><td style="padding:3px 0;text-align:right;font-weight:700">$123</td></tr>
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:3px 0">Senior Advisor (AUS) <span style="color:var(--bz-grey-500)">80%</span></td><td style="padding:3px 0;text-align:right;font-weight:700">$220</td></tr>
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:3px 0">Contractors <span style="color:var(--bz-grey-500)">100% · 4h pw</span></td><td style="padding:3px 0;text-align:right;font-weight:700">$259</td></tr>
+          <tr><td style="padding:3px 0">Casual Advisors <span style="color:var(--bz-grey-500)">100% · 10h pw</span></td><td style="padding:3px 0;text-align:right;font-weight:700">$259</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" style="break-inside:avoid">
+      <div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:7px">Governance Manager assumptions</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 22px;font-size:11px;line-height:1.4;color:var(--bz-grey-700)">
+        <div><strong style="color:var(--bz-grey-900)">Goal:</strong> VMIA ongoing dev @ $12.5k incl GST per two-month release; FPC continues to Sept 26; GM for Audit 10 assessments @ $500 within existing engagements; GM for Audit standalone $5,000 (no target).</div>
+        <div><strong style="color:var(--bz-grey-900)">Stretch:</strong> VMIA @ $12.5k excl GST per release; FPC to Sept 26; GM for Audit 10 @ $3,109 (≈12h Director rate); standalone $5,000 with a goal of 4 sales; one new GM Reseller ($5,500) plus increased Leigh Farnell sales ($8,500).</div>
+      </div>
+      <p style="font-size:10px;color:var(--bz-grey-500);margin-top:9px">Both scenarios assume half-month revenue for December and January, and reduced utilisation for new staff in their first month(s) — two months for PH resources.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Strategic Playbook · Confidential</span><span>17</span></div>
+  </section>
+
+  <!-- ============ 18 · GOVERNANCE, REVIEW & 90-DAY ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:12px">Keeping the plan alive</div>
+    <h2 class="h2">Governance, review &amp; the first 90 days</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">A strategy is only as good as the rhythm that keeps it on track. Blue Zoo governs FY27 through a monthly Board cadence and a clear set of near-term priorities.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px">
+      <div class="card" style="border-top:3px solid #153E5A">
+        <div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:9px">Governance &amp; review cadence</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)"><strong style="color:var(--bz-grey-900)">Monthly Board meeting</strong> with a Strategy Progress Report against this plan.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Monthly financial review against budget and forecast (Xero).</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Compliance Register maintained and reviewed at Board.</li>
+          <li style="padding:5px 0">Full strategic plan refreshed each June.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid var(--bz-green)">
+        <div class="eyb" style="font-size:10px;color:var(--bz-green);margin-bottom:9px">First 90 days — priorities</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Start Senior Advisor recruitment (July).</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Onboard the second PH Advisor.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Launch the proactive sales cadence (2 meetings/week).</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Deliver Campaign 1 (performance-audit readiness) in September.</li>
+          <li style="padding:5px 0">Begin VMIA stakeholder engagement ahead of the extension.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="background:linear-gradient(135deg,#1d4658,#153E5A);color:#fff;border-radius:10px;padding:20px 26px;break-inside:avoid">
+      <div class="eyb" style="color:rgba(255,255,255,.75);margin-bottom:8px">In one line</div>
+      <p style="margin:0;font-size:16px;line-height:1.4;font-weight:700;color:#fff;max-width:760px">Grow steadily toward a managed model — deeper client relationships, a stronger team, recurring revenue and disciplined governance — so the firm endures beyond any single person or contract.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>© 2026 Blue Zoo · FY27 Strategic Playbook · Confidential</span><span>18</span></div>
+  </section>
+
+
+</x-import>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    .pol, .pol *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .pol p{text-wrap:pretty;margin:0}
+    .pol a{color:var(--bz-blue-600);text-decoration:none}
+    .pol a:hover{text-decoration:underline}
+    .pg{display:flex;flex-direction:column;position:relative}
+    .brk{break-before:page}
+    .body{padding:46px 58px}
+    .eyb{font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+    .h2{font-size:15.5px;font-weight:700;color:#153E5A;margin:0 0 4px}
+    .clause{margin:0 0 13px;break-inside:avoid}
+    .cnum{display:flex;gap:12px;align-items:baseline}
+    .cn{font-size:14px;font-weight:700;color:#153E5A;flex:0 0 34px}
+    .ctitle{font-size:14px;font-weight:700;color:var(--bz-grey-900)}
+    .ctext{font-size:12.5px;line-height:1.5;color:var(--bz-grey-700);margin:5px 0 0 46px}
+    .ctext li{margin:0 0 3px}
+    .sub{font-size:12.5px;line-height:1.5;color:var(--bz-grey-700);margin:6px 0 0 46px;display:flex;gap:10px}
+    .sn{font-weight:700;color:#153E5A;flex:0 0 30px}
+    .foot{display:flex;justify-content:space-between;align-items:center;font-size:10.5px;color:var(--bz-grey-500);border-top:1px solid var(--bz-grey-200);padding-top:10px;margin-top:auto}
+    .pagebreak{height:30px;margin:0 -1cm;background:#d6d9db;box-shadow:inset 0 7px 7px -7px rgba(0,0,0,.28),inset 0 -7px 7px -7px rgba(0,0,0,.28)}
+    @media print{.pagebreak{display:none}}
+  </style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="a4" orientation="portrait" margin="1cm" hint-size="100%,100%">
+
+  <!-- ============ 1 · COVER ============ -->
+  <section class="page pol pg" style="color:var(--bz-grey-800);font-size:13px;line-height:1.55;background:linear-gradient(155deg,#153E5A 0%,#284B63 60%,#1d4658 100%);color:#fff;padding:70px 58px 50px;overflow:hidden;">
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-150px;top:150px;width:540px;opacity:.08;pointer-events:none">
+    <img src="assets/logo-white.png" alt="bluezoo" style="width:168px;position:relative">
+    <div style="margin-top:auto;position:relative">
+      <div class="eyb" style="color:#7aa9ab;margin-bottom:20px">Policy template · AI governance</div>
+      <h1 style="font-size:46px;line-height:1.06;font-weight:700;margin:0;color:#fff;letter-spacing:-.4px;max-width:640px">Artificial Intelligence Policy</h1>
+      <p style="font-size:17px;line-height:1.45;max-width:540px;margin:24px 0 0;color:#c3d0d8">A model policy for governing the responsible use of artificial intelligence across a public sector Department, Board, Authority or Commission.</p>
+    </div>
+    <div style="margin-top:40px;position:relative;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:flex-end;font-size:13px;color:#93aab6">
+      <div><div style="color:#fff;font-weight:700;font-size:15px">[Agency name]</div>Aligned to ISO/IEC 42001</div>
+      <span>Governance · Strategy · Risk · Resilience</span>
+    </div>
+  </section>
+
+  <!-- ============ 2 · CONTROL + 1–3 ============ -->
+  <section class="page pol pg brk body" style="color:var(--bz-grey-800);font-size:13px;line-height:1.55">
+    <div class="eyb" style="color:var(--bz-green);margin-bottom:10px">Document control</div>
+    <div style="border:1px solid var(--bz-grey-200);border-radius:7px;overflow:hidden;margin-bottom:22px">
+      <div style="display:grid;grid-template-columns:1fr 1fr">
+        <div style="padding:9px 14px;border-bottom:1px solid var(--bz-grey-100);border-right:1px solid var(--bz-grey-100)"><span class="eyb" style="font-size:8.5px;color:var(--bz-grey-500)">Policy owner</span><div style="font-size:12.5px">[Chief AI Officer / CIO]</div></div>
+        <div style="padding:9px 14px;border-bottom:1px solid var(--bz-grey-100)"><span class="eyb" style="font-size:8.5px;color:var(--bz-grey-500)">Approved by</span><div style="font-size:12.5px">[Director General / Board]</div></div>
+        <div style="padding:9px 14px;border-bottom:1px solid var(--bz-grey-100);border-right:1px solid var(--bz-grey-100)"><span class="eyb" style="font-size:8.5px;color:var(--bz-grey-500)">Version · status</span><div style="font-size:12.5px">v0.1 · Draft</div></div>
+        <div style="padding:9px 14px;border-bottom:1px solid var(--bz-grey-100)"><span class="eyb" style="font-size:8.5px;color:var(--bz-grey-500)">Effective date</span><div style="font-size:12.5px">[dd/mm/yyyy]</div></div>
+        <div style="padding:9px 14px;border-right:1px solid var(--bz-grey-100)"><span class="eyb" style="font-size:8.5px;color:var(--bz-grey-500)">Next review</span><div style="font-size:12.5px">[dd/mm/yyyy] — at least annually</div></div>
+        <div style="padding:9px 14px"><span class="eyb" style="font-size:8.5px;color:var(--bz-grey-500)">Applies to</span><div style="font-size:12.5px">All staff, contractors and third parties</div></div>
+      </div>
+    </div>
+
+    <div class="clause"><div class="cnum"><span class="cn">1</span><span class="ctitle">Purpose</span></div>
+      <p class="ctext">This policy establishes how [Agency name] governs the development, procurement and use of artificial intelligence (AI). It exists to ensure AI is used lawfully, ethically, transparently and safely; that accountability for AI-assisted decisions is clear; and that the agency can demonstrate responsible AI use to the Auditor General, oversight bodies and the public it serves.</p>
+    </div>
+
+    <div class="clause"><div class="cnum"><span class="cn">2</span><span class="ctitle">Scope</span></div>
+      <p class="ctext">This policy applies to all officers, employees, contractors, consultants and third parties acting on behalf of the agency. It covers all AI systems whether built in-house, procured, or embedded within other products — including generative AI, machine learning, automated decision-making and analytics tools that materially influence a decision or output.</p>
+      <div class="sub"><span class="sn">2.1</span><span>Where this policy conflicts with legislation, a Public Sector Commissioner's Instruction or a whole-of-government directive, the higher instrument prevails.</span></div>
+      <div class="sub"><span class="sn">2.2</span><span>Personal use of publicly available AI tools on agency information is governed by clauses 6 and 7.</span></div>
+    </div>
+
+    <div class="clause"><div class="cnum"><span class="cn">3</span><span class="ctitle">Definitions</span></div>
+      <div style="margin:6px 0 0 46px;display:grid;grid-template-columns:1fr 1fr;gap:6px 28px">
+        <div style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">Artificial intelligence</strong> — systems that perform tasks normally requiring human intelligence, including generative and predictive models.</div>
+        <div style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">Automated decision-making</strong> — a decision made, or substantially made, by a system without meaningful human involvement.</div>
+        <div style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">High-consequence use</strong> — an AI use that affects a person's rights, entitlements, safety or access to services.</div>
+        <div style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">Human oversight</strong> — a competent officer able to review, override and be accountable for an AI-assisted output.</div>
+        <div style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">AI system owner</strong> — the named officer accountable for a specific AI system and its outcomes.</div>
+        <div style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">Shadow AI</strong> — AI tools used without approval, record or oversight.</div>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>Artificial Intelligence Policy · [Agency name]</span><span>02</span></div>
+  </section>
+
+  <!-- ============ 3 · PRINCIPLES + GOVERNANCE ============ -->
+  <section class="page pol pg brk body" style="color:var(--bz-grey-800);font-size:13px;line-height:1.55">
+    <div class="clause"><div class="cnum"><span class="cn">4</span><span class="ctitle">Guiding principles</span></div>
+      <p class="ctext" style="margin-bottom:10px">All AI use by the agency must uphold the following principles. They apply whether an AI system is built, bought or embedded.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 22px 46px">
+      <div style="border:1px solid var(--bz-grey-200);border-top:3px solid #153E5A;border-radius:6px;padding:11px 14px"><div style="font-size:12.5px;font-weight:700;color:#153E5A">Accountable</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:3px">A named officer is answerable for every significant AI system and its decisions.</p></div>
+      <div style="border:1px solid var(--bz-grey-200);border-top:3px solid #153E5A;border-radius:6px;padding:11px 14px"><div style="font-size:12.5px;font-weight:700;color:#153E5A">Lawful &amp; ethical</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:3px">AI use complies with the law and the public sector code of conduct.</p></div>
+      <div style="border:1px solid var(--bz-grey-200);border-top:3px solid #153E5A;border-radius:6px;padding:11px 14px"><div style="font-size:12.5px;font-weight:700;color:#153E5A">Transparent &amp; explainable</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:3px">AI-assisted decisions can be explained and are disclosed where they affect people.</p></div>
+      <div style="border:1px solid var(--bz-grey-200);border-top:3px solid #153E5A;border-radius:6px;padding:11px 14px"><div style="font-size:12.5px;font-weight:700;color:#153E5A">Fair &amp; unbiased</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:3px">AI is tested for bias and must not entrench disadvantage.</p></div>
+      <div style="border:1px solid var(--bz-grey-200);border-top:3px solid #153E5A;border-radius:6px;padding:11px 14px"><div style="font-size:12.5px;font-weight:700;color:#153E5A">Human-centred</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:3px">Meaningful human oversight is retained for high-consequence decisions.</p></div>
+      <div style="border:1px solid var(--bz-grey-200);border-top:3px solid #153E5A;border-radius:6px;padding:11px 14px"><div style="font-size:12.5px;font-weight:700;color:#153E5A">Secure &amp; private</div><p style="font-size:11px;line-height:1.4;color:var(--bz-grey-600);margin-top:3px">Data used with AI is protected, and sovereignty and privacy are preserved.</p></div>
+    </div>
+
+    <div class="clause"><div class="cnum"><span class="cn">5</span><span class="ctitle">Governance and responsibilities</span></div>
+      <p class="ctext">AI governance is exercised through defined roles. The agency maintains a register of AI systems, each with a named owner.</p>
+    </div>
+    <div style="margin:8px 0 0 46px;border:1px solid var(--bz-grey-200);border-radius:7px;overflow:hidden">
+      <div style="display:grid;grid-template-columns:0.9fr 1.6fr;background:#153E5A;color:#fff"><div style="padding:8px 14px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase">Role</div><div style="padding:8px 14px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.12)">Responsibility</div></div>
+      <div style="display:grid;grid-template-columns:0.9fr 1.6fr;border-bottom:1px solid var(--bz-grey-100)"><div style="padding:8px 14px;font-size:11.5px;font-weight:700;color:var(--bz-grey-900)">Director General / Board</div><div style="padding:8px 14px;font-size:11.5px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">Approves this policy; sets AI risk appetite; holds ultimate accountability.</div></div>
+      <div style="display:grid;grid-template-columns:0.9fr 1.6fr;border-bottom:1px solid var(--bz-grey-100);background:var(--bz-grey-50)"><div style="padding:8px 14px;font-size:11.5px;font-weight:700;color:var(--bz-grey-900)">Chief AI Officer / CIO</div><div style="padding:8px 14px;font-size:11.5px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">Owns the policy; maintains the AI register; reports on AI risk and compliance.</div></div>
+      <div style="display:grid;grid-template-columns:0.9fr 1.6fr;border-bottom:1px solid var(--bz-grey-100)"><div style="padding:8px 14px;font-size:11.5px;font-weight:700;color:var(--bz-grey-900)">AI Governance Committee</div><div style="padding:8px 14px;font-size:11.5px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">Reviews and approves high-consequence uses; oversees risk and assurance.</div></div>
+      <div style="display:grid;grid-template-columns:0.9fr 1.6fr;border-bottom:1px solid var(--bz-grey-100);background:var(--bz-grey-50)"><div style="padding:8px 14px;font-size:11.5px;font-weight:700;color:var(--bz-grey-900)">AI system owners</div><div style="padding:8px 14px;font-size:11.5px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">Accountable for their system's outcomes, controls, monitoring and records.</div></div>
+      <div style="display:grid;grid-template-columns:0.9fr 1.6fr;border-bottom:1px solid var(--bz-grey-100)"><div style="padding:8px 14px;font-size:11.5px;font-weight:700;color:var(--bz-grey-900)">Audit &amp; Risk Committee</div><div style="padding:8px 14px;font-size:11.5px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">Provides independent assurance over AI governance and controls.</div></div>
+      <div style="display:grid;grid-template-columns:0.9fr 1.6fr"><div style="padding:8px 14px;font-size:11.5px;font-weight:700;color:var(--bz-grey-900)">All staff</div><div style="padding:8px 14px;font-size:11.5px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">Use AI within this policy; register tools; escalate risks and incidents.</div></div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>Artificial Intelligence Policy · [Agency name]</span><span>03</span></div>
+  </section>
+
+  <!-- ============ 4 · ACCEPTABLE USE + RISK TIERS ============ -->
+  <section class="page pol pg brk body" style="color:var(--bz-grey-800);font-size:13px;line-height:1.55">
+    <div class="clause"><div class="cnum"><span class="cn">6</span><span class="ctitle">Acceptable use and risk classification</span></div>
+      <p class="ctext">Before an AI system is used, its risk tier must be assessed and the appropriate approval obtained. The higher the consequence, the greater the oversight required.</p>
+    </div>
+    <div style="margin:10px 0 18px 46px;border:1px solid var(--bz-grey-200);border-radius:7px;overflow:hidden">
+      <div style="display:grid;grid-template-columns:0.7fr 1.5fr 1.3fr;background:#153E5A;color:#fff"><div style="padding:8px 13px;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase">Tier</div><div style="padding:8px 13px;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.12)">Examples</div><div style="padding:8px 13px;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-left:1px solid rgba(255,255,255,.12)">Approval required</div></div>
+      <div style="display:grid;grid-template-columns:0.7fr 1.5fr 1.3fr;border-bottom:1px solid var(--bz-grey-100)"><div style="padding:9px 13px;font-size:11.5px;font-weight:700;color:#6C793C">Low</div><div style="padding:9px 13px;font-size:11px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">Drafting, summarising non-sensitive text; brainstorming</div><div style="padding:9px 13px;font-size:11px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">Line manager; approved tools only</div></div>
+      <div style="display:grid;grid-template-columns:0.7fr 1.5fr 1.3fr;border-bottom:1px solid var(--bz-grey-100);background:var(--bz-grey-50)"><div style="padding:9px 13px;font-size:11.5px;font-weight:700;color:#C9A227">Medium</div><div style="padding:9px 13px;font-size:11px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">Analysing internal data; drafting advice that informs decisions</div><div style="padding:9px 13px;font-size:11px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">System owner; recorded in AI register</div></div>
+      <div style="display:grid;grid-template-columns:0.7fr 1.5fr 1.3fr;border-bottom:1px solid var(--bz-grey-100)"><div style="padding:9px 13px;font-size:11.5px;font-weight:700;color:#C4622D">High</div><div style="padding:9px 13px;font-size:11px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">Influencing decisions about individuals, safety or compliance</div><div style="padding:9px 13px;font-size:11px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">AI Governance Committee; impact assessment</div></div>
+      <div style="display:grid;grid-template-columns:0.7fr 1.5fr 1.3fr"><div style="padding:9px 13px;font-size:11.5px;font-weight:700;color:#A5322A">Prohibited</div><div style="padding:9px 13px;font-size:11px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">Fully automated decisions on rights/entitlements; sensitive data in public tools</div><div style="padding:9px 13px;font-size:11px;color:var(--bz-grey-700);border-left:1px solid var(--bz-grey-100)">Not permitted</div></div>
+    </div>
+    <div class="sub"><span class="sn">6.1</span><span>Only AI tools on the agency's approved-tools list may be used. Shadow AI is prohibited.</span></div>
+    <div class="sub"><span class="sn">6.2</span><span>High-consequence uses require a documented AI impact assessment before deployment.</span></div>
+    <div class="sub" style="margin-bottom:16px"><span class="sn">6.3</span><span>AI must not be used to fully automate a decision that materially affects a person's rights or entitlements without a human decision-maker.</span></div>
+
+    <div class="clause"><div class="cnum"><span class="cn">7</span><span class="ctitle">Data, privacy and security</span></div>
+      <div class="sub"><span class="sn">7.1</span><span>Personal, confidential, sensitive or classified information must not be entered into AI tools that are not approved for that data classification.</span></div>
+      <div class="sub"><span class="sn">7.2</span><span>Data sovereignty must be preserved; agency information must not be used to train external models without explicit approval.</span></div>
+      <div class="sub"><span class="sn">7.3</span><span>AI use must comply with privacy obligations, records management and the agency's information security framework.</span></div>
+      <div class="sub"><span class="sn">7.4</span><span>Data used by AI systems must be accurate, current, lawfully held and fit for purpose.</span></div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>Artificial Intelligence Policy · [Agency name]</span><span>04</span></div>
+  </section>
+
+  <!-- ============ 5 · TRANSPARENCY / PROCUREMENT / CAPABILITY ============ -->
+  <section class="page pol pg brk body" style="color:var(--bz-grey-800);font-size:13px;line-height:1.55">
+    <div class="clause"><div class="cnum"><span class="cn">8</span><span class="ctitle">Transparency and human oversight</span></div>
+      <div class="sub"><span class="sn">8.1</span><span>Where an AI system materially contributes to a decision affecting a person, that use must be disclosed in plain language.</span></div>
+      <div class="sub"><span class="sn">8.2</span><span>A competent officer must be able to explain, review and override any AI-assisted output before it is acted upon.</span></div>
+      <div class="sub"><span class="sn">8.3</span><span>The reasoning and evidence behind high-consequence AI-assisted decisions must be recorded and retained.</span></div>
+      <div class="sub"><span class="sn">8.4</span><span>AI-generated content used externally must be checked for accuracy and appropriateness by the responsible officer.</span></div>
+    </div>
+
+    <div class="clause"><div class="cnum"><span class="cn">9</span><span class="ctitle">Procurement and third parties</span></div>
+      <div class="sub"><span class="sn">9.1</span><span>AI systems and AI-enabled products must be assessed against this policy before procurement or deployment.</span></div>
+      <div class="sub"><span class="sn">9.2</span><span>Contracts must address data use, transparency, security, sovereignty, model training and exit arrangements.</span></div>
+      <div class="sub"><span class="sn">9.3</span><span>The agency remains accountable for outcomes produced by third-party AI; obligations do not transfer to the vendor.</span></div>
+    </div>
+
+    <div class="clause"><div class="cnum"><span class="cn">10</span><span class="ctitle">Capability and training</span></div>
+      <div class="sub"><span class="sn">10.1</span><span>Staff must complete AI awareness training appropriate to their role before using AI tools.</span></div>
+      <div class="sub"><span class="sn">10.2</span><span>Executives and board members receive AI governance briefings sufficient to exercise informed oversight.</span></div>
+      <div class="sub"><span class="sn">10.3</span><span>System owners must understand the capabilities, limitations and risks of the systems they own.</span></div>
+    </div>
+
+    <div style="break-inside:avoid;margin:6px 0 0 46px;background:var(--bz-blue-100);border-left:4px solid var(--bz-green);border-radius:0 6px 6px 0;padding:14px 18px">
+      <div class="eyb" style="font-size:9.5px;color:var(--bz-blue-800);margin-bottom:5px">Alignment</div>
+      <p style="font-size:12px;line-height:1.5;color:var(--bz-blue-800)">This policy is structured to align with ISO/IEC 42001 (AI management systems) and supports the agency's obligations under privacy, records, information security and public sector integrity frameworks.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>Artificial Intelligence Policy · [Agency name]</span><span>05</span></div>
+  </section>
+
+  <!-- ============ 6 · COMPLIANCE + REVIEW + SIGN-OFF ============ -->
+  <section class="page pol pg brk body" style="color:var(--bz-grey-800);font-size:13px;line-height:1.55">
+    <div class="clause"><div class="cnum"><span class="cn">11</span><span class="ctitle">Monitoring, compliance and breaches</span></div>
+      <div class="sub"><span class="sn">11.1</span><span>Compliance with this policy is monitored by the Chief AI Officer and reported to the AI Governance Committee and Audit &amp; Risk Committee.</span></div>
+      <div class="sub"><span class="sn">11.2</span><span>AI systems are subject to periodic review of performance, accuracy, bias and continued fitness for purpose.</span></div>
+      <div class="sub"><span class="sn">11.3</span><span>Suspected breaches, incidents or harms must be reported promptly through the agency's incident process.</span></div>
+      <div class="sub"><span class="sn">11.4</span><span>Breaches may result in withdrawal of access, disciplinary action, and mandatory reporting where required.</span></div>
+    </div>
+
+    <div class="clause"><div class="cnum"><span class="cn">12</span><span class="ctitle">Review</span></div>
+      <p class="ctext">This policy is reviewed at least annually, and sooner where technology, legislation or whole-of-government direction changes materially. The Chief AI Officer is responsible for initiating each review.</p>
+    </div>
+
+    <div class="clause"><div class="cnum"><span class="cn">13</span><span class="ctitle">Related documents</span></div>
+      <p class="ctext">AI Register · AI Risk Register · AI Impact Assessment template · Approved AI Tools list · Information Security Policy · Privacy Policy · Records Management Policy · Code of Conduct · Procurement Policy.</p>
+    </div>
+
+    <div style="break-inside:avoid;margin:20px 0 0;border-top:2px solid var(--bz-grey-200);padding-top:16px">
+      <div class="eyb" style="color:var(--bz-grey-500);margin-bottom:12px">Approval &amp; sign-off</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px 40px">
+        <div><div style="height:34px;border-bottom:1px solid var(--bz-grey-400)"></div><div style="font-size:11px;color:var(--bz-grey-600);margin-top:5px">Director General — name &amp; signature</div></div>
+        <div><div style="height:34px;border-bottom:1px solid var(--bz-grey-400)"></div><div style="font-size:11px;color:var(--bz-grey-600);margin-top:5px">Date</div></div>
+        <div><div style="height:34px;border-bottom:1px solid var(--bz-grey-400)"></div><div style="font-size:11px;color:var(--bz-grey-600);margin-top:5px">Board Chair (if applicable) — name &amp; signature</div></div>
+        <div><div style="height:34px;border-bottom:1px solid var(--bz-grey-400)"></div><div style="font-size:11px;color:var(--bz-grey-600);margin-top:5px">Date</div></div>
+      </div>
+    </div>
+
+    <div style="break-inside:avoid;margin-top:22px">
+      <div class="eyb" style="color:var(--bz-grey-500);margin-bottom:10px">Version history</div>
+      <div style="border:1px solid var(--bz-grey-200);border-radius:7px;overflow:hidden">
+        <div style="display:grid;grid-template-columns:0.6fr 0.8fr 1.4fr 0.9fr;background:var(--bz-grey-100)"><div style="padding:7px 13px;font-size:10px;font-weight:700;color:var(--bz-grey-700)">Version</div><div style="padding:7px 13px;font-size:10px;font-weight:700;color:var(--bz-grey-700)">Date</div><div style="padding:7px 13px;font-size:10px;font-weight:700;color:var(--bz-grey-700)">Summary of change</div><div style="padding:7px 13px;font-size:10px;font-weight:700;color:var(--bz-grey-700)">Author</div></div>
+        <div style="display:grid;grid-template-columns:0.6fr 0.8fr 1.4fr 0.9fr;border-top:1px solid var(--bz-grey-100)"><div style="padding:7px 13px;font-size:11px;color:var(--bz-grey-700)">0.1</div><div style="padding:7px 13px;font-size:11px;color:var(--bz-grey-700)">[dd/mm/yyyy]</div><div style="padding:7px 13px;font-size:11px;color:var(--bz-grey-700)">Initial draft</div><div style="padding:7px 13px;font-size:11px;color:var(--bz-grey-700)">[Author]</div></div>
+        <div style="display:grid;grid-template-columns:0.6fr 0.8fr 1.4fr 0.9fr;border-top:1px solid var(--bz-grey-100)"><div style="padding:11px 13px">&nbsp;</div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>© 2026 Blue Zoo · Governance · Strategy · Risk · Resilience</span><span>06</span></div>
+  </section>
+
+
+</x-import>
+</x-dc>
+</body>
+</html>

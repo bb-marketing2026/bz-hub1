@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+<script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+<style>
+  @page { size: A4; margin: 0; }
+  html, body { margin: 0; padding: 0; }
+  body { background: #5a6770; font-family: 'Carlito','Calibri','Segoe UI',system-ui,sans-serif; color: #353535; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  .im-doc { max-width: 8.27in; margin: 0 auto; background: #fff; }
+  .doc-frame { width: 100%; border-collapse: collapse; }
+  .doc-frame > tbody > tr > td, .doc-frame > thead > tr > td, .doc-frame > tfoot > tr > td { padding: 0; }
+  .hdr-space, .ftr-space { display: none; }
+  .flow { padding: 0 0.85in; }
+  h1, h2, h3, h4 { margin: 0; text-wrap: balance; }
+  p, li { text-wrap: pretty; }
+  .break-before { break-before: page; }
+  .avoid { break-inside: avoid; }
+  .print-footer { display: none; }
+  @media screen {
+    body { padding: 28px 0 80px; }
+    .im-doc { box-shadow: 0 6px 34px rgba(0,0,0,.28); }
+  }
+  @media print {
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { background: #fff; padding: 0; }
+    .im-doc { max-width: none; box-shadow: none; }
+    .hdr-space, .ftr-space { display: table-cell; height: 0.62in; }
+    .flow { padding: 0 0.85in; }
+    .screen-only { display: none !important; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .avoid, figure, table, blockquote { break-inside: avoid; }
+    p, li { orphans: 3; widows: 3; }
+    .print-footer { display: flex; position: fixed; bottom: 0; left: 0; right: 0; height: 0.62in; align-items: center; justify-content: space-between; padding: 0 0.85in; font: 400 9px/1 'Carlito'; letter-spacing: .04em; color: #8c8c8c; text-transform: uppercase; }
+  }
+</style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20GM%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>GM Hub</a>
+
+<button class="screen-only" onClick="{{ print }}" style="position:fixed;right:22px;bottom:22px;z-index:50;border:none;border-radius:6px;background:#284B63;color:#fff;font:700 13px/1 'Carlito';letter-spacing:.03em;padding:13px 18px;cursor:pointer;box-shadow:0 4px 14px rgba(21,62,90,.4);">Print / Save as PDF</button>
+
+<main class="im-doc">
+
+  <!-- ============ COVER ============ -->
+  <section class="avoid" style="position:relative;overflow:hidden;min-height:11.6in;background:linear-gradient(150deg,#153E5A 0%,#284B63 55%,#2f595c 100%);color:#fff;padding:0.95in 0.85in;display:flex;flex-direction:column;">
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-2.4in;top:1.1in;width:8.6in;opacity:0.07;pointer-events:none;">
+    <div style="position:relative;z-index:2;">
+      <img src="assets/logo-white.png" alt="bluezoo" style="width:1.85in;display:block;">
+    </div>
+    <div style="position:relative;z-index:2;margin-top:0.5in;">
+      <div style="display:inline-block;font:700 11px/1 'Carlito';letter-spacing:.18em;text-transform:uppercase;color:#7aa9ab;border:1px solid rgba(122,169,171,.5);border-radius:3px;padding:8px 14px;white-space:nowrap;">Strictly private &amp; confidential</div>
+    </div>
+    <div style="position:relative;z-index:2;margin-top:auto;">
+      <div style="font:700 14px/1 'Carlito';letter-spacing:.16em;text-transform:uppercase;color:#93aab6;margin-bottom:18px;">Growth &amp; market-expansion plan</div>
+      <h1 style="font:700 50px/1.05 'Carlito';letter-spacing:-0.01em;color:#fff;max-width:9in;">Trebling Governance&nbsp;Manager revenue in 12&nbsp;months</h1>
+      <p style="font:400 19px/1.5 'Carlito';color:#c3d0d8;max-width:6.7in;margin:22px 0 0;">A lean, channel-led growth strategy — direct, partner and international distribution — to build recurring revenue and scale the platform's market presence.</p>
+    </div>
+    <div style="position:relative;z-index:2;margin-top:0.7in;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;">
+      <div>
+        <div style="font:400 12px/1.4 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;">Prepared by</div>
+        <div style="font:700 16px/1.4 'Carlito';color:#fff;margin-top:4px;">bluezoo</div>
+      </div>
+      <div style="text-align:right;">
+        <div style="font:400 12px/1.4 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;">Issued</div>
+        <div style="font:700 16px/1.4 'Carlito';color:#fff;margin-top:4px;">June 2026 · Ref. BZ-GM-GS-01</div>
+      </div>
+    </div>
+  </section>
+
+  <table class="doc-frame" role="presentation">
+    <thead><tr><td class="hdr-space"></td></tr></thead>
+    <tbody><tr><td>
+      <div class="flow" style="padding-top:0.55in;padding-bottom:0.55in;">
+
+        <!-- 01 EXEC SUMMARY -->
+        <section>
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">01 · The objective</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">From steady to scaled</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 14px;">Governance Manager is a proven, profitable platform that has grown modestly — FY26 revenue of <strong>A$239,141</strong> from a small client base, despite case studies that demonstrate it can run at whole-of-sector scale. The opportunity is to convert that latent potential into momentum: a focused, aggressive 12-month push to <strong>treble revenue to approximately A$717,000</strong> across both direct and partner channels, lifting recurring revenue and building a materially stronger, more scalable business.</p>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 22px;">This plan sets out the growth model, the five pillars that drive it, a quarter-by-quarter activity roadmap, and a fully costed investment of <strong>A$159,000</strong> — a lean A$75,000 of marketing and enablement plus <strong>two dedicated offshore business development managers (A$84,000 combined)</strong> tasked with extending Governance Manager’s market presence in any jurisdiction. The model is deliberately channel-led: partners and international distributors carry the cost of in-market selling, funded through margin rather than fixed budget, so the plan still targets a trebling of revenue on a modest outlay.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #3C6E71;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 28px/1 'Carlito';color:#284B63;">3.0×</div>
+              <div style="font:400 13px/1.45 'Carlito';color:#6b6b6b;margin-top:7px;">Revenue target — A$239k to ~A$717k in 12 months</div>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #3C6E71;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 28px/1 'Carlito';color:#284B63;">A$159k</div>
+              <div style="font:400 13px/1.45 'Carlito';color:#6b6b6b;margin-top:7px;">12-month investment — A$75k marketing + A$84k two offshore BDMs</div>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #3C6E71;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 28px/1 'Carlito';color:#284B63;">~A$430k</div>
+              <div style="font:400 13px/1.45 'Carlito';color:#6b6b6b;margin-top:7px;">Recurring revenue at 12 months (from A$151k)</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 02 GROWTH MODEL / BRIDGE -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">02 · The growth model</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Where the trebling comes from</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 18px;"></div>
+          <p style="font:400 14px/1.6 'Carlito';color:#6b6b6b;margin:0 0 18px;">Trebling is not achieved through one channel. It is the sum of five compounding levers, weighted toward the scalable channels the case studies already prove — whole-of-sector programs and reseller networks, now extended internationally — rather than slow one-by-one direct sales.</p>
+          <table class="avoid" style="width:100%;border-collapse:collapse;margin-bottom:16px;">
+            <thead><tr>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:11px 14px;font:700 11.5px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Growth lever</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:11px 14px;font:700 11.5px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">New revenue</th>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:11px 14px;font:700 11.5px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Mechanism</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">FY26 revenue (base)</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#284B63;text-align:right;">$239,141</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#6b6b6b;">Starting point</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">Expand 2 existing large clients</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#137B8F;text-align:right;">+$55,000</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#6b6b6b;">More frameworks, business units and users</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">New whole-of-sector &amp; government programs (3)</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#137B8F;text-align:right;">+$150,000</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#6b6b6b;">Peak bodies / departments, ~A$50k each</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">Domestic partner / reseller channel (1 → 6 active)</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#137B8F;text-align:right;">+$144,000</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#6b6b6b;">Consulting &amp; audit firms reselling assessments</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">International software distributors (2–3 signed)</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#137B8F;text-align:right;">+$45,000</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#6b6b6b;">Resellers in priority overseas markets, seed year</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">Direct assessment-only growth (8 → ~45)</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#137B8F;text-align:right;">+$84,000</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#6b6b6b;">Inbound demand generation &amp; self-serve</td></tr>
+              <tr><td style="padding:12px 14px;border-bottom:2px solid #284B63;font:700 14px/1.45 'Carlito';color:#284B63;">12-month target revenue</td><td style="padding:12px 14px;border-bottom:2px solid #284B63;font:700 15px/1.45 'Carlito';color:#284B63;text-align:right;">$717,141</td><td style="padding:12px 14px;border-bottom:2px solid #284B63;font:700 12.5px/1.4 'Carlito';color:#3C6E71;">≈ 3.0× FY26</td></tr>
+            </tbody>
+          </table>
+          <div class="avoid" style="background:#e7f0f0;border-left:3px solid #3C6E71;border-radius:0 6px 6px 0;padding:16px 22px;">
+            <p style="font:400 14px/1.6 'Carlito';color:#284B63;margin:0;">Roughly <strong>60% of the new revenue is recurring</strong> (sector, partner and distributor subscriptions and expanded large-client contracts), lifting annual recurring revenue from A$151k to about <strong>A$430k</strong> — the most durable and defensible form of revenue the business can build.</p>
+          </div>
+        </section>
+
+        <!-- 03 FOUR PILLARS -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">03 · Strategy</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Five pillars of growth</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <div style="display:flex;flex-direction:column;gap:14px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-left:3px solid #153E5A;border-radius:0 6px 6px 0;padding:18px 22px;background:#fff;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;"><div style="font:700 16px/1.3 'Carlito';color:#153E5A;">1 · Whole-of-sector &amp; government programs</div><div style="font:700 13px/1 'Carlito';color:#153E5A;white-space:nowrap;">+$150k</div></div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:8px 0 0;">Replicate the NDS and Sport 4 All model: sell once to a peak body or department and deploy across dozens of member entities, with whole-of-sector benchmarking. Highest-value, most defensible revenue. Target three new programs across disability, sport/recreation, local government, health and not-for-profit sectors.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-left:3px solid #137B8F;border-radius:0 6px 6px 0;padding:18px 22px;background:#fff;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;"><div style="font:700 16px/1.3 'Carlito';color:#137B8F;">2 · Domestic partner &amp; reseller channel</div><div style="font:700 13px/1 'Carlito';color:#137B8F;white-space:nowrap;">+$144k</div></div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:8px 0 0;">Recruit and enable consulting and audit firms to resell assessments under a formal partner program — deal registration, margin share and co-marketing support. Each partner becomes a multiplier, embedding the platform in their own client engagements. Grow from one reseller to six active partners.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-left:3px solid #284B63;border-radius:0 6px 6px 0;padding:18px 22px;background:#fff;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;"><div style="font:700 16px/1.3 'Carlito';color:#284B63;">3 · International software distributors</div><div style="font:700 13px/1 'Carlito';color:#284B63;white-space:nowrap;">+$45k</div></div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:8px 0 0;">Appoint software distributors and resellers in priority overseas markets — starting with aligned, English-speaking jurisdictions (New Zealand, the UK, Ireland, Canada) and selected regional hubs (Singapore, the UAE). Distributors localise, sell and support in-market in exchange for margin, so reach scales with little fixed cost. Two dedicated offshore business development managers own this push across any jurisdiction. Seed two to three agreements in year one, with substantial upside in the years beyond.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-left:3px solid #4B6969;border-radius:0 6px 6px 0;padding:18px 22px;background:#fff;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;"><div style="font:700 16px/1.3 'Carlito';color:#4B6969;">4 · Productised direct demand generation</div><div style="font:700 13px/1 'Carlito';color:#4B6969;white-space:nowrap;">+$84k</div></div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:8px 0 0;">Turn the platform into an inbound engine: clear packaging and pricing, SEO and thought-leadership content, paid search and LinkedIn ABM, and a self-serve demo/trial. Grow assessment-only clients from eight to roughly forty-five.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-left:3px solid #6C793C;border-radius:0 6px 6px 0;padding:18px 22px;background:#fff;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;"><div style="font:700 16px/1.3 'Carlito';color:#6C793C;">5 · Expand &amp; retain existing clients</div><div style="font:700 13px/1 'Carlito';color:#6C793C;white-space:nowrap;">+$55k</div></div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:8px 0 0;">Land-and-expand the two large clients with additional frameworks, business units and users, and lock in multi-year renewals to strengthen the recurring base. Lowest-cost, lowest-risk revenue.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 ROADMAP -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">04 · Execution</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">12-month activity roadmap</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <div style="display:flex;flex-direction:column;gap:0;">
+            <div class="avoid" style="display:flex;gap:18px;align-items:flex-start;padding:0 0 18px;">
+              <div style="flex:none;width:62px;text-align:center;"><div style="font:700 13px/1 'Carlito';color:#fff;background:#153E5A;border-radius:4px;padding:8px 0;">Q1</div><div style="font:400 10px/1.3 'Carlito';color:#8c8c8c;margin-top:5px;">Mo 1–3</div></div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:5px;">Foundations</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Recruit and onboard both offshore business development managers; stand up CRM and marketing automation; finalise the partner program, pricing and co-marketing offers; build the international distributor proposition and target list; package existing case studies; build initial pipeline from existing partner and sector contacts.</p></div>
+            </div>
+            <div class="avoid" style="display:flex;gap:18px;align-items:flex-start;padding:0 0 18px;">
+              <div style="flex:none;width:62px;text-align:center;"><div style="font:700 13px/1 'Carlito';color:#fff;background:#137B8F;border-radius:4px;padding:8px 0;">Q2</div><div style="font:400 10px/1.3 'Carlito';color:#8c8c8c;margin-top:5px;">Mo 4–6</div></div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:5px;">Launch</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Go live with paid media and ABM; sign the first domestic partners; open peak-body and government outreach; the BDMs begin international distributor conversations; launch the self-serve demo; progress and close the first new sector program.</p></div>
+            </div>
+            <div class="avoid" style="display:flex;gap:18px;align-items:flex-start;padding:0 0 18px;">
+              <div style="flex:none;width:62px;text-align:center;"><div style="font:700 13px/1 'Carlito';color:#fff;background:#4B6969;border-radius:4px;padding:8px 0;">Q3</div><div style="font:400 10px/1.3 'Carlito';color:#8c8c8c;margin-top:5px;">Mo 7–9</div></div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:5px;">Scale</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Grow the domestic channel to six active partners and drive assessment volume; sign the first two to three international distributors; close the second and third sector programs; attend priority sector conferences; expand the two large clients.</p></div>
+            </div>
+            <div class="avoid" style="display:flex;gap:18px;align-items:flex-start;padding:0;">
+              <div style="flex:none;width:62px;text-align:center;"><div style="font:700 13px/1 'Carlito';color:#fff;background:#6C793C;border-radius:4px;padding:8px 0;">Q4</div><div style="font:400 10px/1.3 'Carlito';color:#8c8c8c;margin-top:5px;">Mo 10–12</div></div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:5px;">Convert &amp; consolidate</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Convert the pipeline and onboard international distributors; secure multi-year renewals to maximise recurring mix; document the repeatable sales, partner and distributor playbook; consolidate the growth narrative and updated metrics into the standing performance pack.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 05 ACTIVITIES -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">05 · Recommended activities</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">What we will do</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;">
+            <div class="avoid">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#153E5A;margin-bottom:10px;">Sector &amp; government</div>
+              <ul style="font:400 13px/1.55 'Carlito';color:#353535;margin:0;padding-left:18px;">
+                <li>Target list of peak bodies and departments by sector</li>
+                <li>Tailored whole-of-sector value proposition &amp; pricing</li>
+                <li>Reference selling using NDS &amp; Sport 4 All outcomes</li>
+                <li>Sector benchmarking reports as a door-opener</li>
+              </ul>
+            </div>
+            <div class="avoid">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#137B8F;margin-bottom:10px;">Partner channel</div>
+              <ul style="font:400 13px/1.55 'Carlito';color:#353535;margin:0;padding-left:18px;">
+                <li>Formal partner program: tiers, margins, deal registration</li>
+                <li>Recruit consulting &amp; audit firms (target six)</li>
+                <li>Co-marketing fund &amp; joint sector campaigns</li>
+                <li>Lightweight onboarding using existing materials</li>
+              </ul>
+            </div>
+            <div class="avoid">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#4B6969;margin-bottom:10px;">Demand generation</div>
+              <ul style="font:400 13px/1.55 'Carlito';color:#353535;margin:0;padding-left:18px;">
+                <li>Clear packaging &amp; pricing on existing web pages</li>
+                <li>SEO &amp; governance thought-leadership content</li>
+                <li>Paid search + LinkedIn account-based marketing</li>
+                <li>Self-serve demo / trial and onboarding automation</li>
+              </ul>
+            </div>
+            <div class="avoid">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#6C793C;margin-bottom:10px;">Foundations &amp; retention</div>
+              <ul style="font:400 13px/1.55 'Carlito';color:#353535;margin:0;padding-left:18px;">
+                <li>CRM + marketing automation and reporting</li>
+                <li>Tiered pricing &amp; simple packaging (internal)</li>
+                <li>Large-client expansion &amp; multi-year renewals</li>
+                <li>Repeatable sales, partner &amp; distributor playbook</li>
+              </ul>
+            </div>
+            <div class="avoid">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#284B63;margin-bottom:10px;">International distributors</div>
+              <ul style="font:400 13px/1.55 'Carlito';color:#353535;margin:0;padding-left:18px;">
+                <li>Two offshore BDMs own market expansion by region</li>
+                <li>Priority-market target list (NZ, UK, Ireland, Canada, SG, UAE)</li>
+                <li>Distributor proposition, margin model &amp; localisation pack</li>
+                <li>Sign two to three distributor agreements</li>
+              </ul>
+            </div>
+          </div>
+          <div class="avoid" style="background:#f8f9fa;border:1px solid #e7e8e9;border-radius:6px;padding:16px 22px;margin-top:20px;">
+            <p style="font:400 13.5px/1.6 'Carlito';color:#353535;margin:0;">Product work is deliberately light-touch — the self-serve demo, onboarding automation and distributor enablement are delivered with existing in-house development capacity, preserving the platform’s lean cost base while removing friction from the sales motion.</p>
+          </div>
+        </section>
+
+        <!-- 06 INVESTMENT -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">06 · Investment</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Fully costed sales &amp; marketing budget</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 16px;"></div>
+          <p style="font:400 13px/1.55 'Carlito';color:#6b6b6b;margin:0 0 16px;">All amounts in A$, covering the 12-month program. It pairs two dedicated offshore business development managers with a lean marketing and enablement budget; partners and international distributors carry the cost of in-market selling, funded through margin rather than fixed budget. Marketing and enablement spend is held to A$75,000.</p>
+          <table class="avoid" style="width:100%;border-collapse:collapse;">
+            <thead><tr>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:10px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Line item</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:10px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Cost</th>
+            </tr></thead>
+            <tbody>
+              <tr><td colspan="2" style="padding:8px 14px;background:#eef2f4;font:700 11px/1.2 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#153E5A;">Commercial</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Offshore business development managers (2 &times; 1.0 FTE, any jurisdiction)</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">84,000</td></tr>
+              <tr><td colspan="2" style="padding:8px 14px;background:#eef2f4;font:700 11px/1.2 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#153E5A;">Marketing &amp; enablement</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #eee;font:400 13.5px/1.4 'Carlito';color:#353535;">Paid media — Google Ads + LinkedIn ABM</td><td style="padding:11px 14px;border-bottom:1px solid #eee;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">20,500</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #eee;font:400 13.5px/1.4 'Carlito';color:#353535;">SEO &amp; content marketing program</td><td style="padding:11px 14px;border-bottom:1px solid #eee;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">13,500</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #eee;font:400 13.5px/1.4 'Carlito';color:#353535;">Peak-body &amp; government sector conferences (3)</td><td style="padding:11px 14px;border-bottom:1px solid #eee;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">11,500</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #eee;font:400 13.5px/1.4 'Carlito';color:#353535;">Market development / co-marketing fund <span style="color:#8c8c8c;">(partners &amp; distributors)</span></td><td style="padding:11px 14px;border-bottom:1px solid #eee;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">10,000</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #eee;font:400 13.5px/1.4 'Carlito';color:#353535;">Self-serve demo / trial &amp; onboarding automation</td><td style="padding:11px 14px;border-bottom:1px solid #eee;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">6,500</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #eee;font:400 13.5px/1.4 'Carlito';color:#353535;">Partner &amp; distributor channel incentives (SPIFFs)</td><td style="padding:11px 14px;border-bottom:1px solid #eee;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">7,000</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Marketing automation + CRM</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">6,000</td></tr>
+              <tr><td style="padding:8px 14px;border-bottom:1px solid #e7e8e9;font:700 12.5px/1.3 'Carlito';color:#284B63;text-align:right;">Marketing &amp; enablement subtotal</td><td style="padding:8px 14px;border-bottom:1px solid #e7e8e9;font:700 12.5px/1.3 'Carlito';color:#284B63;text-align:right;">75,000</td></tr>
+              <tr><td style="padding:12px 14px;background:#284B63;font:700 14px/1.3 'Carlito';color:#fff;text-align:right;">Total 12-month investment</td><td style="padding:12px 14px;background:#284B63;font:700 15px/1.3 'Carlito';color:#fff;text-align:right;">159,000</td></tr>
+            </tbody>
+          </table>
+          <p style="font:400 12px/1.55 'Carlito';color:#8c8c8c;margin:14px 0 0;font-style:italic;">The two offshore business development managers, at A$84,000 combined, are tasked specifically with extending Governance Manager’s market presence in any jurisdiction — recruiting partners and international distributors who then carry in-market selling costs from channel margin. Marketing and enablement is held to A$75,000; surge or fractional support can be funded by reprioritising within this envelope.</p>
+        </section>
+
+        <!-- 07 INVESTMENT CASE -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">07 · The investment case</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Why the spend pays back</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 18px;">At A$159,000 — A$75,000 of marketing and enablement plus A$84,000 for two offshore BDMs — the program is comfortably self-funding within the year: the incremental gross profit on ~A$478k of new revenue far exceeds the spend, because partners and distributors carry the cost of in-market selling. The strategic return is a structurally stronger business: trebled revenue, a materially higher recurring share, and an international distribution footprint that keeps compounding beyond the twelve months.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #137B8F;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 12px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#137B8F;margin-bottom:8px;">Revenue today</div>
+              <div style="font:700 26px/1 'Carlito';color:#284B63;">A$239k</div>
+              <p style="font:400 12.5px/1.45 'Carlito';color:#6b6b6b;margin:8px 0 0;">FY26, of which A$151k recurring</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #153E5A;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 12px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#153E5A;margin-bottom:8px;">Revenue after plan</div>
+              <div style="font:700 26px/1 'Carlito';color:#284B63;">~A$717k</div>
+              <p style="font:400 12.5px/1.45 'Carlito';color:#6b6b6b;margin:8px 0 0;">of which ~A$430k recurring &mdash; a 2.8&times; lift</p>
+            </div>
+          </div>
+          <div class="avoid" style="background:#e7f0f0;border-left:3px solid #3C6E71;border-radius:0 6px 6px 0;padding:16px 22px;margin-bottom:18px;">
+            <p style="font:400 14px/1.6 'Carlito';color:#284B63;margin:0;">A ~A$159k program supports <strong>~A$478k of new annual revenue</strong>, roughly 60% of it recurring — an exceptional return that is earned within the year and continues to compound after it.</p>
+          </div>
+          <h3 style="font:700 12px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#3C6E71;margin:0 0 14px;">Quarterly investment phasing</h3>
+          <table class="avoid" style="width:100%;border-collapse:collapse;">
+            <thead><tr>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:9px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Quarter</th>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:9px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Focus</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:9px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Spend</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.4 'Carlito';color:#153E5A;">Q1</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.4 'Carlito';color:#353535;">Foundations, setup &amp; BDM onboarding</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.4 'Carlito';color:#353535;text-align:right;">A$45,000</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.4 'Carlito';color:#137B8F;">Q2</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.4 'Carlito';color:#353535;">Launch &amp; first partners</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.4 'Carlito';color:#353535;text-align:right;">A$41,000</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.4 'Carlito';color:#4B6969;">Q3</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.4 'Carlito';color:#353535;">Scale channel, sector &amp; distributors</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.4 'Carlito';color:#353535;text-align:right;">A$38,000</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.4 'Carlito';color:#6C793C;">Q4</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.4 'Carlito';color:#353535;">Convert &amp; consolidate</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.4 'Carlito';color:#353535;text-align:right;">A$35,000</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- 08 KPIs -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">08 · Measurement</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">KPIs &amp; governance</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <table class="avoid" style="width:100%;border-collapse:collapse;margin-bottom:18px;">
+            <thead><tr>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:10px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Metric</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:10px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Start</th>
+              <th style="text-align:right;background:#137B8F;color:#fff;padding:10px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">12-mo target</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Total revenue</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">A$239k</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">A$717k</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Recurring revenue (ARR)</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">A$151k</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">~A$430k</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Active domestic partners</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">1</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">6</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">International distributors signed</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">0</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">2–3</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Whole-of-sector / government programs</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">0 new</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">3</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Direct assessment clients</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">8</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">~45</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Qualified pipeline coverage</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">—</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">3× target</td></tr>
+            </tbody>
+          </table>
+          <p style="font:400 14px/1.6 'Carlito';color:#353535;margin:0;">Performance is reviewed at quarterly gates. Spend is reallocated toward the best-performing channel, and any lever tracking behind plan triggers corrective action before the next quarter’s budget is released.</p>
+        </section>
+
+        <!-- 09 RISKS -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">09 · Risks</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Risks &amp; mitigations</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <table class="avoid" style="width:100%;border-collapse:collapse;">
+            <thead><tr>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:10px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;width:40%;">Risk</th>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:10px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Mitigation</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;">BDM ramp &amp; capacity</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Two offshore BDMs extend reach at low fixed cost and remove single&#8209;person dependency; existing leadership and the partner/distributor channel provide leverage and cover while both ramp. Warm pipeline from current relationships bridges the early months.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;">Channel conflict (direct vs partner)</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Clear rules of engagement and deal registration in the partner program; segment sectors and accounts by channel.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;">International market complexity</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Start with aligned, English-speaking markets; distributors handle localisation, support and in-market compliance; seed a few agreements before scaling.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;">Single-developer delivery capacity</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Keep product work light-touch and enablement-focused; reserve contingency for surge development if channel demand spikes.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;">Aggressive target slips</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Quarterly gates with reallocation of spend to the best-performing lever; sector and channel pipeline de-risk reliance on any single deal.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;">Competing priorities dilute focus</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Ring-fence the growth team from unrelated workload; existing leadership (Tony Friday) owns the growth narrative and reports progress monthly.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- 10 NEXT STEPS -->
+
+
+
+      </div>
+    </td></tr></tbody>
+    <tfoot><tr><td class="ftr-space"></td></tr></tfoot>
+  </table>
+</main>
+
+<div class="print-footer">
+  <span>Growth &amp; market-expansion plan · Governance Manager</span>
+  <span>Strictly private &amp; confidential · bluezoo</span>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return { print: () => window.print() };
+  }
+}
+</script>
+</body>
+</html>

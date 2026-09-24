@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+<script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+<style>
+  @page { size: A4; margin: 0; }
+  html, body { margin: 0; padding: 0; }
+  body { background: #5a6770; font-family: 'Carlito','Calibri','Segoe UI',system-ui,sans-serif; color: #353535; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  .im-doc { max-width: 8.27in; margin: 0 auto; background: #fff; }
+  .doc-frame { width: 100%; border-collapse: collapse; }
+  .doc-frame > tbody > tr > td, .doc-frame > thead > tr > td, .doc-frame > tfoot > tr > td { padding: 0; }
+  .hdr-space, .ftr-space { display: none; }
+  .flow { padding: 0 0.85in; }
+  h1, h2, h3, h4 { margin: 0; text-wrap: balance; }
+  p, li { text-wrap: pretty; }
+  .break-before { break-before: page; }
+  .avoid { break-inside: avoid; }
+  .print-footer { display: none; }
+  @media screen {
+    body { padding: 28px 0 80px; }
+    .im-doc { box-shadow: 0 6px 34px rgba(0,0,0,.28); }
+  }
+  @media print {
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { background: #fff; padding: 0; }
+    .im-doc { max-width: none; box-shadow: none; }
+    .hdr-space, .ftr-space { display: table-cell; height: 0.62in; }
+    .flow { padding: 0 0.85in; }
+    .screen-only { display: none !important; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .avoid, figure, table, blockquote { break-inside: avoid; }
+    p, li { orphans: 3; widows: 3; }
+    .print-footer { display: flex; position: fixed; bottom: 0; left: 0; right: 0; height: 0.62in; align-items: center; justify-content: space-between; padding: 0 0.85in; font: 400 9px/1 'Carlito'; letter-spacing: .04em; color: #8c8c8c; text-transform: uppercase; }
+  }
+</style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20GM%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>GM Hub</a>
+
+<button class="screen-only" onClick="{{ print }}" style="position:fixed;right:22px;bottom:22px;z-index:50;border:none;border-radius:6px;background:#284B63;color:#fff;font:700 13px/1 'Carlito';letter-spacing:.03em;padding:13px 18px;cursor:pointer;box-shadow:0 4px 14px rgba(21,62,90,.4);">Print / Save as PDF</button>
+
+<main class="im-doc">
+
+  <!-- ============ COVER ============ -->
+  <section class="avoid" style="position:relative;overflow:hidden;min-height:11.6in;background:linear-gradient(150deg,#153E5A 0%,#284B63 55%,#2f595c 100%);color:#fff;padding:0.95in 0.85in;display:flex;flex-direction:column;">
+    <div style="position:absolute;right:-1.6in;top:2.2in;width:7in;height:7in;border:1.5px solid rgba(255,255,255,.06);transform:rotate(15deg);"></div>
+    <div style="position:absolute;right:-0.4in;top:3.4in;width:4.4in;height:4.4in;border:1.5px solid rgba(122,169,171,.12);transform:rotate(15deg);"></div>
+    <div style="position:relative;z-index:2;display:flex;align-items:center;gap:13px;">
+      <div style="width:34px;height:34px;background:#3C6E71;transform:rotate(45deg);"></div>
+      <div style="font:700 22px/1 'Carlito';letter-spacing:.02em;color:#fff;">Project Keystone</div>
+    </div>
+    <div style="position:relative;z-index:2;margin-top:0.5in;">
+      <div style="display:inline-block;font:700 11px/1 'Carlito';letter-spacing:.18em;text-transform:uppercase;color:#7aa9ab;border:1px solid rgba(122,169,171,.5);border-radius:3px;padding:8px 14px;white-space:nowrap;">Confidential investment teaser</div>
+    </div>
+    <div style="position:relative;z-index:2;margin-top:auto;">
+      <div style="font:700 14px/1 'Carlito';letter-spacing:.16em;text-transform:uppercase;color:#93aab6;margin-bottom:18px;">Acquisition opportunity</div>
+      <h1 style="font:700 48px/1.06 'Carlito';letter-spacing:-0.01em;color:#fff;max-width:9in;">An established, profitable governance &amp; maturity SaaS platform</h1>
+      <p style="font:400 19px/1.5 'Carlito';color:#c3d0d8;max-width:6.6in;margin:22px 0 0;">A wholly owned Australian software asset with recurring revenue, blue-chip clients and a productised, defensible methodology &mdash; available now via a clean asset sale.</p>
+    </div>
+    <div style="position:relative;z-index:2;margin-top:0.7in;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;">
+      <div>
+        <div style="font:400 12px/1.4 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;">Issued by the vendor&rsquo;s adviser</div>
+        <div style="font:700 16px/1.4 'Carlito';color:#fff;margin-top:4px;">For prospective acquirers</div>
+      </div>
+      <div style="text-align:right;">
+        <div style="font:400 12px/1.4 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;">Issued</div>
+        <div style="font:700 16px/1.4 'Carlito';color:#fff;margin-top:4px;">June 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <table class="doc-frame" role="presentation">
+    <thead><tr><td class="hdr-space"></td></tr></thead>
+    <tbody><tr><td>
+      <div class="flow" style="padding-top:0.55in;padding-bottom:0.55in;">
+
+        <!-- THE OPPORTUNITY -->
+        <section>
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">The opportunity</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">A ready-built governance methodology, for sale</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 14px;">A wholly owned, cloud-based software-as-a-service platform is being offered for sale. The platform helps organisations measure, manage and improve governance and capability maturity across many disciplines &mdash; converting subjective governance review into structured, repeatable, evidence-based assessment, supported by an extensive framework library, benchmarking, improvement planning, reporting and a substantial video learning library.</p>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 14px;">The asset is established, proven and revenue-generating, with a loyal base of government and corporate clients across Australia &mdash; several on multi-year, &ldquo;sticky&rdquo; contracts and some engaged via a partner network. It is offered with the option to retain its long-serving lead developer to ensure continuity.</p>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0;">The vendor is divesting because the product sits outside its core advisory business. For a <strong>consulting or audit firm</strong>, it is a rare chance to acquire a defensible methodology and a recurring software revenue line deployable across an existing client base from day one.</p>
+        </section>
+
+        <!-- AT A GLANCE -->
+        <section style="margin-top:30px;">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:16px;">At a glance</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #3C6E71;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 28px/1 'Carlito';color:#284B63;">circa A$650k</div>
+              <div style="font:400 13px/1.45 'Carlito';color:#6b6b6b;margin-top:7px;">Indicative price &mdash; clean asset sale</div>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #3C6E71;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 28px/1 'Carlito';color:#284B63;">10&ndash;12</div>
+              <div style="font:400 13px/1.45 'Carlito';color:#6b6b6b;margin-top:7px;">Government &amp; corporate clients (Australia)</div>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #3C6E71;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 28px/1 'Carlito';color:#284B63;">~10 yrs</div>
+              <div style="font:400 13px/1.45 'Carlito';color:#6b6b6b;margin-top:7px;">Continuous platform development</div>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #3C6E71;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 28px/1 'Carlito';color:#284B63;">Unlimited</div>
+              <div style="font:400 13px/1.45 'Carlito';color:#6b6b6b;margin-top:7px;">Addressable market (discipline-agnostic)</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- HIGHLIGHTS -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">Why it&rsquo;s compelling</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Investment highlights</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.1em;text-transform:uppercase;color:#137B8F;margin-bottom:10px;">Recurring &amp; sticky</div>
+              <p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">Subscription revenue with contracts running up to 8&ndash;10 years and high switching costs once embedded.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.1em;text-transform:uppercase;color:#153E5A;margin-bottom:10px;">Productised IP</div>
+              <p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">A flexible, limitless library of frameworks and maturity-scoring models &mdash; a repeatable methodology ready to deploy.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.1em;text-transform:uppercase;color:#4B6969;margin-bottom:10px;">Lean cost base</div>
+              <p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">Principal cost is a single lead developer &mdash; attractive operating leverage as clients and frameworks scale.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.1em;text-transform:uppercase;color:#6C793C;margin-bottom:10px;">Low-risk handover</div>
+              <p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">The decade-long lead developer is available to transfer, preserving domain and codebase knowledge.</p>
+            </div>
+          </div>
+
+          <div class="avoid" style="background:#e7f0f0;border-left:3px solid #3C6E71;border-radius:0 6px 6px 0;padding:18px 22px;margin-top:24px;">
+            <div style="font:700 13px/1.3 'Carlito';color:#284B63;margin-bottom:9px;letter-spacing:.04em;text-transform:uppercase;">Strategic fit</div>
+            <p style="font:400 14px/1.6 'Carlito';color:#284B63;margin:0;"><strong>Consulting firms</strong> can productise advisory work into recurring software and assessment revenue, with benchmarking IP that compounds. <strong>Audit firms</strong> gain defensible, traceable maturity assessment for assurance and internal-audit work, plus a value-add advisory upsell. The asset also suits managed service providers and software providers seeking a complementary GRC capability.</p>
+          </div>
+        </section>
+
+        <!-- TERMS & PROCESS -->
+        <section style="margin-top:30px;">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">Indicative terms &amp; process</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Next steps</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <table style="width:100%;border-collapse:collapse;margin-bottom:24px;">
+            <tbody>
+              <tr><td style="width:38%;padding:12px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;">Transaction type</td><td style="padding:12px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Asset sale</td></tr>
+              <tr><td style="padding:12px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;">Indicative price</td><td style="padding:12px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Circa A$650,000</td></tr>
+              <tr><td style="padding:12px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;">Reason for sale</td><td style="padding:12px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Non-core to the vendor</td></tr>
+              <tr><td style="padding:12px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;">Developer</td><td style="padding:12px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Optional retention (~A$60k p.a.)</td></tr>
+              <tr><td style="padding:12px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;">Full information</td><td style="padding:12px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Detailed Information Memorandum &amp; data room released on signing an NDA</td></tr>
+            </tbody>
+          </table>
+          <div class="avoid" style="background:linear-gradient(150deg,#153E5A 0%,#284B63 70%);border-radius:8px;padding:28px 32px;color:#fff;">
+            <div style="font:700 17px/1.3 'Carlito';color:#fff;margin-bottom:8px;">Register your interest</div>
+            <p style="font:400 14px/1.6 'Carlito';color:#c3d0d8;margin:0 0 18px;">To receive the full Information Memorandum, please make contact to execute a non-disclosure agreement. Kindly do not approach the underlying business, its staff, clients or partners.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px 32px;">
+              <div><div style="font:400 11px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px;">Contact</div><div style="font:700 15px/1.4 'Carlito';color:#fff;">[Adviser name / role &mdash; to confirm]</div></div>
+              <div><div style="font:400 11px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px;">Email</div><div style="font:700 15px/1.4 'Carlito';color:#fff;">[email &mdash; to confirm]</div></div>
+              <div><div style="font:400 11px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px;">Phone</div><div style="font:700 15px/1.4 'Carlito';color:#fff;">[phone &mdash; to confirm]</div></div>
+              <div><div style="font:400 11px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px;">Reference</div><div style="font:700 15px/1.4 'Carlito';color:#fff;">Project Keystone</div></div>
+            </div>
+          </div>
+          <p style="font:400 12px/1.55 'Carlito';color:#8c8c8c;margin:22px 0 0;font-style:italic;">This teaser is a summary for information only, is strictly confidential, and does not constitute an offer or advice. It contains no representation or warranty as to accuracy or completeness. Any transaction is subject to due diligence and a formally executed sale agreement.</p>
+        </section>
+
+      </div>
+    </td></tr></tbody>
+    <tfoot><tr><td class="ftr-space"></td></tr></tfoot>
+  </table>
+</main>
+
+<div class="print-footer">
+  <span>Confidential investment teaser &middot; Project Keystone</span>
+  <span>Strictly private &amp; confidential</span>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return { print: () => window.print() };
+  }
+}
+</script>
+</body>
+</html>

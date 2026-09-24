@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    .sp, .sp *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .sp p{text-wrap:pretty;margin:0}
+    .sp a{color:var(--bz-blue-600);text-decoration:none}
+    .sp-page{min-height:1000px;display:flex;flex-direction:column;position:relative}
+    .sp-break{break-before:page}
+    .sp-content{padding:46px 60px}
+    .eyb{font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+    .h2{font-size:26px;line-height:1.1;font-weight:700;color:var(--bz-blue-700);margin:0 0 6px}
+    .lead{font-size:14px;line-height:1.55;color:var(--bz-grey-700)}
+    .foot{display:flex;justify-content:space-between;align-items:center;font-size:10.5px;color:var(--bz-grey-500);border-top:1px solid var(--bz-grey-200);padding-top:10px;margin-top:auto}
+    .sp-pagebreak{height:30px;margin:30px -1cm;background:#d6d9db;box-shadow:inset 0 7px 7px -7px rgba(0,0,0,.28),inset 0 -7px 7px -7px rgba(0,0,0,.28)}
+    @media print{.sp-pagebreak{display:none}}
+    .card{border:1px solid var(--bz-grey-200);border-radius:8px;padding:15px 18px;break-inside:avoid}
+    .li{padding:5px 0;border-bottom:1px solid var(--bz-grey-100);font-size:12.5px;line-height:1.4;color:var(--bz-grey-700)}
+    .li:last-child{border-bottom:none}
+    .pol{break-inside:avoid;margin:0 0 12px}
+    .pol h3{font-size:13.5px;font-weight:700;color:var(--bz-blue-700);margin:0 0 4px}
+    .pol p{font-size:12px;line-height:1.45;color:var(--bz-grey-700)}
+    .rtbl{width:100%;border-collapse:collapse}
+    .rtbl th{background:#284B63;color:#fff;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;text-align:left;padding:8px 12px}
+    .rtbl td{padding:7px 12px;font-size:12px;color:var(--bz-grey-700);border-bottom:1px solid var(--bz-grey-100);vertical-align:top}
+    .apx{font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#6C793C;display:flex;align-items:center;gap:10px;margin:18px 0 8px}
+    .apx::after{content:"";flex:1;height:1px;background:var(--bz-grey-200)}
+    .ol{margin:0 0 12px 18px;padding:0;font-size:11.5px;line-height:1.5;color:var(--bz-grey-700)}
+    .ol li{margin-bottom:3px}
+    .shot{width:100%;border:1px solid var(--bz-grey-200);border-radius:6px;display:block;margin:5px 0}
+    .g2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:6px 0 12px;break-inside:avoid}
+    .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:6px 0 12px;break-inside:avoid}
+    .note{background:var(--bz-grey-50);border:1px solid var(--bz-grey-200);border-radius:8px;padding:10px 14px;font-size:11.5px;line-height:1.45;color:var(--bz-grey-700);margin:0 0 12px}
+  </style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="a4" orientation="portrait" margin="1cm" hint-size="100%,100%">
+
+  <!-- ============ 1 · COVER ============ -->
+  <section class="page sp sp-page" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55;background:linear-gradient(155deg,#13343f 0%,#284B63 48%,#6C793C 100%);color:#fff;padding:72px 60px 48px;overflow:hidden;">
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-140px;top:170px;width:540px;opacity:.08;pointer-events:none">
+    <img src="assets/logo-white.png" alt="bluezoo" style="width:172px;position:relative">
+    <div style="margin-top:auto;position:relative">
+      <div class="eyb" style="color:#c2c99a;margin-bottom:20px">Finance · Operational</div>
+      <h1 style="font-size:52px;line-height:1.04;font-weight:700;margin:0;color:#fff;letter-spacing:-.6px">Finance Playbook</h1>
+      <div style="font-size:22px;font-weight:700;color:#c2c99a;margin-top:10px;letter-spacing:.02em">FY27</div>
+      <p style="font-size:16.5px;line-height:1.45;max-width:580px;margin:24px 0 0;color:#d5dcc4">How Blue Zoo runs its finances — the systems, the chart of accounts, the accounting policies and the controls that keep the numbers clean and the business solvent.</p>
+    </div>
+    <div style="margin-top:40px;position:relative;padding-top:18px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:flex-end;font-size:13px;color:#b7bf98">
+      <div><span style="display:inline-block;background:rgba(255,255,255,.14);border-radius:4px;padding:4px 10px;font-size:11px;font-weight:700;letter-spacing:.08em">CONFIDENTIAL · INTERNAL</span></div>
+      <span>Adapted from the Blue Zoo Finance Manual</span>
+    </div>
+  </section>
+
+  <!-- ============ 2 · CONTENTS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:12px">Contents</div>
+    <h2 class="h2">What's inside</h2>
+    <p class="lead" style="max-width:820px;margin:0 0 22px">The operating manual for Blue Zoo's finances — how the manual is governed, the financial system, the chart of accounts, the accounting policies applied, and the controls and month-end rhythm.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 44px">
+      <div class="li" style="display:flex;justify-content:space-between"><span>Document control &amp; purpose</span><span style="font-weight:700;color:var(--bz-grey-500)">03</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Accounting policies II — assets</span><span style="font-weight:700;color:var(--bz-grey-500)">07</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Financial management system</span><span style="font-weight:700;color:var(--bz-grey-500)">04</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Accounting policies III — liabilities</span><span style="font-weight:700;color:var(--bz-grey-500)">08</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Chart of accounts</span><span style="font-weight:700;color:var(--bz-grey-500)">05</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Controls, month-end &amp; reporting</span><span style="font-weight:700;color:var(--bz-grey-500)">09</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Accounting policies I — basis &amp; income</span><span style="font-weight:700;color:var(--bz-grey-500)">06</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>&nbsp;</span><span></span></div>
+    </div>
+    <div style="margin-top:26px;background:var(--bz-blue-100);border-left:4px solid #6C793C;border-radius:0 6px 6px 0;padding:14px 18px">
+      <p style="margin:0;font-size:12.5px;line-height:1.5;color:var(--bz-blue-800)">Financial reports are prepared under Philippine Accounting Standards and Australian Accounting Interpretations. This playbook summarises the Finance Manual; the manual remains the controlling document.</p>
+    </div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Confidential</span><span>02</span></div>
+  </section>
+
+  <!-- ============ 3 · DOCUMENT CONTROL ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:12px">Why this exists</div>
+    <h2 class="h2">Document control &amp; purpose</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">This playbook provides a clear, transparent and consistent framework for the financial management of the business that complies with statutory obligations and the requisite accounting standards.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px">
+      <div class="card" style="border-top:3px solid #6C793C">
+        <div class="eyb" style="font-size:10px;color:#6C793C;margin-bottom:9px">Ownership &amp; review</div>
+        <table style="width:100%;border-collapse:collapse;font-size:12px;color:var(--bz-grey-700)">
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:5px 0;color:var(--bz-grey-500);width:45%">Document owner</td><td style="padding:5px 0">Chief Executive Officer</td></tr>
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:5px 0;color:var(--bz-grey-500)">Reviewer</td><td style="padding:5px 0">CEO / Finance</td></tr>
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:5px 0;color:var(--bz-grey-500)">Review cycle</td><td style="padding:5px 0">Reviewed periodically; changes approved by the CEO</td></tr>
+          <tr><td style="padding:5px 0;color:var(--bz-grey-500)">Source</td><td style="padding:5px 0">Blue Zoo Finance Manual</td></tr>
+        </table>
+      </div>
+      <div class="card" style="border-top:3px solid #284B63">
+        <div class="eyb" style="font-size:10px;color:#284B63;margin-bottom:9px">Reporting framework</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Philippine Accounting Standards &amp; Australian Accounting Interpretations.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">General purpose financial statements.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Accrual basis, historical cost — modified by fair value where applicable.</li>
+          <li style="padding:5px 0">Figures rounded to the nearest dollar.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:3px solid var(--bz-green)">
+      <div class="eyb" style="font-size:10px;color:var(--bz-green);margin-bottom:8px">Critical accounting estimates</div>
+      <p style="font-size:12px;line-height:1.5;color:var(--bz-grey-700)">Preparing the financial report requires management to make judgements, estimates and assumptions based on historical experience and other reasonable factors. These form the basis of carrying values not readily apparent from other sources; actual results may differ from these estimates.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Confidential</span><span>03</span></div>
+  </section>
+
+  <!-- ============ 4 · FINANCIAL MANAGEMENT SYSTEM ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:12px">The systems of record</div>
+    <h2 class="h2">Financial management system</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Xero is the sole source of truth and trust for the financial administration of the business. Connected tools inform key decisions and record operating activity.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px">
+      <div class="card" style="border-top:3px solid #6C793C"><div style="font-size:15px;font-weight:700;color:var(--bz-grey-900)">Xero</div><p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">The sole source of truth for all financial administration and reporting.</p></div>
+      <div class="card" style="border-top:3px solid #284B63"><div style="font-size:15px;font-weight:700;color:var(--bz-grey-900)">Claude Design</div><p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">Management reporting and dashboards linked to Xero.</p></div>
+      
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="card" style="border-top:3px solid #6C793C">
+        <div class="eyb" style="font-size:10px;color:#6C793C;margin-bottom:9px">Required training before access</div>
+        <p style="font-size:12px;line-height:1.45;color:var(--bz-grey-700);margin-bottom:8px">Employees or contractors logging into the financial management system — other than for approvals or authorisations — must first have completed:</p>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Xero training modules</li>
+          <li style="padding:4px 0">Brainbuilder Excel</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #284B63">
+        <div class="eyb" style="font-size:10px;color:#284B63;margin-bottom:9px">Access principle</div>
+        <p style="font-size:12px;line-height:1.5;color:var(--bz-grey-700)">Keep one system of record. Reporting and forecasting tools read from Xero rather than holding separate ledgers, so there is a single, trusted set of numbers behind every decision and Board report.</p>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Confidential</span><span>04</span></div>
+  </section>
+
+  <!-- ============ 5 · CHART OF ACCOUNTS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:12px">The account structure</div>
+    <h2 class="h2">Chart of accounts</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 16px">Accounts must not be added or archived without express approval from the Chief Executive Officer. The chart groups into the standard classes below.</p>
+
+    <table class="rtbl" style="margin-bottom:16px">
+      <thead><tr><th style="width:170px">Class</th><th>Representative accounts</th></tr></thead>
+      <tbody>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Bank</td><td>Working account (NAB); Debit Card</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Current assets</td><td>Trade Debtors; Sundry Debtors; Future Fund (InvestSmart); salary-sacrifice clearing</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Fixed assets</td><td>Computer hardware &amp; software; furniture &amp; fixtures; motor vehicles; plant &amp; equipment (each with accumulated depreciation)</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Liabilities</td><td>Trade &amp; Sundry Creditors; GST; PAYG Withholding; Superannuation Payable; ATO Running Balance; FBT instalment</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Equity</td><td>Shareholder equity accounts; retained earnings; dividends paid</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Direct costs (COS)</td><td>Consulting costs; wages &amp; salaries; superannuation; sales commission; licence cost of sales</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Operating expenses</td><td>GM &amp; hosting costs; accounting &amp; legal fees; insurance; software/hardware &lt; $6,500; communications; sales &amp; delivery travel, meals &amp; events; depreciation</td></tr>
+      </tbody>
+    </table>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="card" style="border-top:3px solid #6C793C"><div class="eyb" style="font-size:10px;color:#6C793C;margin-bottom:7px">GST tax codes</div><p style="font-size:12px;line-height:1.45;color:var(--bz-grey-700)">Each account carries a tax code — GST on Income, GST on Expenses, GST Free, or BAS Excluded — set when the account is created and not changed without approval.</p></div>
+      <div class="card" style="border-top:3px solid #284B63"><div class="eyb" style="font-size:10px;color:#284B63;margin-bottom:7px">Change control</div><p style="font-size:12px;line-height:1.45;color:var(--bz-grey-700)">New accounts, renames and archiving are CEO-approved only. This keeps reporting comparable period to period and protects the integrity of the chart.</p></div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Confidential</span><span>05</span></div>
+  </section>
+
+  <!-- ============ 6 · POLICIES I ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:12px">Significant accounting policies · I</div>
+    <h2 class="h2">Basis &amp; income items</h2>
+    <div style="columns:2;column-gap:28px;margin-top:10px">
+      <div class="pol"><h3>Basis of preparation</h3><p>General purpose statements on the accrual basis and historical cost, modified where applicable by fair-value measurement of selected non-current assets, financial assets and liabilities.</p></div>
+      <div class="pol"><h3>Goods &amp; Services Tax (GST)</h3><p>Revenues, expenses and assets are recognised net of GST, except where GST is not recoverable from the ATO. Receivables and payables are stated inclusive of GST. Cash flows are presented gross; GST on investing/financing flows is shown as operating.</p></div>
+      <div class="pol"><h3>Cash &amp; cash equivalents</h3><p>Cash on hand, cash at bank, deposits on demand and highly liquid investments maturing within three months. Bank overdrafts are shown as short-term borrowings in current liabilities.</p></div>
+      <div class="pol"><h3>Trade &amp; other receivables</h3><p>Amounts due from customers for unpaid invoices and services. Those due within 12 months are current. Collectability is reviewed on an ongoing basis; uncollectible debts are written off when identified, and an allowance for doubtful debts is raised on objective evidence.</p></div>
+      <div class="pol"><h3>Trade &amp; other payables</h3><p>Liabilities for goods and services received before year end that are unpaid. Unsecured, recognised as a current liability, and normally paid within 30 days of recognition.</p></div>
+      <div class="pol"><h3>Grants &amp; other contributions</h3><p>Recognised as revenue when the business obtains control of the contributed assets, with attention to any conditions requiring the funds to be spent in a particular manner or period.</p></div>
+    </div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Confidential</span><span>06</span></div>
+  </section>
+
+  <!-- ============ 7 · POLICIES II ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:12px">Significant accounting policies · II</div>
+    <h2 class="h2">Assets</h2>
+    <div style="columns:2;column-gap:28px;margin-top:10px">
+      <div class="pol"><h3>Fixed assets</h3><p>Each class is carried at cost or fair value less accumulated depreciation or impairment. Assets are initially recognised at cost — the fair value of consideration given plus incidental acquisition costs. Subsequent costs are capitalised only when future economic benefits are probable and cost is reliably measurable; other repairs and maintenance are expensed as incurred.</p></div>
+      <div class="pol"><h3>Capitalisation threshold</h3><p>Expenditure on items of equipment under <strong>$1,000</strong> is generally not capitalised; instead it is recorded on an asset inventory listing.</p></div>
+      <div class="pol"><h3>Revaluation</h3><p>Revalued assets are carried at fair value. Increases are credited to a revaluation surplus in equity; decreases first offset prior increases for the same asset, then go to profit or loss. Revaluations occur with sufficient regularity that carrying amounts do not differ materially from fair value.</p></div>
+      <div class="pol"><h3>Depreciation of non-current assets</h3><p>All non-current assets with a limited useful life (excluding freehold land) are depreciated on a straight-line basis over their useful lives, from the date of acquisition or completion. Residual values and useful lives are reviewed each reporting period. Gains and losses on disposal are recognised in comprehensive income.</p></div>
+      <div class="pol"><h3>Impairment</h3><p>Assets (other than inventories) are assessed at each reporting date for indicators of impairment. Where indicated, the recoverable amount — the higher of fair value less costs to sell and value in use — is compared to carrying amount, and any excess is recognised immediately in profit or loss (or as a revaluation decrease for revalued assets).</p></div>
+    </div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Confidential</span><span>07</span></div>
+  </section>
+
+  <!-- ============ 8 · POLICIES III ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:12px">Significant accounting policies · III</div>
+    <h2 class="h2">Liabilities &amp; presentation</h2>
+    <div style="columns:2;column-gap:28px;margin-top:10px">
+      <div class="pol"><h3>Employee benefits</h3><p>Provision is made for benefits arising from services rendered to the end of the reporting period. Benefits expected to settle within a year are measured at the amounts expected to be paid; those beyond a year at the present value of estimated future cash outflows, allowing for wage increases and vesting probability.</p></div>
+      <div class="pol"><h3>Provisions</h3><p>Recognised when there is a present legal or constructive obligation from a past event, an outflow of economic benefits is probable, and the amount can be reliably measured — using the best estimate to settle the obligation at reporting date.</p></div>
+      <div class="pol"><h3>Leases</h3><p>Finance leases (substantially all risks and benefits transferred) are capitalised as an asset and liability and depreciated over the shorter of useful life or lease term. Operating lease payments are expensed as incurred; lease incentives are amortised over the lease term.</p></div>
+      <div class="pol"><h3>Current &amp; non-current classification</h3><p>Assets and liabilities are classified as current when expected to be settled within the 12-month operational cycle. Liabilities without an unconditional right to defer settlement beyond 12 months (e.g. vested long service leave) are current even if not expected to settle within the year.</p></div>
+      <div class="pol"><h3>Rounding off figures</h3><p>All figures in the annual financial report, other than a rate in the dollar, are rounded to the nearest dollar.</p></div>
+      <div class="pol"><h3>Budget comparative figures</h3><p>Unless otherwise stated, budget comparatives relate to the original budget estimate for the relevant item of disclosure.</p></div>
+    </div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Confidential</span><span>08</span></div>
+  </section>
+
+  <!-- ============ 9 · CONTROLS & MONTH-END ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:12px">Keeping it clean &amp; solvent</div>
+    <h2 class="h2">Controls, month-end &amp; reporting</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Day-to-day discipline and a reliable month-end close are what let the CEO report accurate numbers to the Board and attest to solvency each month.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+      <div class="card" style="border-top:3px solid #6C793C">
+        <div class="eyb" style="font-size:10px;color:#6C793C;margin-bottom:9px">Standing controls</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Chart-of-accounts changes: CEO approval only.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">System access requires completed training.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Payables normally paid within 30 days.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Equipment under $1,000 to the asset inventory, not capitalised.</li>
+          <li style="padding:5px 0">Receivables reviewed for collectability on an ongoing basis.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #284B63">
+        <div class="eyb" style="font-size:10px;color:#284B63;margin-bottom:9px">Month-end close</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Reconcile bank, debtors, creditors and clearing accounts in Xero.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Post depreciation, accruals and payroll liabilities.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Confirm GST, PAYG and superannuation positions.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Refresh reporting (Reach) and cash forecast (Frog).</li>
+          <li style="padding:5px 0">Produce the numbers for the Monthly Board Report.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="background:linear-gradient(135deg,#55632f,#6C793C);color:#fff;border-radius:10px;padding:18px 24px;break-inside:avoid">
+      <div class="eyb" style="color:rgba(255,255,255,.8);margin-bottom:7px">The link to governance</div>
+      <p style="margin:0;font-size:14.5px;line-height:1.45;color:#fff;max-width:780px">A clean close feeds the Monthly Board Report — the strategic scorecard, budget compliance and the CEO's attestation of solvency. Good finance discipline is what makes "no surprises to the Board" possible.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>© 2026 Blue Zoo · FY27 Finance Playbook · Confidential</span><span>09</span></div>
+  </section>
+
+  <!-- ============ APPENDIX · INDEX ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:12px">Appendix</div>
+    <h2 class="h2">Procedures &amp; how-to guides</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Step-by-step procedures from the Finance Operations Manual, with the original system screenshots. The manual, held by the Finance Manager, remains the controlling document; no changes without Director consent.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 44px;margin-bottom:20px">
+      <div class="li">A · ASIC annual Company Statement</div>
+      <div class="li">H · Bank transfers &amp; BPAY</div>
+      <div class="li">B · Accounts payable</div>
+      <div class="li">I · Bank reconciliation</div>
+      <div class="li">C · Reimbursements &amp; accounts receivable</div>
+      <div class="li">J · Company tax &amp; BAS</div>
+      <div class="li">D · Delinquent collections</div>
+      <div class="li">K · Separation of duties &amp; delegations</div>
+      <div class="li">E · Payroll</div>
+      <div class="li">L · Compliance calendar</div>
+      <div class="li">F · Superannuation &amp; salary sacrifice</div>
+      <div class="li">M · Budget procedures</div>
+      <div class="li">G · Bank processing &amp; attestation</div>
+      <div class="li">&nbsp;</div>
+    </div>
+    <div class="apx">Finance policy &amp; accounts</div>
+    <div class="g2" style="grid-template-columns:1fr 1fr;display:grid;gap:16px">
+      <div class="card" style="border-top:3px solid #6C793C">
+        <div class="eyb" style="font-size:10px;color:#6C793C;margin-bottom:7px">Finance policy</div>
+        <p style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700)">The business seeks a minimum <strong>8% return on total operating costs</strong>, sequestered into a Future Fund for the benefit of shareholders.</p>
+      </div>
+      <div class="card" style="border-top:3px solid #284B63">
+        <div class="eyb" style="font-size:10px;color:#284B63;margin-bottom:7px">Accounts</div>
+        <p style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700)"><strong>Bank (NAB):</strong> Operating, Director cards, Finance Manager card, Subscriptions. <strong>Investments:</strong> Future Fund (InvestSmart), CMC Markets, Colonial First State.</p>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>10</span></div>
+  </section>
+
+  <!-- ============ A · ASIC ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix A</div>
+    <h2 class="h2" style="font-size:22px">Annual Compliance — ASIC Company Statement</h2>
+    <ol class="ol">
+      <li>Go to the ASIC officeholder portal (asic.gov.au/company-online) and log in.</li>
+      <li>Key in the ACN / ABN — Blue Zoo Holdings Pty Ltd, ACN 119 062 850.</li>
+      <li>In your inbox, click the form number shown to download the Company Statement PDF.</li>
+      <li>Review all details. If changes are needed, click <strong>Start new form</strong> and select form 484.</li>
+      <li>Tick which change applies and enter the new address or information.</li>
+      <li>Get payment details from the Company Statement and process payment via BPAY.</li>
+    </ol>
+    <div class="note">ASIC must be notified within 28 days after the date of change, and within 28 days after the date of issue of the annual company statement.</div>
+    <div class="g3">
+      <img class="shot" src="assets/fm/image5.png" alt="ASIC portal login"><img class="shot" src="assets/fm/image6.png" alt="Key in ACN/ABN"><img class="shot" src="assets/fm/image7.png" alt="Download company statement">
+      <img class="shot" src="assets/fm/image8.png" alt="Review details"><img class="shot" src="assets/fm/image9.png" alt="Start new form 484"><img class="shot" src="assets/fm/image10.png" alt="Tick change">
+      <img class="shot" src="assets/fm/image11.png" alt="Enter new information"><img class="shot" src="assets/fm/image12.png" alt="Payment details"><div></div>
+    </div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>11</span></div>
+  </section>
+
+  <!-- ============ B · ACCOUNTS PAYABLE ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix B</div>
+    <h2 class="h2" style="font-size:22px">Accounts payable</h2>
+    <p style="font-size:12px;line-height:1.45;color:var(--bz-grey-700);margin-bottom:8px">Two types: a traditional supplier invoice, and a debit-card transaction.</p>
+    <div class="apx">Supplier invoice</div>
+    <ol class="ol">
+      <li>Receive the invoice on delivery of goods/services; confirm goods received and in good condition.</li>
+      <li>Save the invoice to OneDrive as "YYYYMMDD Supplier Name-Purchase Summary-Amount".</li>
+      <li>Log into Xero and create a new bill from the New menu; then proceed to bank processing and reconciliation.</li>
+    </ol>
+    <div class="g2"><img class="shot" src="assets/fm/image14.png" alt="New bill menu"><img class="shot" src="assets/fm/image15.png" alt="Create bill"></div>
+    <div class="apx">Debit-card transaction</div>
+    <ol class="ol">
+      <li>The card owner saves the receipt to OneDrive using the same naming format.</li>
+      <li>Draft the bill in Xero; open the dashboard and click "Reconcile items" for the card.</li>
+      <li>Input the bill details, attach the receipt from OneDrive, and click Approve. Proceed to reconciliation.</li>
+    </ol>
+    <div class="g3"><img class="shot" src="assets/fm/image16.png" alt="Reconcile items"><img class="shot" src="assets/fm/image17.png" alt="Bill details"><img class="shot" src="assets/fm/image18.png" alt="Attach receipt"></div>
+    <div class="g3"><img class="shot" src="assets/fm/image19.png" alt="Approve bill"><div></div><div></div></div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>12</span></div>
+  </section>
+
+  <!-- ============ C · REIMBURSEMENTS & AR ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix C</div>
+    <h2 class="h2" style="font-size:22px">Reimbursements &amp; accounts receivable</h2>
+    <div class="apx">Reimbursements (employee expense claims)</div>
+    <ol class="ol">
+      <li>Claims are sent periodically, in a single email, at least three days before the pay run (Wednesdays, fortnightly).</li>
+      <li>Staff incur the expense on personal cash/card and email receipts to the accountant.</li>
+      <li>Check validity; every Monday of pay-run week, draft a bill in Xero payable to the staff member.</li>
+      <li>Send bank payment on the pay-run date.</li>
+    </ol>
+    <div class="apx">Accounts receivable</div>
+    <ol class="ol">
+      <li>The CEO sends the billing sheet on or before each invoicing run (15th and 28th of the month).</li>
+      <li>In Xero, click the plus icon then Invoice; encode the information from the billing sheet.</li>
+      <li>Click Save &amp; Submit, forward to the CEO for approval, then send invoices to customers.</li>
+      <li>Monitor payments after the due date; if unpaid, proceed to delinquent collections.</li>
+    </ol>
+    <div class="g3"><img class="shot" src="assets/fm/image22.png" alt="New invoice"><img class="shot" src="assets/fm/image23.png" alt="Encode billing sheet"><img class="shot" src="assets/fm/image24.png" alt="Save and submit"></div>
+    <div class="note">GL categories include Consulting Fees, Wizer Licences, Reimbursements (on-billed client costs) and Governance Manager.</div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>13</span></div>
+  </section>
+
+  <!-- ============ D · DELINQUENT ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix D</div>
+    <h2 class="h2" style="font-size:22px">Delinquent collections</h2>
+    <ol class="ol">
+      <li>For invoices past due, discuss the missed payment with the CEO.</li>
+      <li>If the cause is an invoice issue, investigate and resend the corrected invoice.</li>
+      <li>If there is no issue, at 14 days overdue get CEO approval and send the first email reminder via Xero.</li>
+      <li>If no payment or commitment a week later, call the customer.</li>
+      <li>At 28 days overdue, send the second email reminder via Xero.</li>
+      <li>Inform the CEO; the CEO personally contacts the customer. Last resort is a statutory demand.</li>
+    </ol>
+    <div class="note" style="font-style:italic">Reminder template: a courteous note acknowledging difficult trading conditions, stating the overdue balance and days past due, inviting the customer to discuss a workable solution, and requesting payment or communication.</div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>14</span></div>
+  </section>
+
+  <!-- ============ E · PAYROLL (1) ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix E</div>
+    <h2 class="h2" style="font-size:22px">Payroll — pay run</h2>
+    <p style="font-size:12px;line-height:1.45;color:var(--bz-grey-700);margin-bottom:8px">AU payroll is processed on Wednesdays, fortnightly.</p>
+    <ol class="ol">
+      <li>Ensure all leave taken in the pay period is filed in Xero.</li>
+      <li>Under Payroll → Pay employees, click Add Pay Run; select the current pay period and click Next.</li>
+      <li>Xero calculates superannuation and PAYG; review each employee's pay for accuracy.</li>
+      <li>Post the pay run in Xero and download the .aba file; proceed to Bank Processing (NAB).</li>
+      <li>Monitor payment and ensure the CEO's authorisation.</li>
+    </ol>
+    <div class="g3"><img class="shot" src="assets/fm/image27.png" alt="Add pay run"><img class="shot" src="assets/fm/image28.png" alt="Select pay period"><img class="shot" src="assets/fm/image29.png" alt="Review pay"></div>
+    <div class="g2"><img class="shot" src="assets/fm/image30.png" alt="Post pay run"><img class="shot" src="assets/fm/image31.png" alt="Download aba"></div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>15</span></div>
+  </section>
+
+  <!-- ============ E · PAYROLL (2) ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix E (cont.)</div>
+    <h2 class="h2" style="font-size:22px">Payroll — payslips &amp; STP</h2>
+    <ol class="ol">
+      <li>Log into Xero; under Payroll → Pay employees, select the most recent pay-run period.</li>
+      <li>Under Pay run options, click Email payslips.</li>
+      <li>Return to the pay run and click File to lodge Single Touch Payroll (STP).</li>
+      <li>Tick the check box and click Submit to ATO.</li>
+    </ol>
+    <div class="g3"><img class="shot" src="assets/fm/image32.png" alt="Select pay run"><img class="shot" src="assets/fm/image33.png" alt="Email payslips option"><img class="shot" src="assets/fm/image34.png" alt="Payslips"></div>
+    <div class="g2"><img class="shot" src="assets/fm/image35.png" alt="File STP"><img class="shot" src="assets/fm/image36.png" alt="Submit to ATO"></div>
+    <div class="note">Special-case employees are calculated in the fortnight payroll workbook, paid via Wise batch payment (recipients imported from a .csv populated from the payroll template). Employee master data lives in BambooHR.</div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>16</span></div>
+  </section>
+
+  <!-- ============ F · SUPER & SALARY SACRIFICE ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix F</div>
+    <h2 class="h2" style="font-size:22px">Superannuation &amp; salary sacrifice</h2>
+    <div class="apx">Superannuation</div>
+    <ol class="ol">
+      <li>In Xero → Payroll → Superannuation, click Add Super Payment.</li>
+      <li>Choose the lines of the covered month from the posted pay runs (paid monthly to manage cash flow, though due quarterly).</li>
+      <li>Click Submit for Approval; the batch shows as 'Pending Approval'.</li>
+      <li>The Finance Director receives an SMS authorisation code (valid 24 hours); the approver opens the batch, clicks Approve, enters the code and clicks Approve &amp; Submit.</li>
+    </ol>
+    <div class="g2"><img class="shot" src="assets/fm/image38.png" alt="Superannuation menu"><img class="shot" src="assets/fm/image39.png" alt="Add super payment"></div>
+    <div class="g2"><img class="shot" src="assets/fm/image40.png" alt="Select accruals"><img class="shot" src="assets/fm/image41.png" alt="Submit for approval"></div>
+    <div class="apx">Salary sacrifice</div>
+    <ol class="ol">
+      <li>Staff advise their line manager of intent to salary sacrifice; the LM consults the accountant on cash-flow impact.</li>
+      <li>If allowable, LM and staff finalise terms and sign the agreement (staff may not resign until the asset is fully paid).</li>
+      <li>The asset is purchased via debit card or bank processing; the accountant updates the payroll template and sets it up in Xero.</li>
+    </ol>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>17</span></div>
+  </section>
+
+  <!-- ============ G · BANK PROCESSING ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix G</div>
+    <h2 class="h2" style="font-size:22px">Bank processing &amp; attestation</h2>
+    <ol class="ol">
+      <li>After creating the bill in Xero, download its .aba file.</li>
+      <li>Log into NAB; click Payments → Upload a payment file.</li>
+      <li>Choose and upload the .aba file exported from Xero, then click View Payment.</li>
+      <li>Email the CEO that NAB transactions are ready for authorisation, attaching the .aba file and the attestation statement.</li>
+      <li>CEO authorisation is done twice a month, coinciding with the payroll pay run; monitor authorisation.</li>
+    </ol>
+    <div class="g3"><img class="shot" src="assets/fm/image31.png" alt="Download aba"><img class="shot" src="assets/fm/image44.png" alt="Upload payment file"><img class="shot" src="assets/fm/image45.png" alt="Upload aba"></div>
+    <div class="g3"><img class="shot" src="assets/fm/image46.png" alt="View payment"><div></div><div></div></div>
+    <div class="note" style="font-style:italic">Attestation sample: "I have considered the cash position of Blue Zoo and attest that the approval requested from the Operating Account will not leave the business unable to pay its bills as and when they fall due… the payments can be met from current account balances and are not reliant on receipts or any other element of uncertainty."</div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>18</span></div>
+  </section>
+
+  <!-- ============ H · TRANSFERS & BPAY ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix H</div>
+    <h2 class="h2" style="font-size:22px">Bank transfers &amp; BPAY</h2>
+    <div class="apx">Transfer to a linked account</div>
+    <ol class="ol">
+      <li>Log into NAB; click Payments → Transfer (linked account).</li>
+      <li>Complete the mandatory fields — From (Operating Account) and To (the relevant debit card).</li>
+      <li>Submit payment.</li>
+    </ol>
+    <div class="g3"><img class="shot" src="assets/fm/image47.png" alt="Transfer linked account"><img class="shot" src="assets/fm/image48.png" alt="Payment details"><img class="shot" src="assets/fm/image49.png" alt="Submit"></div>
+    <div class="apx">BPAY</div>
+    <p style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700);margin-bottom:6px">For payments to the ATO or suppliers that can only be paid via BPAY (others are paid by manual transfer to the bank details on their invoice).</p>
+    <ol class="ol">
+      <li>Log into NAB; from the Payments menu, select BPAY.</li>
+      <li>Fill the value date, From account, description, biller, customer reference number and amount.</li>
+      <li>Click Submit.</li>
+    </ol>
+    <div class="g2"><img class="shot" src="assets/fm/image50.png" alt="BPAY menu"><img class="shot" src="assets/fm/image51.png" alt="BPAY details"></div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>19</span></div>
+  </section>
+
+  <!-- ============ I · BANK REC ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix I</div>
+    <h2 class="h2" style="font-size:22px">Bank reconciliation</h2>
+    <ol class="ol">
+      <li>Ensure all payable bills and transactions are approved, and all receivable invoices collected.</li>
+      <li>Check that approved bills and collected invoices match the bank lines on the statement.</li>
+      <li>Open the Xero dashboard and click "Reconcile items" for the account being reconciled.</li>
+      <li>Beside the bank line, in the Match tab click Find &amp; Match; select the matching bill.</li>
+      <li>For international transactions, split the transaction to match the bill across both bank lines (transaction fee appears separately).</li>
+      <li>Click OK to finish matching; move to the next line until all are matched.</li>
+      <li>If bills do not match, review invoices and amend bills as necessary.</li>
+    </ol>
+    <div class="g3"><img class="shot" src="assets/fm/image53.png" alt="Reconcile items"><img class="shot" src="assets/fm/image54.png" alt="Find and match"><img class="shot" src="assets/fm/image55.png" alt="Select matching bill"></div>
+    <div class="g2"><img class="shot" src="assets/fm/image56.png" alt="Split international transaction"><img class="shot" src="assets/fm/image57.png" alt="Finish matching"></div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>20</span></div>
+  </section>
+
+  <!-- ============ J · COMPANY TAX & BAS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix J</div>
+    <h2 class="h2" style="font-size:22px">Company tax &amp; BAS</h2>
+    <div class="apx">Company tax return</div>
+    <p style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700);margin-bottom:6px">Blue Zoo uses Marsden Stantons to prepare and lodge the company return; initiated after 30 June reconciliation.</p>
+    <ol class="ol">
+      <li>Reconcile the books at the end of the financial year and advise Marsden Stantons (they have Xero access).</li>
+      <li>The Finance Director signs the Letter of Engagement to initiate the review.</li>
+      <li>Provide information as required (e.g. tax statements from InvestSmart &amp; Colonial First State).</li>
+      <li>Monitor progress; follow up if not filed by February. Marsden Stantons files the return.</li>
+    </ol>
+    <div class="g2"><img class="shot" src="assets/fm/image58.png" alt="Company tax"><div></div></div>
+    <div class="apx">Business Activity Statement (BAS)</div>
+    <ol class="ol">
+      <li>Ensure all cash and bank transactions are reconciled and pay runs posted.</li>
+      <li>In Xero → Accounting → Reports → Activity Statement, click Review for the reporting period.</li>
+      <li>Review BAS figures for PAYG against the Payroll Summary Report.</li>
+      <li>Click Lodge to ATO, tick Authorise to file, and Lodge. A refund goes to the operating account; a payable is processed via bank processing.</li>
+    </ol>
+    <div class="g2"><img class="shot" src="assets/fm/image60.jpeg" alt="Activity statement"><div></div></div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>21</span></div>
+  </section>
+
+  <!-- ============ K · SEPARATION & DELEGATIONS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix K</div>
+    <h2 class="h2" style="font-size:22px">Separation of duties &amp; delegations</h2>
+    <div class="apx">Separation of duties</div>
+    <p style="font-size:11.5px;line-height:1.45;color:var(--bz-grey-700);margin-bottom:6px">No individual should control every activity in an end-to-end process — providing checks and balances. Reviewed at least annually.</p>
+    <ol class="ol">
+      <li>Separate system ownership from system certification / accreditation.</li>
+      <li>Separate system administration from system auditing.</li>
+      <li>Separate operational responsibility from record-keeping responsibility.</li>
+    </ol>
+    <div class="apx">Delegations &amp; authorities (extract)</div>
+    <table class="rtbl">
+      <thead><tr><th>Decision</th><th style="width:90px">Board</th><th style="width:90px">Director</th><th style="width:90px">Finance</th></tr></thead>
+      <tbody>
+        <tr><td>Purchase / disposal of assets &gt; $1,000</td><td>Approve</td><td>Recommend</td><td>Recommend</td></tr>
+        <tr><td>Contracts &lt; 2 years or &lt; $20,000</td><td>Be advised</td><td>Approve &amp; sign</td><td>Recommend</td></tr>
+        <tr><td>Contracts &gt; 2 years or &gt; $20,000</td><td>Approve</td><td>Recommend</td><td>Recommend</td></tr>
+        <tr><td>Annual budget</td><td>Approve</td><td>Recommend</td><td>Develop</td></tr>
+        <tr><td>Unbudgeted capital &gt; $5,000</td><td>Approve</td><td>Recommend</td><td>Recommend</td></tr>
+        <tr><td>Operating expense payments</td><td>—</td><td>Check / approve / sign</td><td>Monitor / transfer</td></tr>
+        <tr><td>Tax &amp; superannuation payments</td><td>Approve</td><td>Check / sign</td><td>Prepare / monitor</td></tr>
+        <tr><td>Opening / closing bank accounts</td><td>Approve</td><td>Recommend</td><td>Recommend</td></tr>
+      </tbody>
+    </table>
+    <div class="note">Powers are delegated to a position, not a person; approving beyond a delegation limit breaches the policy. The register is Board-reserved and reviewed annually.</div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>22</span></div>
+  </section>
+
+  <!-- ============ L · COMPLIANCE CALENDAR ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix L</div>
+    <h2 class="h2" style="font-size:22px">Compliance calendar</h2>
+    <p style="font-size:12px;line-height:1.45;color:var(--bz-grey-700);margin-bottom:10px">Business Activity Statement, Superannuation Lodgement and PAYG Instalment recur <strong>every month</strong>. Additional obligations and audits fall as below.</p>
+    <table class="rtbl">
+      <thead><tr><th style="width:130px">Month</th><th>Additional obligation / audit</th></tr></thead>
+      <tbody>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">July</td><td>Statutory Compliance Audit (external)</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">September</td><td>Reimbursements / Claims Audit</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">November</td><td>Banking Reconciliation Audit</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">February</td><td>Professional Insurance; Company Tax Return</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">March</td><td>Financial Controls Audit</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">April</td><td>Fringe Benefits Tax; ASIC Review / Renewal</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">May</td><td>Separation of Duties Audit; Insurance renewals (Workers' Comp, PI, Business)</td></tr>
+      </tbody>
+    </table>
+    <div class="note">Audit program: Financial controls (Mar, internal), Separation of duties (May, internal), Statutory compliance (Jul, external), Reimbursements &amp; expense claims (Sep, internal), Annual banking reconciliation (Nov). Findings tracked in an Asana audit project and reported to the Board.</div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Finance Playbook · Appendix · Confidential</span><span>23</span></div>
+  </section>
+
+  <!-- ============ M · BUDGET PROCEDURES ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#6C793C;margin-bottom:10px">Appendix M</div>
+    <h2 class="h2" style="font-size:22px">Budget procedures</h2>
+    <p style="font-size:12px;line-height:1.45;color:var(--bz-grey-700);margin-bottom:8px">The budget is updated twice a year against a four-year planning horizon (the Strategic Plan), with forecasting and reporting to maintain budgetary control.</p>
+    <div class="apx">End-year (delivered June, operational 1 July)</div>
+    <ol class="ol">
+      <li>Commence 1 April: review prior budget and variances; understand strategic decisions with budget impact.</li>
+      <li>Assess likely future revenues, fixed costs and variable costs; prepare a draft budget by 30 April.</li>
+      <li>Scrutinise cash flows for sustainability; deliver the draft to the CEO with scenarios.</li>
+      <li>Implement Board changes by mid-May; deliver the final budget for the June Board agenda.</li>
+      <li>Receive endorsement mid-June; publish in the finance system by end June; advise the CEO the budget is live by 1 July.</li>
+    </ol>
+    <div class="apx">Mid-year (delivered December, operational 1 January)</div>
+    <ol class="ol">
+      <li>Commence 1 October: review the period and variances and any strategic budget impacts.</li>
+      <li>Reassess revenues and costs; prepare draft amendments and test against cash flow.</li>
+      <li>Deliver draft amendments to the CEO with scenarios by mid-October; implement Board changes and republish.</li>
+    </ol>
+    <div class="note">Budget policy: operate financially sustainably — surpluses fund capital, Future Fund allocations and debt servicing, and provide for calculated risk-taking and innovation.</div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>© 2026 Blue Zoo · FY27 Finance Playbook · Appendix · Confidential</span><span>24</span></div>
+  </section>
+
+
+</x-import>
+</x-dc>
+</body>
+</html>

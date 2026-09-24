@@ -1,0 +1,97 @@
+/* ============================================================
+   bluezoo — Colour tokens
+   Source: BZ Brand Guide (Primary + Service Line palettes)
+   ============================================================ */
+
+:root {
+  /* ---- Primary palette (brand guide) ---- */
+  --bz-blue:        #284B63;  /* BZ Blue   — RGB 40 75 99   */
+  --bz-green:       #3C6E71;  /* BZ Green  — RGB 60 110 113 (teal) */
+  --bz-grey:        #353535;  /* BZ Grey   — RGB 53 53 53   */
+  --bz-grey-light:  #D9D9D9;  /* Light grey— RGB 217 217 217 */
+  --bz-white:       #FFFFFF;
+
+  /* ---- Service-line palette (brand guide, 8 swatches) ---- */
+  --bz-governance:  #137B8F;  /* elephant — bright teal */
+  --bz-strategy:    #153E5A;  /* lion     — deep navy   */
+  --bz-risk:        #4B6969;  /* fox      — slate teal  */
+  --bz-resilience:  #6C793C;  /* hummingbird — olive    */
+
+  --bz-teal-deep:   #275E75;
+  --bz-blue-muted:  #638490;
+  --bz-sage:        #8AA090;
+  --bz-olive-light: #96A350;
+
+  /* ---- Blue ramp (built around BZ Blue) ---- */
+  --bz-blue-900: #153E5A;
+  --bz-blue-800: #1d4658;
+  --bz-blue-700: #284B63;   /* = BZ Blue */
+  --bz-blue-600: #34607f;
+  --bz-blue-500: #44748f;
+  --bz-blue-400: #638490;
+  --bz-blue-300: #93aab6;
+  --bz-blue-200: #c3d0d8;
+  --bz-blue-100: #e6ecef;
+
+  /* ---- Teal ramp (built around BZ Green) ---- */
+  --bz-teal-700: #2f595c;
+  --bz-teal-600: #3C6E71;   /* = BZ Green */
+  --bz-teal-500: #4d8689;
+  --bz-teal-400: #7aa9ab;
+  --bz-teal-200: #c2d7d8;
+  --bz-teal-100: #e7f0f0;
+
+  /* ---- Neutral grey ramp (built around BZ Grey / Light grey) ---- */
+  --bz-grey-900: #232323;
+  --bz-grey-800: #353535;   /* = BZ Grey */
+  --bz-grey-700: #4d4d4d;
+  --bz-grey-600: #6b6b6b;
+  --bz-grey-500: #8c8c8c;
+  --bz-grey-400: #b0b0b0;
+  --bz-grey-300: #D9D9D9;   /* = Light grey */
+  --bz-grey-200: #e7e8e9;
+  --bz-grey-100: #f1f2f3;
+  --bz-grey-50:  #f8f9fa;
+
+  /* ---- Semantic / status (derived to harmonise with palette) ---- */
+  --bz-success: #6C793C;   /* resilience olive */
+  --bz-warning: #b08a2e;
+  --bz-danger:  #9e3b34;
+  --bz-info:    #137B8F;   /* governance teal */
+
+  /* ============================================================
+     Semantic aliases — reference these in product code
+     ============================================================ */
+
+  /* Surfaces */
+  --surface-page:    var(--bz-grey-50);
+  --surface-card:    var(--bz-white);
+  --surface-sunken:  var(--bz-grey-100);
+  --surface-inverse: var(--bz-blue-900);
+  --surface-brand:   var(--bz-blue-700);
+  --surface-accent:  var(--bz-teal-600);
+
+  /* Text */
+  --text-strong:   var(--bz-grey-900);
+  --text-body:     var(--bz-grey-800);
+  --text-muted:    var(--bz-grey-600);
+  --text-subtle:   var(--bz-grey-500);
+  --text-on-brand: var(--bz-white);
+  --text-heading:  var(--bz-blue-700);   /* H1 = BZ Blue   */
+  --text-subhead:  var(--bz-teal-600);   /* H2 = BZ Green  */
+  --text-link:     var(--bz-blue-600);
+
+  /* Borders & lines */
+  --border-subtle:  var(--bz-grey-200);
+  --border-default: var(--bz-grey-300);
+  --border-strong:  var(--bz-grey-400);
+  --border-brand:   var(--bz-blue-700);
+  --ring-focus:     color-mix(in srgb, var(--bz-blue-600) 45%, transparent);
+
+  /* Brand interaction states */
+  --brand-rest:    var(--bz-blue-700);
+  --brand-hover:   var(--bz-blue-800);
+  --brand-active:  var(--bz-blue-900);
+  --accent-rest:   var(--bz-teal-600);
+  --accent-hover:  var(--bz-teal-700);
+}

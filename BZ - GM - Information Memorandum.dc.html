@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+<script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+<style>
+  @page { size: A4; margin: 0; }
+  html, body { margin: 0; padding: 0; }
+  body { background: #5a6770; font-family: 'Carlito','Calibri','Segoe UI',system-ui,sans-serif; color: #353535; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  .im-doc { max-width: 8.27in; margin: 0 auto; background: #fff; }
+  .doc-frame { width: 100%; border-collapse: collapse; }
+  .doc-frame > tbody > tr > td, .doc-frame > thead > tr > td, .doc-frame > tfoot > tr > td { padding: 0; }
+  .hdr-space, .ftr-space { display: none; }
+  .flow { padding: 0 0.85in; }
+  h1, h2, h3, h4 { margin: 0; text-wrap: balance; }
+  p, li { text-wrap: pretty; }
+  .break-before { break-before: page; }
+  .avoid { break-inside: avoid; }
+  .print-footer { display: none; }
+  @media screen {
+    body { padding: 28px 0 80px; }
+    .im-doc { box-shadow: 0 6px 34px rgba(0,0,0,.28); }
+  }
+  @media print {
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { background: #fff; padding: 0; }
+    .im-doc { max-width: none; box-shadow: none; }
+    .hdr-space, .ftr-space { display: table-cell; height: 0.62in; }
+    .flow { padding: 0 0.85in; }
+    .screen-only { display: none !important; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .avoid, figure, table, blockquote { break-inside: avoid; }
+    p, li { orphans: 3; widows: 3; }
+    .print-footer { display: flex; position: fixed; bottom: 0; left: 0; right: 0; height: 0.62in; align-items: center; justify-content: space-between; padding: 0 0.85in; font: 400 9px/1 'Carlito'; letter-spacing: .04em; color: #8c8c8c; text-transform: uppercase; }
+  }
+</style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20GM%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>GM Hub</a>
+
+<button class="screen-only" onClick="{{ print }}" style="position:fixed;right:22px;bottom:22px;z-index:50;border:none;border-radius:6px;background:#284B63;color:#fff;font:700 13px/1 'Carlito';letter-spacing:.03em;padding:13px 18px;cursor:pointer;box-shadow:0 4px 14px rgba(21,62,90,.4);">Print / Save as PDF</button>
+
+<main class="im-doc">
+
+  <!-- ============ COVER ============ -->
+  <section class="avoid" style="position:relative;overflow:hidden;min-height:11.6in;background:linear-gradient(150deg,#153E5A 0%,#284B63 55%,#2f595c 100%);color:#fff;padding:0.95in 0.85in;display:flex;flex-direction:column;">
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-2.4in;top:1.1in;width:8.6in;opacity:0.07;pointer-events:none;">
+    <div style="position:relative;z-index:2;">
+      <img src="assets/logo-white.png" alt="bluezoo" style="width:1.85in;display:block;">
+    </div>
+    <div style="position:relative;z-index:2;margin-top:0.5in;">
+      <div style="display:inline-block;font:700 11px/1 'Carlito';letter-spacing:.18em;text-transform:uppercase;color:#7aa9ab;border:1px solid rgba(122,169,171,.5);border-radius:3px;padding:8px 14px;white-space:nowrap;">Strictly private &amp; confidential</div>
+    </div>
+    <div style="position:relative;z-index:2;margin-top:auto;">
+      <div style="font:700 14px/1 'Carlito';letter-spacing:.16em;text-transform:uppercase;color:#93aab6;margin-bottom:18px;">Information Memorandum</div>
+      <h1 style="font:700 52px/1.04 'Carlito';letter-spacing:-0.01em;color:#fff;max-width:9in;">Acquisition opportunity:<br>Governance&nbsp;Manager</h1>
+      <p style="font:400 19px/1.5 'Carlito';color:#c3d0d8;max-width:6.4in;margin:22px 0 0;">A wholly owned, cloud-based governance &amp; capability-maturity assessment platform, offered for sale by bluezoo.</p>
+    </div>
+    <div style="position:relative;z-index:2;margin-top:0.7in;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;">
+      <div>
+        <div style="font:400 12px/1.4 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;">Prepared for</div>
+        <div style="font:700 16px/1.4 'Carlito';color:#fff;margin-top:4px;">Prospective acquirers</div>
+      </div>
+      <div style="text-align:right;">
+        <div style="font:400 12px/1.4 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;">Issued</div>
+        <div style="font:700 16px/1.4 'Carlito';color:#fff;margin-top:4px;">June 2026 · Ref. BZ-GM-IM-01</div>
+      </div>
+    </div>
+  </section>
+
+  <table class="doc-frame" role="presentation">
+    <thead><tr><td class="hdr-space"></td></tr></thead>
+    <tbody><tr><td>
+      <div class="flow" style="padding-top:0.55in;padding-bottom:0.55in;">
+
+        <!-- ============ IMPORTANT NOTICE ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">Important notice</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Disclaimer &amp; basis of distribution</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 13px/1.62 'Carlito';color:#6b6b6b;margin:0 0 12px;">This Information Memorandum (the &ldquo;Memorandum&rdquo;) has been prepared by bluezoo (the &ldquo;Vendor&rdquo;) solely to assist recipients in deciding whether to proceed with a further investigation of the proposed sale of the Governance Manager business and its associated assets (the &ldquo;Opportunity&rdquo;). It is provided on a strictly confidential basis to a limited number of parties.</p>
+          <p style="font:400 13px/1.62 'Carlito';color:#6b6b6b;margin:0 0 12px;">By accepting this Memorandum, the recipient agrees that it, and any information made available in connection with the Opportunity, will be kept confidential, will be used only for the purpose of evaluating the Opportunity, and will not be reproduced, distributed or disclosed to any other person without the prior written consent of the Vendor. The recipient agrees to return or destroy this Memorandum on request.</p>
+          <p style="font:400 13px/1.62 'Carlito';color:#6b6b6b;margin:0 0 12px;">This Memorandum contains summary information only. It does not purport to be all-inclusive or to contain all of the information that a prospective acquirer may require. The information has been prepared in good faith from sources believed to be reliable; however, no representation or warranty, express or implied, is made as to the accuracy, completeness or reasonableness of the information, forecasts or opinions contained herein. Certain statements are forward-looking and subject to risks and uncertainties; actual outcomes may differ materially.</p>
+          <p style="font:400 13px/1.62 'Carlito';color:#6b6b6b;margin:0 0 12px;">Prospective acquirers must conduct and rely upon their own independent investigation, due diligence and analysis, and should seek their own legal, financial, taxation and commercial advice. Nothing in this Memorandum constitutes legal, financial or taxation advice, nor an offer or invitation to enter into any binding agreement. Any transaction will be governed solely by the terms of a formally executed sale agreement.</p>
+          <p style="font:400 13px/1.62 'Carlito';color:#6b6b6b;margin:0;">The Vendor reserves the right, in its absolute discretion and without giving reasons, to negotiate with any party, to amend or terminate the sale process, to vary the terms or structure of any transaction, and to accept or reject any expression of interest, at any time. All currency figures are in Australian dollars (A$) unless otherwise stated.</p>
+        </section>
+
+        <!-- ============ CONTENTS ============ -->
+        <section class="break-before avoid">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">Contents</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">In this memorandum</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 26px;"></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 48px;">
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">01</span>&nbsp;&nbsp;Executive summary</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">09</span>&nbsp;&nbsp;Case studies in market</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">02</span>&nbsp;&nbsp;Investment highlights</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">10</span>&nbsp;&nbsp;People &amp; transition</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">03</span>&nbsp;&nbsp;The business at a glance</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">11</span>&nbsp;&nbsp;Financial summary</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">04</span>&nbsp;&nbsp;Product overview</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">12</span>&nbsp;&nbsp;Transaction overview</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">05</span>&nbsp;&nbsp;Platform &amp; technology</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">13</span>&nbsp;&nbsp;Indicative process &amp; timeline</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">06</span>&nbsp;&nbsp;Framework library &amp; range</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">14</span>&nbsp;&nbsp;Contact &amp; next steps</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">07</span>&nbsp;&nbsp;Market opportunity</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">A</span>&nbsp;&nbsp;Appendix: framework detail &amp; glossary</span></div>
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e7e8e9;padding:11px 0;font:400 15px/1.3 'Carlito';color:#353535;"><span><span style="color:#3C6E71;font-weight:700;">08</span>&nbsp;&nbsp;Strategic fit for acquirers</span></div>
+          </div>
+        </section>
+
+        <!-- ============ 01 EXEC SUMMARY ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">01 · Executive summary</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">A productised governance methodology, ready to scale</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 14px;">bluezoo is offering for sale <strong>Governance Manager</strong> &mdash; a wholly owned, cloud-based software-as-a-service platform that helps organisations understand, measure, manage and improve governance across a wide range of disciplines. The platform converts the often subjective practice of governance review into a structured, repeatable, evidence-based capability-maturity assessment, supported by an extensive library of frameworks, benchmarking, improvement planning, reporting and a substantial multimedia learning library.</p>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 14px;">Governance Manager is established, proven in market and revenue-generating. FY26 revenue was <strong>A$239,141</strong>, of which <strong>63% was recurring</strong>, earned across three channels &mdash; a small number of large recurring-contract clients, direct one-off assessments, and a growing reseller network. The client base spans government and corporate organisations across Australia, several engaged via a partner network. The product is mature, with a decade of continuous development behind it, and is offered with the option to retain its long-serving development team to ensure continuity.</p>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 22px;">For bluezoo the platform sits outside its core advisory business, prompting a clean divestment. For the right acquirer &mdash; particularly a <strong>consulting or audit firm</strong> &mdash; it represents a rare opportunity to acquire a ready-built, defensible methodology and a recurring software revenue line that can be deployed immediately across an existing client base.</p>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #3C6E71;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 30px/1 'Carlito';color:#284B63;">A$650k</div>
+              <div style="font:400 13px/1.45 'Carlito';color:#6b6b6b;margin-top:7px;">Indicative asking price &mdash; clean asset sale</div>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #3C6E71;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 30px/1 'Carlito';color:#284B63;">A$239k</div>
+              <div style="font:400 13px/1.45 'Carlito';color:#6b6b6b;margin-top:7px;">FY26 total revenue (all channels)</div>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #3C6E71;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 30px/1 'Carlito';color:#284B63;">63%</div>
+              <div style="font:400 13px/1.45 'Carlito';color:#6b6b6b;margin-top:7px;">Recurring revenue (FY26 A$151,053)</div>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #3C6E71;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 30px/1 'Carlito';color:#284B63;">48%</div>
+              <div style="font:400 13px/1.45 'Carlito';color:#6b6b6b;margin-top:7px;">FY26 gross margin / EBITDA (up to 78% stretch)</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 02 INVESTMENT HIGHLIGHTS ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">02 · Investment highlights</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Why Governance Manager is compelling</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 24px;"></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.1em;text-transform:uppercase;color:#137B8F;margin-bottom:10px;">Recurring &amp; sticky</div>
+              <p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">A subscription model with long-tenured contracts &mdash; some running 8 to 10 years &mdash; delivers predictable, defensible recurring revenue and high switching costs once a client&rsquo;s frameworks and history are embedded.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.1em;text-transform:uppercase;color:#153E5A;margin-bottom:10px;">Productised IP</div>
+              <p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">A flexible, limitless library of capability standards, frameworks and maturity-scoring models &mdash; a repeatable methodology that an acquirer can deploy across its own client base from day one.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.1em;text-transform:uppercase;color:#4B6969;margin-bottom:10px;">Data &amp; benchmark moat</div>
+              <p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">Benchmarking across entities, units and suppliers means the platform&rsquo;s value compounds with every assessment &mdash; a defensible advantage that deepens as the install base grows.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.1em;text-transform:uppercase;color:#6C793C;margin-bottom:10px;">Blue-chip clients</div>
+              <p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">Government departments, regulators and corporate entities already trust the platform &mdash; credibility that is difficult and slow to build from scratch in the governance sector.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.1em;text-transform:uppercase;color:#137B8F;margin-bottom:10px;">Low-risk handover</div>
+              <p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">The decade-long lead developer is available to transfer with the asset, materially de-risking continuity and preserving deep domain and codebase knowledge.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.1em;text-transform:uppercase;color:#153E5A;margin-bottom:10px;">Large addressable market</div>
+              <p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">Governance, risk and compliance is a structural growth market. Because the framework model is discipline-agnostic, the addressable market is effectively unlimited &mdash; any organisation, any sector.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 03 AT A GLANCE ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">03 · The business at a glance</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Key facts</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <table style="width:100%;border-collapse:collapse;">
+            <tbody>
+              <tr><td style="width:34%;padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Asset</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Governance Manager &mdash; a cloud-based SaaS governance &amp; capability-maturity platform (governancemanager.org.au)</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Vendor</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">bluezoo &mdash; wholly owned; the product is non-core to bluezoo&rsquo;s advisory business</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">What it does</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Structured capability-maturity assessment, benchmarking, improvement planning, reporting and governance learning across multiple disciplines</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Clients</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">FY26: 2 large recurring-contract clients, 8 direct assessment clients and a growing reseller network &mdash; government and corporate, across Australia</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Contracts</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Recurring subscriptions; high retention with several relationships of 8&ndash;10 years</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Team</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Senior developer (1 FTE, ~10 years on the product) and a support resource (1 FTE), both Philippines-based, who may transfer with the asset</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Transaction</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Asset sale; indicative price A$650,000</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Headquarters</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Australia, with development capability in the Philippines</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- ============ 04 PRODUCT OVERVIEW ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">04 · Product overview</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">What Governance Manager does</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 14px;">Governance complexities can overwhelm even well-organised teams. Governance Manager addresses this with a single, integrated platform that helps organisations measure where they stand, decide what to improve, and prove progress over time &mdash; without the cost and inconsistency of bespoke consulting reviews.</p>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 22px;">At its heart, the platform solves a resource-effectiveness problem: it helps organisations identify needs and focus finite resources on the vital practices that form the next foundational layer of improvement. Maturity models give a structured way to evaluate an organisation&rsquo;s current state, desired state, mandatory state and benchmark performance &mdash; turning judgement into measurable, comparable data.</p>
+
+          <h3 style="font:700 17px/1.3 'Carlito';color:#3C6E71;margin:6px 0 16px;">Core capabilities</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#f8f9fa;">
+              <div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Framework library</div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:0;">An extensive, curated library of governance frameworks and capability standards reflecting industry best practice &mdash; deployable to suit each organisation&rsquo;s priorities.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#f8f9fa;">
+              <div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Maturity scoring</div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:0;">Flexible, maturity-based scoring models let teams assess capabilities consistently and chart the path from current to desired and mandatory states.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#f8f9fa;">
+              <div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Benchmarking</div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:0;">Visually compare maturity across any number of entities &mdash; companies, projects, business units, suppliers &mdash; for deeper insight into relative performance.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#f8f9fa;">
+              <div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Improvement programs</div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:0;">Assign, prioritise, schedule, monitor and report on improvement actions with full traceability of decision-making &mdash; from finding to outcome.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#f8f9fa;">
+              <div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Reporting &amp; analytics</div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:0;">Detailed reports and a comprehensive reference library let users dive into data and analytics to support informed, defensible decisions.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#f8f9fa;">
+              <div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Learning library</div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:0;">Hundreds of hours of engaging video content break complex governance concepts into digestible segments &mdash; accelerating adoption across teams.</p>
+            </div>
+          </div>
+
+          <div class="avoid" style="background:#e7f0f0;border-left:3px solid #3C6E71;border-radius:0 6px 6px 0;padding:18px 22px;margin:24px 0 0;">
+            <p style="font:400 14.5px/1.6 'Carlito';color:#284B63;margin:0;font-style:italic;">&ldquo;When everyone in an organisation &mdash; or across an entire sector &mdash; can evaluate their business practices, incredible things happen.&rdquo; Governance Manager is built to operate at scale, with enterprise-grade data and security controls.</p>
+          </div>
+        </section>
+
+        <!-- ============ 05 PLATFORM & TECH ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">05 · Platform &amp; technology</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">A scalable, secure SaaS platform</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 18px;">Governance Manager is delivered as a multi-tenant, cloud-hosted SaaS application, refined over roughly a decade of continuous development. It is designed to operate at scale, with enterprise-grade data and security controls suited to government and regulated corporate clients.</p>
+
+          <table style="width:100%;border-collapse:collapse;">
+            <tbody>
+              <tr><td style="width:32%;padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Delivery</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Cloud-hosted, browser-based SaaS; no client installation required</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Tech stack</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Microsoft .NET with SQL Server, running on Microsoft Azure</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Hosting</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Microsoft Azure &mdash; Australia Central region</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Architecture</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Configurable framework / scoring engine supporting limitless capability standards and maturity models</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Security</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Enterprise-grade data and security controls; role-based access; audit trail of assessment decisions</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Third-party dependencies</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">PostMark and Telnyx for messaging; Telerik and Kendo UI component libraries</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Intellectual property</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">All custom source code is wholly owned and transfers with the asset, together with framework content, the video learning library, brand and domain</td></tr>
+              <tr><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;vertical-align:top;">Development</td><td style="padding:13px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Maintained by a Philippines-based senior developer (1 FTE) with ~10 years&rsquo; continuity on the codebase, supported by a support resource (1 FTE); spare capacity for a forward roadmap</td></tr>
+            </tbody>
+          </table>
+          <p style="font:400 13px/1.55 'Carlito';color:#6b6b6b;margin:16px 0 0;font-style:italic;">Further technology detail &mdash; security posture, environments and any certifications &mdash; will be made available to qualified parties in the data room.</p>
+        </section>
+
+        <!-- ============ 06 FRAMEWORK LIBRARY ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">06 · Framework library &amp; product range</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Breadth across governance disciplines</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 20px;">Because the platform is framework-agnostic, it spans a wide range of governance disciplines &mdash; from strategy and project governance to payroll, data, cyber, supply chain and more. Assessment products are organised as assurance frameworks, maturity frameworks and top-up assessments, with named methodologies such as <strong>STRATassess</strong> (strategy governance) and <strong>PAYROLLassess</strong> (payroll governance). A representative sample of covered disciplines:</p>
+          <div style="display:flex;flex-wrap:wrap;gap:9px;">
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Strategy governance</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Project governance</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Risk management</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Cybersecurity</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Data governance</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Payroll governance</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Supply chain</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Business continuity</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Physical security</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Knowledge governance</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Policy governance</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Remuneration</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Change governance</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">ESG &amp; sustainability</span>
+            <span style="font:700 12.5px/1 'Carlito';color:#284B63;background:#e6ecef;border-radius:20px;padding:9px 15px;">Sector-specific (e.g. NDIS, ACNC)</span>
+          </div>
+          <p style="font:400 13px/1.55 'Carlito';color:#6b6b6b;margin:18px 0 0;font-style:italic;">Indicative coverage drawn from the platform&rsquo;s published frameworks and the GovMatters content library. A full, current catalogue is available on request.</p>
+        </section>
+
+        <!-- ============ 07 MARKET ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">07 · Market opportunity</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">A structural growth market</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 14px;">Governance, risk and compliance (GRC) demand is rising structurally. Boards and executives face intensifying regulatory scrutiny, heightened expectations around accountability and transparency, ESG obligations, cyber and data risk, and growing supply-chain complexity. Across both government and corporate sectors, organisations increasingly need a defensible, evidence-based way to measure and improve how they govern.</p>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 22px;">Governance Manager&rsquo;s addressable market is effectively unlimited: because the platform is discipline-agnostic, any organisation in any sector that wants to assess and improve a capability is a potential user. Demand can be deepened within existing clients (more frameworks, more business units) and broadened across new sectors and geographies.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 14px/1.3 'Carlito';color:#137B8F;margin-bottom:8px;">Regulatory pressure</div>
+              <p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Rising compliance and accountability obligations drive demand for structured assurance.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 14px/1.3 'Carlito';color:#153E5A;margin-bottom:8px;">Do-more-with-less</div>
+              <p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Organisations must focus finite resources on the practices that matter most.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 14px/1.3 'Carlito';color:#6C793C;margin-bottom:8px;">Benchmark demand</div>
+              <p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Sector bodies and groups increasingly want to compare maturity at scale.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 08 STRATEGIC FIT ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">08 · Strategic fit for acquirers</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Where this creates the most value</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 22px;">Governance Manager is being offered to a select group of managed service providers, consulting firms, audit firms and software providers. The fit is strongest for consulting and audit firms, who can productise an existing service line and add recurring software revenue without building from scratch.</p>
+
+          <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #153E5A;border-radius:6px;padding:22px;margin-bottom:16px;background:#fff;">
+            <div style="font:700 16px/1.3 'Carlito';color:#153E5A;margin-bottom:10px;">For consulting firms</div>
+            <p style="font:400 14px/1.6 'Carlito';color:#353535;margin:0;">Turn bespoke advisory work into a repeatable, productised methodology with built-in benchmarking IP. Deploy across your client base from day one, differentiate proposals with a proprietary tool, convert one-off engagements into recurring SaaS and assessment revenue, and build a benchmark dataset that grows more valuable with every engagement.</p>
+          </div>
+          <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #137B8F;border-radius:6px;padding:22px;margin-bottom:16px;background:#fff;">
+            <div style="font:700 16px/1.3 'Carlito';color:#137B8F;margin-bottom:10px;">For audit firms</div>
+            <p style="font:400 14px/1.6 'Carlito';color:#353535;margin:0;">Add structured, defensible, evidence-based maturity assessment with full traceability of decisions &mdash; ideal for internal audit, controls-maturity reviews and assurance engagements. Standardised frameworks improve consistency and quality across teams, while benchmarking opens a value-add advisory upsell beyond compliance.</p>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #4B6969;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 15px/1.3 'Carlito';color:#4B6969;margin-bottom:9px;">For managed service providers</div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:0;">A governance &amp; compliance module to bolt onto managed-client relationships, adding stickiness and a new recurring revenue stream.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #6C793C;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 15px/1.3 'Carlito';color:#6C793C;margin-bottom:9px;">For software providers</div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:0;">A complementary GRC capability plus established clients, content IP and a knowledgeable developer to fold into an existing platform.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 09 CASE STUDIES ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">09 · Case studies in market</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Proven across government &amp; whole sectors</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 24px;">Governance Manager has been deployed not only for individual organisations but at whole-of-sector scale &mdash; coordinated by peak bodies and government departments to assess, benchmark and improve capability across dozens of entities at once. Two representative deployments are summarised below.</p>
+
+          <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #137B8F;border-radius:6px;padding:24px;margin-bottom:18px;background:#fff;">
+            <div style="font:700 12px/1 'Carlito';letter-spacing:.1em;text-transform:uppercase;color:#137B8F;margin-bottom:6px;">Not-for-profit governance &middot; Western Australia</div>
+            <div style="font:700 19px/1.3 'Carlito';color:#284B63;margin-bottom:12px;">National Disability Services (NDS WA)</div>
+            <p style="font:400 14px/1.6 'Carlito';color:#353535;margin:0 0 12px;">NDS is Australia&rsquo;s peak body for non-government disability service organisations; in WA roughly 80 members operate several hundred services. With sector governance under close stakeholder scrutiny &mdash; where the failings of one provider can carry across the whole sector &mdash; NDS adopted Governance Manager as a web-based self-assessment tool offered as a value-added member service, with whole-of-sector performance reporting.</p>
+            <p style="font:400 14px/1.6 'Carlito';color:#353535;margin:0 0 14px;">It lets providers and their boards assess current capability and set goals across governance areas &mdash; boards and committees, financial management, ethics and integrity, social capital, people management, risk and communications &mdash; and track &ldquo;agreed actions&rdquo; toward their goals.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px 28px;">
+              <div style="flex:1 1 140px;"><div style="font:700 24px/1 'Carlito';color:#137B8F;">32+</div><div style="font:400 12.5px/1.4 'Carlito';color:#6b6b6b;margin-top:4px;">member organisations using the tool, anticipated to double</div></div>
+              <div style="flex:1 1 140px;"><div style="font:700 24px/1 'Carlito';color:#137B8F;">~80</div><div style="font:400 12.5px/1.4 'Carlito';color:#6b6b6b;margin-top:4px;">NDS (WA) members across the sector</div></div>
+              <div style="flex:1 1 140px;"><div style="font:700 24px/1 'Carlito';color:#137B8F;">Whole-sector</div><div style="font:400 12.5px/1.4 'Carlito';color:#6b6b6b;margin-top:4px;">oversight of governance strengths and weaknesses</div></div>
+            </div>
+          </div>
+
+          <div class="avoid" style="border:1px solid #e7e8e9;border-top:3px solid #153E5A;border-radius:6px;padding:24px;background:#fff;">
+            <div style="font:700 12px/1 'Carlito';letter-spacing:.1em;text-transform:uppercase;color:#153E5A;margin-bottom:6px;">ICT capability benchmarking &middot; WA Government</div>
+            <div style="font:700 19px/1.3 'Carlito';color:#284B63;margin-bottom:12px;">Sport 4 All &mdash; Department of Sport &amp; Recreation</div>
+            <p style="font:400 14px/1.6 'Carlito';color:#353535;margin:0 0 12px;">Sport 4 All is a four-year, A$20 million program to lift participation in community sport across WA. Through its ClubTalk component, the Department of Sport and Recreation used Governance Manager in partnership with all 93 sporting associations to assess, compare and improve ICT capability across the sector &mdash; directly informing the discharge of the multi-million-dollar grant program.</p>
+            <p style="font:400 14px/1.6 'Carlito';color:#353535;margin:0 0 14px;">Assessments used a purpose-built Small Business ICT Governance Framework (Plan &amp; Organise, Acquire &amp; Implement, Delivery &amp; Support, Monitor &amp; Evaluate), scored on a 1&ndash;4 capability-maturity scale &mdash; where the goal is the right level for each organisation, not simply the highest.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px 28px;">
+              <div style="flex:1 1 140px;"><div style="font:700 24px/1 'Carlito';color:#153E5A;">93</div><div style="font:400 12.5px/1.4 'Carlito';color:#6b6b6b;margin-top:4px;">sporting associations benchmarked together</div></div>
+              <div style="flex:1 1 140px;"><div style="font:700 24px/1 'Carlito';color:#153E5A;">A$20m</div><div style="font:400 12.5px/1.4 'Carlito';color:#6b6b6b;margin-top:4px;">grant program informed by the assessments</div></div>
+              <div style="flex:1 1 140px;"><div style="font:700 24px/1 'Carlito';color:#153E5A;">4 yrs</div><div style="font:400 12.5px/1.4 'Carlito';color:#6b6b6b;margin-top:4px;">multi-year program duration</div></div>
+            </div>
+          </div>
+          <p style="font:400 12px/1.55 'Carlito';color:#8c8c8c;margin:16px 0 0;font-style:italic;">Case study figures reflect the programs as reported at the time of each deployment.</p>
+        </section>
+
+        <!-- ============ 10 PEOPLE & TRANSITION ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">10 · People &amp; transition</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Continuity built into the deal</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 16px;">A common risk in acquiring niche software is loss of institutional knowledge. Governance Manager mitigates this directly: its <strong>senior developer</strong> &mdash; a very experienced engineer based in the Philippines who has worked on the platform for roughly the last decade &mdash; together with a <strong>support resource</strong>, are available to transfer with the asset (one senior developer FTE and one support FTE).</p>
+          <ul style="font:400 14.5px/1.65 'Carlito';color:#353535;margin:0 0 16px;padding-left:22px;">
+            <li style="margin-bottom:8px;">Deep, end-to-end knowledge of the codebase, frameworks and client configurations.</li>
+            <li style="margin-bottom:8px;">Optional retention of the senior developer at an ongoing cost of approximately <strong>A$60,000 per year</strong> if the buyer chooses; the support resource may also transfer.</li>
+            <li style="margin-bottom:8px;">Spare capacity beyond maintenance &mdash; able to take on new development and roadmap work for the acquirer.</li>
+            <li style="margin-bottom:0;">Materially de-risks handover and protects service continuity for existing clients.</li>
+          </ul>
+          <div class="avoid" style="background:#e7f0f0;border-left:3px solid #3C6E71;border-radius:0 6px 6px 0;padding:16px 22px;">
+            <p style="font:400 14px/1.6 'Carlito';color:#284B63;margin:0;">The Vendor will work with the acquirer on a sensible transition plan &mdash; including knowledge transfer, client introductions and a handover period &mdash; to be agreed as part of the transaction. Specifics are open to negotiation.</p>
+          </div>
+        </section>
+
+        <!-- ============ 10 FINANCIAL SUMMARY ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">11 · Financial summary</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Revenue, profitability &amp; customers</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 18px;"></div>
+          <p style="font:400 14px/1.6 'Carlito';color:#6b6b6b;margin:0 0 10px;">Figures are drawn from the Vendor&rsquo;s FY26 actuals, with FY27 goal and stretch targets. All amounts are in Australian dollars and exclude GST.</p>
+
+          <h3 class="avoid" style="font:700 17px/1.3 'Carlito';color:#3C6E71;margin:0 0 10px;">Revenue &amp; profitability</h3>
+          <table class="avoid" style="width:100%;border-collapse:collapse;margin-bottom:14px;">
+            <thead><tr>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:10px 14px;font:700 11.5px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Metric</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:10px 14px;font:700 11.5px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">FY26</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:10px 14px;font:700 11.5px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">FY27 goal</th>
+              <th style="text-align:right;background:#137B8F;color:#fff;padding:10px 14px;font:700 11.5px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">FY27 stretch</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#284B63;">Revenue (ARR / total)</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#284B63;text-align:right;">$239,141</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#284B63;text-align:right;">$224,353</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#284B63;text-align:right;background:#eef5f5;">$287,671</td></tr>
+              <tr><td style="padding:9px 14px 9px 30px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#555;">Recurring contract</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">$151,053</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">$148,171</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;background:#eef5f5;">$182,671</td></tr>
+              <tr><td style="padding:9px 14px 9px 30px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#555;">One-off <sup style="color:#3C6E71;">1</sup></td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">$88,088</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">$76,182</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;background:#eef5f5;">$105,000</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#284B63;">Gross margin / EBITDA</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#284B63;text-align:right;">48%</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#284B63;text-align:right;">51%</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.45 'Carlito';color:#284B63;text-align:right;background:#eef5f5;">78%</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">Annual contract value</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">$151,053</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">$148,171</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;background:#eef5f5;">$182,671</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">Projected growth &mdash; large client</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#999;text-align:right;">n/a</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#b23b3b;text-align:right;">&minus;2%</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;background:#eef5f5;">21%</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">Projected growth &mdash; assessment only <sup style="color:#3C6E71;">2</sup></td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#999;text-align:right;">n/a</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">700%</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;background:#eef5f5;">1,900%</td></tr>
+            </tbody>
+          </table>
+          <p style="font:400 12px/1.55 'Carlito';color:#8c8c8c;margin:0 0 6px;"><sup style="color:#3C6E71;">1</sup> A significant portion of one-off revenue is regular development for one long-term client, averaging roughly A$6,000&ndash;A$7,500 excl. GST per month, which could be reduced at little notice.</p>
+          <p style="font:400 12px/1.55 'Carlito';color:#8c8c8c;margin:0 0 12px;"><sup style="color:#3C6E71;">2</sup> Assessment-only growth is calculated off a very low base (~A$1,000).</p>
+
+          <h3 class="avoid" style="font:700 17px/1.3 'Carlito';color:#3C6E71;margin:0 0 10px;">Customer base</h3>
+          <table class="avoid" style="width:100%;border-collapse:collapse;margin-bottom:16px;">
+            <thead><tr>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:10px 14px;font:700 11.5px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Segment (count)</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:10px 14px;font:700 11.5px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">FY26</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:10px 14px;font:700 11.5px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">FY27 goal</th>
+              <th style="text-align:right;background:#137B8F;color:#fff;padding:10px 14px;font:700 11.5px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">FY27 stretch</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">Large clients <sup style="color:#3C6E71;">3</sup></td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">2</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">1</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;background:#eef5f5;">2</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">Assessment only (direct) <sup style="color:#3C6E71;">4</sup></td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">8</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">10</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;background:#eef5f5;">10</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">Resellers</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">1</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">2</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;background:#eef5f5;">4</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;">Reseller assessments</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">2</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;">6</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.45 'Carlito';color:#353535;text-align:right;background:#eef5f5;">12</td></tr>
+            </tbody>
+          </table>
+          <div class="avoid" style="background:#e7f0f0;border-left:3px solid #3C6E71;border-radius:0 6px 6px 0;padding:14px 22px;margin-bottom:8px;">
+            <div style="font:700 12px/1.3 'Carlito';color:#137B8F;margin-bottom:7px;letter-spacing:.06em;text-transform:uppercase;">Churn &mdash; long-term clients</div>
+            <p style="font:400 14px/1.6 'Carlito';color:#284B63;margin:0;">Very low. The principal long-term client signed a two-year contract extension to April 2027. The one large client lost in FY26 (~A$36k of revenue) had been a client for 10+ years.</p>
+          </div>
+          <p style="font:400 12px/1.55 'Carlito';color:#8c8c8c;margin:0 0 6px;"><sup style="color:#3C6E71;">3</sup> One long-term large client was lost in FY26, equating to roughly A$36k in revenue.</p>
+          <p style="font:400 12px/1.55 'Carlito';color:#8c8c8c;margin:0 0 0;"><sup style="color:#3C6E71;">4</sup> Assessments delivered as part of other professional-services work were not charged for in FY26, but will be charged on an ongoing basis.</p>
+        </section>
+
+        <!-- ============ 11b PRICING & DEAL ECONOMICS ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">11 · Financial summary <span style="color:#9bb0bd;">(continued)</span></div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Pricing &amp; deal economics</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <h3 class="avoid" style="font:700 17px/1.3 'Carlito';color:#3C6E71;margin:0 0 14px;">Pricing models</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:26px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#f8f9fa;">
+              <div style="font:700 12px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#153E5A;margin-bottom:9px;">Large clients</div>
+              <p style="font:400 13px/1.55 'Carlito';color:#353535;margin:0;">Custom model based on the number of the client&rsquo;s own clients and the number of assessments per client &mdash; custom frameworks versus owned-IP frameworks.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#f8f9fa;">
+              <div style="font:700 12px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#137B8F;margin-bottom:9px;">Assessment only</div>
+              <p style="font:400 13px/1.55 'Carlito';color:#353535;margin:0;">A$500 per assessment plus a framework cost &mdash; averaging around A$2,000 per assessment for a single assessment.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#f8f9fa;">
+              <div style="font:700 12px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#4B6969;margin-bottom:9px;">Resellers</div>
+              <p style="font:400 13px/1.55 'Carlito';color:#353535;margin:0;">A$500 per assessment plus a one-off cost for owned frameworks, or a professional-services cost to develop a custom framework. Option to prepurchase assessments at a scaling bulk discount.</p>
+            </div>
+          </div>
+
+          <h3 class="avoid" style="font:700 17px/1.3 'Carlito';color:#3C6E71;margin:0 0 14px;">Deal economics</h3>
+          <table class="avoid" style="width:100%;border-collapse:collapse;">
+            <tbody>
+              <tr><td style="width:55%;padding:11px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Indicative asking price</td><td style="padding:11px 16px;border-bottom:1px solid #e7e8e9;font:700 14px/1.5 'Carlito';color:#284B63;text-align:right;">A$650,000</td></tr>
+              <tr><td style="padding:11px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Transaction type</td><td style="padding:11px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;text-align:right;">Asset sale</td></tr>
+              <tr><td style="padding:11px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;">Key operating cost &mdash; senior developer (optional retention)</td><td style="padding:11px 16px;border-bottom:1px solid #e7e8e9;font:400 14px/1.5 'Carlito';color:#353535;text-align:right;">~A$60,000 p.a.</td></tr>
+            </tbody>
+          </table>
+          <div class="avoid" style="background:#f8f9fa;border:1px solid #e7e8e9;border-radius:6px;padding:18px 22px;margin-top:20px;">
+            <div style="font:700 13px/1.3 'Carlito';color:#284B63;margin-bottom:8px;letter-spacing:.04em;text-transform:uppercase;">Cost-base observation</div>
+            <p style="font:400 14px/1.6 'Carlito';color:#353535;margin:0;">The platform runs on a notably lean cost base &mdash; its principal cost is a single senior developer (~A$60k p.a., and optional). Combined with sticky, multi-year recurring contracts and a 48% FY26 margin (up to 78% at stretch), this gives the business attractive operating leverage: incremental clients, assessments and frameworks can be added with limited marginal cost.</p>
+          </div>
+        </section>
+
+        <!-- ============ 11 TRANSACTION OVERVIEW ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">12 · Transaction overview</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Structure &amp; rationale</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 20px;">bluezoo is divesting Governance Manager because it is not core to its advisory business. This is a clean, well-defined opportunity for a buyer to acquire a complete, revenue-generating asset.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 15px/1.3 'Carlito';color:#3C6E71;margin-bottom:11px;">Included in the sale</div>
+              <ul style="font:400 13.5px/1.6 'Carlito';color:#353535;margin:0;padding-left:18px;">
+                <li>Source code and the Governance Manager platform</li>
+                <li>Framework library and maturity-scoring content</li>
+                <li>Video learning library and reference content</li>
+                <li>Brand, domain(s) and associated digital assets</li>
+                <li>Existing client contracts (subject to consent)</li>
+                <li>Option to retain the lead developer</li>
+              </ul>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:20px;background:#fff;">
+              <div style="font:700 15px/1.3 'Carlito';color:#3C6E71;margin-bottom:11px;">Key terms</div>
+              <ul style="font:400 13.5px/1.6 'Carlito';color:#353535;margin:0;padding-left:18px;">
+                <li><strong>Type:</strong> asset sale</li>
+                <li><strong>Indicative price:</strong> A$650,000</li>
+                <li><strong>Reason for sale:</strong> non-core to the Vendor</li>
+                <li><strong>Transition:</strong> handover support to be agreed</li>
+                <li><strong>Developer:</strong> optional retention ~A$60k p.a.</li>
+                <li><strong>Currency:</strong> Australian dollars</li>
+              </ul>
+            </div>
+          </div>
+          <p style="font:400 13px/1.55 'Carlito';color:#6b6b6b;margin:18px 0 0;font-style:italic;">The asking price is indicative and not a formal offer. Final terms, including the treatment of client contracts and any transition or earn-out arrangements, are subject to negotiation and a formally executed sale agreement.</p>
+        </section>
+
+        <!-- ============ 12 PROCESS ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">13 · Indicative process &amp; timeline</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">How to engage</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 24px;"></div>
+          <div style="display:flex;flex-direction:column;gap:0;">
+            <div class="avoid" style="display:flex;gap:18px;align-items:flex-start;padding:0 0 22px;">
+              <div style="flex:none;width:38px;height:38px;border-radius:50%;background:#284B63;color:#fff;font:700 16px/38px 'Carlito';text-align:center;">1</div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:4px;">Confidentiality &amp; access</div><p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">Interested parties sign a non-disclosure agreement and are granted access to the data room and a guided product demonstration.</p></div>
+            </div>
+            <div class="avoid" style="display:flex;gap:18px;align-items:flex-start;padding:0 0 22px;">
+              <div style="flex:none;width:38px;height:38px;border-radius:50%;background:#284B63;color:#fff;font:700 16px/38px 'Carlito';text-align:center;">2</div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:4px;">Indicative offers</div><p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">Parties submit a non-binding expression of interest outlining price, structure and intended treatment of clients and the developer.</p></div>
+            </div>
+            <div class="avoid" style="display:flex;gap:18px;align-items:flex-start;padding:0 0 22px;">
+              <div style="flex:none;width:38px;height:38px;border-radius:50%;background:#284B63;color:#fff;font:700 16px/38px 'Carlito';text-align:center;">3</div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:4px;">Due diligence</div><p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">Shortlisted parties conduct technical, commercial, financial and legal due diligence with Vendor support.</p></div>
+            </div>
+            <div class="avoid" style="display:flex;gap:18px;align-items:flex-start;padding:0;">
+              <div style="flex:none;width:38px;height:38px;border-radius:50%;background:#3C6E71;color:#fff;font:700 16px/38px 'Carlito';text-align:center;">4</div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:4px;">Completion</div><p style="font:400 14px/1.55 'Carlito';color:#353535;margin:0;">Negotiation and execution of a sale agreement, followed by transition and handover.</p></div>
+            </div>
+          </div>
+          <p style="font:400 13px/1.55 'Carlito';color:#6b6b6b;margin:22px 0 0;font-style:italic;">Indicative process only. The Vendor may vary or terminate the process at its discretion. Specific dates will be communicated to participating parties.</p>
+        </section>
+
+        <!-- ============ 13 CONTACT ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">14 · Contact &amp; next steps</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Register your interest</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 22px;">All enquiries and expressions of interest should be directed to bluezoo. Please do not contact Governance Manager&rsquo;s staff, clients or partners directly.</p>
+          <div class="avoid" style="background:linear-gradient(150deg,#153E5A 0%,#284B63 70%);border-radius:8px;padding:30px 32px;color:#fff;">
+            <img src="assets/logo-white.png" alt="bluezoo" style="width:1.5in;display:block;margin-bottom:18px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px 32px;">
+              <div><div style="font:400 11px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px;">Contact</div><div style="font:700 15px/1.4 'Carlito';color:#fff;">Tony Friday &mdash; Director</div></div>
+              <div><div style="font:400 11px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px;">Email</div><div style="font:700 15px/1.4 'Carlito';color:#fff;">tonyf@bluezoo.com.au</div></div>
+              <div><div style="font:400 11px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px;">Phone</div><div style="font:700 15px/1.4 'Carlito';color:#fff;">0400 055 739</div></div>
+              <div><div style="font:400 11px/1.3 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px;">Web</div><div style="font:700 15px/1.4 'Carlito';color:#fff;">bluezoo.com.au · governancemanager.org.au</div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ APPENDIX ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">Appendix A</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Framework detail &amp; glossary</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <h3 style="font:700 17px/1.3 'Carlito';color:#3C6E71;margin:0 0 14px;">Named assessment methodologies (sample)</h3>
+          <table style="width:100%;border-collapse:collapse;margin-bottom:26px;">
+            <thead><tr>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:10px 14px;font:700 12px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Methodology</th>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:10px 14px;font:700 12px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Focus</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.5 'Carlito';color:#284B63;">STRATassess</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.5 'Carlito';color:#353535;">Strategy governance &mdash; alignment, performance monitoring, stakeholder engagement and adaptability</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.5 'Carlito';color:#284B63;">PAYROLLassess</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.5 'Carlito';color:#353535;">Payroll governance &mdash; accuracy, compliance and process efficiency</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.5 'Carlito';color:#284B63;">Assurance frameworks</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.5 'Carlito';color:#353535;">Structured assurance across disciplines</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.5 'Carlito';color:#284B63;">Maturity frameworks</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.5 'Carlito';color:#353535;">Capability-maturity scoring and improvement planning</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.5 'Carlito';color:#284B63;">Top-up assessment</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.5 'Carlito';color:#353535;">Incremental / supplementary assessments</td></tr>
+            </tbody>
+          </table>
+          <h3 style="font:700 17px/1.3 'Carlito';color:#3C6E71;margin:0 0 14px;">Glossary</h3>
+          <table style="width:100%;border-collapse:collapse;">
+            <tbody>
+              <tr><td style="width:30%;padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;vertical-align:top;">Capability maturity</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">A structured measure of how well-developed an organisation&rsquo;s practices are in a given discipline.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;vertical-align:top;">Maturity model</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">A framework defining current, desired, mandatory and benchmark states for evaluation.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;vertical-align:top;">Benchmarking</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Comparing maturity across entities, units, projects or suppliers.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;vertical-align:top;">ARR</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Annual recurring revenue.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;vertical-align:top;">Asset sale</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Sale of business assets (IP, contracts, brand) rather than company shares.</td></tr>
+            </tbody>
+          </table>
+          <p style="font:400 12px/1.5 'Carlito';color:#8c8c8c;margin:26px 0 0;text-align:center;">Strictly private &amp; confidential &mdash; prepared by bluezoo · June 2026 · Ref. BZ-GM-IM-01</p>
+        </section>
+
+      </div>
+    </td></tr></tbody>
+    <tfoot><tr><td class="ftr-space"></td></tr></tfoot>
+  </table>
+</main>
+
+<div class="print-footer">
+  <span>Information Memorandum &middot; Governance Manager</span>
+  <span>Strictly private &amp; confidential &middot; bluezoo</span>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return { print: () => window.print() };
+  }
+}
+</script>
+</body>
+</html>

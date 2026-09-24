@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    .wp, .wp *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .wp p{text-wrap:pretty}
+    .wp a{color:var(--bz-blue-600);text-decoration:none}
+    .wp a:hover{text-decoration:underline}
+    .wp-page{display:flex;flex-direction:column;position:relative}
+    .wp-break{break-before:page}
+    .wp-content{padding:52px 62px}
+    .wp-eyb{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+    .wp-cols{column-count:2;column-gap:36px}
+    .wp-w{break-inside:avoid;margin:0 0 12px}
+    .wp-w h3{font-size:15px;font-weight:700;color:var(--bz-blue-700);margin:0 0 5px;line-height:1.2}
+    .wp-w p{font-size:13.5px;line-height:1.46;color:var(--bz-grey-700);margin:0}
+    .wp-w .n{color:var(--bz-governance);font-weight:700;margin-right:8px}
+    .wp-lead{font-size:14px;line-height:1.6;color:var(--bz-grey-700);margin:0 0 12px}
+    .wp-foot{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--bz-grey-500);border-top:1px solid var(--bz-grey-200);padding-top:10px}
+    .wp-pagebreak{height:30px;margin:0 -1cm;background:#d6d9db;box-shadow:inset 0 7px 7px -7px rgba(0,0,0,.28),inset 0 -7px 7px -7px rgba(0,0,0,.28)}
+    @media print{.wp-pagebreak{display:none}}
+  </style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="a4" orientation="portrait" margin="1cm" hint-size="100%,100%">
+
+  <!-- ============ 1 · COVER ============ -->
+  <section class="page wp wp-page" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55;background:linear-gradient(155deg,#153E5A 0%,#284B63 58%,#2f595c 100%);color:#fff;padding:70px 62px 52px;overflow:hidden;">
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-150px;top:160px;width:560px;opacity:.08;pointer-events:none">
+    <img src="assets/logo-white.png" alt="bluezoo" style="width:172px;position:relative">
+    <div style="margin-top:auto;position:relative">
+      <div class="wp-eyb" style="color:#7aa9ab;margin-bottom:20px">White paper · Governance</div>
+      <h1 style="font-size:47px;line-height:1.06;font-weight:700;margin:0;color:#fff;letter-spacing:-.4px;max-width:620px">10 governance weaknesses commonly identified in WA public sector performance audits</h1>
+      <p style="font-size:17px;line-height:1.45;max-width:540px;margin:26px 0 0;color:#c3d0d8">What the Auditor General keeps finding — and what boards and executives can do before the auditors arrive.</p>
+    </div>
+    <div style="margin-top:44px;position:relative;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:flex-end;font-size:13px;color:#93aab6">
+      <div><div style="color:#fff;font-weight:700;font-size:15px">Pat Scally</div>Chief Executive Officer, Blue Zoo</div>
+      <span>Governance · Strategy · Risk · Resilience</span>
+    </div>
+  </section>
+
+  <!-- ============ 2 · INTRODUCTION ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-green);margin-bottom:12px">Introduction</div>
+    <h2 style="font-size:30px;line-height:1.1;font-weight:700;color:var(--bz-blue-700);margin:0 0 16px;max-width:600px">Why performance audits find what financial audits miss</h2>
+    <div style="border-radius:8px;overflow:hidden;margin:0 0 20px;height:190px">
+      <image-slot id="wp-hero" shape="rect" fit="cover" placeholder="Civic / WA public sector imagery — drop from magnific.com or OneDrive" style="width:100%;height:190px"></image-slot>
+    </div>
+    <div class="wp-cols">
+      <p class="wp-lead">For most Western Australian agencies, the annual financial audit is a well-rehearsed routine. Systems are ready, the evidence is assembled, and a clean opinion is expected. Performance audits are a different exercise entirely — and, across the sector, they are becoming both more frequent and more searching.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0 0 12px">The Auditor General's performance audits do not ask whether the numbers add up. They ask whether public money achieved what it was meant to achieve — whether programs are well governed, whether decisions are sound, and whether the public received value. Over a career spent inside and alongside the sector, I have watched capable agencies, confident after a clean financial result, be genuinely surprised by a performance audit. The surprise is rarely about honesty or effort. It is about whether the agency can demonstrate, on the public record, that its decisions were sound, its risks understood, and its money well spent.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0 0 12px">The weaknesses that surface are rarely exotic. They are the same recurring patterns, appearing across portfolios large and small, in agencies that would each describe their governance as sound. They are, almost without exception, matters an agency could have found and fixed itself. What separates those that emerge well from those that do not is seldom talent or funding. It is the habit of turning on themselves the same critical eye that an auditor eventually will.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0">This paper sets out the ten I see most often. For each, it describes what auditors typically find, why it matters, and the question a board or executive should be asking now — long before an audit is announced. Read together, they form a practical checklist that a board or executive team can work through in an afternoon — and return to each year.</p>
+    </div>
+    <div style="break-inside:avoid;margin-top:18px;background:var(--bz-blue-100);border-left:4px solid var(--bz-green);border-radius:0 6px 6px 0;padding:16px 20px">
+      <p style="margin:0;font-size:14.5px;line-height:1.5;color:var(--bz-blue-800);font-style:italic">A clean financial audit says the numbers add up. A performance audit asks whether the public got value — a very different question, and one many agencies are not ready to answer.</p>
+    </div>
+    <div style="margin-top:auto;padding-top:24px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>10 Governance Weaknesses · WA Public Sector Performance Audits</span><span>02</span></div>
+  </section>
+
+  <!-- ============ 3 · WEAKNESSES 1–4 ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-governance);margin-bottom:12px">The ten weaknesses</div>
+    <h2 style="font-size:26px;line-height:1.12;font-weight:700;color:var(--bz-blue-700);margin:0 0 22px">Governance, strategy and risk</h2>
+    <div class="wp-cols">
+      <div class="wp-w"><h3><span class="n">01</span>Decision rights that live on paper, not in practice</h3><p>Organisation charts and committee terms of reference describe how decisions should be made. Performance audits routinely find that real authority has drifted — approvals sit with whoever is available, delegations are inconsistent, and no one can say with confidence who owns a decision. The gap between governance on paper and governance in practice is the single most common finding, and it slows everything that depends on a clear line of accountability. When authority is ambiguous, capable people hesitate and decisions are quietly re-made by whoever is willing to act. Mature agencies write down not only who is responsible, but who decides, who must be consulted, and who is simply informed.</p></div>
+      <div class="wp-w"><h3><span class="n">02</span>Frameworks inherited rather than designed</h3><p>Governance arrangements accumulate. They are shaped by past restructures and legacy systems until they reflect history more than current need. Committees multiply without distinct purpose; delegations layer on top of one another. Auditors quickly notice when a framework has never been deliberately recalibrated to match how the agency now operates — and when nobody owns keeping it current. The result is not obvious dysfunction but a slow accumulation of drag: overlapping mandates, unclear escalation, and oversight that no longer matches the risks the agency actually carries.</p></div>
+      <div class="wp-w"><h3><span class="n">03</span>Risk management that reports rather than decides</h3><p>Almost every agency maintains a risk register. Far fewer can show that risk actually shapes what they prioritise, fund or defer. When risk is a quarterly reporting exercise rather than an input to decisions, performance audits find controls that exist on paper but do not influence behaviour, and exposures that were known well in advance but never acted upon. The consequence is predictable — the register is complete, yet the surprises keep coming. Risk earns its place in governance only when it changes a decision: what gets funded, deferred, escalated or stopped.</p></div>
+      <div class="wp-w"><h3><span class="n">04</span>Benefits and outcomes that are never measured</h3><p>Programs are commonly reported by activity — dollars spent, milestones passed — rather than by the outcomes they were funded to deliver. Performance audits ask the harder question: did it work? Agencies that cannot link expenditure to measurable public benefit struggle to defend their programs, and rarely know which initiatives to continue, redesign or stop. Without an outcome measure, success quietly defaults to spending the budget and closing the project, and genuinely poor performance can persist unchallenged for years. The discipline is to define, at the outset, what success will look like and how it will be evidenced.</p></div>
+    </div>
+    <div style="break-inside:avoid;margin-top:16px;background:var(--bz-grey-50);border:1px solid var(--bz-grey-200);border-radius:8px;padding:16px 20px;display:flex;gap:16px;align-items:center">
+      <div style="font-size:34px;font-weight:700;color:var(--bz-governance);line-height:1;flex:0 0 auto">?</div>
+      <p style="margin:0;font-size:13.5px;line-height:1.5;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">Ask yourself:</strong> if the Auditor General reviewed our largest program tomorrow, could we show — with evidence — who decided what, and what the public received?</p>
+    </div>
+    <div style="margin-top:auto;padding-top:24px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>10 Governance Weaknesses · WA Public Sector Performance Audits</span><span>03</span></div>
+  </section>
+
+  <!-- ============ 4 · WEAKNESSES 5–7 ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-governance);margin-bottom:12px">The ten weaknesses</div>
+    <h2 style="font-size:26px;line-height:1.12;font-weight:700;color:var(--bz-blue-700);margin:0 0 22px">Procurement, contracts and information</h2>
+    <div class="wp-cols">
+      <div class="wp-w"><h3><span class="n">05</span>Procurement governance gaps</h3><p>Procurement remains one of the most frequently audited and most frequently criticised areas of public administration. Common findings include inadequate justification for direct or sole-source purchases, incomplete documentation, undeclared conflicts of interest, and evaluations that cannot be reconciled to the stated criteria. The issue is seldom fraud; it is a control environment that cannot demonstrate a fair, transparent and value-driven process. The cost is rarely a single dramatic failure; it is a steady erosion of confidence that the agency spends public money well. Well-run agencies keep a clean, contemporaneous record of why each significant purchase was made, and can produce it without scrambling.</p></div>
+      <div class="wp-w"><h3><span class="n">06</span>Contract management after the signature</h3><p>Agencies invest heavily in awarding a contract and comparatively little in managing it. Auditors find contracts without active oversight, variations approved without scrutiny, and suppliers paid without confirmation that deliverables were actually met. The value carefully negotiated at signing then leaks, quietly, across the life of the contract. By the time the shortfall becomes visible, the money is spent and the leverage is gone. Active contract management — confirming deliverables, testing value for money, and documenting decisions — is what protects the benefit the agency actually paid for.</p></div>
+      <div class="wp-w"><h3><span class="n">07</span>Information, records and data quality</h3><p>Under the State Records Act and related obligations, agencies must keep complete and reliable records. Performance audits repeatedly find incomplete recordkeeping, poor data quality, and information that cannot be produced when it is needed. Weak information governance undermines every other control, because both day-to-day decisions and independent assurance depend on records that can be trusted. When records cannot be produced, the agency cannot show what it did or why, and even sound decisions begin to look questionable. Reliable recordkeeping is not administrative housekeeping; it is the evidentiary backbone of accountability.</p></div>
+    </div>
+    <div style="break-inside:avoid;margin-top:16px;background:var(--bz-strategy);color:#fff;border-radius:8px;padding:22px 26px">
+      <p style="margin:0;font-size:16px;line-height:1.45;font-style:italic;color:#fff">"The value carefully agreed when a contract is signed is rarely lost all at once. It leaks — through variations no one challenged and deliverables no one confirmed."</p>
+    </div>
+    <div style="margin-top:auto;padding-top:24px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>10 Governance Weaknesses · WA Public Sector Performance Audits</span><span>04</span></div>
+  </section>
+
+  <!-- ============ 5 · WEAKNESSES 8–10 ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-governance);margin-bottom:12px">The ten weaknesses</div>
+    <h2 style="font-size:26px;line-height:1.12;font-weight:700;color:var(--bz-blue-700);margin:0 0 20px">Technology, resilience and assurance</h2>
+    <div style="border-radius:8px;overflow:hidden;margin:0 0 16px;height:148px">
+      <image-slot id="wp-fig2" shape="rect" fit="cover" placeholder="Cyber / operations imagery — drop from magnific.com or OneDrive" style="width:100%;height:148px"></image-slot>
+    </div>
+    <div class="wp-cols">
+      <div class="wp-w"><h3><span class="n">08</span>Cyber and ICT governance immaturity</h3><p>Cyber security is now a core governance responsibility, not a technical afterthought. Audits continue to find unpatched systems, excessive user access, untested incident response, and boards with limited visibility of their agency's cyber posture. The gap between how heavily agencies rely on technology and how well they govern it remains one of the widest in the sector. Because a serious cyber incident is now a whole-of-agency event, boards are increasingly expected to understand and govern it directly rather than delegate it to the technology team. Regular, plain-language reporting on the agency's cyber posture is fast becoming a baseline expectation.</p></div>
+      <div class="wp-w"><h3><span class="n">09</span>Business continuity and preparedness that is untested</h3><p>Most agencies have a business continuity plan. Fewer have tested it. Auditors distinguish sharply between a plan that exists and a capability that works — looking for evidence of exercises, clearly assigned roles, coordination with wider emergency management arrangements, and visibility over third-party dependencies. Untested plans provide false comfort, and third parties remain the agency's accountability even when they are outside its direct control. A plan that has never been exercised tends to fail at precisely the moment it is needed, when roles are unclear and assumptions go untested. Confidence comes from rehearsal, not documentation.</p></div>
+      <div class="wp-w"><h3><span class="n">10</span>Audit findings accepted but never closed</h3><p>Perhaps the most telling weakness is what happens after an audit. Recommendations are accepted, and then overdue findings accumulate year after year. Where assurance is treated as fault-finding rather than improvement, information is filtered and the same issues resurface. The agencies that fare best treat internal audit as a source of insight and track every recommendation through to closure. Nothing erodes the value of assurance faster than a growing register of accepted-but-unactioned findings, and auditors read it as a direct signal of how seriously an agency takes oversight. The remedy is unglamorous but reliable: assign each finding an owner, a date and a status, and close it.</p></div>
+    </div>
+    <div style="margin-top:auto;padding-top:20px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>10 Governance Weaknesses · WA Public Sector Performance Audits</span><span>05</span></div>
+  </section>
+
+  <!-- ============ 6 · CONCLUSION + BIO ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-green);margin-bottom:12px">What to do about it</div>
+    <h2 style="font-size:28px;line-height:1.1;font-weight:700;color:var(--bz-blue-700);margin:0 0 16px;max-width:560px">Preparing before the auditors arrive</h2>
+    <div class="wp-cols">
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0 0 12px">None of these weaknesses is difficult to understand, and none is unique to any one agency. They recur because governance is too often treated as an administrative obligation rather than an organisational capability — something to be satisfied rather than used. Treated as an obligation, governance becomes a cost centre that produces documents; treated as a capability, it becomes a source of better, faster and more defensible decisions.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0 0 12px">The agencies that come through a performance audit well are not the ones with the thickest policy manuals. They are the ones that have already asked themselves the auditor's questions: Are our decision rights clear? Does risk genuinely inform our decisions? Can we demonstrate value, not just activity? Have we closed what previous reviews identified? These are not difficult questions, but they are uncomfortable ones — and they are far better asked in a boardroom than discovered in a published audit report.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0">Answering those questions honestly, and acting on the answers, is the difference between an audit that confirms your standing and one that damages it. The work is straightforward. What it requires is the discipline to look before you are asked to. An agency that reviews itself honestly, on its own timetable, is never at the mercy of one that reviews it later.</p>
+    </div>
+
+    <div style="break-inside:avoid;margin-top:18px;background:linear-gradient(135deg,#137B8F,#0f6474);color:#fff;border-radius:10px;padding:22px 26px;display:flex;gap:22px;align-items:center">
+      <div style="flex:1">
+        <div class="wp-eyb" style="color:rgba(255,255,255,.75);margin-bottom:6px">Free assessment</div>
+        <div style="font-size:19px;font-weight:700;color:#fff;line-height:1.2">Performance Audit Readiness Index</div>
+        <p style="margin:6px 0 0;font-size:13.5px;color:#e7f0f0;line-height:1.45">Complete Blue Zoo's self-assessment to see how your agency measures against the ten weaknesses, followed by a one-hour executive debrief. No cost, no obligation.</p>
+      </div>
+    </div>
+
+    <div style="break-inside:avoid;margin-top:22px;border-top:2px solid var(--bz-grey-200);padding-top:18px;display:flex;gap:20px;align-items:flex-start">
+      <div style="flex:0 0 96px;height:96px;border-radius:50%;overflow:hidden">
+        <image-slot id="wp-author" shape="circle" fit="cover" placeholder="Pat Scally headshot" style="width:96px;height:96px"></image-slot>
+      </div>
+      <div style="flex:1">
+        <div class="wp-eyb" style="color:var(--bz-grey-500);margin-bottom:6px">About the author</div>
+        <div style="font-size:16px;font-weight:700;color:var(--bz-grey-900)">Pat Scally — Chief Executive Officer, Blue Zoo</div>
+        <p style="margin:6px 0 0;font-size:12.5px;line-height:1.5;color:var(--bz-grey-700)">Over a career spanning decades in the Western Australian public sector and advisory practice, Pat has led large-scale government transformation — including reform within the Department of the Premier and Cabinet and the establishment of the Department of Communities — and has advised boards and executives on governance, strategy, risk and technology. He has served as a non-executive director across the public, corporate and not-for-profit sectors. At Blue Zoo he leads a practice that has spent more than twenty years helping WA agencies strengthen governance, oversight and resilience.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:auto;padding-top:22px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>© 2026 Blue Zoo · Governance · Strategy · Risk · Resilience</span><span>06</span></div>
+  </section>
+
+
+</x-import>
+</x-dc>
+</body>
+</html>

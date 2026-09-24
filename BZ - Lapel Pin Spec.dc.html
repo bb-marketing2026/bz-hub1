@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    body{background:#eef0f3;margin:0}
+    .pin, .pin *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .pin p{text-wrap:pretty}
+    .pin a{color:var(--bz-blue-600);text-decoration:none}
+    .h2{font-size:21px;font-weight:700;color:var(--bz-blue-700);margin:32px 0 0;padding-bottom:8px;border-bottom:2px solid #137B8F}
+    .mono{font-family:ui-monospace,'Cascadia Mono',Menlo,monospace}
+    .bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}
+    .bz-backhub:hover{background:#153E5A}
+    @media print{.bz-backhub{display:none!important}}
+  </style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="a4" margin="0.7in" hint-size="100%,100%">
+<div class="pin" style="color:var(--bz-grey-800)">
+
+  <div slot="header" style="display:flex;align-items:center;justify-content:space-between;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9b0b6;padding-bottom:6px;border-bottom:1px solid #e6e6e6">
+    <span style="font-weight:700;letter-spacing:.02em;color:#153E5A;text-transform:none;font-size:13px">Blue Zoo</span>
+    <span>Confidential · Design specification</span>
+  </div>
+
+  <div slot="footer" style="display:flex;align-items:center;justify-content:space-between;font-size:9px;letter-spacing:.08em;color:#a9b0b6;padding-top:6px;border-top:1px solid #e6e6e6">
+    <span>Blue Zoo · Governance · Strategy · Risk · Resilience</span>
+    <span>BZ&#8209;PIN&#8209;001 · Rev A · bluezoo.com.au</span>
+  </div>
+
+  <!-- ============ MASTHEAD ============ -->
+  <div style="font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#137B8F">Product design specification · BZ&#8209;PIN&#8209;001</div>
+  <h1 style="font-size:38px;line-height:1.05;color:#153E5A;font-weight:700;margin:8px 0 0;letter-spacing:-.01em">Butterfly lapel pin</h1>
+  <p style="font-size:15.5px;line-height:1.6;color:var(--bz-grey-700);margin:12px 0 0;max-width:46em">A crisp, lightweight die&#8209;struck lapel pin built from the Blue Zoo origami butterfly mark. Raised polished&#8209;metal lines hold the mark's straight&#8209;edged facets; hard enamel carries the two brand hues — deep navy and teal — so the triangles read cleanly from across a room. Designed to be worn every day: understated, considered, unmistakably us.</p>
+
+  <!-- ============ HERO + KEY FACTS ============ -->
+  <div style="display:grid;grid-template-columns:1.15fr 1fr;gap:22px;margin-top:26px;align-items:stretch">
+    <div style="border:1px solid #e6e6e6;border-radius:18px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 40% 32%, #f4f7fa, #e7edf2)">
+      <div style="width:210px;height:210px;border-radius:50%;background:radial-gradient(circle at 36% 30%, #ffffff 0%, #dfe6ec 42%, #b8c4ce 100%);box-shadow:0 18px 34px rgba(40,75,99,.22),inset 0 2px 6px rgba(255,255,255,.9),inset 0 -8px 18px rgba(40,75,99,.12);display:flex;align-items:center;justify-content:center;margin:26px 0">
+        <img src="assets/logo-mark.png" alt="Photo-realistic render of the finished pin" style="width:58%;height:auto;display:block;filter:drop-shadow(0 2px 3px rgba(40,75,99,.28))">
+      </div>
+    </div>
+    <div style="border:1px solid #e6e6e6;border-radius:18px;padding:22px 24px">
+      <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#137B8F;margin-bottom:12px">At a glance</div>
+      <dl style="margin:0">
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Overall size</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">15 mm (&Oslash; 15 mm)</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Thickness</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">1.5 mm</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Target weight</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">&le; 4 g</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Build</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">Die&#8209;struck hard enamel</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Plating</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">Polished silver / nickel&#8209;free</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Attachment</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">Post + locking clutch</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0"><dt style="font-size:12.5px;color:#7d7d7d">MOQ / lead</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">500 pcs · 4&ndash;5 wks</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <!-- ============ 1. OVERVIEW ============ -->
+  <h2 class="h2">1 &nbsp;Overview &amp; intent</h2>
+  <p style="font-size:14.5px;line-height:1.65;color:#3f3f3f;margin:14px 0 0">This pin is a staff and partner keepsake — worn on a lapel, jacket or bag strap. It should read instantly as Blue Zoo from across a room, feel premium in the hand, and sit flat and light on fabric. The origami butterfly is a solid, two&#8209;tone geometric mark, so a die&#8209;struck hard&#8209;enamel build suits it far better than a cut outline: raised polished&#8209;metal ridges separate each facet and hold the enamel, keeping the mark's crisp, straight&#8209;edged geometry honest.</p>
+  <p style="font-size:14.5px;line-height:1.65;color:#3f3f3f;margin:12px 0 0">The mark is used exactly as supplied — the origami butterfly, symbol only, no wordmark. The facet geometry, the navy/teal split and the relative proportions must not be altered. This document is the single source of truth for the manufacturer; anything not drawn here is to be confirmed with Blue Zoo before tooling.</p>
+
+  <!-- ============ 2. CONSTRUCTION ============ -->
+  <h2 class="h2">2 &nbsp;Construction</h2>
+  <p style="font-size:14.5px;line-height:1.65;color:#3f3f3f;margin:14px 0 0">The pin is a single die&#8209;struck body with baked hard enamel and attachment hardware on the rear.</p>
+  <ul style="font-size:14.5px;line-height:1.6;color:#3f3f3f;margin:12px 0 0;padding-left:20px">
+    <li style="margin-bottom:7px"><strong style="font-weight:700;color:#585858">Body &mdash; die&#8209;struck brass.</strong> The mark is struck into 1.2 mm jewellers' brass so each facet sits in its own recessed cell, divided by raised metal ridges ~0.25 mm wide. Ridges and any exposed metal are polished silver plated.</li>
+    <li style="margin-bottom:7px"><strong style="font-weight:700;color:#585858">Colour &mdash; hard enamel.</strong> Each cell is hand&#8209;filled with hard (cloisonn&eacute;&#8209;style) enamel in the specified navy or teal, slightly over&#8209;filled, then lapped flat and polished level with the metal ridges for a smooth, durable, glass&#8209;like face.</li>
+    <li style="margin-bottom:0"><strong style="font-weight:700;color:#585858">Finish.</strong> The whole face is polished flush; metal ridges read as bright silver lines between flat navy and teal facets. No epoxy dome.</li>
+  </ul>
+
+  <!-- FIGURE 1 — FRONT ELEVATION -->
+  <figure style="margin:22px 0 0;border:1px solid #e6e6e6;border-radius:18px;padding:26px 20px 18px;background:#fff">
+    <div style="position:relative;width:300px;height:300px;margin:28px auto 8px">
+      <div style="position:absolute;top:-24px;left:0;right:0;height:0;border-top:1px solid #96B3D2"></div>
+      <div style="position:absolute;top:-29px;left:0;width:1px;height:11px;background:#96B3D2"></div>
+      <div style="position:absolute;top:-29px;right:0;width:1px;height:11px;background:#96B3D2"></div>
+      <div style="position:absolute;top:-40px;left:50%;transform:translateX(-50%);background:#fff;padding:0 8px;font-size:11px;color:#5a7da8" class="mono">&Oslash; 15.0 mm</div>
+      <div style="position:absolute;inset:0;border:1.5px dashed #d2d2d2;border-radius:50%;background:radial-gradient(circle at 38% 34%, #f4f7fa, #eef2f6);display:flex;align-items:center;justify-content:center">
+        <img src="assets/logo-mark.png" alt="Front elevation of the pin" style="width:64%;height:auto;display:block">
+      </div>
+      <div style="position:absolute;left:19%;top:34%;width:52px;height:1px;background:#585858;transform:rotate(-16deg);transform-origin:left"></div>
+      <div style="position:absolute;left:calc(19% + 48px);top:26%;font-size:10.5px;color:#585858" class="mono">ridge 0.25 mm</div>
+      <div style="position:absolute;left:60%;top:58%;width:50px;height:1px;background:#585858;transform:rotate(12deg);transform-origin:left"></div>
+      <div style="position:absolute;left:calc(60% + 46px);top:62%;font-size:10.5px;color:#585858" class="mono">enamel facet</div>
+    </div>
+    <figcaption style="font-size:11.5px;color:#7d7d7d;text-align:center;margin-top:20px">Figure 1 &mdash; Front elevation. Dashed outline = &Oslash; 15 mm round pin edge; butterfly mark centred, ~11 mm wide. Not to scale.</figcaption>
+  </figure>
+
+  <!-- FIGURE 2 — SECTION / LAYER STACK -->
+  <figure style="margin:20px 0 0;border:1px solid #e6e6e6;border-radius:18px;padding:24px 26px 16px;background:#fff">
+    <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#137B8F;margin-bottom:16px">Section A&ndash;A · body stack (edge view, enlarged)</div>
+    <div style="display:flex;flex-direction:column;gap:6px;max-width:420px;margin:0 auto">
+      <div style="display:flex;align-items:center;gap:14px">
+        <div style="flex:1;height:12px;border-radius:3px;background:linear-gradient(180deg,#f0f2f5,#c9ccd2);border:1px solid #b8bcc4"></div>
+        <div style="width:158px;font-size:11.5px;color:#585858"><strong style="font-weight:700">Polished metal ridges</strong> · plating</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px">
+        <div style="flex:1;height:20px;border-radius:4px;display:flex;overflow:hidden;border:1px solid #0f3247">
+          <div style="flex:1;background:#153E5A"></div><div style="flex:1;background:#137B8F"></div><div style="flex:1;background:#153E5A"></div>
+        </div>
+        <div style="width:158px;font-size:11.5px;color:#585858"><strong style="font-weight:700">Hard enamel</strong> · navy + teal<br><span style="color:#7d7d7d">lapped flush</span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px">
+        <div style="flex:1;height:30px;border-radius:5px;background:linear-gradient(180deg,#e8d29a,#c7a558);border:1px solid #b8944a"></div>
+        <div style="width:158px;font-size:11.5px;color:#585858"><strong style="font-weight:700">Die&#8209;struck brass</strong> · 1.20 mm</div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:14px;margin-top:2px">
+        <div style="flex:1;display:flex;justify-content:center"><div style="width:10px;height:44px;background:linear-gradient(180deg,#d2d2d2,#afafaf);border-radius:0 0 3px 3px"></div></div>
+        <div style="width:158px;font-size:11.5px;color:#585858">Brass post &oslash; 1.15 mm<br><span style="color:#7d7d7d">soldered to rear</span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px">
+        <div style="flex:1;display:flex;justify-content:center"><div style="width:34px;height:12px;background:#585858;border-radius:7px"></div></div>
+        <div style="width:158px;font-size:11.5px;color:#585858">Locking rubber clutch</div>
+      </div>
+    </div>
+    <figcaption style="font-size:11.5px;color:#7d7d7d;text-align:center;margin-top:16px">Figure 2 &mdash; Cross&#8209;section. Body thickness 1.5 mm (brass + enamel). Clutch adds behind fabric only.</figcaption>
+  </figure>
+
+  <!-- ============ 3. MATERIALS & FINISH ============ -->
+  <h2 class="h2">3 &nbsp;Materials &amp; finish</h2>
+  <table style="width:100%;border-collapse:collapse;margin-top:14px">
+    <thead>
+      <tr style="border-bottom:2px solid #585858">
+        <th style="text-align:left;padding:8px 10px 8px 0;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858;width:22%">Component</th>
+        <th style="text-align:left;padding:8px 10px;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858">Material</th>
+        <th style="text-align:left;padding:8px 0 8px 10px;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858;width:34%">Finish</th>
+      </tr>
+    </thead>
+    <tbody style="font-size:13px;color:#3f3f3f">
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Body</td><td style="padding:9px 10px">Die&#8209;struck jewellers' brass, 1.2 mm</td><td style="padding:9px 0 9px 10px">Polished silver plating; edges deburred</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Navy facets</td><td style="padding:9px 10px">Hard (cloisonn&eacute;) enamel</td><td style="padding:9px 0 9px 10px">Lapped flush &amp; polished, gloss</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Teal facets</td><td style="padding:9px 10px">Hard (cloisonn&eacute;) enamel</td><td style="padding:9px 0 9px 10px">Lapped flush &amp; polished, gloss</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Post</td><td style="padding:9px 10px">Brass, &oslash; 1.15 mm</td><td style="padding:9px 0 9px 10px">Plated to match body tone</td></tr>
+      <tr><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Clutch</td><td style="padding:9px 10px">Rubber locking (&ldquo;pin keeper&rdquo;)</td><td style="padding:9px 0 9px 10px">Matte black; deluxe metal clutch optional</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:12.5px;line-height:1.6;color:#7d7d7d;margin:12px 0 0">Hard enamel is specified over soft enamel for a flat, hard&#8209;wearing, glass&#8209;like face that keeps the mark's crisp geometry. All materials must be nickel&#8209;safe for skin contact.</p>
+
+  <!-- ============ 4. COLOUR ============ -->
+  <h2 class="h2">4 &nbsp;Colour reproduction</h2>
+  <p style="font-size:14.5px;line-height:1.65;color:#3f3f3f;margin:14px 0 0">The mark uses the two Blue Zoo brand hues — deep navy for the leading facets and teal for the trailing facets. Match to Pantone; the enamel proof must be approved against a physical chip before the run.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px">
+    <div style="border:1px solid #e6e6e6;border-radius:14px;overflow:hidden">
+      <div style="height:56px;background:#153E5A"></div>
+      <div style="padding:12px 14px;font-size:11.5px;color:#585858;line-height:1.7" class="mono">
+        <div style="font-weight:700;font-size:13px;letter-spacing:.02em;font-family:'Carlito','Calibri',sans-serif">Strategy navy</div>
+        HEX #153E5A<br>PANTONE 302 C
+      </div>
+    </div>
+    <div style="border:1px solid #e6e6e6;border-radius:14px;overflow:hidden">
+      <div style="height:56px;background:#137B8F"></div>
+      <div style="padding:12px 14px;font-size:11.5px;color:#585858;line-height:1.7" class="mono">
+        <div style="font-weight:700;font-size:13px;letter-spacing:.02em;font-family:'Carlito','Calibri',sans-serif">Governance teal</div>
+        HEX #137B8F<br>PANTONE 321 C
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:14px;border:1px solid #e6e6e6;border-radius:14px;overflow:hidden">
+    <div style="height:44px;display:flex"><div style="flex:1;background:#153E5A"></div><div style="width:2px;background:#c9ccd2"></div><div style="flex:1;background:#137B8F"></div></div>
+    <div style="padding:10px 14px;font-size:11px;color:#7d7d7d" class="mono">Two flat enamel colours divided by a bright silver metal ridge · no gradient, no blend</div>
+  </div>
+  <p style="font-size:12.5px;line-height:1.6;color:#7d7d7d;margin:12px 0 0">Unlike a printed asset, the pin carries two flat enamel colours only — the navy/teal relationship reads through the hard split at the metal ridge, not a gradient. Keep facets solid; do not blend colours within a cell.</p>
+
+  <!-- ============ 5. REAR & HARDWARE ============ -->
+  <h2 class="h2">5 &nbsp;Rear &amp; attachment</h2>
+  <div style="display:grid;grid-template-columns:1fr 1.1fr;gap:22px;margin-top:14px;align-items:center">
+    <figure style="margin:0;border:1px solid #e6e6e6;border-radius:18px;padding:22px;background:#fff">
+      <div style="position:relative;width:150px;height:150px;margin:6px auto">
+        <div style="position:absolute;inset:0;background:#f2f2f2;border:1px solid #d2d2d2;border-radius:50%"></div>
+        <div style="position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:16px;height:16px;border-radius:50%;border:1.5px solid #96B3D2;display:flex;align-items:center;justify-content:center">
+          <div style="width:1px;height:16px;background:#96B3D2;position:absolute"></div>
+          <div style="width:16px;height:1px;background:#96B3D2;position:absolute"></div>
+        </div>
+        <div style="position:absolute;left:calc(50% + 16px);top:36%;font-size:9.5px;color:#5a7da8" class="mono">post</div>
+        <div style="position:absolute;left:0;right:0;bottom:12px;text-align:center;font-size:12px;font-weight:700;letter-spacing:.02em;color:#9aa0a6">bluezoo</div>
+      </div>
+      <figcaption style="font-size:11.5px;color:#7d7d7d;text-align:center;margin-top:10px">Figure 3 &mdash; Rear view. Single post at balance point; laser&#8209;etched backstamp.</figcaption>
+    </figure>
+    <div>
+      <ul style="font-size:14px;line-height:1.6;color:#3f3f3f;margin:0;padding-left:20px">
+        <li style="margin-bottom:8px"><strong style="font-weight:700;color:#585858">Single post</strong> positioned at the mark's balance point so the pin hangs level; 8 mm exposed length.</li>
+        <li style="margin-bottom:8px"><strong style="font-weight:700;color:#585858">Locking rubber clutch</strong> as standard — secure, gentle on fabric, no sharp butterfly. Deluxe metal locking clutch offered as an upgrade.</li>
+        <li style="margin-bottom:8px"><strong style="font-weight:700;color:#585858">Backstamp</strong> laser&#8209;etched into the rear: the lowercase <em>bluezoo</em> wordmark. No ink.</li>
+        <li style="margin-bottom:0"><strong style="font-weight:700;color:#585858">Optional</strong> magnetic backing (2&#8209;magnet) for wearers who prefer not to pierce fabric — adds ~1.5 g.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ 6. PACKAGING ============ -->
+  <h2 class="h2">6 &nbsp;Packaging &amp; presentation</h2>
+  <p style="font-size:14.5px;line-height:1.65;color:#3f3f3f;margin:14px 0 0">Each pin ships on a soft&#8209;touch white backing card (55 &times; 85 mm) with the primary lockup top&#8209;left and a single line of copy — <em>&ldquo;Steady counsel, worn with pride.&rdquo;</em> — below the pin well. Card stock 350 gsm, matte laminate, subtle corners to echo the mark's straight edges. Pins are seated in a die&#8209;cut foam well and covered with a clear sleeve. For gifting, an optional navy&#8209;lined kraft box (60 &times; 60 &times; 22 mm) with the butterfly mark foil&#8209;stamped on the lid.</p>
+  <div style="display:flex;gap:20px;align-items:center;margin-top:16px;padding:18px 22px;border:1px solid #e6e6e6;border-radius:16px;background:linear-gradient(150deg,#f4f7fa 0%,#eef4f2 100%)">
+    <img src="assets/logo-primary.png" alt="bluezoo primary lockup" style="height:44px;width:auto">
+    <p style="margin:0;font-size:13px;line-height:1.55;color:#585858">Use the full primary lockup on packaging; the pin face itself stays purely the butterfly mark, no wordmark.</p>
+  </div>
+
+  <!-- ============ 7. TOLERANCES & QA ============ -->
+  <h2 class="h2">7 &nbsp;Tolerances &amp; quality</h2>
+  <table style="width:100%;border-collapse:collapse;margin-top:14px">
+    <thead>
+      <tr style="border-bottom:2px solid #585858">
+        <th style="text-align:left;padding:8px 10px 8px 0;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858">Attribute</th>
+        <th style="text-align:left;padding:8px 10px;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858">Nominal</th>
+        <th style="text-align:left;padding:8px 0 8px 10px;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858">Tolerance</th>
+      </tr>
+    </thead>
+    <tbody style="font-size:13px;color:#3f3f3f">
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Overall diameter</td><td style="padding:9px 10px" class="mono">&Oslash; 15.0 mm</td><td style="padding:9px 0 9px 10px">&plusmn; 0.2 mm</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Body thickness</td><td style="padding:9px 10px" class="mono">1.5 mm</td><td style="padding:9px 0 9px 10px">&plusmn; 0.15 mm</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Enamel fill level</td><td style="padding:9px 10px" class="mono">flush</td><td style="padding:9px 0 9px 10px">&plusmn; 0.05 mm to ridge</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Colour vs Pantone</td><td style="padding:9px 10px" class="mono">&Delta;E</td><td style="padding:9px 0 9px 10px">&le; 2.0</td></tr>
+      <tr><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Post pull strength</td><td style="padding:9px 10px" class="mono">&mdash;</td><td style="padding:9px 0 9px 10px">&ge; 3 kg without separation</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:16px;padding:18px 22px;border:1px solid #e6e6e6;border-radius:16px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#137B8F;margin-bottom:10px">QA acceptance</div>
+    <ul style="font-size:13px;line-height:1.55;color:#3f3f3f;margin:0;padding-left:18px">
+      <li style="margin-bottom:5px">Enamel lapped flush to the ridges; no pitting, bubbles or low fill.</li>
+      <li style="margin-bottom:5px">Plating uniform and bright; no scratches, discolouration or sharp edges.</li>
+      <li style="margin-bottom:5px">Navy and teal consistent pin&#8209;to&#8209;pin across the run.</li>
+      <li style="margin-bottom:0">Facet ridges crisp and unbroken; straight edges stay straight.</li>
+    </ul>
+  </div>
+
+  <!-- ============ 8. DELIVERABLES ============ -->
+  <h2 class="h2">8 &nbsp;For the manufacturer</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:14px">
+    <div>
+      <div style="font-size:13px;font-weight:700;color:#585858;margin-bottom:8px">We will supply</div>
+      <ul style="font-size:13px;line-height:1.55;color:#3f3f3f;margin:0;padding-left:18px">
+        <li style="margin-bottom:5px">Vector artwork of the mark (AI + SVG), facets separated.</li>
+        <li style="margin-bottom:5px">Enamel colour file with Pantone call&#8209;outs.</li>
+        <li style="margin-bottom:5px">Backstamp artwork and packaging print files.</li>
+        <li style="margin-bottom:0">This specification, Rev A.</li>
+      </ul>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:700;color:#585858;margin-bottom:8px">We need back before tooling</div>
+      <ul style="font-size:13px;line-height:1.55;color:#3f3f3f;margin:0;padding-left:18px">
+        <li style="margin-bottom:5px">Pre&#8209;production sample (2 pcs) for physical sign&#8209;off.</li>
+        <li style="margin-bottom:5px">Enamel colour proof on struck metal.</li>
+        <li style="margin-bottom:5px">Confirmed weight and thickness of the sample.</li>
+        <li style="margin-bottom:0">Costing at 250 / 500 / 1000 pcs.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ 9. ASSUMPTIONS ============ -->
+  <div style="margin-top:26px;padding:18px 22px;border-left:3px solid #96B3D2;background:#f4f8fc;border-radius:0 12px 12px 0">
+    <div style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#5a7da8;margin-bottom:8px">Open items &amp; assumptions</div>
+    <p style="font-size:12.5px;line-height:1.6;color:#3f3f3f;margin:0">Size (&Oslash; 15 mm round), build (die&#8209;struck hard enamel), clutch type (locking rubber) and plating (polished silver) are proposed defaults — please confirm or amend. Alternatives worth a sample: (a) matte black plating instead of silver; (b) soft enamel for a lower unit cost; (c) magnetic backing as the standard. Budget and quantity to be confirmed to finalise costing.</p>
+  </div>
+
+  <!-- ============ SIGN-OFF ============ -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:34px;padding-top:20px;border-top:1px solid #e6e6e6">
+    <div>
+      <div style="height:34px;border-bottom:1px solid #afafaf"></div>
+      <div style="font-size:11px;color:#7d7d7d;margin-top:6px">Blue Zoo &mdash; approved by / date</div>
+    </div>
+    <div>
+      <div style="height:34px;border-bottom:1px solid #afafaf"></div>
+      <div style="font-size:11px;color:#7d7d7d;margin-top:6px">Manufacturer &mdash; accepted by / date</div>
+    </div>
+  </div>
+
+</div>
+</x-import>
+</x-dc>
+</body>
+</html>

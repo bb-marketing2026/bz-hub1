@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    body{background:#eef0f3;margin:0}
+    .pin, .pin *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .pin p{text-wrap:pretty}
+    .pin a{color:var(--bz-blue-600);text-decoration:none}
+    .h2{font-size:21px;font-weight:700;color:var(--bz-blue-700);margin:32px 0 0;padding-bottom:8px;border-bottom:2px solid #137B8F}
+    .mono{font-family:ui-monospace,'Cascadia Mono',Menlo,monospace}
+    .foil{background:linear-gradient(115deg,#f4f6f8 0%,#c3ccd3 26%,#8f9aa3 40%,#f0f3f5 54%,#aab4bc 72%,#dfe4e8 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}
+    .bz-backhub:hover{background:#153E5A}
+    @media print{.bz-backhub{display:none!important}}
+  </style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="a4" margin="0.7in" hint-size="100%,100%">
+<div class="pin" style="color:var(--bz-grey-800)">
+
+  <div slot="header" style="display:flex;align-items:center;justify-content:space-between;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9b0b6;padding-bottom:6px;border-bottom:1px solid #e6e6e6">
+    <span style="font-weight:700;letter-spacing:.02em;color:#153E5A;text-transform:none;font-size:13px">Blue Zoo</span>
+    <span>Confidential · Design specification</span>
+  </div>
+  <div slot="footer" style="display:flex;align-items:center;justify-content:space-between;font-size:9px;letter-spacing:.08em;color:#a9b0b6;padding-top:6px;border-top:1px solid #e6e6e6">
+    <span>Blue Zoo · Governance · Strategy · Risk · Resilience</span>
+    <span>BZ&#8209;BC&#8209;001 · Rev A · bluezoo.com.au</span>
+  </div>
+
+  <div style="font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#137B8F">Product design specification · BZ&#8209;BC&#8209;001</div>
+  <h1 style="font-size:38px;line-height:1.05;color:#153E5A;font-weight:700;margin:8px 0 0;letter-spacing:-.01em">Business card</h1>
+  <p style="font-size:15.5px;line-height:1.6;color:var(--bz-grey-700);margin:12px 0 0;max-width:46em">A double&#8209;sided business card in deep Blue Zoo navy: a foil name and a blind&#8209;deboss butterfly on the front, and the primary lockup with contact details on a clean reverse. Understated, tactile, unmistakably us.</p>
+
+  <div style="display:grid;grid-template-columns:1.15fr 1fr;gap:22px;margin-top:26px;align-items:stretch">
+    <div style="border:1px solid #e6e6e6;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;background:radial-gradient(circle at 40% 32%, #f4f7fa, #e7edf2);padding:22px">
+      <div style="width:330px;height:189px;border-radius:11px;position:relative;overflow:hidden;background:linear-gradient(150deg,#153E5A 0%,#1d4a63 55%,#1c5560 100%);color:#fff;box-shadow:0 10px 22px rgba(20,40,60,.24)">
+        <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:18px;bottom:14px;width:114px;opacity:.10;filter:drop-shadow(0 1px 0 rgba(255,255,255,.18)) drop-shadow(0 -1px 0 rgba(0,0,0,.5))">
+        <div style="position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(180deg,#137B8F,#3C6E71)"></div>
+        <img src="assets/logo-white.png" alt="bluezoo" style="position:absolute;left:24px;top:22px;width:92px">
+        <div style="position:absolute;left:24px;bottom:24px">
+          <div style="height:1px;width:26px;background:#8f9aa3;margin-bottom:8px"></div>
+          <div style="font-size:18px;font-weight:400;letter-spacing:.05em" class="foil">Pat Scally</div>
+          <div style="font-size:8px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9fb1bb;margin-top:5px">Managing Director</div>
+        </div>
+      </div>
+      <div style="width:330px;height:189px;border-radius:11px;position:relative;overflow:hidden;background:#fff;color:#153E5A;box-shadow:0 10px 22px rgba(20,40,60,.16)">
+        <div style="position:absolute;left:0;top:0;right:0;height:5px;background:linear-gradient(90deg,#153E5A,#137B8F 55%,#3C6E71)"></div>
+        <div style="position:absolute;left:0;right:0;top:26px;display:flex;justify-content:center"><img src="assets/logo-primary.png" alt="bluezoo" style="width:132px"></div>
+        <div style="position:absolute;left:22px;right:22px;bottom:16px;display:flex;justify-content:space-between;font-size:7.5px;line-height:1.7;color:#45585f"><div><div>pats@bluezoo.com.au</div><div>+61 8 9370 0409</div></div><div style="text-align:right"><div>bluezoo.com.au</div><div>896 Beaufort Street, Inglewood WA 6052</div></div></div>
+      </div>
+    </div>
+    <div style="border:1px solid #e6e6e6;border-radius:18px;padding:22px 24px">
+      <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#137B8F;margin-bottom:12px">At a glance</div>
+      <dl style="margin:0">
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Trim size</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">90 &times; 55 mm</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Bleed</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">3 mm all sides</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Safe margin</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">4 mm inside trim</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Stock</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">600 gsm uncoated</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Corners</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">Square</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Colour</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">CMYK + silver foil</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0"><dt style="font-size:12.5px;color:#7d7d7d">MOQ / lead</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">250 pcs · 1&ndash;2 wks</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <h2 class="h2">1 &nbsp;Overview &amp; intent</h2>
+  <p style="font-size:14.5px;line-height:1.65;color:#3f3f3f;margin:14px 0 0">The card is the firm's most personal piece of collateral. It should feel weighty and considered in the hand and read instantly as Blue Zoo. The front carries the wordmark, the holder's name in silver foil and a blind&#8209;deboss butterfly; the reverse is a clean white card with the primary lockup, the brand line and full contact details. The design is deliberately restrained — one foil, one deboss, generous space.</p>
+
+  <h2 class="h2">2 &nbsp;Layout &amp; dimensions</h2>
+  <ul style="font-size:14.5px;line-height:1.6;color:#3f3f3f;margin:14px 0 0;padding-left:20px">
+    <li style="margin-bottom:7px"><strong style="font-weight:700;color:#585858">Trim size.</strong> 90 &times; 55 mm (landscape), square corners.</li>
+    <li style="margin-bottom:7px"><strong style="font-weight:700;color:#585858">Bleed.</strong> 3 mm on every side — artwork size 96 &times; 61 mm. The navy front background must extend to full bleed.</li>
+    <li style="margin-bottom:7px"><strong style="font-weight:700;color:#585858">Safe area.</strong> Keep all text and the logo at least 4 mm inside the trim.</li>
+    <li style="margin-bottom:0"><strong style="font-weight:700;color:#585858">Contact block (rear).</strong> pats@bluezoo.com.au · +61 8 9370 0409 · bluezoo.com.au · 896 Beaufort Street, Inglewood WA 6052.</li>
+  </ul>
+
+  <h2 class="h2">3 &nbsp;Materials &amp; finish</h2>
+  <table style="width:100%;border-collapse:collapse;margin-top:14px">
+    <thead>
+      <tr style="border-bottom:2px solid #585858">
+        <th style="text-align:left;padding:8px 10px 8px 0;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858;width:24%">Element</th>
+        <th style="text-align:left;padding:8px 10px;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858">Specification</th>
+        <th style="text-align:left;padding:8px 0 8px 10px;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858;width:30%">Finish</th>
+      </tr>
+    </thead>
+    <tbody style="font-size:13px;color:#3f3f3f">
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Stock</td><td style="padding:9px 10px">600 gsm uncoated card, bright white</td><td style="padding:9px 0 9px 10px">Soft&#8209;touch matte laminate (front)</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Front print</td><td style="padding:9px 10px">CMYK navy flood to full bleed</td><td style="padding:9px 0 9px 10px">Even, streak&#8209;free coverage</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Name / rule</td><td style="padding:9px 10px">Brushed&#8209;silver foil stamp</td><td style="padding:9px 0 9px 10px">Metallic foil, tight registration</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Butterfly (front)</td><td style="padding:9px 10px">Blind deboss, no ink</td><td style="padding:9px 0 9px 10px">~0.3 mm depth, clean shoulders</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Back print</td><td style="padding:9px 10px">CMYK on white; navy&#8594;teal top bar</td><td style="padding:9px 0 9px 10px">Matte</td></tr>
+      <tr><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Edge (optional)</td><td style="padding:9px 10px">Silver painted edge</td><td style="padding:9px 0 9px 10px">Even; sample before run</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:12.5px;line-height:1.6;color:#7d7d7d;margin:12px 0 0">600 gsm gives a substantial, premium card without the cost of triplex. Foil and deboss each need their own tooling (a die/plate) — supply separated artwork layers (see Section 5).</p>
+
+  <h2 class="h2">4 &nbsp;Colour</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:14px">
+    <div style="border:1px solid #e6e6e6;border-radius:12px;overflow:hidden"><div style="height:48px;background:#153E5A"></div><div style="padding:10px 12px;font-size:10.5px;color:#585858;line-height:1.6" class="mono"><div style="font-weight:700;font-family:'Carlito',sans-serif">Navy</div>#153E5A · PMS 302 C<br>C100 M78 Y40 K35</div></div>
+    <div style="border:1px solid #e6e6e6;border-radius:12px;overflow:hidden"><div style="height:48px;background:#137B8F"></div><div style="padding:10px 12px;font-size:10.5px;color:#585858;line-height:1.6" class="mono"><div style="font-weight:700;font-family:'Carlito',sans-serif">Teal</div>#137B8F · PMS 321 C<br>C88 M33 Y38 K5</div></div>
+    <div style="border:1px solid #e6e6e6;border-radius:12px;overflow:hidden"><div style="height:48px;background:linear-gradient(115deg,#f4f6f8,#8f9aa3,#dfe4e8)"></div><div style="padding:10px 12px;font-size:10.5px;color:#585858;line-height:1.6" class="mono"><div style="font-weight:700;font-family:'Carlito',sans-serif">Foil</div>Brushed silver<br>e.g. Kurz Luxor 351</div></div>
+  </div>
+
+  <h2 class="h2">5 &nbsp;Artwork layers for the printer</h2>
+  <p style="font-size:14.5px;line-height:1.65;color:#3f3f3f;margin:14px 0 0">Supply print&#8209;ready PDF/X&#8209;1a with each special finish on its own named spot layer (100% coverage, overprint on):</p>
+  <ul style="font-size:14px;line-height:1.6;color:#3f3f3f;margin:12px 0 0;padding-left:20px">
+    <li style="margin-bottom:6px"><span class="mono" style="color:#153E5A">CMYK</span> — front navy flood &amp; all back artwork.</li>
+    <li style="margin-bottom:6px"><span class="mono" style="color:#153E5A">FOIL&#8209;SILVER</span> — name and short rule (spot, e.g. Pantone 877).</li>
+    <li style="margin-bottom:6px"><span class="mono" style="color:#153E5A">DEBOSS</span> — butterfly outline (spot, marked "blind deboss, no ink").</li>
+    <li style="margin-bottom:0"><span class="mono" style="color:#153E5A">DIELINE</span> — trim path (spot, marked non&#8209;printing).</li>
+  </ul>
+  <div style="margin-top:14px;padding:14px 18px;border-left:3px solid #96B3D2;background:#f4f8fc;border-radius:0 12px 12px 0;font-size:12.5px;line-height:1.6;color:#3f3f3f">Fonts outlined; images embedded at 300 dpi; total ink coverage &le; 300%; rich black for the navy flood built as C60 M40 K100. A separate <strong>print&#8209;marks artboard</strong> (BZ&#8209;BC&#8209;001&#8209;PRINT) accompanies this spec with trim, bleed, registration marks and colour bars in place.</div>
+
+  <h2 class="h2">6 &nbsp;Tolerances &amp; quality</h2>
+  <table style="width:100%;border-collapse:collapse;margin-top:14px">
+    <thead>
+      <tr style="border-bottom:2px solid #585858">
+        <th style="text-align:left;padding:8px 10px 8px 0;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858">Attribute</th>
+        <th style="text-align:left;padding:8px 10px;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858">Nominal</th>
+        <th style="text-align:left;padding:8px 0 8px 10px;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858">Tolerance</th>
+      </tr>
+    </thead>
+    <tbody style="font-size:13px;color:#3f3f3f">
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Trim size</td><td style="padding:9px 10px" class="mono">90 &times; 55 mm</td><td style="padding:9px 0 9px 10px">&plusmn; 0.5 mm</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Foil / CMYK registration</td><td style="padding:9px 10px" class="mono">0.0 mm</td><td style="padding:9px 0 9px 10px">&plusmn; 0.2 mm</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Colour vs Pantone</td><td style="padding:9px 10px" class="mono">&Delta;E</td><td style="padding:9px 0 9px 10px">&le; 2.0</td></tr>
+      <tr><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Deboss depth</td><td style="padding:9px 10px" class="mono">0.30 mm</td><td style="padding:9px 0 9px 10px">&plusmn; 0.1 mm; no cracking</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:16px;padding:18px 22px;border:1px solid #e6e6e6;border-radius:16px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#137B8F;margin-bottom:10px">QA acceptance</div>
+    <ul style="font-size:13px;line-height:1.55;color:#3f3f3f;margin:0;padding-left:18px">
+      <li style="margin-bottom:5px">Navy flood even and rich; no banding or roller marks.</li>
+      <li style="margin-bottom:5px">Foil bright and fully adhered; no flaking or fill&#8209;in of fine strokes.</li>
+      <li style="margin-bottom:5px">Deboss clean and even both sides; no show&#8209;through cracking on the reverse.</li>
+      <li style="margin-bottom:0">Trim square and consistent; laminate free of bubbles and debris.</li>
+    </ul>
+  </div>
+
+  <h2 class="h2">7 &nbsp;For the printer</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:14px">
+    <div>
+      <div style="font-size:13px;font-weight:700;color:#585858;margin-bottom:8px">We will supply</div>
+      <ul style="font-size:13px;line-height:1.55;color:#3f3f3f;margin:0;padding-left:18px">
+        <li style="margin-bottom:5px">Print&#8209;ready front &amp; back PDF/X&#8209;1a with layered finishes.</li>
+        <li style="margin-bottom:5px">Print&#8209;marks artboard (BZ&#8209;BC&#8209;001&#8209;PRINT).</li>
+        <li style="margin-bottom:5px">Vector logos, mark and foil/deboss dies.</li>
+        <li style="margin-bottom:0">This specification, Rev A.</li>
+      </ul>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:700;color:#585858;margin-bottom:8px">We need back before the run</div>
+      <ul style="font-size:13px;line-height:1.55;color:#3f3f3f;margin:0;padding-left:18px">
+        <li style="margin-bottom:5px">Hard&#8209;copy proof on the actual 600 gsm stock.</li>
+        <li style="margin-bottom:5px">Foil draw&#8209;down and deboss strike sample.</li>
+        <li style="margin-bottom:5px">Confirmed edge&#8209;paint sample (if selected).</li>
+        <li style="margin-bottom:0">Costing at 250 / 500 / 1000 pcs.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:34px;padding-top:20px;border-top:1px solid #e6e6e6">
+    <div><div style="height:34px;border-bottom:1px solid #afafaf"></div><div style="font-size:11px;color:#7d7d7d;margin-top:6px">Blue Zoo &mdash; approved by / date</div></div>
+    <div><div style="height:34px;border-bottom:1px solid #afafaf"></div><div style="font-size:11px;color:#7d7d7d;margin-top:6px">Printer &mdash; accepted by / date</div></div>
+  </div>
+
+</div>
+</x-import>
+</x-dc>
+</body>
+</html>

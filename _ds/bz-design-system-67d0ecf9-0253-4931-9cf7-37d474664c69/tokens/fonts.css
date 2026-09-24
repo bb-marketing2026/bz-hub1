@@ -1,0 +1,11 @@
+/* ============================================================
+   bluezoo — Fonts
+   The brand standard is CALIBRI. Calibri is a proprietary
+   Microsoft typeface and is not web-distributable, so the
+   design system ships CARLITO — the metric-compatible open
+   clone of Calibri (identical metrics, near-identical shapes).
+   Substitution flagged to the brand owner. In native Office
+   documents (decks, proposals) use real Calibri.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');

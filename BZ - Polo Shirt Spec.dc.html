@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    body{background:#eef0f3;margin:0}
+    .pin, .pin *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .pin p{text-wrap:pretty}
+    .pin a{color:var(--bz-blue-600);text-decoration:none}
+    .h2{font-size:21px;font-weight:700;color:var(--bz-blue-700);margin:32px 0 0;padding-bottom:8px;border-bottom:2px solid #137B8F}
+    .mono{font-family:ui-monospace,'Cascadia Mono',Menlo,monospace}
+    .bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}
+    .bz-backhub:hover{background:#153E5A}
+    @media print{.bz-backhub{display:none!important}}
+  </style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="a4" margin="0.7in" hint-size="100%,100%">
+<div class="pin" style="color:var(--bz-grey-800)">
+
+  <div slot="header" style="display:flex;align-items:center;justify-content:space-between;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9b0b6;padding-bottom:6px;border-bottom:1px solid #e6e6e6">
+    <span style="font-weight:700;letter-spacing:.02em;color:#153E5A;text-transform:none;font-size:13px">Blue Zoo</span>
+    <span>Confidential · Design specification</span>
+  </div>
+
+  <div slot="footer" style="display:flex;align-items:center;justify-content:space-between;font-size:9px;letter-spacing:.08em;color:#a9b0b6;padding-top:6px;border-top:1px solid #e6e6e6">
+    <span>Blue Zoo · Governance · Strategy · Risk · Resilience</span>
+    <span>BZ&#8209;POL&#8209;001 · Rev A · bluezoo.com.au</span>
+  </div>
+
+  <!-- ============ MASTHEAD ============ -->
+  <div style="font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#137B8F">Product design specification · BZ&#8209;POL&#8209;001</div>
+  <h1 style="font-size:38px;line-height:1.05;color:#153E5A;font-weight:700;margin:8px 0 0;letter-spacing:-.01em">Polo shirt</h1>
+  <p style="font-size:15.5px;line-height:1.6;color:var(--bz-grey-700);margin:12px 0 0;max-width:46em">A premium cotton&#8209;pique polo in deep Blue Zoo navy, carrying the all&#8209;white butterfly mark on the left chest and the line <em>Governance. Done Differently.</em> across the rear shoulder blades. Smart enough for a client site, comfortable enough for a full day. Understated, considered, unmistakably us.</p>
+
+  <!-- ============ HERO + KEY FACTS ============ -->
+  <div style="display:grid;grid-template-columns:1.15fr 1fr;gap:22px;margin-top:26px;align-items:stretch">
+    <div style="border:1px solid #e6e6e6;border-radius:18px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 40% 32%, #f4f7fa, #e7edf2)">
+      <img src="assets/polo-render.png" alt="Render of the finished Blue Zoo polo shirt, front and back" style="width:100%;height:auto;display:block">
+    </div>
+    <div style="border:1px solid #e6e6e6;border-radius:18px;padding:22px 24px">
+      <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#137B8F;margin-bottom:12px">At a glance</div>
+      <dl style="margin:0">
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Garment</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">Short&#8209;sleeve polo</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Fit</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">Regular, classic</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Colour</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">Blue Zoo navy</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Fabric</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">Cotton pique, ~210 gsm</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Branding</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">Chest mark + rear line</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12.5px;color:#7d7d7d">Sizes</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">XS &ndash; 3XL</dd></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:7px 0"><dt style="font-size:12.5px;color:#7d7d7d">MOQ / lead</dt><dd style="margin:0;font-weight:700;font-size:12.5px;color:#585858;text-align:right">50 pcs · 4&ndash;5 wks</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <!-- ============ 1. OVERVIEW ============ -->
+  <h2 class="h2">1 &nbsp;Overview &amp; intent</h2>
+  <p style="font-size:14.5px;line-height:1.65;color:#3f3f3f;margin:14px 0 0">This polo is a staff and partner garment — worn to client sites, events and everyday office wear. It should read instantly as Blue Zoo, feel premium and well&#8209;made, and hold its shape and colour through repeated wear. The design is deliberately understated: deep navy, with the all&#8209;white butterfly mark on the left chest and a single quiet line of copy across the rear shoulder blades.</p>
+  <p style="font-size:14.5px;line-height:1.65;color:#3f3f3f;margin:12px 0 0">The mark is used exactly as supplied — the origami butterfly, all&#8209;white version, symbol only, no wordmark. Proportions must not be altered. This document is the single source of truth for the manufacturer; anything not drawn here is to be confirmed with Blue Zoo before production.</p>
+
+  <!-- ============ 2. CONSTRUCTION ============ -->
+  <h2 class="h2">2 &nbsp;Construction &amp; fit</h2>
+  <p style="font-size:14.5px;line-height:1.65;color:#3f3f3f;margin:14px 0 0">A classic short&#8209;sleeve pique polo with a ribbed collar, three&#8209;button placket and a regular fit.</p>
+  <ul style="font-size:14.5px;line-height:1.6;color:#3f3f3f;margin:12px 0 0;padding-left:20px">
+    <li style="margin-bottom:7px"><strong style="font-weight:700;color:#585858">Fabric.</strong> Combed cotton pique, ~210 gsm, with a soft handle and a firm, breathable knit; pre&#8209;shrunk and colourfast. Regular fit; hip length with a subtle side vent.</li>
+    <li style="margin-bottom:7px"><strong style="font-weight:700;color:#585858">Collar &amp; placket.</strong> Flat&#8209;knit ribbed collar and cuffs in tonal navy; three&#8209;button placket with tonal navy buttons; clean twin&#8209;needle topstitching.</li>
+    <li style="margin-bottom:7px"><strong style="font-weight:700;color:#585858">Sleeves &amp; hem.</strong> Set&#8209;in short sleeves with ribbed cuffs; straight hem with side vents; reinforced shoulder taping for shape retention.</li>
+    <li style="margin-bottom:0"><strong style="font-weight:700;color:#585858">Branding.</strong> Embroidered all&#8209;white mark on the left chest; the rear line applied across the shoulder blades (see Section 4).</li>
+  </ul>
+
+  <!-- FIGURE 1 — BRAND PLACEMENT -->
+  <figure style="margin:22px 0 0;border:1px solid #e6e6e6;border-radius:18px;padding:26px 20px 18px;background:#fff">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center">
+      <div style="position:relative;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 40% 34%,#f4f7fa,#eef2f6);border-radius:12px;padding:14px">
+        <img src="assets/polo-render.png" alt="Front and rear branding placement" style="width:100%;height:auto;display:block;border-radius:8px">
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#137B8F;margin-bottom:12px">Branding placement</div>
+        <dl style="margin:0">
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12px;color:#7d7d7d">Chest mark width</dt><dd style="margin:0;font-weight:700;font-size:12px;color:#585858" class="mono">~75 mm</dd></div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12px;color:#7d7d7d">Chest, below shoulder</dt><dd style="margin:0;font-weight:700;font-size:12px;color:#585858" class="mono">~80 mm</dd></div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12px;color:#7d7d7d">Rear line width</dt><dd style="margin:0;font-weight:700;font-size:12px;color:#585858" class="mono">~240 mm</dd></div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid #f2f2f2"><dt style="font-size:12px;color:#7d7d7d">Rear, below collar seam</dt><dd style="margin:0;font-weight:700;font-size:12px;color:#585858" class="mono">~110 mm</dd></div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:6px 0"><dt style="font-size:12px;color:#7d7d7d">Method</dt><dd style="margin:0;font-weight:700;font-size:12px;color:#585858">Embroidery / print</dd></div>
+        </dl>
+        <p style="font-size:12px;line-height:1.5;color:#7d7d7d;margin:12px 0 0">Chest mark upright on the wearer's left; rear line centred across the shoulder blades. Confirm on a size&#8209;M sample before bulk.</p>
+      </div>
+    </div>
+    <figcaption style="font-size:11.5px;color:#7d7d7d;text-align:center;margin-top:16px">Figure 1 &mdash; Front chest mark and rear shoulder&#8209;blade line. Dimensions indicative on a size M; scale proportionally across the size run. Not to scale.</figcaption>
+  </figure>
+
+  <!-- REAR LINE VISUAL -->
+  <figure style="margin:20px 0 0;border:1px solid #e6e6e6;border-radius:18px;padding:24px 26px 18px;background:#153E5A">
+    <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#7aa9ab;margin-bottom:14px">Rear shoulder&#8209;blade line — all&#8209;white</div>
+    <div style="text-align:center;padding:14px 0">
+      <div style="font-size:26px;font-weight:700;color:#ffffff;letter-spacing:.01em">Governance. Done Differently.</div>
+    </div>
+    <figcaption style="font-size:11.5px;color:#9fb4c2;text-align:center;margin-top:10px">Figure 2 &mdash; Rear line set in the brand face (Carlito / Calibri), bold, all&#8209;white, centred. Shown on navy for colour reference.</figcaption>
+  </figure>
+
+  <!-- ============ 3. MATERIALS & FINISH ============ -->
+  <h2 class="h2">3 &nbsp;Materials &amp; finish</h2>
+  <table style="width:100%;border-collapse:collapse;margin-top:14px">
+    <thead>
+      <tr style="border-bottom:2px solid #585858">
+        <th style="text-align:left;padding:8px 10px 8px 0;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858;width:22%">Component</th>
+        <th style="text-align:left;padding:8px 10px;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858">Material</th>
+        <th style="text-align:left;padding:8px 0 8px 10px;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858;width:34%">Finish</th>
+      </tr>
+    </thead>
+    <tbody style="font-size:13px;color:#3f3f3f">
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Body</td><td style="padding:9px 10px">Combed cotton pique, ~210 gsm</td><td style="padding:9px 0 9px 10px">Pre&#8209;shrunk, colourfast; soft handle</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Collar &amp; cuffs</td><td style="padding:9px 10px">Flat&#8209;knit rib, tonal navy</td><td style="padding:9px 0 9px 10px">Shape&#8209;retentive; clean edges</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Placket buttons</td><td style="padding:9px 10px">Tonal navy resin, 3&#8209;button</td><td style="padding:9px 0 9px 10px">Securely bar&#8209;tacked</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Chest mark</td><td style="padding:9px 10px">Machine embroidery, ~75 mm wide</td><td style="padding:9px 0 9px 10px">All&#8209;white thread, satin fill</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Rear line</td><td style="padding:9px 10px">Embroidery or soft&#8209;hand screen print</td><td style="padding:9px 0 9px 10px">All&#8209;white; ~240 mm wide</td></tr>
+      <tr><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Labels</td><td style="padding:9px 10px">Woven neck label + care label</td><td style="padding:9px 0 9px 10px">bluezoo wordmark; sizing &amp; care</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:12.5px;line-height:1.6;color:#7d7d7d;margin:12px 0 0">Cotton pique is specified for a premium, breathable handle. The rear line may be embroidered (premium) or soft&#8209;hand screen printed (lower cost) — sample both and confirm before bulk. A cotton&#8209;rich moisture&#8209;wicking blend can be sampled as an alternative.</p>
+
+  <!-- ============ 4. COLOUR & BRANDING ============ -->
+  <h2 class="h2">4 &nbsp;Colour &amp; branding</h2>
+  <p style="font-size:14.5px;line-height:1.65;color:#3f3f3f;margin:14px 0 0">The body is deep Blue Zoo navy. Both the chest mark and the rear line are rendered in <strong style="font-weight:700;color:#585858">all white</strong> for clean contrast against the navy — use the supplied all&#8209;white butterfly mark, not the colour version. The rear line reads <em>Governance. Done Differently.</em> set in the brand face, bold, centred across the shoulder blades.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px">
+    <div style="border:1px solid #e6e6e6;border-radius:14px;overflow:hidden">
+      <div style="height:56px;background:#153E5A"></div>
+      <div style="padding:12px 14px;font-size:11.5px;color:#585858;line-height:1.7" class="mono">
+        <div style="font-weight:700;font-size:13px;letter-spacing:.02em;font-family:'Carlito','Calibri',sans-serif">Body navy</div>
+        HEX #153E5A<br>PANTONE 302 C
+      </div>
+    </div>
+    <div style="border:1px solid #e6e6e6;border-radius:14px;overflow:hidden">
+      <div style="height:56px;background:#ffffff;border-bottom:1px solid #eee"></div>
+      <div style="padding:12px 14px;font-size:11.5px;color:#585858;line-height:1.7" class="mono">
+        <div style="font-weight:700;font-size:13px;letter-spacing:.02em;font-family:'Carlito','Calibri',sans-serif">Mark &amp; text</div>
+        HEX #FFFFFF<br>All&#8209;white thread / ink
+      </div>
+    </div>
+  </div>
+  <p style="font-size:12.5px;line-height:1.6;color:#7d7d7d;margin:12px 0 0">Keep branding to the chest mark and the single rear line only; no sleeve badges or additional prints. Do not use the colour or reverse mark on this garment — the all&#8209;white version is specified throughout.</p>
+
+  <!-- ============ 5. LABELLING & PACKAGING ============ -->
+  <h2 class="h2">5 &nbsp;Labelling &amp; packaging</h2>
+  <div style="display:grid;grid-template-columns:1fr 1.1fr;gap:22px;margin-top:14px;align-items:center">
+    <figure style="margin:0;border:1px solid #e6e6e6;border-radius:18px;padding:22px;background:#fff">
+      <div style="position:relative;width:170px;height:150px;margin:6px auto;display:flex;align-items:center;justify-content:center">
+        <div style="width:130px;border:1px solid #d2d2d2;border-radius:8px;padding:14px 10px;text-align:center;background:#fbfbfc">
+          <div style="font-size:13px;font-weight:700;color:#153E5A;letter-spacing:.02em">bluezoo</div>
+          <div style="height:1px;background:#e6e6e6;margin:8px 0"></div>
+          <div style="font-size:9px;color:#9aa0a6;letter-spacing:.06em" class="mono">SIZE M</div>
+          <div style="font-size:8px;color:#c0c4c8;margin-top:4px" class="mono">100% COTTON PIQUE</div>
+        </div>
+      </div>
+      <figcaption style="font-size:11.5px;color:#7d7d7d;text-align:center;margin-top:10px">Figure 3 &mdash; Woven neck label + printed care label.</figcaption>
+    </figure>
+    <div>
+      <ul style="font-size:14px;line-height:1.6;color:#3f3f3f;margin:0;padding-left:20px">
+        <li style="margin-bottom:8px"><strong style="font-weight:700;color:#585858">Neck label</strong> woven with the lowercase <em>bluezoo</em> wordmark, or a soft&#8209;print tagless equivalent for comfort.</li>
+        <li style="margin-bottom:8px"><strong style="font-weight:700;color:#585858">Care label</strong> in the left side seam: fibre content, size and wash care to AU standards.</li>
+        <li style="margin-bottom:8px"><strong style="font-weight:700;color:#585858">Sizing</strong> XS&ndash;3XL to a Blue Zoo&#8209;approved size chart; supply a full size set for fit sign&#8209;off.</li>
+        <li style="margin-bottom:0"><strong style="font-weight:700;color:#585858">Packaging</strong> individually folded in a recyclable poly bag with a size sticker; bulk&#8209;packed by size.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ 6. TOLERANCES & QA ============ -->
+  <h2 class="h2">6 &nbsp;Tolerances &amp; quality</h2>
+  <table style="width:100%;border-collapse:collapse;margin-top:14px">
+    <thead>
+      <tr style="border-bottom:2px solid #585858">
+        <th style="text-align:left;padding:8px 10px 8px 0;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858">Attribute</th>
+        <th style="text-align:left;padding:8px 10px;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858">Nominal</th>
+        <th style="text-align:left;padding:8px 0 8px 10px;font-weight:700;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#585858">Tolerance</th>
+      </tr>
+    </thead>
+    <tbody style="font-size:13px;color:#3f3f3f">
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Body measurements</td><td style="padding:9px 10px" class="mono">per size chart</td><td style="padding:9px 0 9px 10px">&plusmn; 1.0 cm</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Branding placement</td><td style="padding:9px 10px" class="mono">per Figure 1</td><td style="padding:9px 0 9px 10px">&plusmn; 5 mm</td></tr>
+      <tr style="border-bottom:1px solid #f2f2f2"><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Shrinkage after wash</td><td style="padding:9px 10px" class="mono">&mdash;</td><td style="padding:9px 0 9px 10px">&le; 5%</td></tr>
+      <tr><td style="padding:9px 10px 9px 0;font-weight:700;color:#585858">Colourfastness (wash/rub)</td><td style="padding:9px 10px" class="mono">grey scale</td><td style="padding:9px 0 9px 10px">&ge; grade 4</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:16px;padding:18px 22px;border:1px solid #e6e6e6;border-radius:16px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#137B8F;margin-bottom:10px">QA acceptance</div>
+    <ul style="font-size:13px;line-height:1.55;color:#3f3f3f;margin:0;padding-left:18px">
+      <li style="margin-bottom:5px">Body colour consistent piece&#8209;to&#8209;piece; no shading across panels or between batches.</li>
+      <li style="margin-bottom:5px">All&#8209;white embroidery/print crisp and opaque; no puckering, loose threads or grin&#8209;through.</li>
+      <li style="margin-bottom:5px">Collar and cuffs flat and even; placket lies flat with secure buttons.</li>
+      <li style="margin-bottom:0">Rear line straight, centred and level across the shoulder blades.</li>
+    </ul>
+  </div>
+
+  <!-- ============ 7. DELIVERABLES ============ -->
+  <h2 class="h2">7 &nbsp;For the manufacturer</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:14px">
+    <div>
+      <div style="font-size:13px;font-weight:700;color:#585858;margin-bottom:8px">We will supply</div>
+      <ul style="font-size:13px;line-height:1.55;color:#3f3f3f;margin:0;padding-left:18px">
+        <li style="margin-bottom:5px">Vector artwork of the all&#8209;white mark (AI + SVG).</li>
+        <li style="margin-bottom:5px">Rear line artwork with the exact wording &amp; font.</li>
+        <li style="margin-bottom:5px">Approved size chart and neck/care label artwork.</li>
+        <li style="margin-bottom:0">This specification, Rev A.</li>
+      </ul>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:700;color:#585858;margin-bottom:8px">We need back before bulk</div>
+      <ul style="font-size:13px;line-height:1.55;color:#3f3f3f;margin:0;padding-left:18px">
+        <li style="margin-bottom:5px">Pre&#8209;production sample (size M) for fit &amp; placement sign&#8209;off.</li>
+        <li style="margin-bottom:5px">Stitched&#8209;out / printed branding proof on shell fabric.</li>
+        <li style="margin-bottom:5px">Body colour lab dip against the navy reference.</li>
+        <li style="margin-bottom:0">Costing at 50 / 100 / 250 pcs.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ 8. ASSUMPTIONS ============ -->
+  <div style="margin-top:26px;padding:18px 22px;border-left:3px solid #96B3D2;background:#f4f8fc;border-radius:0 12px 12px 0">
+    <div style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#5a7da8;margin-bottom:8px">Open items &amp; assumptions</div>
+    <p style="font-size:12.5px;line-height:1.6;color:#3f3f3f;margin:0">Fabric (cotton pique, navy), fit (regular), branding (all&#8209;white chest mark + rear line) and sizing (XS&ndash;3XL) are proposed defaults — please confirm or amend. Alternatives worth a sample: (a) cotton&#8209;rich moisture&#8209;wicking blend; (b) rear line as embroidery vs soft&#8209;hand print; (c) a slim&#8209;fit option alongside regular. Budget and quantity to be confirmed to finalise costing.</p>
+  </div>
+
+  <!-- ============ SIGN-OFF ============ -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:34px;padding-top:20px;border-top:1px solid #e6e6e6">
+    <div>
+      <div style="height:34px;border-bottom:1px solid #afafaf"></div>
+      <div style="font-size:11px;color:#7d7d7d;margin-top:6px">Blue Zoo &mdash; approved by / date</div>
+    </div>
+    <div>
+      <div style="height:34px;border-bottom:1px solid #afafaf"></div>
+      <div style="font-size:11px;color:#7d7d7d;margin-top:6px">Manufacturer &mdash; accepted by / date</div>
+    </div>
+  </div>
+
+</div>
+</x-import>
+</x-dc>
+</body>
+</html>

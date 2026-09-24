@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+<script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+<style>
+  @page { size: A4; margin: 0; }
+  html, body { margin: 0; padding: 0; }
+  body { background: #5a6770; font-family: 'Carlito','Calibri','Segoe UI',system-ui,sans-serif; color: #353535; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  .im-doc { max-width: 8.27in; margin: 0 auto; background: #fff; }
+  .doc-frame { width: 100%; border-collapse: collapse; }
+  .doc-frame > tbody > tr > td, .doc-frame > thead > tr > td, .doc-frame > tfoot > tr > td { padding: 0; }
+  .hdr-space, .ftr-space { display: none; }
+  .flow { padding: 0 0.85in; }
+  h1, h2, h3, h4 { margin: 0; text-wrap: balance; }
+  p, li { text-wrap: pretty; }
+  .break-before { break-before: page; }
+  .avoid { break-inside: avoid; }
+  .print-footer { display: none; }
+  @media screen {
+    body { padding: 28px 0 80px; }
+    .im-doc { box-shadow: 0 6px 34px rgba(0,0,0,.28); }
+  }
+  @media print {
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { background: #fff; padding: 0; }
+    .im-doc { max-width: none; box-shadow: none; }
+    .hdr-space, .ftr-space { display: table-cell; height: 0.55in; }
+    .flow { padding: 0 0.85in; }
+    .screen-only { display: none !important; }
+    h1, h2, h3, h4 { break-after: avoid; }
+    .avoid, figure, table, blockquote { break-inside: avoid; }
+    p, li { orphans: 3; widows: 3; }
+    .print-footer { display: flex; position: fixed; bottom: 0; left: 0; right: 0; height: 0.55in; align-items: center; justify-content: space-between; padding: 0 0.85in; font: 400 9px/1 'Carlito'; letter-spacing: .04em; color: #8c8c8c; text-transform: uppercase; }
+  }
+</style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20GM%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>GM Hub</a>
+
+<button class="screen-only" onClick="{{ print }}" style="position:fixed;right:22px;bottom:22px;z-index:50;border:none;border-radius:6px;background:#284B63;color:#fff;font:700 13px/1 'Carlito';letter-spacing:.03em;padding:13px 18px;cursor:pointer;box-shadow:0 4px 14px rgba(21,62,90,.4);">Print / Save as PDF</button>
+
+<main class="im-doc">
+
+  <!-- ============ COVER ============ -->
+  <section class="avoid" style="position:relative;overflow:hidden;min-height:11.6in;background:linear-gradient(150deg,#153E5A 0%,#284B63 55%,#2f595c 100%);color:#fff;padding:0.95in 0.85in;display:flex;flex-direction:column;">
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-2.4in;top:1.1in;width:8.6in;opacity:0.07;pointer-events:none;">
+    <div style="position:relative;z-index:2;">
+      <img src="assets/logo-white.png" alt="bluezoo" style="width:1.85in;display:block;">
+    </div>
+    <div style="position:relative;z-index:2;margin-top:0.5in;">
+      <div style="display:inline-block;font:700 11px/1 'Carlito';letter-spacing:.18em;text-transform:uppercase;color:#7aa9ab;border:1px solid rgba(122,169,171,.5);border-radius:3px;padding:8px 14px;white-space:nowrap;">Internal working document · confidential</div>
+    </div>
+    <div style="position:relative;z-index:2;margin-top:auto;">
+      <div style="font:700 14px/1 'Carlito';letter-spacing:.16em;text-transform:uppercase;color:#93aab6;margin-bottom:18px;">Business development execution plan</div>
+      <h1 style="font:700 48px/1.05 'Carlito';letter-spacing:-0.01em;color:#fff;max-width:9in;">Governance&nbsp;Manager: 52 weeks from current state to embedded</h1>
+      <p style="font:400 19px/1.5 'Carlito';color:#c3d0d8;max-width:6.8in;margin:22px 0 0;">A week-by-week, task-level operating plan for the Governance Manager growth program — taking the product from current state to market embedded. It assumes the program is run by an incoming business development lead with no prior knowledge of bluezoo or the product.</p>
+    </div>
+    <div style="position:relative;z-index:2;margin-top:0.7in;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;">
+      <div>
+        <div style="font:400 12px/1.4 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;">Owner</div>
+        <div style="font:700 16px/1.4 'Carlito';color:#fff;margin-top:4px;">Governance Manager growth program</div>
+      </div>
+      <div style="text-align:right;">
+        <div style="font:400 12px/1.4 'Carlito';color:#93aab6;text-transform:uppercase;letter-spacing:.1em;">Plan period</div>
+        <div style="font:700 16px/1.4 'Carlito';color:#fff;margin-top:4px;">1 Jul 2026 – 30 Jun 2027 · BZ-GM-BDP-01</div>
+      </div>
+    </div>
+  </section>
+
+  <table class="doc-frame" role="presentation">
+    <thead><tr><td class="hdr-space"></td></tr></thead>
+    <tbody><tr><td>
+      <div class="flow" style="padding-top:0.5in;padding-bottom:0.5in;">
+
+        <!-- HOW TO USE -->
+        <section>
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">Orientation</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">How to use this plan</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 14px;">This is the operating manual for the Governance Manager growth program’s first year. It assumes the program is led by an incoming business development lead who is new to bluezoo and the product, and it takes the program from learning the product to fully embedded in a target market — week by week, task by task. It is deliberately prescriptive in the early weeks and increasingly outcome-led as the team builds judgement. The plan runs from <strong>1 July 2026 to 30 June 2027</strong>; the four quarterly gates fall at the end of September 2026, December 2026, March 2027 and June 2027.</p>
+          <ul style="font:400 14.5px/1.65 'Carlito';color:#353535;margin:0 0 18px;padding-left:22px;">
+            <li style="margin-bottom:7px;">Work the plan in order. Each week lists <strong>tasks</strong>, the <strong>output</strong> it should produce, and the <strong>KPI</strong> it advances.</li>
+            <li style="margin-bottom:7px;">The 52 weeks are grouped into five phases. Each phase opens with its objectives, the KPIs in focus, and the exit criteria to hit before moving on.</li>
+            <li style="margin-bottom:7px;">Treat the weekly targets (calls, demos, proposals, signings) as commitments, not suggestions. They ladder directly to the annual KPIs.</li>
+            <li style="margin-bottom:0;">If the program falls behind, it does not silently slip — the gap is raised at the weekly check-in and re-planned with the sponsor.</li>
+          </ul>
+          <div class="avoid" style="background:#e7f0f0;border-left:3px solid #3C6E71;border-radius:0 6px 6px 0;padding:16px 22px;">
+            <p style="font:400 14px/1.6 'Carlito';color:#284B63;margin:0;">The program’s sponsor is <strong>Tony Friday (Director)</strong> — the route to product history, client introductions and sign-off on pricing, partnering and the sale narrative. <strong>Both the business development lead and the offshore BDM are recruited during the first six weeks and start in Week 7.</strong> Weeks 1–6 are therefore a mobilisation window led by <strong>Pat</strong> (a local Australian executive and product leader; no incremental cost, ~4 hours/week) with Tony: they ready the product knowledge, data, HubSpot and target lists, and run the hiring — Pat sits on the interview panel in Weeks 3–4. From Week 7 the BD lead runs the program day to day and directs the BDM, who owns international distributor recruitment; Pat continues throughout for local demonstrations and product authority.</p>
+          </div>
+        </section>
+
+        <!-- ROLE & MANDATE -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">The program’s mandate</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">The program &amp; what success looks like</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 18px;">The program owns the commercial growth of Governance Manager and its readiness for sale: treble revenue and, just as importantly, build durable recurring revenue and repeatable go-to-market systems that survive a change of ownership. It sells through three motions — direct, partner and international distribution. From Week 7 a business development lead runs the program day to day and directs the offshore BDM; both are recruited in Weeks 1–6, a mobilisation window led by Pat and Tony. Pat, a local Australian executive and product leader (no incremental cost, ~4 hours/week), provides in-person demonstrations and product authority in Australia throughout.</p>
+          <h3 style="font:700 17px/1.3 'Carlito';color:#3C6E71;margin:0 0 14px;">The KPIs the program owns</h3>
+          <table class="avoid" style="width:100%;border-collapse:collapse;">
+            <thead><tr>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:10px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">KPI</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:10px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Current</th>
+              <th style="text-align:right;background:#137B8F;color:#fff;padding:10px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">12-mo target</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Total revenue (annualised run-rate)</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">A$239k</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">A$717k</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Recurring revenue (ARR)</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">A$151k</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">~A$430k</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Active domestic partners</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">1</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">6</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">International distributors signed</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">0</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">2–3</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Whole-of-sector / government programs</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">0</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">3</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Direct assessment clients</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">8</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">~45</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Qualified pipeline coverage</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">—</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">3× target</td></tr>
+              <tr><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;">Sale-readiness pack (metrics, playbook, data room)</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.4 'Carlito';color:#353535;text-align:right;">—</td><td style="padding:9px 14px;border-bottom:1px solid #e7e8e9;font:700 13.5px/1.4 'Carlito';color:#284B63;text-align:right;">Complete</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- OPERATING RHYTHM -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">Ways of working</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Operating rhythm</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 20px;">A predictable cadence keeps the plan honest. Hold these rhythms from week one; they are how the program stays ahead of the KPIs rather than reporting on them after the fact.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#137B8F;margin-bottom:9px;">Daily</div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:0;">Work the pipeline: outreach, follow-ups, demos and proposal progression. Update the CRM same-day. Unblock the BDM.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#153E5A;margin-bottom:9px;">Weekly</div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:0;">30-minute check-in with Tony: pipeline movement, wins, blockers, week-ahead plan. BDM 1:1. Refresh the KPI tracker.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#4B6969;margin-bottom:9px;">Monthly</div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:0;">Full KPI review vs glidepath; forecast for the quarter; spend check against the A$75k marketing envelope; pipeline-coverage review.</p>
+            </div>
+            <div class="avoid" style="border:1px solid #e7e8e9;border-radius:6px;padding:18px;background:#fff;">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#6C793C;margin-bottom:9px;">Quarterly</div>
+              <p style="font:400 13.5px/1.55 'Carlito';color:#353535;margin:0;">Phase gate: review against exit criteria, reallocate effort to the best-performing channel, and lock the next quarter’s plan.</p>
+            </div>
+          </div>
+          <div class="avoid" style="background:#e7f0f0;border-left:3px solid #137B8F;border-radius:0 6px 6px 0;padding:16px 22px;margin-top:18px;">
+            <div style="font:700 12px/1.3 'Carlito';color:#137B8F;margin-bottom:7px;letter-spacing:.06em;text-transform:uppercase;">Deploying Pat — ~4 hrs/week, no cost</div>
+            <p style="font:400 14px/1.6 'Carlito';color:#284B63;margin:0;">Pat is a local Australian executive and product leader whose salary sits elsewhere, so his time is free to the plan. Spend his four hours a week where in-person product authority converts best: local demonstrations, whole-of-sector and government meetings, large-client value reviews, partner product training and conference presence. Book him a week ahead against the highest-value opportunity, and lean on him for product leadership while the BD lead builds fluency. In Weeks 1–6, before the BDM starts, Pat is the program’s main in-field resource alongside the BD lead. Pat already holds a strong relationship with the largest client and will visit them on-site in <strong>July</strong> and <strong>November</strong> — anchor that client’s renewal and expansion around those two visits.</p>
+          </div>
+          <h3 style="font:700 17px/1.3 'Carlito';color:#3C6E71;margin:24px 0 12px;">Mobilisation &amp; phase milestones</h3>
+          <table class="avoid" style="width:100%;border-collapse:collapse;">
+            <tbody>
+              <tr><td style="width:22%;padding:11px 14px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;">By Week 6</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.5 'Carlito';color:#353535;">Both roles hired to start Week 7; product &amp; demo knowledge, account &amp; commercial data, HubSpot, pricing and playbook ready; sector and partner target lists seeded.</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;">By Week 13</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.5 'Carlito';color:#353535;">BD lead and BDM onboarded (from Week 7); pipeline at 1.5× coverage; first partner conversations advanced; first sector program in active pursuit.</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;">By Week 26</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.5 'Carlito';color:#353535;">Three partners live, the first whole-of-sector program closed, and pipeline at 3× coverage.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- KPI GLIDEPATH -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">Targets</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">52-week KPI glidepath</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 18px;"></div>
+          <p style="font:400 14px/1.6 'Carlito';color:#6b6b6b;margin:0 0 18px;">Quarterly checkpoints. Revenue and ARR are annualised run-rates; counts are cumulative. If the program is behind two checkpoints running, escalate and re-plan.</p>
+          <table class="avoid" style="width:100%;border-collapse:collapse;">
+            <thead><tr>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:9px 12px;font:700 10.5px/1.2 'Carlito';letter-spacing:.03em;text-transform:uppercase;">KPI</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:9px 12px;font:700 10.5px/1.2 'Carlito';letter-spacing:.03em;text-transform:uppercase;">Start</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:9px 12px;font:700 10.5px/1.2 'Carlito';letter-spacing:.03em;text-transform:uppercase;">Q1·w13</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:9px 12px;font:700 10.5px/1.2 'Carlito';letter-spacing:.03em;text-transform:uppercase;">Q2·w26</th>
+              <th style="text-align:right;background:#284B63;color:#fff;padding:9px 12px;font:700 10.5px/1.2 'Carlito';letter-spacing:.03em;text-transform:uppercase;">Q3·w39</th>
+              <th style="text-align:right;background:#137B8F;color:#fff;padding:9px 12px;font:700 10.5px/1.2 'Carlito';letter-spacing:.03em;text-transform:uppercase;">Q4·w52</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;">Revenue (run-rate, A$k)</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">239</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">270</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">400</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">560</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:700 12.5px/1.4 'Carlito';color:#284B63;text-align:right;">717</td></tr>
+              <tr><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;">Recurring ARR (A$k)</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">151</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">175</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">250</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">350</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:700 12.5px/1.4 'Carlito';color:#284B63;text-align:right;">430</td></tr>
+              <tr><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;">Domestic partners</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">1</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">2</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">3</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">5</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:700 12.5px/1.4 'Carlito';color:#284B63;text-align:right;">6</td></tr>
+              <tr><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;">Intl distributors signed</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">0</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">0</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">1</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">2</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:700 12.5px/1.4 'Carlito';color:#284B63;text-align:right;">3</td></tr>
+              <tr><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;">Sector / govt programs</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">0</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">0*</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">1</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">2</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:700 12.5px/1.4 'Carlito';color:#284B63;text-align:right;">3</td></tr>
+              <tr><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;">Direct assessment clients</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">8</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">12</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">22</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">35</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:700 12.5px/1.4 'Carlito';color:#284B63;text-align:right;">45</td></tr>
+              <tr><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;">Pipeline coverage</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">—</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">1.5×</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">3×</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:400 12.5px/1.4 'Carlito';color:#353535;text-align:right;">3×</td><td style="padding:9px 12px;border-bottom:1px solid #e7e8e9;font:700 12.5px/1.4 'Carlito';color:#284B63;text-align:right;">3×</td></tr>
+            </tbody>
+          </table>
+          <p style="font:400 11.5px/1.5 'Carlito';color:#8c8c8c;margin:12px 0 0;">* First sector program in active pursuit by week 13; first close targeted in Q2.</p>
+        </section>
+
+        <!-- PHASE MAP -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">The year at a glance</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Five phases over 52 weeks</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="avoid" style="display:flex;gap:16px;align-items:flex-start;border:1px solid #e7e8e9;border-left:3px solid #153E5A;border-radius:0 6px 6px 0;padding:16px 18px;background:#fff;">
+              <div style="flex:none;width:78px;"><div style="font:700 13px/1 'Carlito';color:#153E5A;">Phase 1</div><div style="font:400 11px/1.3 'Carlito';color:#8c8c8c;margin-top:3px;">Weeks 1–4 · Jul 2026</div></div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:3px;">Mobilisation &amp; recruitment</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Pat and Tony recruit the BD lead and BDM (both start Week 7) and ready the product knowledge, data, HubSpot, pricing and target lists.</p></div>
+            </div>
+            <div class="avoid" style="display:flex;gap:16px;align-items:flex-start;border:1px solid #e7e8e9;border-left:3px solid #137B8F;border-radius:0 6px 6px 0;padding:16px 18px;background:#fff;">
+              <div style="flex:none;width:78px;"><div style="font:700 13px/1 'Carlito';color:#137B8F;">Phase 2</div><div style="font:400 11px/1.3 'Carlito';color:#8c8c8c;margin-top:3px;">Weeks 5–13 · Aug–Sep 2026</div></div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:3px;">Adopt &amp; activate</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Weeks 5–6 finish mobilisation; the BD lead and BDM start in Week 7, then adopt HubSpot and the playbooks, activate the partner program and start selling.</p></div>
+            </div>
+            <div class="avoid" style="display:flex;gap:16px;align-items:flex-start;border:1px solid #e7e8e9;border-left:3px solid #4B6969;border-radius:0 6px 6px 0;padding:16px 18px;background:#fff;">
+              <div style="flex:none;width:78px;"><div style="font:700 13px/1 'Carlito';color:#4B6969;">Phase 3</div><div style="font:400 11px/1.3 'Carlito';color:#8c8c8c;margin-top:3px;">Weeks 14–26 · Oct–Dec 2026</div></div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:3px;">Launch &amp; first wins</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Campaigns live, first partners signed, first sector program closed, distributor outreach begun.</p></div>
+            </div>
+            <div class="avoid" style="display:flex;gap:16px;align-items:flex-start;border:1px solid #e7e8e9;border-left:3px solid #6C793C;border-radius:0 6px 6px 0;padding:16px 18px;background:#fff;">
+              <div style="flex:none;width:78px;"><div style="font:700 13px/1 'Carlito';color:#6C793C;">Phase 4</div><div style="font:400 11px/1.3 'Carlito';color:#8c8c8c;margin-top:3px;">Weeks 27–39 · Jan–Mar 2027</div></div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:3px;">Scale the channels</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Grow partners to six, sign distributors, close sector programs two and three, drive assessment volume.</p></div>
+            </div>
+            <div class="avoid" style="display:flex;gap:16px;align-items:flex-start;border:1px solid #e7e8e9;border-left:3px solid #284B63;border-radius:0 6px 6px 0;padding:16px 18px;background:#fff;">
+              <div style="flex:none;width:78px;"><div style="font:700 13px/1 'Carlito';color:#284B63;">Phase 5</div><div style="font:400 11px/1.3 'Carlito';color:#8c8c8c;margin-top:3px;">Weeks 40–52 · Apr–Jun 2027</div></div>
+              <div><div style="font:700 15px/1.3 'Carlito';color:#284B63;margin-bottom:3px;">Convert &amp; make sale-ready</div><p style="font:400 13px/1.5 'Carlito';color:#353535;margin:0;">Lock recurring revenue, document the playbook, build the sale-readiness pack and prepare for handover.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ PHASE 1 ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#153E5A;margin-bottom:12px;">Phase 1 · Weeks 1–4 · July 2026</div>
+          <h2 style="font:700 28px/1.12 'Carlito';color:#153E5A;">Mobilisation &amp; recruitment</h2>
+          <div style="height:3px;width:54px;background:#153E5A;margin:14px 0 20px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 18px;">Weeks 1–6 are a mobilisation window led by Pat and Tony. The work: recruit the business development lead and the offshore BDM (both start Week 7) and ready the ground so the incoming team moves fast — capturing product and demo knowledge, assembling account, contract and renewal data, confirming access and the data room, readying the live HubSpot instance, and seeding sector and partner target lists. Pat leads in-field and sits on the interview panel in Weeks 3–4; Tony chairs the hiring and sign-off. (Weeks 1–4 shown here; Weeks 5–6 complete mobilisation at the start of Phase 2.)</p>
+          <div class="avoid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:8px;">
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#153E5A;margin-bottom:7px;">Objectives</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">Recruit the BD lead &amp; BDM (start Week 7); ready knowledge, data, HubSpot, pricing and target lists.</p></div>
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#153E5A;margin-bottom:7px;">KPIs in focus</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">Baseline for all; no targets due yet.</p></div>
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#153E5A;margin-bottom:7px;">Exit criteria</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">Both roles hired to start Week 7; knowledge pack, data, account map, ICPs and tracker ready.</p></div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#153E5A;">W1</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#153E5A;margin-top:6px;">Mobilise</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Mobilisation kickoff &amp; recruitment opens</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Tony and Pat confirm program objectives, KPIs, governance and decision rights for the incoming team.</li>
+                <li>Open recruitment for the BD lead and the offshore BDM — both to start Week 7; define roles, scorecards and shortlists.</li>
+                <li>Ready access for the incoming team: platform admin, website &amp; analytics, finance summaries, contracts and the data room.</li>
+                <li>Start the onboarding knowledge pack (Information Memorandum, Growth Strategy, product basics).</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">Output ·</span> Recruitment open for both roles; access &amp; knowledge pack underway.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">BDM ·</span> Role being recruited — not in seat until Week 7.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">Pat ·</span> Leads mobilisation with Tony; begins the product knowledge pack.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">KPI ·</span> Enabler for all.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#153E5A;">W2</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#153E5A;margin-top:6px;">Mobilise</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Capture product &amp; demo knowledge</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Pat records a full assessment walkthrough (assess → score → improvement plan → report) for the onboarding pack.</li>
+                <li>Document capabilities, the named methodologies (STRATassess, PAYROLLassess, assurance &amp; maturity frameworks) and the strongest demo moments.</li>
+                <li>Curate the video learning library highlights for the incoming lead.</li>
+                <li>Source and screen BD-lead and BDM candidates.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">Output ·</span> Product &amp; demo knowledge pack drafted.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">BDM ·</span> In recruitment — sourcing and screening.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">Pat ·</span> Builds the product / demo knowledge pack.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">KPI ·</span> Product fluency (for handover).</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#153E5A;">W3</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#153E5A;margin-top:6px;">Mobilise</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Assemble accounts, contracts &amp; commercials</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Tony and Pat compile every current contract: value, term, renewal date, channel and risks (incl. the April 2027 client extension and the ~A$36k FY26 churn).</li>
+                <li>Build the account &amp; renewal calendar and the revenue baseline by channel (FY26 A$239k; recurring A$151k).</li>
+                <li>Document the pricing models for the incoming team.</li>
+                <li>Hold first interviews for the BD lead and BDM (Pat on the panel).</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">Output ·</span> Account &amp; renewal map; commercial baseline; first interviews held.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">BDM ·</span> Recruitment — first interviews (Pat on the panel).</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">Pat ·</span> July on-site visit to the largest client; co-runs interviews.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">KPI ·</span> Revenue baseline; retention.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#153E5A;">W4</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#153E5A;margin-top:6px;">Mobilise</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Market map, ICPs &amp; final hiring</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Map the GRC / capability-maturity landscape and define the ideal customer profiles.</li>
+                <li>Seed sector and partner target lists from Tony’s and Pat’s networks.</li>
+                <li>Stand up the KPI tracker with the 52-week glidepath.</li>
+                <li>Final interviews; select and offer the BD lead and BDM (both start Week 7).</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">Output ·</span> ICPs; competitor map; seeded target lists; offers made.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">BDM ·</span> Recruitment — final interviews; offer made.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">Pat ·</span> On the interview panel; helps define product-fit ICPs.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#153E5A;">KPI ·</span> All — baseline set.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ PHASE 2 ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#137B8F;margin-bottom:12px;">Phase 2 · Weeks 5–13 · Aug–Sep 2026</div>
+          <h2 style="font:700 28px/1.12 'Carlito';color:#137B8F;">Adopt &amp; activate</h2>
+          <div style="height:3px;width:54px;background:#137B8F;margin:14px 0 20px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 18px;">The systems and assets already exist — HubSpot is operating, with established sales artefacts, playbooks and partner support materials. Weeks 5–6 complete mobilisation (Pat and Tony ready HubSpot, pricing and the playbook); the BD lead and BDM start in Week 7 and take ownership. From there the program adopts what exists, tailors it to the three motions (direct, partner and international distribution), and gets into market fast — so that by the end of the phase it is actively selling, partner recruitment is underway, and the BDM is pointed at international distribution.</p>
+          <div class="avoid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:8px;">
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#137B8F;margin-bottom:7px;">Objectives</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">Adopt HubSpot &amp; existing artefacts; tailor to segments; activate the partner program; launch demand gen; first demos.</p></div>
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#137B8F;margin-bottom:7px;">KPIs in focus</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">Pipeline 1.5×; partners 1→2; direct clients 8→12.</p></div>
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#137B8F;margin-bottom:7px;">Exit criteria</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">Selling live; partner outreach underway; BDM onboarded; pipeline 1.5×; Q1 gate passed.</p></div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#137B8F;">W5</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#137B8F;margin-top:6px;">Mobilise</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Ready HubSpot &amp; data for handover</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Confirm the live HubSpot instance is clean and aligned to the glidepath: pipelines, deal types, properties and dashboards.</li>
+                <li>Load the assembled accounts, contracts and renewal data.</li>
+                <li>Package the existing artefacts, playbooks and partner materials into an onboarding library.</li>
+                <li>Confirm Week-7 start logistics for the BD lead and BDM.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Output ·</span> HubSpot &amp; data ready; onboarding library assembled.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">BDM ·</span> Final interviews / offer accepted; starts Week 7.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Pat ·</span> Oversees readiness; on call for product queries.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">KPI ·</span> Pipeline (enabler).</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#137B8F;">W6</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#137B8F;margin-top:6px;">Mobilise</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Finalise pricing, playbook &amp; hand-off</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Confirm the rate card, packaging and deal-registration rules with Tony.</li>
+                <li>Finalise messaging, the demo script and proposal templates for the incoming lead.</li>
+                <li>Prepare the Week-7 onboarding plan and first-90-days brief.</li>
+                <li>Confirm Pat’s availability and the largest-client November visit.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Output ·</span> Pricing &amp; playbook ready; Week-7 onboarding plan set.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">BDM ·</span> Pre-start; reviews the distributor opportunity.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Pat ·</span> Validates pricing and playbook from a product-value view.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">KPI ·</span> Conversion enabler.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#137B8F;">W7</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#137B8F;margin-top:6px;">Onboard</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">BD lead &amp; BDM start — onboard &amp; take ownership</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>The business development lead and offshore BDM start this week.</li>
+                <li>Rapid immersion using the mobilisation knowledge pack; the BD lead takes ownership of HubSpot, pricing and the playbook.</li>
+                <li>BDM induction on product, ICPs and the distributor scorecard.</li>
+                <li>Agree the operating cadence with Tony and Pat; confirm the quarter’s priorities.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Output ·</span> Team in seat; ownership transferred; cadence set.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">BDM ·</span> Starts this week — induction begins.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Pat ·</span> Hands over product knowledge; supports onboarding.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">KPI ·</span> Mobilisation complete; execution begins.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#137B8F;">W8</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#137B8F;margin-top:6px;">Adopt</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Activate the partner program &amp; start recruiting</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Review the existing partner program and support materials; confirm tiers, margins and deal registration.</li>
+                <li>Refresh the ideal partner profile and validate a 30-name target list (consulting &amp; audit firms).</li>
+                <li>Begin partner outreach; book the first partner conversations.</li>
+                <li>Re-engage the existing reseller to expand volume.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Output ·</span> Partner program activated; 30 targets; first conversations booked.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">BDM ·</span> Onboarding complete; learning the distributor pack.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Pat ·</span> Shapes the partner product-training approach; available for demos.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">KPI ·</span> Domestic partners 1→6.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#137B8F;">W9</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#137B8F;margin-top:6px;">Adopt</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Build the international distributor proposition</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Adapt the existing partner materials into a distributor proposition (margin, localisation, support, exclusivity) — this motion is genuinely new.</li>
+                <li>Draft the distributor agreement checklist with legal input.</li>
+                <li>Shortlist priority markets (NZ, UK, Ireland, Canada, Singapore, UAE) and 15 candidate distributors.</li>
+                <li>Brief the BDM with a recruitment scorecard and targets.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Output ·</span> Distributor pack; agreement checklist; market shortlist; BDM brief.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">BDM ·</span> Builds the 15-candidate distributor list; learns the proposition.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Pat ·</span> Reviews the distributor proposition for product fit.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">KPI ·</span> Distributors 0→2-3.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#137B8F;">W10</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#137B8F;margin-top:6px;">Adopt</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Activate demand generation</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Confirm the existing SEO and content assets in HubSpot; schedule a 12-week content calendar.</li>
+                <li>Launch Google Ads + LinkedIn ABM using existing audiences and templates; verify tracking and lead routing.</li>
+                <li>Publish or repurpose lead magnets (sector benchmarking explainer; maturity self-check).</li>
+                <li>Confirm lead scoring and routing in HubSpot.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Output ·</span> Campaigns live; content scheduled; lead routing verified.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">BDM ·</span> Researches priority markets; preps outreach sequences.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Pat ·</span> Confirms demo and content are technically accurate.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">KPI ·</span> Direct 8→45; pipeline.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#137B8F;">W11</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#137B8F;margin-top:6px;">Adopt</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Ready the demo/trial &amp; start selling direct</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Confirm the self-serve demo/trial and onboarding flow; clear any friction with the developer.</li>
+                <li>Begin direct outreach to the 50-prospect list and deliver the first demos.</li>
+                <li>Use the existing follow-up sequences in HubSpot for demo attendees.</li>
+                <li>Convert the first new assessment clients.</li>
+                <li>Have Pat pressure-test the demo and agree which local demonstrations he will attend in person.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Output ·</span> Demo/trial confirmed; first direct demos &amp; conversions.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">BDM ·</span> Readies distributor outreach; sets the international pipeline in HubSpot.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Pat ·</span> Pressure-tests the demo; agrees which local demos he attends.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">KPI ·</span> Direct conversion; clients →12.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#137B8F;">W12</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#137B8F;margin-top:6px;">Adopt</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Pipeline build &amp; first outreach</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Build segmented target lists: 3 priority sectors with named peak bodies/departments; 30 partners; 15 distributors; 50 direct prospects.</li>
+                <li>Write outbound sequences for each segment.</li>
+                <li>Begin warm outreach through Tony’s network and existing relationships; book the first discovery meetings.</li>
+                <li>Stand up weekly pipeline reporting.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Output ·</span> Segmented lists; sequences live; first meetings booked.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">BDM ·</span> Begins distributor prospecting outreach (15 candidates).</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Pat ·</span> Joins the first high-value local demos as needed (~4 hrs).</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">KPI ·</span> Pipeline → 1.5×.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#137B8F;">W13</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#137B8F;margin-top:6px;">Adopt</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">BDM onboarding &amp; Q1 gate</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Confirm the offshore BDM is productive on distributor recruitment; coach and unblock as needed.</li>
+                <li>Dry-run a full product demo and a partner pitch; refine from feedback.</li>
+                <li>Review the KPI tracker against the glidepath; confirm Phase 2 exit criteria are met.</li>
+                <li>Readout to Tony; lock the Phase 3 plan.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Output ·</span> BDM onboarded; assets signed off; Q1 gate review.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">BDM ·</span> Distributor outreach continues; reports first international pipeline.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">Pat ·</span> Product leadership at the Q1 review; demo support.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#137B8F;">KPI ·</span> Gate 1 — pipeline 1.5×; partners →2; direct →12.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ PHASE 3 ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#4B6969;margin-bottom:12px;">Phase 3 · Weeks 14–26 · Oct–Dec 2026</div>
+          <h2 style="font:700 28px/1.12 'Carlito';color:#4B6969;">Launch &amp; first wins</h2>
+          <div style="height:3px;width:54px;background:#4B6969;margin:14px 0 20px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 18px;">Turn the engine on. Campaigns go live, the program signs its first new partners, closes the first whole-of-sector program, and the BDM opens international distributor conversations. Momentum and proof points matter more than perfection.</p>
+          <div class="avoid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:8px;">
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#4B6969;margin-bottom:7px;">Objectives</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">Campaigns live; first partners; first sector close; distributor pipeline.</p></div>
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#4B6969;margin-bottom:7px;">KPIs in focus</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">Partners →3; sector →1; direct →22; pipeline 3×.</p></div>
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#4B6969;margin-bottom:7px;">Exit criteria</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">3 partners live; 1 sector program closed; H1 review passed.</p></div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W14</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Scale outreach &amp; first demos at volume</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Run ten discovery calls and deliver four demos this week; keep HubSpot current same-day.</li>
+                <li>Optimise paid search and ABM from early conversion data.</li>
+                <li>Push the self-serve trial in all follow-ups; chase trial-to-paid conversions.</li>
+                <li>Hold the first weekly pipeline-coverage review with Tony.</li>
+                <li>Block Pat’s time for the highest-value local demonstrations this week.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> Demo cadence established; campaigns optimised.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> Distributor outreach at volume; books intro calls.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> Attends the highest-value local demonstrations this week.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Direct pipeline &amp; coverage.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W15</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Sector play 1: peak-body engagement</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Target the highest-fit sector; secure a first meeting with a peak body or department.</li>
+                <li>Run a discovery session framed by the NDS / Sport 4 All outcomes.</li>
+                <li>Offer a whole-of-sector benchmarking concept as the entry point.</li>
+                <li>Agree a scoping conversation and stakeholders.</li>
+                <li>Bring Pat for in-person product leadership and credibility in the peak-body meeting.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> Sector opportunity opened &amp; scoped.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> Qualifies distributor candidates against the scorecard.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> In the room for the peak-body meeting — product leadership.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Sector programs →1.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W16</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Partner recruitment push</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Run six partner pitches against the 30-name list.</li>
+                <li>Walk prospects through partner economics and deal registration.</li>
+                <li>Identify two or three partners ready to proceed to agreement.</li>
+                <li>Hand any partner-sourced end-clients into the pipeline.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> 2–3 partners in final discussions.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> Runs distributor intro calls; shares the proposition pack.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> Backs partner pitches with product credibility as needed.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Partners →3.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W17</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">First partner signed &amp; enabled</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Sign the first new partner agreement.</li>
+                <li>Run enablement using the existing partner materials; certify their lead seller.</li>
+                <li>Build a joint 90-day plan with two or three target end-clients.</li>
+                <li>Register the partner’s first deals in HubSpot.</li>
+                <li>Have Pat deliver product training to the partner’s sellers.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> First partner live with a joint plan.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> Advances qualified distributors toward commercial talks.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> Delivers product training to the first partner’s sellers.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Partners →2; partner pipeline.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W18</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Direct demand momentum</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Publish two thought-leadership pieces; promote via ABM to target accounts.</li>
+                <li>Convert three or four assessment clients from the trial and demo pipeline.</li>
+                <li>Refine the demo from win/loss notes.</li>
+                <li>Tighten lead scoring so the BD lead and BDM focus on the best leads.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> Steady direct conversions; sharper targeting.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> Distributor pipeline grooming; market prioritisation.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> Joins select direct demos; answers technical objections.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Direct clients →16.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W19</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Distributor outreach begins (BDM)</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>BDM opens conversations with the 15 shortlisted distributors across priority markets.</li>
+                <li>Qualify against the recruitment scorecard; book intro calls.</li>
+                <li>Run the distributor pitch and share the proposition pack.</li>
+                <li>Log a clean international pipeline in HubSpot.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> International pipeline opened; first qualified candidates.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> Formally opens distributor conversations across priority markets.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> On call for product questions from active deals.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Distributors (pipeline).</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W20</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Sector play 1: proposal</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Scope the whole-of-sector program with the peak body (entities, frameworks, reporting).</li>
+                <li>Build a tailored proposal and pricing with Tony.</li>
+                <li>Line up a reference conversation with an existing sector client.</li>
+                <li>Agree a decision timeline with the buyer.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> Sector proposal submitted.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> Runs distributor pitches; logs a clean international pipeline.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> Supports sector-1 scoping with product / technical input.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Sector programs →1 (in close).</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W21</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Large-client expansion 1</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Run a value review with the first large client; identify additional frameworks, units and users.</li>
+                <li>Propose an expansion and begin the multi-year renewal conversation.</li>
+                <li>Document the account plan and success metrics.</li>
+                <li>Capture a testimonial or reference.</li>
+                <li>Bring Pat into the value review to lead the product conversation.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> Expansion proposed; renewal underway.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> Advances 2–3 distributor candidates.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> November on-site visit — leads the largest-client expansion &amp; renewal.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Recurring ARR.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W22</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Second partner &amp; co-marketing</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Sign and enable the second partner.</li>
+                <li>Launch a co-marketing campaign with the first partner (webinar or joint content).</li>
+                <li>Set partner pipeline targets and a monthly partner cadence.</li>
+                <li>Review deal-registration to pre-empt channel conflict.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> Second partner live; first co-marketing in market.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> Distributor commercial discussions begin.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> Joins the partner co-marketing webinar as the product voice.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Partners →3.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W23</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Mid-launch review &amp; optimise</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Review channel performance (direct, partner, distributor, sector); double down on what converts.</li>
+                <li>Reallocate marketing spend within the A$75k envelope to the best-performing channel.</li>
+                <li>Refresh messaging and the demo from win/loss data.</li>
+                <li>Re-forecast the quarter.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> Optimised channel mix; updated forecast.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> Distributor pipeline review; refines target markets.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> Helps refresh the demo from win/loss; product input.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Pipeline 3×.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W24</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Close the first sector program</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Negotiate and sign the first whole-of-sector program.</li>
+                <li>Plan the rollout across member entities with the developer.</li>
+                <li>Set sector benchmarking reporting as the recurring hook.</li>
+                <li>Capture the win as a reference and mini case study.</li>
+                <li>Use Pat in the final decision meeting to close on product confidence.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> First sector program signed.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> Aligns distributor terms (margin, territory, support).</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> In the final sector-1 decision meeting to close on product confidence.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Sector →1; recurring ARR.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W25</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Distributor: first qualified candidates</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>BDM advances two or three distributor candidates to commercial discussions.</li>
+                <li>Align on margin, territory, localisation and support expectations.</li>
+                <li>Run a product and enablement session for serious candidates.</li>
+                <li>Prepare draft distributor agreements with legal.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> 2–3 distributors in commercial talks.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> Moves 2–3 distributors to commercial talks; drafts agreements.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> Runs a product enablement session for serious sector prospects.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Distributors (pipeline).</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#4B6969;">W26</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#4B6969;margin-top:6px;">Launch</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Q2 close-out &amp; H1 review</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Review all KPIs against the glidepath (partners →3; sector →1; direct →22; pipeline 3×).</li>
+                <li>Validate revenue and ARR run-rate; refresh the forecast.</li>
+                <li>Document what is working as early playbook notes.</li>
+                <li>Readout to Tony; lock the Phase 4 scale plan.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Output ·</span> H1 review; Phase 4 plan locked.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">BDM ·</span> H1 distributor pipeline review; first close in sight.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">Pat ·</span> Product leadership at the H1 review.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#4B6969;">KPI ·</span> Gate 2 — pipeline 3×; sector 1; partners 3.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ PHASE 4 ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#6C793C;margin-bottom:12px;">Phase 4 · Weeks 27–39 · Jan–Mar 2027</div>
+          <h2 style="font:700 28px/1.12 'Carlito';color:#6C793C;">Scale the channels</h2>
+          <div style="height:3px;width:54px;background:#6C793C;margin:14px 0 20px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 18px;">Move from first wins to repeatable volume. Grow the partner base, sign the first international distributors, close two more sector programs and build a steady assessment-sales engine. This is where the revenue curve bends.</p>
+          <div class="avoid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:8px;">
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#6C793C;margin-bottom:7px;">Objectives</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">Partners to 6; first distributors; sector 2 &amp; 3; assessment volume.</p></div>
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#6C793C;margin-bottom:7px;">KPIs in focus</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">Partners →5; distributors →2; sector →2; direct →35.</p></div>
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#6C793C;margin-bottom:7px;">Exit criteria</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">5 partners; 2 distributors; 2 sector programs live; Q3 gate passed.</p></div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W27</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Scale outbound &amp; ABM</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Increase outbound volume across direct and partner segments; expand the prospect lists.</li>
+                <li>Scale the best-performing ABM plays to more target accounts.</li>
+                <li>Stand up a monthly content rhythm tied to sector themes.</li>
+                <li>Keep pipeline coverage at or above 3×.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> Higher-volume, repeatable demand engine.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Scales distributor outreach; prioritises closers.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> Attends priority local demos; product authority on big deals.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Pipeline 3×; direct growth.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W28</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Third partner &amp; partner-sourced pipeline</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Sign and enable the third partner.</li>
+                <li>Drive partner-sourced opportunities into the pipeline; set per-partner targets.</li>
+                <li>Run a partner office-hours cadence for deal support.</li>
+                <li>Track partner-influenced revenue separately in HubSpot.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> Three partners active &amp; producing pipeline.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Distributor commercial talks; supports partner product enablement.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> Product training for new partners’ sellers.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Partners →3–4.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W29</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Sign the first international distributor</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>BDM closes the first distributor agreement in a priority market.</li>
+                <li>Deliver enablement and a localisation/support plan with the developer.</li>
+                <li>Agree first-quarter targets and a joint launch plan.</li>
+                <li>Register the distributor and its pipeline in HubSpot.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> First distributor signed &amp; enabled.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Closes the first international distributor; builds the enablement plan.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> Provides product onboarding content for the new distributor.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Distributors →1.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W30</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Sector play 2 launch</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Open the second sector using the first as a reference.</li>
+                <li>Secure a peak-body/department meeting and scope a program.</li>
+                <li>Re-use the sector playbook and proposal template.</li>
+                <li>Agree a decision timeline.</li>
+                <li>Schedule Pat for the peak-body / department product session.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> Second sector opportunity scoped.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Distributor 1 launch; advances distributor 2.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> Joins the sector-2 peak-body / department product session.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Sector →2 (in pursuit).</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W31</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Assessment volume engine</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Optimise the self-serve trial-to-paid funnel; remove drop-off points.</li>
+                <li>Run a referral push with happy assessment clients.</li>
+                <li>Bundle frameworks to lift average order value.</li>
+                <li>Hit a steady weekly run-rate of new assessment clients.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> Repeatable assessment-sales motion.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Coaches distributor on first deals; grows international pipeline.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> Supports referral and demo activity for assessment volume.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Direct clients →28.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W32</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Large-client expansion 2 &amp; renewals</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Expand the second large client; add frameworks and units.</li>
+                <li>Open early multi-year renewal talks on all recurring contracts (incl. the Apr-2027 client).</li>
+                <li>Convert one-off engagements toward recurring where possible.</li>
+                <li>Update the renewal calendar and ARR forecast.</li>
+                <li>Bring Pat to the large-client expansion review.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> Expansions live; renewals in motion.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Second distributor commercial close approaching.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> Joins the large-client-2 expansion review (product lead).</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Recurring ARR →300k+.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W33</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Fourth &amp; fifth partners</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Sign and enable the fourth and fifth partners.</li>
+                <li>Promote the strongest partner to a higher tier with more co-marketing.</li>
+                <li>Share a partner win story to attract more partners.</li>
+                <li>Tighten deal-registration governance as volume grows.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> Five partners active.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Supports partner product enablement; keeps distributor pipeline warm.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> Product training for the 4th &amp; 5th partners.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Partners →5.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W34</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Second distributor &amp; enablement</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>BDM signs the second international distributor.</li>
+                <li>Standardise distributor onboarding and a shared enablement kit.</li>
+                <li>Set joint pipeline targets and a monthly distributor cadence.</li>
+                <li>Capture the first international opportunities in HubSpot.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> Two distributors live; repeatable onboarding.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Signs the second international distributor; standardises onboarding.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> Delivers distributor product enablement.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Distributors →2.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W35</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Sector conference presence</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Attend or present at a priority sector / government conference.</li>
+                <li>Run a benchmarking session or roundtable to source sector leads.</li>
+                <li>Book follow-up meetings with qualified attendees.</li>
+                <li>Feed new opportunities into the sector pipeline.</li>
+                <li>Have Pat present or co-present the benchmarking session for product authority.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> Sector leads &amp; follow-ups booked.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Builds distributor joint pipeline; market expansion.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> Presents / co-presents the conference benchmarking session.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Sector pipeline.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W36</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Close sector 2; open sector 3</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Negotiate and sign the second sector program.</li>
+                <li>Open the third sector with the proven playbook.</li>
+                <li>Schedule rollouts with the developer to protect delivery.</li>
+                <li>Update references and case studies with the new wins.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> Sector 2 signed; sector 3 in pursuit.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Distributor enablement; supports sector rollout planning.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> In the sector-2 close and sector-3 open meetings.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Sector →2.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W37</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Pipeline &amp; forecast hygiene</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Scrub the pipeline; close out stale deals; validate close dates.</li>
+                <li>Re-forecast revenue and ARR to year-end.</li>
+                <li>Check pipeline coverage by channel against targets.</li>
+                <li>Brief Tony on confidence and gaps.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> Clean pipeline; reliable forecast.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Cleans international pipeline; validates close dates.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> Product input to the forecast; technical de-risking.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Forecast accuracy.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W38</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Sixth partner &amp; channel governance</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Sign the sixth partner to hit the annual partner target.</li>
+                <li>Formalise channel governance: tiers, rules of engagement, quarterly business reviews.</li>
+                <li>Retire underperforming partners; reinvest in the best.</li>
+                <li>Document the partner motion for the playbook.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> Six partners; governed channel.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Distributor governance; schedules quarterly business reviews.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> Product leadership for channel governance &amp; partner QBRs.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Partners →6.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#6C793C;">W39</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#6C793C;margin-top:6px;">Scale</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Q3 close-out &amp; scale review</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Review KPIs (partners →5; distributors →2; sector →2; direct →35).</li>
+                <li>Confirm revenue run-rate is tracking toward A$560k.</li>
+                <li>Decide Q4 conversion priorities and renewal targets.</li>
+                <li>Readout to Tony; lock the Phase 5 plan.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Output ·</span> Q3 review; Phase 5 plan locked.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">BDM ·</span> Q3 distributor review; sets Q4 targets.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">Pat ·</span> Product leadership at the Q3 review.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#6C793C;">KPI ·</span> Gate 3 — 5 partners; 2 distributors; 2 sectors.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ PHASE 5 ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#284B63;margin-bottom:12px;">Phase 5 · Weeks 40–52 · Apr–Jun 2027</div>
+          <h2 style="font:700 28px/1.12 'Carlito';color:#284B63;">Convert &amp; make sale-ready</h2>
+          <div style="height:3px;width:54px;background:#284B63;margin:14px 0 20px;"></div>
+          <p style="font:400 15px/1.65 'Carlito';color:#353535;margin:0 0 18px;">Convert pipeline to signed, recurring revenue, then turn the business into a clean, documented, defensible asset. Everything in this phase is about maximising the recurring base and de-risking the handover so a buyer can step in with confidence.</p>
+          <div class="avoid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:8px;">
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#284B63;margin-bottom:7px;">Objectives</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">Lock recurring; document playbook; build sale-readiness pack; handover.</p></div>
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#284B63;margin-bottom:7px;">KPIs in focus</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">Revenue 717; ARR 430; partners 6; distributors 3; direct 45.</p></div>
+            <div style="border:1px solid #e7e8e9;border-radius:6px;padding:14px;background:#f8f9fa;"><div style="font:700 11px/1 'Carlito';letter-spacing:.06em;text-transform:uppercase;color:#284B63;margin-bottom:7px;">Exit criteria</div><p style="font:400 12.5px/1.5 'Carlito';color:#353535;margin:0;">All KPIs met; playbook &amp; data room complete; sale-ready sign-off.</p></div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W40</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Recurring conversion push (renewals)</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Close multi-year renewals on every recurring contract possible.</li>
+                <li>Convert eligible one-off engagements to subscriptions.</li>
+                <li>Lock sector and partner subscriptions for 12–24 months.</li>
+                <li>Update the ARR bridge toward the A$430k target.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Renewals signed; recurring base locked.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Converts distributors to subscriptions; locks recurring.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> Leads largest-client renewal conversations (relationship owner).</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> Recurring ARR →380k+.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W41</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Third distributor / international pipeline</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>BDM closes the third distributor or advances the strongest candidate.</li>
+                <li>Review distributor-sourced pipeline and early in-market wins.</li>
+                <li>Document the international motion for the playbook.</li>
+                <li>Set a beyond-year-one international growth outlook.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Three distributors engaged; international outlook.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Closes or advances the third distributor.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> Product authority on remaining distributor deals.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> Distributors →3.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W42</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Close sector program 3</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Negotiate and sign the third whole-of-sector program.</li>
+                <li>Confirm recurring benchmarking-reporting revenue.</li>
+                <li>Plan rollout and reference capture.</li>
+                <li>Update the sector playbook with all three plays.</li>
+                <li>Bring Pat to the final sector decision meeting.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Third sector program signed.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Builds distributor pipeline for handover; documents the motion.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> In the final sector-3 decision meeting.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> Sector →3.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W43</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Direct base to ~45 clients</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Final push on the direct and self-serve funnel to reach ~45 assessment clients.</li>
+                <li>Run a referral and reactivation campaign.</li>
+                <li>Offer annual assessment subscriptions to recurring-ise direct revenue.</li>
+                <li>Confirm direct cohort retention.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Direct target reached; some converted to recurring.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Supports international referrals; tidies pipeline.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> Demo support for the direct-base final push.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> Direct clients →45.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W44</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Playbook documentation I (sales &amp; partner)</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Document the direct sales motion: ICP, sequences, demo, objections, pricing, close.</li>
+                <li>Document the partner motion: recruitment, enablement, deal registration, governance.</li>
+                <li>Capture metrics: conversion rates, cycle times, CAC by channel.</li>
+                <li>Store everything in the data room structure.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Sales &amp; partner playbook documented.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Documents the distributor motion for the playbook.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> Documents the product leadership &amp; demo playbook.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> Sale-readiness.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W45</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Playbook documentation II (distributor &amp; sector)</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Document the international distributor motion: targeting, margin model, onboarding, support.</li>
+                <li>Document the whole-of-sector play, end to end, with the proposal template.</li>
+                <li>Record the BDM’s role, cadences and scorecard.</li>
+                <li>Confirm everything is repeatable without the BD lead in the room.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Distributor &amp; sector playbooks documented.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Co-documents the distributor &amp; sector playbooks.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> Records the product / demo and sector technical playbook.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> Sale-readiness.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W46</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Sale-readiness pack: metrics &amp; data room</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Assemble updated revenue, ARR, churn and cohort metrics for the data room.</li>
+                <li>Produce a clean customer, contract and renewal schedule.</li>
+                <li>Reconcile HubSpot data with finance for diligence.</li>
+                <li>Feed updated metrics into the Information Memorandum.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Diligence-ready metrics &amp; schedules.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Provides distributor metrics for the data room.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> Validates product / roadmap notes for diligence.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> Sale-readiness pack.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W47</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">References &amp; case studies refresh</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Produce two or three new case studies from this year’s wins (sector, partner, international).</li>
+                <li>Secure referenceable customers for diligence.</li>
+                <li>Refresh testimonials and logos (with consent).</li>
+                <li>Update the pitch and sales assets with proof points.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Fresh case studies &amp; reference list.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Supplies an international case study &amp; references.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> Helps produce product-led case studies.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> Sale-readiness.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W48</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Forecast lock &amp; revenue/ARR validation</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Validate the annualised revenue run-rate against the A$717k target.</li>
+                <li>Confirm recurring ARR against the ~A$430k target.</li>
+                <li>Lock the year-end forecast and document assumptions.</li>
+                <li>Identify any final-weeks deals needed to close the gap.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Validated revenue &amp; ARR; gap plan.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Confirms distributor pipeline in the forecast.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> Validates product assumptions in the forecast.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> Revenue 717; ARR 430.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W49</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Risk &amp; dependency clean-up (handover-ready)</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Resolve open commercial risks; document key-client and key-person dependencies.</li>
+                <li>Ensure partner and distributor agreements are signed and filed.</li>
+                <li>Confirm IP, data and consent are clean for transfer.</li>
+                <li>Tidy HubSpot so a new owner can run it day one.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Clean, low-risk, transferable business.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Ensures distributor agreements are signed &amp; filed.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> Confirms product / IP notes are clean for transfer.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> Sale-readiness.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W50</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Buyer narrative &amp; growth story</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Write the growth story: what changed, the proof, and the runway for a buyer.</li>
+                <li>Quantify the recurring base, channel mix and international optionality.</li>
+                <li>Align the narrative with Tony and the Information Memorandum.</li>
+                <li>Prepare a management-presentation pack for buyers.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Buyer growth narrative &amp; management pack.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Inputs the international growth story for buyers.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> Co-authors the product &amp; roadmap narrative for buyers.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> Sale-readiness.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W51</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Final KPI verification vs targets</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Verify every KPI against the 12-month target and document the evidence.</li>
+                <li>Close any last deals within reach to hit thresholds.</li>
+                <li>Produce the final KPI scorecard for the data room.</li>
+                <li>Brief Tony on the final position.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Final KPI scorecard with evidence.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Verifies distributor KPIs for the scorecard.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> Confirms product-readiness evidence.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> All targets verified.</div>
+              </div>
+            </div>
+          </div>
+          <div class="avoid" style="display:flex;gap:15px;border:1px solid #e7e8e9;border-radius:6px;padding:14px 16px;margin-bottom:11px;background:#fff;">
+            <div style="flex:none;width:52px;text-align:center;"><div style="font:700 19px/1 'Carlito';color:#284B63;">W52</div><div style="font:700 8.5px/1.2 'Carlito';letter-spacing:.05em;text-transform:uppercase;color:#284B63;margin-top:6px;">Convert</div></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font:700 14px/1.3 'Carlito';color:#284B63;margin-bottom:7px;">Handover &amp; sale-ready sign-off</div>
+              <ul style="font:400 12px/1.5 'Carlito';color:#353535;margin:0 0 9px;padding-left:15px;">
+                <li>Walk Tony and advisers through the playbook, data room and pipeline.</li>
+                <li>Confirm the BDM and channel relationships are stable for transfer.</li>
+                <li>Hand over the live forecast and renewal calendar.</li>
+                <li>Obtain sale-ready sign-off; agree any post-sale transition support.</li>
+              </ul>
+              <div style="border-top:1px solid #eef0f1;padding-top:8px;">
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Output ·</span> Sale-ready sign-off; clean handover.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">BDM ·</span> Hands over distributor relationships for transfer.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">Pat ·</span> Confirms product-leadership continuity post-sale.</div>
+                <div style="font:400 11.5px/1.45 'Carlito';color:#6b6b6b;"><span style="font-weight:700;color:#284B63;">KPI ·</span> Sale-readiness complete.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ APPENDIX A ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">Appendix A</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Artefacts the program operates &amp; refines</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <p style="font:400 14px/1.6 'Carlito';color:#6b6b6b;margin:0 0 18px;">These assets largely already exist and HubSpot is operating. The program operates, tailors and keeps them current so that by week 52 they are battle-tested and ready to hand to a buyer.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;">
+            <div class="avoid">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#153E5A;margin-bottom:10px;">Commercial systems</div>
+              <ul style="font:400 13px/1.55 'Carlito';color:#353535;margin:0;padding-left:18px;">
+                <li>HubSpot CRM with pipeline stages, deal types &amp; KPI dashboards</li>
+                <li>KPI tracker against the 52-week glidepath</li>
+                <li>Forecast model &amp; pipeline-coverage report</li>
+                <li>Lead scoring &amp; routing rules</li>
+              </ul>
+            </div>
+            <div class="avoid">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#137B8F;margin-bottom:10px;">Sales assets</div>
+              <ul style="font:400 13px/1.55 'Carlito';color:#353535;margin:0;padding-left:18px;">
+                <li>Messaging house &amp; objection-handling guide</li>
+                <li>Demo script &amp; 2-minute explainer</li>
+                <li>Rate card, proposal &amp; quote templates</li>
+                <li>Segment one-pagers (sector, audit, direct)</li>
+              </ul>
+            </div>
+            <div class="avoid">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#4B6969;margin-bottom:10px;">Channel programs</div>
+              <ul style="font:400 13px/1.55 'Carlito';color:#353535;margin:0;padding-left:18px;">
+                <li>Partner program: tiers, margins, deal registration</li>
+                <li>Partner pack &amp; onboarding checklist</li>
+                <li>Distributor proposition, margin model &amp; agreement checklist</li>
+                <li>Co-marketing fund rules</li>
+              </ul>
+            </div>
+            <div class="avoid">
+              <div style="font:700 13px/1 'Carlito';letter-spacing:.08em;text-transform:uppercase;color:#6C793C;margin-bottom:10px;">Sale-readiness pack</div>
+              <ul style="font:400 13px/1.55 'Carlito';color:#353535;margin:0;padding-left:18px;">
+                <li>Repeatable sales, partner &amp; distributor playbook</li>
+                <li>Refreshed case studies &amp; references</li>
+                <li>Updated revenue/ARR metrics for the data room</li>
+                <li>Pipeline &amp; renewal schedule for diligence</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ APPENDIX B ============ -->
+        <section class="break-before">
+          <div style="font:700 11px/1 'Carlito';letter-spacing:.14em;text-transform:uppercase;color:#3C6E71;margin-bottom:12px;">Appendix B</div>
+          <h2 style="font:700 26px/1.15 'Carlito';color:#284B63;">Risks, escalation &amp; key contacts</h2>
+          <div style="height:3px;width:54px;background:#3C6E71;margin:14px 0 22px;"></div>
+          <h3 style="font:700 17px/1.3 'Carlito';color:#3C6E71;margin:0 0 14px;">Watch-items &amp; how to respond</h3>
+          <table class="avoid" style="width:100%;border-collapse:collapse;margin-bottom:24px;">
+            <thead><tr>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:10px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;width:38%;">Watch-item</th>
+              <th style="text-align:left;background:#284B63;color:#fff;padding:10px 14px;font:700 11px/1.2 'Carlito';letter-spacing:.04em;text-transform:uppercase;">Response</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;">Behind glidepath two checkpoints running</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Escalate to Tony; reallocate effort to the best-converting channel; trim low-yield activity.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;">Key-client renewal at risk (e.g. Apr-2027 client)</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Prioritise an early renewal conversation; involve Tony; protect the recurring base before chasing new logos.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;">Developer capacity constrains delivery</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Keep product asks light-touch; queue and prioritise; fund surge work from the contingency within the program envelope.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;">Channel conflict (direct vs partner/distributor)</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Enforce deal registration; segment accounts and territories; document rules of engagement.</td></tr>
+              <tr><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:700 13px/1.45 'Carlito';color:#284B63;">Sale process begins mid-year</td><td style="padding:10px 14px;border-bottom:1px solid #e7e8e9;font:400 13px/1.5 'Carlito';color:#353535;">Keep selling; feed updated metrics into the data room; do not let diligence stall the pipeline.</td></tr>
+            </tbody>
+          </table>
+          <h3 style="font:700 17px/1.3 'Carlito';color:#3C6E71;margin:0 0 14px;">Key contacts</h3>
+          <table class="avoid" style="width:100%;border-collapse:collapse;">
+            <tbody>
+              <tr><td style="width:30%;padding:11px 14px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;">Sponsor / Director</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.5 'Carlito';color:#353535;">Tony Friday — tonyf@bluezoo.com.au · 0400 055 739</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;">Local executive (product)</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.5 'Carlito';color:#353535;">Pat — local demonstrations, product leadership &amp; ~4 hrs/week sales support (no incremental cost)</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;">Offshore BDM</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.5 'Carlito';color:#353535;">Owns international distributor recruitment; hired in Weeks 1–6, deployable from Week 7 (reports to the BD lead)</td></tr>
+              <tr><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;background:#f8f9fa;font:700 13px/1.4 'Carlito';color:#284B63;">Lead developer</td><td style="padding:11px 14px;border-bottom:1px solid #e7e8e9;font:400 13.5px/1.5 'Carlito';color:#353535;">Product, demo environment &amp; enablement (Philippines-based)</td></tr>
+            </tbody>
+          </table>
+          <p style="font:400 11.5px/1.55 'Carlito';color:#8c8c8c;margin:26px 0 0;text-align:center;">Internal working document — bluezoo · Governance Manager · Ref. BZ-GM-BDP-01 · June 2026</p>
+        </section>
+
+      </div>
+    </td></tr></tbody>
+    <tfoot><tr><td class="ftr-space"></td></tr></tfoot>
+  </table>
+</main>
+
+<div class="print-footer">
+  <span>BD execution plan · Governance Manager</span>
+  <span>Internal &amp; confidential · bluezoo</span>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return { print: () => window.print() };
+  }
+}
+</script>
+</body>
+</html>

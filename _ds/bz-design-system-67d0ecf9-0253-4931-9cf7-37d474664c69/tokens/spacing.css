@@ -1,0 +1,49 @@
+/* ============================================================
+   bluezoo — Spacing, radius, elevation, motion
+   ============================================================ */
+
+:root {
+  /* Spacing scale (4px base) */
+  --space-0:  0;
+  --space-1:  0.25rem;  /* 4  */
+  --space-2:  0.5rem;   /* 8  */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.5rem;   /* 24 */
+  --space-6:  2rem;     /* 32 */
+  --space-7:  3rem;     /* 48 */
+  --space-8:  4rem;     /* 64 */
+  --space-9:  6rem;     /* 96 */
+
+  /* Radii — the brand reads crisp & geometric; modest rounding */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
+  --radius-pill: 999px;
+
+  /* Border widths */
+  --border-thin: 1px;
+  --border-med:  1.5px;
+
+  /* Elevation — soft, cool-grey shadows (never warm/black) */
+  --shadow-xs: 0 1px 2px rgba(40, 75, 99, 0.06);
+  --shadow-sm: 0 1px 3px rgba(40, 75, 99, 0.08), 0 1px 2px rgba(40, 75, 99, 0.06);
+  --shadow-md: 0 4px 12px rgba(40, 75, 99, 0.10), 0 2px 4px rgba(40, 75, 99, 0.06);
+  --shadow-lg: 0 12px 28px rgba(21, 62, 90, 0.14), 0 4px 8px rgba(21, 62, 90, 0.08);
+  --shadow-xl: 0 24px 56px rgba(21, 62, 90, 0.18);
+
+  /* Layout */
+  --container-sm: 640px;
+  --container-md: 880px;
+  --container-lg: 1140px;
+  --container-xl: 1320px;
+
+  /* Motion — calm, professional; ease-out, no bounce */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --dur-fast:   120ms; /* @kind other */
+  --dur-base:   200ms; /* @kind other */
+  --dur-slow:   320ms; /* @kind other */
+}

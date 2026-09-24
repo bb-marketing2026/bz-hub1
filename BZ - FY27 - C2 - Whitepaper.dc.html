@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    .wp, .wp *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .wp p{text-wrap:pretty}
+    .wp a{color:var(--bz-blue-600);text-decoration:none}
+    .wp a:hover{text-decoration:underline}
+    .wp-page{display:flex;flex-direction:column;position:relative}
+    .wp-break{break-before:page}
+    .wp-content{padding:52px 62px}
+    .wp-eyb{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+    .wp-cols{column-count:2;column-gap:36px}
+    .wp-w{break-inside:avoid;margin:0 0 12px}
+    .wp-w h3{font-size:15px;font-weight:700;color:var(--bz-blue-700);margin:0 0 5px;line-height:1.2}
+    .wp-w p{font-size:13.5px;line-height:1.46;color:var(--bz-grey-700);margin:0}
+    .wp-w .n{color:var(--bz-strategy);font-weight:700;margin-right:8px}
+    .wp-lead{font-size:14px;line-height:1.6;color:var(--bz-grey-700);margin:0 0 12px}
+    .wp-foot{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--bz-grey-500);border-top:1px solid var(--bz-grey-200);padding-top:10px}
+    .wp-pagebreak{height:30px;margin:0 -1cm;background:#d6d9db;box-shadow:inset 0 7px 7px -7px rgba(0,0,0,.28),inset 0 -7px 7px -7px rgba(0,0,0,.28)}
+    @media print{.wp-pagebreak{display:none}}
+  </style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="a4" orientation="portrait" margin="1cm" hint-size="100%,100%">
+
+  <!-- ============ 1 · COVER ============ -->
+  <section class="page wp wp-page" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55;background:linear-gradient(155deg,#153E5A 0%,#284B63 60%,#1d4658 100%);color:#fff;padding:70px 62px 52px;overflow:hidden;">
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-150px;top:160px;width:560px;opacity:.08;pointer-events:none">
+    <img src="assets/logo-white.png" alt="bluezoo" style="width:172px;position:relative">
+    <div style="margin-top:auto;position:relative">
+      <div class="wp-eyb" style="color:#7aa9ab;margin-bottom:20px">White paper · AI governance</div>
+      <h1 style="font-size:47px;line-height:1.06;font-weight:700;margin:0;color:#fff;letter-spacing:-.4px;max-width:640px">10 questions WA public sector directors should ask about AI</h1>
+      <p style="font-size:17px;line-height:1.45;max-width:540px;margin:26px 0 0;color:#c3d0d8">Moving your agency from AI experimentation to Board-level governance — before it becomes an audit finding.</p>
+    </div>
+    <div style="margin-top:44px;position:relative;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:flex-end;font-size:13px;color:#93aab6">
+      <div><div style="color:#fff;font-weight:700;font-size:15px">Pat Scally</div>Chief Executive Officer, Blue Zoo</div>
+      <span>Governance · Strategy · Risk · Resilience</span>
+    </div>
+  </section>
+
+  <!-- ============ 2 · INTRODUCTION ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-green);margin-bottom:12px">Introduction</div>
+    <h2 style="font-size:30px;line-height:1.1;font-weight:700;color:var(--bz-blue-700);margin:0 0 16px;max-width:600px">AI is already in your agency. Is it governed?</h2>
+    <div style="border-radius:8px;overflow:hidden;margin:0 0 20px;height:190px">
+      <image-slot id="ai-hero" shape="rect" fit="cover" placeholder="AI / technology / civic imagery — drop from magnific.com or OneDrive" style="width:100%;height:190px"></image-slot>
+    </div>
+    <div class="wp-cols">
+      <p class="wp-lead">Almost every Western Australian agency is now experimenting with artificial intelligence. Very few have the governance arrangements to match. That gap — between what is being used and what is being overseen — is where risk is quietly accumulating — and where the next adverse audit finding is most likely to be found.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0 0 12px">The reason is understandable. AI tools are cheap, capable and everywhere, and staff have adopted them faster than any policy could be written. Documents are drafted, papers summarised and data analysed by systems that leadership has often neither approved nor recorded. The technology has moved from the ICT roadmap into everyday practice without pausing at the board table. Adoption has been organic, invisible and, so far, ungoverned.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0 0 12px">For directors, this is not a technical problem to be delegated. It is a governance question, and a familiar one: are decisions informed, are risks understood, is accountability clear? AI simply raises those questions in a new and fast-moving form — and the Auditor General has already signalled that AI governance is firmly within scope. What was a novelty two years ago is now an accountability that boards are expected to hold.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0">A director does not need to understand the mathematics of a model to govern its use well. They need to ask the right questions and insist on clear answers. This paper sets out ten such questions — practical, non-technical, and grounded in the realities of the WA public sector. For each, we set out why it matters and what a confident answer sounds like.</p>
+    </div>
+    <div style="break-inside:avoid;margin-top:18px;background:var(--bz-blue-100);border-left:4px solid var(--bz-green);border-radius:0 6px 6px 0;padding:16px 20px">
+      <p style="margin:0;font-size:14.5px;line-height:1.5;color:var(--bz-blue-800);font-style:italic">The question is no longer whether your agency uses AI. It is whether your agency can explain, defend and account for how it does.</p>
+    </div>
+    <div style="margin-top:auto;padding-top:24px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>10 Questions Directors Should Ask About AI · WA Public Sector</span><span>02</span></div>
+  </section>
+
+  <!-- ============ 3 · QUESTIONS 1–4 ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-strategy);margin-bottom:12px">The ten questions</div>
+    <h2 style="font-size:26px;line-height:1.12;font-weight:700;color:var(--bz-blue-700);margin:0 0 22px">Strategy, oversight and accountability</h2>
+    <div class="wp-cols">
+      <div class="wp-w"><h3><span class="n">01</span>Do we actually know where AI is already being used?</h3><p>This is often the most uncomfortable question, because most agencies cannot answer it. Staff are already using generative tools to draft, summarise and analyse — frequently without approval or record. Before a board can govern AI, it needs an honest inventory of where it is in use, by whom, and for what. You cannot oversee what you cannot see. A simple, honest register — refreshed regularly — is the foundation every other question depends on, and it usually reveals far more activity than leadership expects.</p></div>
+      <div class="wp-w"><h3><span class="n">02</span>Which decisions may AI influence, and which must a human make?</h3><p>Not every use carries the same risk. Drafting the first version of a briefing is very different from shaping a decision that affects a citizen's entitlements. Directors should ask leadership to classify AI uses by consequence, and to set firm rules on where a human must remain in control. The higher the stakes, the more human judgement the decision demands. A clear line between assistance and automation protects both the citizen and the officer who signs the decision.</p></div>
+      <div class="wp-w"><h3><span class="n">03</span>What is our appetite for AI risk, and who set it?</h3><p>AI creates opportunity and exposure at once. An agency that adopts it with no stated risk appetite makes that judgement by accident, tool by tool. Boards should ask what level of AI risk the agency is willing to accept, in which areas, and who approved that position. A documented appetite turns scattered choices into a governed one, and gives staff a clear boundary to work within rather than leaving each team to guess.</p></div>
+      <div class="wp-w"><h3><span class="n">04</span>Who is accountable when an AI system gets it wrong?</h3><p>AI does not dilute accountability; the agency remains responsible for every decision it informs. Yet ownership is often unclear, split between the business area, the technology team and the vendor. Directors should insist on a single named owner for each significant AI system. "The system decided" is not a defence a public agency can offer. Naming an owner is what converts a diffuse anxiety about AI into a manageable, assignable responsibility.</p></div>
+    </div>
+    <div style="break-inside:avoid;margin-top:14px;background:var(--bz-grey-50);border:1px solid var(--bz-grey-200);border-radius:8px;padding:16px 20px;display:flex;gap:16px;align-items:center">
+      <div style="font-size:34px;font-weight:700;color:var(--bz-strategy);line-height:1;flex:0 0 auto">?</div>
+      <p style="margin:0;font-size:13.5px;line-height:1.5;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">Ask yourself:</strong> could we produce, today, a list of every AI tool in use across the agency — and name who is accountable for each?</p>
+    </div>
+    <div style="margin-top:auto;padding-top:20px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>10 Questions Directors Should Ask About AI · WA Public Sector</span><span>03</span></div>
+  </section>
+
+  <!-- ============ 4 · QUESTIONS 5–7 ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-strategy);margin-bottom:12px">The ten questions</div>
+    <h2 style="font-size:26px;line-height:1.12;font-weight:700;color:var(--bz-blue-700);margin:0 0 22px">Transparency, data and ethics</h2>
+    <div class="wp-cols">
+      <div class="wp-w"><h3><span class="n">05</span>Can we explain how an AI-assisted decision was reached?</h3><p>Public decisions must be capable of explanation. If an agency cannot describe, in plain terms, how an AI system reached a result, it cannot defend that result to a citizen, a minister or a court. Directors should ask whether the agency's AI uses are explainable, whether decisions are recorded, and whether affected people are told when AI has played a part. Opacity is a governance risk, not a technical detail. If a decision cannot be explained, it cannot truly be reviewed — and unreviewable decisions are exactly what performance audits are designed to find.</p></div>
+      <div class="wp-w"><h3><span class="n">06</span>How do we know the data behind our AI is accurate, lawful and fair?</h3><p>An AI system is only as sound as the data it learns from and runs on. Poor-quality, out-of-date or unlawfully held data produces confident but wrong results, and historical data can quietly encode bias against the very people the agency serves. Boards should ask where the data comes from, whether its use is lawful, and how bias is tested for and managed over time. In a public agency, a biased model does not just produce a poor outcome; it can entrench disadvantage in the name of efficiency.</p></div>
+      <div class="wp-w"><h3><span class="n">07</span>What could go wrong for the people affected — and how would we know?</h3><p>Governance of AI is ultimately governance of its impact on people. Directors should ask what harm a system could cause if it failed or was misused, which groups are most exposed, and what monitoring is in place to detect problems early. In the public sector, community trust is hard won and easily lost; an AI failure that harms citizens damages far more than the program that caused it. Asking "who could this hurt, and how would we find out?" early is the cheapest safeguard a board can insist on.</p></div>
+    </div>
+    <div style="break-inside:avoid;margin-top:16px;background:var(--bz-strategy);color:#fff;border-radius:8px;padding:22px 26px">
+      <p style="margin:0;font-size:16px;line-height:1.45;font-style:italic;color:#fff">"AI does not remove the agency's accountability for a decision. It simply makes that accountability easier to overlook."</p>
+    </div>
+    <div style="margin-top:auto;padding-top:24px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>10 Questions Directors Should Ask About AI · WA Public Sector</span><span>04</span></div>
+  </section>
+
+  <!-- ============ 5 · QUESTIONS 8–10 ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-strategy);margin-bottom:12px">The ten questions</div>
+    <h2 style="font-size:26px;line-height:1.12;font-weight:700;color:var(--bz-blue-700);margin:0 0 20px">Security, capability and assurance</h2>
+    <div style="border-radius:8px;overflow:hidden;margin:0 0 16px;height:148px">
+      <image-slot id="ai-fig2" shape="rect" fit="cover" placeholder="Data security / ICT imagery — drop from magnific.com or OneDrive" style="width:100%;height:148px"></image-slot>
+    </div>
+    <div class="wp-cols">
+      <div class="wp-w"><h3><span class="n">08</span>Are our AI tools secure, and where does our information go?</h3><p>Every prompt is data leaving the desk. Directors should ask where information entered into AI tools actually goes, whether it is used to train external models, and whether sensitive or personal data is protected. Where tools are provided by third parties, the agency's obligations do not transfer with them. Data sovereignty, privacy and security should be settled before adoption, not after an incident. The convenience of a free tool is rarely worth the exposure of information the agency is legally bound to protect.</p></div>
+      <div class="wp-w"><h3><span class="n">09</span>Do we have the skills and policies to govern AI, not just use it?</h3><p>Enthusiasm for AI usually outpaces the capability to govern it. Boards should ask whether the agency has clear AI policies, whether staff understand them, and whether anyone is genuinely accountable for AI governance rather than merely for AI adoption. A recognised standard such as ISO/IEC 42001 offers a ready framework; the real question is whether the agency is using one at all. Capability is not only technical; it is the governance skill to challenge a confident recommendation and know when to say no.</p></div>
+      <div class="wp-w"><h3><span class="n">10</span>How will we keep this under review as technology and rules change?</h3><p>AI and its regulation are moving faster than any single policy can follow. A framework written today will be out of date within the year. Directors should ask how often the agency's AI governance is reviewed, who is watching the changing legal landscape, and how new tools are assessed before adoption. Governing AI is a standing commitment, not a one-off project. The agencies that stay ahead treat AI governance as a living part of their risk and assurance cycle, revisited as deliberately as any other material exposure.</p></div>
+    </div>
+    <div style="margin-top:auto;padding-top:18px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>10 Questions Directors Should Ask About AI · WA Public Sector</span><span>05</span></div>
+  </section>
+
+  <!-- ============ 6 · CONCLUSION + BIO ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-green);margin-bottom:12px">What to do about it</div>
+    <h2 style="font-size:28px;line-height:1.1;font-weight:700;color:var(--bz-blue-700);margin:0 0 16px;max-width:560px">Governing AI, not just adopting it</h2>
+    <div class="wp-cols">
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0 0 12px">None of these questions requires the board to become technical. They require it to be curious, and to insist on clear answers. The agencies that will use AI well are not those that adopt it fastest, but those that can explain what they are doing, why, and with what safeguards. Confidence, in this context, comes from control — not from caution.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0 0 12px">Most WA agencies are already somewhere on this journey — experimenting in pockets, without the governance to match. The gap between use and oversight is where risk accumulates, and where the next adverse finding is most likely to sit. Closing it does not mean slowing down; it means adopting with intent. Governance is what lets an agency say yes to AI with its eyes open, rather than discovering the exposure later.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0">The board's role is not to hold AI back, but to ensure the agency can adopt it with confidence — lawfully, transparently, and in the public interest. Asking these ten questions, and returning to them as the technology evolves, is where that begins. The board that asks them well will not be the one explaining an AI failure after the fact — it will be the one that quietly avoided it.</p>
+    </div>
+
+    <div style="break-inside:avoid;margin-top:18px;background:linear-gradient(135deg,#1d4658,#153E5A);color:#fff;border-radius:10px;padding:22px 26px;display:flex;gap:22px;align-items:center">
+      <div style="flex:1">
+        <div class="wp-eyb" style="color:rgba(255,255,255,.75);margin-bottom:6px">Free assessment</div>
+        <div style="font-size:19px;font-weight:700;color:#fff;line-height:1.2">AI Governance Benchmark Report</div>
+        <p style="margin:6px 0 0;font-size:13.5px;color:#c3d0d8;line-height:1.45">Complete Blue Zoo's AI Governance Maturity Assessment, aligned to ISO/IEC 42001, to see how your agency scores against these ten questions — with a benchmark report and one-hour executive debrief. No cost, no obligation.</p>
+      </div>
+    </div>
+
+    <div style="break-inside:avoid;margin-top:22px;border-top:2px solid var(--bz-grey-200);padding-top:18px;display:flex;gap:20px;align-items:flex-start">
+      <div style="flex:0 0 96px;height:96px;border-radius:50%;overflow:hidden">
+        <image-slot id="ai-author" shape="circle" fit="cover" placeholder="Pat Scally headshot" style="width:96px;height:96px"></image-slot>
+      </div>
+      <div style="flex:1">
+        <div class="wp-eyb" style="color:var(--bz-grey-500);margin-bottom:6px">About the author</div>
+        <div style="font-size:16px;font-weight:700;color:var(--bz-grey-900)">Pat Scally — Chief Executive Officer, Blue Zoo</div>
+        <p style="margin:6px 0 0;font-size:12.5px;line-height:1.5;color:var(--bz-grey-700)">Over a career spanning decades in the Western Australian public sector and advisory practice, Pat has led large-scale government transformation — including reform within the Department of the Premier and Cabinet and the establishment of the Department of Communities — and has advised boards and executives on governance, strategy, risk and technology. He has served as a non-executive director across the public, corporate and not-for-profit sectors. At Blue Zoo he leads a practice that has spent more than twenty years helping WA agencies strengthen governance, oversight and resilience.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:auto;padding-top:22px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>© 2026 Blue Zoo · Governance · Strategy · Risk · Resilience</span><span>06</span></div>
+  </section>
+
+
+</x-import>
+</x-dc>
+</body>
+</html>

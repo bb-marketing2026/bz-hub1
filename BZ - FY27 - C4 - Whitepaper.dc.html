@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    .wp, .wp *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .wp p{text-wrap:pretty}
+    .wp a{color:var(--bz-blue-600);text-decoration:none}
+    .wp a:hover{text-decoration:underline}
+    .wp-page{display:flex;flex-direction:column;position:relative}
+    .wp-break{break-before:page}
+    .wp-content{padding:52px 62px}
+    .wp-eyb{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+    .wp-cols{column-count:2;column-gap:36px}
+    .wp-w{break-inside:avoid;margin:0 0 12px}
+    .wp-w h3{font-size:15px;font-weight:700;color:var(--bz-blue-700);margin:0 0 5px;line-height:1.2}
+    .wp-w p{font-size:13.5px;line-height:1.46;color:var(--bz-grey-700);margin:0}
+    .wp-w .n{color:var(--bz-resilience);font-weight:700;margin-right:8px}
+    .wp-lead{font-size:14px;line-height:1.6;color:var(--bz-grey-700);margin:0 0 12px}
+    .wp-foot{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--bz-grey-500);border-top:1px solid var(--bz-grey-200);padding-top:10px}
+    .wp-pagebreak{height:30px;margin:0 -1cm;background:#d6d9db;box-shadow:inset 0 7px 7px -7px rgba(0,0,0,.28),inset 0 -7px 7px -7px rgba(0,0,0,.28)}
+    @media print{.wp-pagebreak{display:none}}
+  </style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="a4" orientation="portrait" margin="1cm" hint-size="100%,100%">
+
+  <!-- ============ 1 · COVER ============ -->
+  <section class="page wp wp-page" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55;background:linear-gradient(155deg,#153E5A 0%,#284B63 58%,#3c5233 100%);color:#fff;padding:70px 62px 52px;overflow:hidden;">
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-150px;top:160px;width:560px;opacity:.08;pointer-events:none">
+    <img src="assets/logo-white.png" alt="bluezoo" style="width:172px;position:relative">
+    <div style="margin-top:auto;position:relative">
+      <div class="wp-eyb" style="color:#96a350;margin-bottom:20px">White paper · Performance</div>
+      <h1 style="font-size:47px;line-height:1.06;font-weight:700;margin:0;color:#fff;letter-spacing:-.4px;max-width:640px">Why compliance alone does not deliver better public sector performance</h1>
+      <p style="font-size:17px;line-height:1.45;max-width:540px;margin:26px 0 0;color:#c3d0d8">Moving from satisfying obligations to building the capability that improves outcomes.</p>
+    </div>
+    <div style="margin-top:44px;position:relative;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:flex-end;font-size:13px;color:#93aab6">
+      <div><div style="color:#fff;font-weight:700;font-size:15px">Pat Scally</div>Chief Executive Officer, Blue Zoo</div>
+      <span>Governance · Strategy · Risk · Resilience</span>
+    </div>
+  </section>
+
+  <!-- ============ 2 · INTRODUCTION ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-green);margin-bottom:12px">Introduction</div>
+    <h2 style="font-size:30px;line-height:1.1;font-weight:700;color:var(--bz-blue-700);margin:0 0 16px;max-width:600px">Compliant, but not necessarily better</h2>
+    <div style="border-radius:8px;overflow:hidden;margin:0 0 20px;height:190px">
+      <image-slot id="cc-hero" shape="rect" fit="cover" placeholder="Public sector / delivery imagery — drop from magnific.com or OneDrive" style="width:100%;height:190px"></image-slot>
+    </div>
+    <div class="wp-cols">
+      <p class="wp-lead">Public sector agencies have never been more compliant. Frameworks, policies and reporting obligations have multiplied for two decades. Yet more compliance has not reliably produced better services — and that gap is the quiet frustration of many executives.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0 0 12px">The reason is that compliance and performance answer different questions. Compliance asks whether an agency followed the rules. Performance asks whether the public is better off. An agency can excel at the first and still struggle with the second, and many capable ones do.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0 0 12px">This is not an argument against compliance. Rules exist for good reasons, and meeting them matters. It is an argument that compliance, on its own, is not enough — that satisfying obligations and improving outcomes are related but distinct, and that treating them as the same thing quietly caps how good an agency can become.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0">This paper sets out ten shifts that separate agencies which merely comply from those which genuinely improve. Together they describe the move from compliance to capability — from satisfying rules to delivering outcomes.</p>
+    </div>
+    <div style="break-inside:avoid;margin-top:18px;background:var(--bz-blue-100);border-left:4px solid var(--bz-green);border-radius:0 6px 6px 0;padding:16px 20px">
+      <p style="margin:0;font-size:14.5px;line-height:1.5;color:var(--bz-blue-800);font-style:italic">Compliance keeps an agency safe. Capability makes it good. The two are related — but they are not the same, and only one of them improves outcomes.</p>
+    </div>
+    <div style="margin-top:auto;padding-top:24px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>From Compliance to Capability · WA Public Sector Performance</span><span>02</span></div>
+  </section>
+
+  <!-- ============ 3 · SHIFTS 1–4 ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-resilience);margin-bottom:12px">The ten shifts</div>
+    <h2 style="font-size:26px;line-height:1.12;font-weight:700;color:var(--bz-blue-700);margin:0 0 22px">The limits of compliance</h2>
+    <div class="wp-cols">
+      <div class="wp-w"><h3><span class="n">01</span>Compliance proves the process ran, not that it worked</h3><p>Compliance answers a narrow question: did we follow the rule? It is a necessary discipline, but it is silent on the question that matters most — did following the rule actually improve anything? An agency can complete every mandatory step of a program and still deliver a poor outcome. Compliance confirms the machinery turned; it says nothing about whether it produced value.</p></div>
+      <div class="wp-w"><h3><span class="n">02</span>A clean audit is a floor, not a ceiling</h3><p>A clean compliance result tells you the agency met the minimum expected of it. That is worth having, but it is the starting line, not the finish. Treating a clean audit as proof of good performance is one of the most common misreadings in the sector. The absence of findings is not the presence of excellence.</p></div>
+      <div class="wp-w"><h3><span class="n">03</span>Compliance measures activity; performance measures outcomes</h3><p>Compliance frameworks count what is easy to count — policies in place, training completed, deadlines met. Performance asks what changed as a result. The two are frequently confused, and agencies report activity as though it were achievement. A wall of green indicators can sit comfortably alongside services that are not actually improving.</p></div>
+      <div class="wp-w"><h3><span class="n">04</span>Rules can be met while their intent is missed</h3><p>Every rule exists for a reason, but the rule and its purpose are not the same thing. Under pressure, organisations optimise for the letter of a requirement and lose sight of its spirit — the procurement that is technically compliant but poor value, the report filed on time but never read. Capability holds on to why a rule exists.</p></div>
+    </div>
+    <div style="break-inside:avoid;margin-top:14px;background:var(--bz-grey-50);border:1px solid var(--bz-grey-200);border-radius:8px;padding:16px 20px;display:flex;gap:16px;align-items:center">
+      <div style="font-size:34px;font-weight:700;color:var(--bz-resilience);line-height:1;flex:0 0 auto">?</div>
+      <p style="margin:0;font-size:13.5px;line-height:1.5;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">Ask yourself:</strong> can we point to a single service that is measurably better this year because of something our governance told us — not just something we complied with?</p>
+    </div>
+    <div style="margin-top:auto;padding-top:20px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>From Compliance to Capability · WA Public Sector Performance</span><span>03</span></div>
+  </section>
+
+  <!-- ============ 4 · SHIFTS 5–7 ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-resilience);margin-bottom:12px">The ten shifts</div>
+    <h2 style="font-size:26px;line-height:1.12;font-weight:700;color:var(--bz-blue-700);margin:0 0 22px">What capability adds</h2>
+    <div class="wp-cols">
+      <div class="wp-w"><h3><span class="n">05</span>Capability turns controls into better decisions</h3><p>A control is only valuable if it changes what people do. In a compliance mindset, controls are hurdles to clear; in a capability mindset, they are sources of insight that sharpen decisions. The same risk register that gathers dust as a compliance artefact can, used well, tell leaders exactly where to focus. The difference is not the control itself but the capability to use it.</p></div>
+      <div class="wp-w"><h3><span class="n">06</span>Risk becomes foresight, not paperwork</h3><p>Treated as compliance, risk management produces registers that are updated to satisfy a cycle and forgotten between reviews. Treated as capability, it becomes the organisation's early-warning system — shaping what gets funded, deferred or escalated before problems arrive. The framework can look identical on paper; what differs is whether risk reaches the decisions it is meant to inform.</p></div>
+      <div class="wp-w"><h3><span class="n">07</span>Assurance becomes improvement, not fault-finding</h3><p>Where internal audit is experienced as fault-finding, information is filtered and findings are resisted. Where it is treated as a source of insight, the same function drives genuine improvement. Capability reframes assurance from a test to be survived into a conversation about how to do better. Agencies that make that shift close their findings faster and learn more from each review.</p></div>
+    </div>
+    <div style="break-inside:avoid;margin-top:16px;background:var(--bz-resilience);color:#fff;border-radius:8px;padding:22px 26px">
+      <p style="margin:0;font-size:16px;line-height:1.45;font-style:italic;color:#fff">"The absence of audit findings is not the presence of good performance. Compliance is the floor beneath capability, never a substitute for it."</p>
+    </div>
+    <div style="margin-top:auto;padding-top:24px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>From Compliance to Capability · WA Public Sector Performance</span><span>04</span></div>
+  </section>
+
+  <!-- ============ 5 · SHIFTS 8–10 ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-resilience);margin-bottom:12px">The ten shifts</div>
+    <h2 style="font-size:26px;line-height:1.12;font-weight:700;color:var(--bz-blue-700);margin:0 0 20px">Building the capability</h2>
+    <div style="border-radius:8px;overflow:hidden;margin:0 0 16px;height:148px">
+      <image-slot id="cc-fig2" shape="rect" fit="cover" placeholder="Teamwork / performance imagery — drop from magnific.com or OneDrive" style="width:100%;height:148px"></image-slot>
+    </div>
+    <div class="wp-cols">
+      <div class="wp-w"><h3><span class="n">08</span>Measure governance maturity, not just compliance status</h3><p>Compliance status is binary — met or not met. Maturity is a spectrum, and it is far more useful. Asking how well an agency governs, rather than merely whether it complied, reveals where capability is strong, where it is fragile, and where to invest. A maturity view gives boards something a checklist never can: the trajectory, not just the moment.</p></div>
+      <div class="wp-w"><h3><span class="n">09</span>Connect governance to strategy, delivery and outcomes</h3><p>Governance delivers performance only when it is joined up with everything else — strategic planning, risk, delivery, and the outcomes the agency exists to achieve. Treated as a separate compliance stream, it becomes overhead. Connected to the business of the agency, it keeps strategy on track and turns intent into results. The connection is where compliance becomes capability.</p></div>
+      <div class="wp-w"><h3><span class="n">10</span>Make it continuous — capability is a habit, not a project</h3><p>Compliance is episodic; it peaks around audits and reporting deadlines. Capability is continuous, built through the ordinary rhythm of how an agency makes decisions, reviews itself and acts on what it learns. Agencies that treat governance improvement as a one-off project regress as soon as it ends. Those that build it into their operating rhythm keep getting better.</p></div>
+    </div>
+    <div style="margin-top:auto;padding-top:18px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>From Compliance to Capability · WA Public Sector Performance</span><span>05</span></div>
+  </section>
+
+  <!-- ============ 6 · CONCLUSION + BIO ============ -->
+  <section class="page wp wp-page wp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="wp-eyb" style="color:var(--bz-green);margin-bottom:12px">What to do about it</div>
+    <h2 style="font-size:28px;line-height:1.1;font-weight:700;color:var(--bz-blue-700);margin:0 0 16px;max-width:560px">From satisfying rules to delivering outcomes</h2>
+    <div class="wp-cols">
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0 0 12px">None of this diminishes the importance of doing the basics well. Compliance protects the agency and the public, and no amount of capability compensates for a broken control. But compliance is where performance starts, not where it ends.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0 0 12px">The agencies that stand out are not those with the most policies or the cleanest checklists. They are the ones that treat governance as a capability to be built — using their controls, their risk insight and their assurance to make better decisions and deliver better outcomes, year after year.</p>
+      <p style="font-size:13.5px;line-height:1.55;color:var(--bz-grey-700);margin:0">Moving from compliance to capability is not a large or expensive undertaking. It is a shift in mindset, reinforced by the right measures and the discipline to keep at it — the difference between an agency that satisfies its obligations and one that earns the confidence of the public it serves.</p>
+    </div>
+
+    <div style="break-inside:avoid;margin-top:18px;background:linear-gradient(135deg,#6C793C,#4f5a2b);color:#fff;border-radius:10px;padding:22px 26px;display:flex;gap:22px;align-items:center">
+      <div style="flex:1">
+        <div class="wp-eyb" style="color:rgba(255,255,255,.8);margin-bottom:6px">Next step</div>
+        <div style="font-size:19px;font-weight:700;color:#fff;line-height:1.2">Governance Capability Review</div>
+        <p style="margin:6px 0 0;font-size:13.5px;color:#eef1e4;line-height:1.45">Blue Zoo's Governance Capability Diagnostic benchmarks your agency's maturity and connects governance to strategy, delivery and outcomes — with a practical roadmap and an executive debrief. Request a review to see where capability will move performance most.</p>
+      </div>
+    </div>
+
+    <div style="break-inside:avoid;margin-top:22px;border-top:2px solid var(--bz-grey-200);padding-top:18px;display:flex;gap:20px;align-items:flex-start">
+      <div style="flex:0 0 96px;height:96px;border-radius:50%;overflow:hidden">
+        <image-slot id="cc-author" shape="circle" fit="cover" placeholder="Pat Scally headshot" style="width:96px;height:96px"></image-slot>
+      </div>
+      <div style="flex:1">
+        <div class="wp-eyb" style="color:var(--bz-grey-500);margin-bottom:6px">About the author</div>
+        <div style="font-size:16px;font-weight:700;color:var(--bz-grey-900)">Pat Scally — Chief Executive Officer, Blue Zoo</div>
+        <p style="margin:6px 0 0;font-size:12.5px;line-height:1.5;color:var(--bz-grey-700)">Over a career spanning decades in the Western Australian public sector and advisory practice, Pat has led large-scale government transformation — including reform within the Department of the Premier and Cabinet and the establishment of the Department of Communities — and has advised boards and executives on governance, strategy, risk and technology. He has served as a non-executive director across the public, corporate and not-for-profit sectors. At Blue Zoo he leads a practice that has spent more than twenty years helping WA agencies strengthen governance, oversight and resilience.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:auto;padding-top:22px"></div>
+    <div class="wp-foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>© 2026 Blue Zoo · Governance · Strategy · Risk · Resilience</span><span>06</span></div>
+  </section>
+
+
+</x-import>
+</x-dc>
+</body>
+</html>

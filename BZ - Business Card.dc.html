@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <style>
+    .bc, .bc *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .bc p{margin:0}
+    .eyb{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+    /* 3.5 x 2 in at 300px/in = 1050 x 600 */
+    .card{width:1050px;height:600px;border-radius:22px;overflow:hidden;position:relative;box-shadow:0 30px 60px rgba(20,40,60,.28),0 8px 20px rgba(20,40,60,.16)}
+    .bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}
+    .bz-backhub:hover{background:#153E5A}
+    @media print{.bz-backhub{display:none!important}}
+    .foil{background:linear-gradient(115deg,#f4f6f8 0%,#c3ccd3 26%,#8f9aa3 40%,#f0f3f5 54%,#aab4bc 72%,#dfe4e8 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  </style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+
+<div class="bc" style="min-height:100vh;background:linear-gradient(160deg,#e9edf1 0%,#dde3e9 100%);padding:70px 60px;display:flex;flex-direction:column;align-items:center;gap:56px">
+
+  <div style="text-align:center;max-width:900px">
+    <div class="eyb" style="color:#137B8F;margin-bottom:10px">Blue Zoo · Stationery</div>
+    <h1 style="font-size:34px;font-weight:700;color:#153E5A;margin:0;letter-spacing:-.01em">Business card</h1>
+    <p style="font-size:15px;color:#5a6b74;margin-top:10px;line-height:1.55">Standard 90 × 55 mm, double-sided. 600 gsm uncoated soft-touch stock, with a silver-foil name and a blind-deboss butterfly on the navy front. Shown front and back at scale.</p>
+  </div>
+
+  <!-- FRONT -->
+  <div>
+    <div class="eyb" style="color:#8a97a0;text-align:center;margin-bottom:14px">Front</div>
+    <div class="card" style="background:linear-gradient(150deg,#153E5A 0%,#1d4a63 55%,#1c5560 100%);color:#fff">
+      <!-- blind-deboss butterfly -->
+      <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:56px;bottom:44px;width:360px;opacity:.10;filter:drop-shadow(0 1px 0 rgba(255,255,255,.18)) drop-shadow(0 -1px 0 rgba(0,0,0,.5));pointer-events:none">
+      <!-- teal edge accent -->
+      <div style="position:absolute;left:0;top:0;bottom:0;width:14px;background:linear-gradient(180deg,#137B8F,#3C6E71)"></div>
+      <div style="position:absolute;left:74px;top:66px;right:74px;display:flex;justify-content:space-between;align-items:flex-start">
+        <img src="assets/logo-white.png" alt="bluezoo" style="width:250px">
+        <div class="eyb" style="color:#7aa9ab;font-size:10px;text-align:right;line-height:2">Governance<br>Strategy<br>Risk<br>Resilience</div>
+      </div>
+      <div style="position:absolute;left:74px;bottom:70px;right:74px">
+        <div style="height:1px;width:72px;background:linear-gradient(90deg,#e8ecef,#8f9aa3);margin-bottom:22px"></div>
+        <div style="font-size:40px;font-weight:400;line-height:1.05;letter-spacing:.06em" class="foil">Pat Scally</div>
+        <div class="eyb" style="font-size:12px;color:#9fb1bb;margin-top:12px;letter-spacing:.24em">Managing Director</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK -->
+  <div>
+    <div class="eyb" style="color:#8a97a0;text-align:center;margin-bottom:14px">Back</div>
+    <div class="card" style="background:#ffffff;color:#153E5A">
+      <div style="position:absolute;left:0;top:0;right:0;height:14px;background:linear-gradient(90deg,#153E5A,#137B8F 55%,#3C6E71)"></div>
+      <!-- centred mark + wordmark -->
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px">
+        <img src="assets/logo-primary.png" alt="bluezoo" style="width:330px">
+        <p style="font-size:17px;font-style:italic;color:#5a6b74">Steady counsel for an uncertain world.</p>
+      </div>
+      <!-- contact strip -->
+      <div style="position:absolute;left:74px;right:74px;bottom:60px;display:flex;justify-content:space-between;align-items:flex-end">
+        <div style="font-size:15px;line-height:1.85;color:#3f5560">
+          <div>pats@bluezoo.com.au</div>
+          <div>+61 8 9370 0409</div>
+        </div>
+        <div style="font-size:15px;line-height:1.85;color:#3f5560;text-align:right">
+          <div>bluezoo.com.au</div>
+          <div>896 Beaufort Street, Inglewood WA 6052</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

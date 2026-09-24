@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/tokens/base.css">
+  <link rel="stylesheet" href="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/styles.css">
+  <script src="_ds/bz-design-system-67d0ecf9-0253-4931-9cf7-37d474664c69/_ds_bundle.js"></script>
+  <style>
+    doc-page:not(:defined){visibility:hidden}
+    .sp, .sp *{font-family:'Carlito','Calibri',sans-serif;box-sizing:border-box}
+    .sp p{text-wrap:pretty;margin:0}
+    .sp a{color:var(--bz-blue-600);text-decoration:none}
+    .sp-page{min-height:1000px;display:flex;flex-direction:column;position:relative}
+    .sp-break{break-before:page}
+    .sp-content{padding:46px 60px}
+    .eyb{font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+    .h2{font-size:26px;line-height:1.1;font-weight:700;color:var(--bz-blue-700);margin:0 0 6px}
+    .lead{font-size:14px;line-height:1.55;color:var(--bz-grey-700)}
+    .foot{display:flex;justify-content:space-between;align-items:center;font-size:10.5px;color:var(--bz-grey-500);border-top:1px solid var(--bz-grey-200);padding-top:10px;margin-top:auto}
+    .sp-pagebreak{height:30px;margin:30px -1cm;background:#d6d9db;box-shadow:inset 0 7px 7px -7px rgba(0,0,0,.28),inset 0 -7px 7px -7px rgba(0,0,0,.28)}
+    @media print{.sp-pagebreak{display:none}}
+    .card{border:1px solid var(--bz-grey-200);border-radius:8px;padding:15px 18px;break-inside:avoid}
+    .li{padding:5px 0;border-bottom:1px solid var(--bz-grey-100);font-size:12.5px;line-height:1.4;color:var(--bz-grey-700)}
+    .li:last-child{border-bottom:none}
+    .rtbl{width:100%;border-collapse:collapse}
+    .rtbl th{background:#284B63;color:#fff;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;text-align:left;padding:8px 12px}
+    .rtbl td{padding:6px 12px;font-size:12px;color:var(--bz-grey-700);border-bottom:1px solid var(--bz-grey-100);vertical-align:top}
+  </style>
+<style>.bz-backhub{position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;font-family:'Carlito','Calibri',sans-serif;font-size:12px;font-weight:700;color:#fff;background:rgba(21,62,90,.92);border:1px solid rgba(255,255,255,.18);padding:7px 12px 7px 11px;border-radius:20px;text-decoration:none;box-shadow:0 4px 14px rgba(40,75,99,.28)}.bz-backhub:hover{background:#153E5A}@media print{.bz-backhub{display:none!important}}</style>
+</helmet>
+<a href="BZ%20-%20Governance%20Hub.dc.html" class="bz-backhub"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>BZ Hub</a>
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="a4" orientation="portrait" margin="1cm" hint-size="100%,100%">
+
+  <!-- ============ 1 · COVER ============ -->
+  <section class="page sp sp-page" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55;background:linear-gradient(155deg,#13343f 0%,#284B63 45%,#3C6E71 100%);color:#fff;padding:72px 60px 48px;overflow:hidden;">
+    <img src="assets/logo-mark-white.png" alt="" style="position:absolute;right:-140px;top:170px;width:540px;opacity:.08;pointer-events:none">
+    <img src="assets/logo-white.png" alt="bluezoo" style="width:172px;position:relative">
+    <div style="margin-top:auto;position:relative">
+      <div class="eyb" style="color:#9fc7c4;margin-bottom:20px">Sales · Operational</div>
+      <h1 style="font-size:52px;line-height:1.04;font-weight:700;margin:0;color:#fff;letter-spacing:-.6px">Sales Playbook</h1>
+      <div style="font-size:22px;font-weight:700;color:#9fc7c4;margin-top:10px;letter-spacing:.02em">FY27</div>
+      <p style="font-size:16.5px;line-height:1.45;max-width:580px;margin:24px 0 0;color:#cbdcd9">How Blue Zoo wins work with half a person's selling time — a focused, tool-leveraged approach from first contact to signed engagement.</p>
+    </div>
+    <div style="margin-top:40px;position:relative;padding-top:18px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:flex-end;font-size:13px;color:#a7c3c1">
+      <div><span style="display:inline-block;background:rgba(255,255,255,.14);border-radius:4px;padding:4px 10px;font-size:11px;font-weight:700;letter-spacing:.08em">CONFIDENTIAL · INTERNAL</span></div>
+      <span>HubSpot · Claude Design · PandaDoc</span>
+    </div>
+  </section>
+
+  <!-- ============ 2 · CONTENTS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#3C6E71;margin-bottom:12px">Contents</div>
+    <h2 class="h2">What's inside</h2>
+    <p class="lead" style="max-width:820px;margin:0 0 22px">A practical operating manual for selling with a lean, senior team — the model, who we target, how we qualify, the pipeline, the weekly rhythm, the tools and the numbers.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 44px">
+      <div class="li" style="display:flex;justify-content:space-between"><span>The 0.5 FTE sales model</span><span style="font-weight:700;color:var(--bz-grey-500)">03</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>The sales process, end to end</span><span style="font-weight:700;color:var(--bz-grey-500)">08</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Ideal client profile &amp; segments</span><span style="font-weight:700;color:var(--bz-grey-500)">04</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Proposals: HubSpot · Claude · PandaDoc</span><span style="font-weight:700;color:var(--bz-grey-500)">09</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Qualifying what to pursue</span><span style="font-weight:700;color:var(--bz-grey-500)">05</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Pricing &amp; commercial guardrails</span><span style="font-weight:700;color:var(--bz-grey-500)">10</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>The pipeline stages (HubSpot)</span><span style="font-weight:700;color:var(--bz-grey-500)">06</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>Metrics, KPIs &amp; review</span><span style="font-weight:700;color:var(--bz-grey-500)">11</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>The weekly sales rhythm</span><span style="font-weight:700;color:var(--bz-grey-500)">07</span></div>
+      <div class="li" style="display:flex;justify-content:space-between"><span>&nbsp;</span><span></span></div>
+    </div>
+    <div style="margin-top:26px;background:var(--bz-blue-100);border-left:4px solid #3C6E71;border-radius:0 6px 6px 0;padding:14px 18px">
+      <p style="margin:0;font-size:12.5px;line-height:1.5;color:var(--bz-blue-800)">The guiding constraint of this playbook: selling capacity is roughly <strong>half of the Managing Director's week</strong>. Every process here exists to make that half-person as effective as a full sales team.</p>
+    </div>
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Sales Playbook · Confidential</span><span>02</span></div>
+  </section>
+
+  <!-- ============ 3 · 0.5 FTE MODEL ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#3C6E71;margin-bottom:12px">The operating reality</div>
+    <h2 class="h2">Selling with 0.5 FTE</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Blue Zoo has around half of the Managing Director's time available for sales — senior, expensive and finite. The whole model is built to protect that time for the few activities only the MD can do, and to hand everything else to tools and process.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px">
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:22px;font-weight:700;line-height:1">0.5 FTE</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">MD time for sales</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:22px;font-weight:700;line-height:1">2 / wk</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">proactive sales meetings</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:22px;font-weight:700;line-height:1">6 / mth</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">new business meetings</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:22px;font-weight:700;line-height:1">&gt;$200K</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">adjusted pipeline &lt; 30 days</p></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+      <div class="card" style="border-top:3px solid #3C6E71">
+        <div class="eyb" style="font-size:10px;color:#3C6E71;margin-bottom:9px">Protect the MD's time for</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Discovery and scoping conversations with executives.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Relationship building with senior sponsors and panels.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Shaping and presenting proposals; negotiation and close.</li>
+          <li style="padding:5px 0">Key-account expansion and referrals.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid var(--bz-grey-400)">
+        <div class="eyb" style="font-size:10px;color:var(--bz-grey-500);margin-bottom:9px">Delegate or automate</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.45;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Lead capture, reminders and follow-ups — <strong style="color:var(--bz-grey-900)">HubSpot</strong>.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">First-draft proposal writing — <strong style="color:var(--bz-grey-900)">Claude Design</strong>.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Proposal assembly, sending &amp; e-sign — <strong style="color:var(--bz-grey-900)">PandaDoc</strong>.</li>
+          <li style="padding:5px 0">Content &amp; campaigns — the Marketing Playbook.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:16px;background:var(--bz-grey-50);border:1px solid var(--bz-grey-200);border-radius:8px;padding:13px 18px">
+      <p style="font-size:12px;line-height:1.5;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">The principle:</strong> proactive, not reactive. With so little selling time, we pursue fewer, better-qualified opportunities, lead with the problems agencies already have, and let tools carry the administrative and drafting load.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Sales Playbook · Confidential</span><span>03</span></div>
+  </section>
+
+  <!-- ============ 4 · ICP & SEGMENTS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#3C6E71;margin-bottom:12px">Who we sell to</div>
+    <h2 class="h2">Ideal client profile &amp; segments</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Focus is the whole game at 0.5 FTE. We sell where our track record, panels and platform give us an edge — the Western Australian public sector.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+      <div class="card" style="border-top:3px solid #3C6E71">
+        <div class="eyb" style="font-size:10px;color:#3C6E71;margin-bottom:9px">Target segments</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">WA state government agencies</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Local government</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Statutory authorities</li>
+          <li style="padding:5px 0">Boards &amp; audit / risk committees</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #153E5A">
+        <div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:9px">Buyers &amp; sponsors</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Directors General / CEOs</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Directors, Corporate Services / CFO</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Audit &amp; Risk Committee chairs, Company Secretaries</li>
+          <li style="padding:5px 0">CIOs / Digital &amp; Transformation leads</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="card" style="border-top:3px solid var(--bz-green)">
+        <div class="eyb" style="font-size:10px;color:var(--bz-green);margin-bottom:9px">Good-fit signals</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Upcoming Auditor General or performance-audit exposure</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Machinery-of-government change or a new DG / board</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">AI adoption without governance in place</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">A mandate to lift governance maturity or capability</li>
+          <li style="padding:5px 0">Existing Governance Manager / VMIA relationship to expand</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #C4622D">
+        <div class="eyb" style="font-size:10px;color:#C4622D;margin-bottom:9px">Poor-fit signals — disqualify early</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Price-only shopper with no executive sponsor</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">No funding path or procurement route</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Scope outside our governance / strategy / risk focus</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Commodity work that won't clear the 25% GP floor</li>
+          <li style="padding:5px 0">Timeline with no real trigger or decision date</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Sales Playbook · Confidential</span><span>04</span></div>
+  </section>
+
+  <!-- ============ 5 · QUALIFICATION ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#3C6E71;margin-bottom:12px">Choosing where to spend the time</div>
+    <h2 class="h2">Qualifying what to pursue</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">With 0.5 FTE, the fastest way to win more is to say no faster. Every opportunity is scored against six tests before it earns MD time. Qualify hard, and re-qualify at each stage.</p>
+
+    <table class="rtbl" style="margin-bottom:18px">
+      <thead><tr><th style="width:150px">Test</th><th>Ask</th><th style="width:180px">Pursue when…</th></tr></thead>
+      <tbody>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Problem</td><td>Is there a real, funded problem we solve — audit, AI governance, capability?</td><td>A named pain with consequences.</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Sponsor</td><td>Is there an executive who owns the outcome and will champion us?</td><td>DG, Director or ARC-level sponsor.</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Funding</td><td>Is there budget and a procurement route (panel / CUA / direct)?</td><td>Money and a path to contract.</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Timing</td><td>Is there a trigger and a decision date within a useful horizon?</td><td>A real deadline, not "someday".</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Fit</td><td>Does it sit in our governance / strategy / risk sweet spot?</td><td>Plays to our track record &amp; GM.</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Margin</td><td>Will it clear our 25% gross-profit floor at our rates?</td><td>Profitable at rate card.</td></tr>
+      </tbody>
+    </table>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+      <div class="card" style="border-top:3px solid var(--bz-green)"><div style="font-size:13px;font-weight:700;color:var(--bz-green)">Pursue</div><p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">5–6 tests met. Advance in HubSpot and invest MD time.</p></div>
+      <div class="card" style="border-top:3px solid #c08a1e"><div style="font-size:13px;font-weight:700;color:#c08a1e">Park / nurture</div><p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">3–4 tests. Keep warm with content; no MD time yet.</p></div>
+      <div class="card" style="border-top:3px solid #C4622D"><div style="font-size:13px;font-weight:700;color:#C4622D">Decline</div><p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">0–2 tests. Politely decline and free the time.</p></div>
+    </div>
+
+    <div style="margin-top:16px;background:var(--bz-blue-100);border-left:4px solid #3C6E71;border-radius:0 6px 6px 0;padding:12px 18px">
+      <p style="font-size:12px;line-height:1.5;color:var(--bz-blue-800)">Free assessments (Performance Audit Readiness, AI Governance Benchmark, Governance Health Check) are our best qualification tool — a low-cost first step that surfaces the problem, the sponsor and the funding before a full proposal.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Sales Playbook · Confidential</span><span>05</span></div>
+  </section>
+
+  <!-- ============ 6 · PIPELINE STAGES ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#3C6E71;margin-bottom:12px">How work moves</div>
+    <h2 class="h2">The pipeline stages (HubSpot)</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">One deal pipeline in HubSpot, eight stages, each with a clear exit test and a probability weighting used for the adjusted pipeline forecast.</p>
+
+    <table class="rtbl">
+      <thead><tr><th style="width:44px">#</th><th style="width:180px">Stage</th><th>Exit criteria — advance only when…</th><th style="width:70px;text-align:right">Weight</th></tr></thead>
+      <tbody>
+        <tr><td style="font-weight:700;color:#3C6E71">1</td><td style="font-weight:700;color:var(--bz-grey-900)">Contacted</td><td>Fit account and buyer identified; first outreach made.</td><td style="text-align:right">10%</td></tr>
+        <tr><td style="font-weight:700;color:#3C6E71">2</td><td style="font-weight:700;color:var(--bz-grey-900)">Interested</td><td>Prospect has engaged and expressed genuine interest.</td><td style="text-align:right">20%</td></tr>
+        <tr><td style="font-weight:700;color:#3C6E71">3</td><td style="font-weight:700;color:var(--bz-grey-900)">Meeting scheduled</td><td>A discovery meeting is booked in the calendar.</td><td style="text-align:right">30%</td></tr>
+        <tr><td style="font-weight:700;color:#3C6E71">4</td><td style="font-weight:700;color:var(--bz-grey-900)">Meeting held</td><td>Discovery done; problem, sponsor, funding and timing confirmed.</td><td style="text-align:right">45%</td></tr>
+        <tr><td style="font-weight:700;color:#3C6E71">5</td><td style="font-weight:700;color:var(--bz-grey-900)">Request received</td><td>Client has asked for a proposal or quote.</td><td style="text-align:right">60%</td></tr>
+        <tr><td style="font-weight:700;color:#3C6E71">6</td><td style="font-weight:700;color:var(--bz-grey-900)">Proposal sent</td><td>Scoped proposal issued via PandaDoc and acknowledged.</td><td style="text-align:right">75%</td></tr>
+        <tr><td style="font-weight:700;color:#3C6E71">7</td><td style="font-weight:700;color:var(--bz-grey-900)">Negotiation</td><td>Verbal yes; terms, scope and price being finalised.</td><td style="text-align:right">90%</td></tr>
+        <tr><td style="font-weight:700;color:#3C6E71">8</td><td style="font-weight:700;color:var(--bz-grey-900)">Closed won / lost</td><td>Signed in PandaDoc and handed to delivery — or closed lost with a reason.</td><td style="text-align:right">100% / 0%</td></tr>
+      </tbody>
+    </table>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px">
+      <div class="card" style="border-top:3px solid #3C6E71">
+        <div class="eyb" style="font-size:10px;color:#3C6E71;margin-bottom:8px">Pipeline hygiene rules</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">Every deal has a next step and a date, always.</li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--bz-grey-100)">No deal sits in a stage &gt; 30 days without action.</li>
+          <li style="padding:4px 0">Close lost honestly — a clean pipeline forecasts better.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #153E5A">
+        <div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:8px">Adjusted pipeline</div>
+        <p style="font-size:12px;line-height:1.45;color:var(--bz-grey-700)">Deal value × stage weight = adjusted value. The sum of deals expected to close within 30 days is the number we hold above <strong style="color:var(--bz-grey-900)">$200K</strong> at all times, and report to the Board monthly.</p>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Sales Playbook · Confidential</span><span>06</span></div>
+  </section>
+
+  <!-- ============ 7 · WEEKLY RHYTHM ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#3C6E71;margin-bottom:12px">Making 0.5 FTE count</div>
+    <h2 class="h2">The weekly sales rhythm</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">A fixed cadence turns limited, senior time into consistent output. Sales works best in the morning, so the sales day starts at <strong>8:30am</strong> with a structured hour before meetings and delivery take over.</p>
+
+    <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:11px 16px;margin-bottom:12px;display:flex;align-items:center;gap:14px">
+      <div style="font-size:26px;font-weight:700;line-height:1;flex:0 0 auto">15 hrs</div>
+      <p style="margin:0;font-size:12px;line-height:1.4;color:#c3d0d8"><strong style="color:#fff">Minimum sales hours recorded every week — non-negotiable.</strong> The first hour of each day is preserved for HubSpot and prospecting; the remaining sales time is within the Managing Director's locus of control.</p>
+    </div>
+
+    <div class="eyb" style="color:#3C6E71;margin-bottom:10px">The 8:30am start — first hour, every day</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:12px">
+      <div class="card" style="border-top:3px solid #3C6E71">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px"><div class="eyb" style="font-size:10px;color:#3C6E71">8:30 – 8:45 · HubSpot</div><span style="font-size:11px;font-weight:700;color:var(--bz-grey-500)">15 min</span></div>
+        <p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-700);margin-bottom:6px">Update the CRM so the pipeline is always clean:</p>
+        <ul style="margin:0;padding:0;list-style:none;font-size:11.5px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:3px 0;border-bottom:1px solid var(--bz-grey-100)">No deals missing information</li>
+          <li style="padding:3px 0;border-bottom:1px solid var(--bz-grey-100)">No deals with &gt; 14 days inactivity</li>
+          <li style="padding:3px 0">No deals missing a Next Step</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #153E5A">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px"><div class="eyb" style="font-size:10px;color:#153E5A">8:45 – 9:30 · Prospecting</div><span style="font-size:11px;font-weight:700;color:var(--bz-grey-500)">45 min</span></div>
+        <p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-700);margin-bottom:6px">Straight into active outreach:</p>
+        <ul style="margin:0;padding:0;list-style:none;font-size:11.5px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:3px 0;border-bottom:1px solid var(--bz-grey-100)">Reach-outs and follow-up emails &amp; calls</li>
+          <li style="padding:3px 0;border-bottom:1px solid var(--bz-grey-100)">Trying to schedule meetings</li>
+          <li style="padding:3px 0">Focus on <strong>NfN</strong> and <strong>NfE</strong> — no EfE</li>
+        </ul>
+      </div>
+    </div>
+
+    <table class="rtbl" style="margin-bottom:12px">
+      <thead><tr><th style="width:130px">Cadence</th><th>Activity</th></tr></thead>
+      <tbody>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Daily (from 8:30am)</td><td>15 min HubSpot hygiene, then 45 min prospecting; respond to inbound within 24 hours; mornings protected for sales.</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Weekly</td><td>Two sales / discovery meetings; 15-minute pipeline review; send any proposals due.</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Twice weekly</td><td>Review panel bid requests (CUA / WALGA); triage which to pursue against the six qualification tests.</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Monthly</td><td>Six new business-development meetings; supply four content pieces to marketing; pipeline &amp; forecast to the Board.</td></tr>
+        <tr><td style="font-weight:700;color:var(--bz-grey-900)">Quarterly</td><td>Key-account review and expansion planning; refresh target-account list; campaign alignment with marketing.</td></tr>
+      </tbody>
+    </table>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+      <div style="background:var(--bz-grey-50);border:1px solid var(--bz-grey-200);border-radius:8px;padding:10px 14px">
+        <p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">Campaign sync:</strong> Tuesday 9:30–10:00, a fast meeting with Sean on campaign updates and input on progress. Pat commits to <strong>&gt; 20 'connected calls' from each campaign</strong>, irrespective of inbound levels — tracked in HubSpot.</p>
+      </div>
+      <div style="background:var(--bz-grey-50);border:1px solid var(--bz-grey-200);border-radius:8px;padding:10px 14px">
+        <p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">Panel bids:</strong> review requests twice weekly; cap preparation at a <strong>maximum 2 hours from decision to lodgment</strong> — tracked in Xero timesheets.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:10px;background:#f6e4de;border:1px solid #e6c3b6;border-radius:8px;padding:10px 14px">
+      <p style="font-size:11.5px;line-height:1.4;color:#8a3a1f"><strong style="color:#6e2d18">Responding to RFQs is not sales.</strong> It is document building — a different skill. RFQ / bid preparation is tracked separately (in Xero timesheets) and must never be counted toward, or allowed to displace, the Managing Director's protected sales time.</p>
+    </div>
+
+    <div style="margin-top:10px;background:var(--bz-grey-50);border:1px solid var(--bz-grey-200);border-radius:8px;padding:10px 14px">
+      <p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-700)"><strong style="color:var(--bz-grey-900)">Booking:</strong> all meetings run through the HubSpot scheduler (meetings.hubspot.com/pat-scally) so calendars, reminders and CRM records stay in sync with no admin.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Sales Playbook · Confidential</span><span>07</span></div>
+  </section>
+
+  <!-- ============ 8 · SALES PROCESS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#3C6E71;margin-bottom:12px">First contact to signed engagement</div>
+    <h2 class="h2">The sales process, end to end</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Seven steps carry a prospect from attention to a signed engagement — and beyond, into expansion. Marketing feeds the top; delivery takes the bottom.</p>
+
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start"><div style="font-size:18px;font-weight:700;color:#3C6E71;flex:0 0 26px">1</div><div><div style="font-size:13.5px;font-weight:700;color:var(--bz-grey-900)">Attract</div><p style="font-size:12px;line-height:1.4;color:var(--bz-grey-600)">Campaigns, LinkedIn and insight content (Marketing Playbook) put the problem in front of the right executives.</p></div></div>
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start"><div style="font-size:18px;font-weight:700;color:#3C6E71;flex:0 0 26px">2</div><div><div style="font-size:13.5px;font-weight:700;color:var(--bz-grey-900)">Capture</div><p style="font-size:12px;line-height:1.4;color:var(--bz-grey-600)">Landing pages and free assessments capture interest straight into HubSpot as a new lead with context.</p></div></div>
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start"><div style="font-size:18px;font-weight:700;color:#3C6E71;flex:0 0 26px">3</div><div><div style="font-size:13.5px;font-weight:700;color:var(--bz-grey-900)">Qualify</div><p style="font-size:12px;line-height:1.4;color:var(--bz-grey-600)">Score against the six tests. Pursue, park or decline — before booking MD time.</p></div></div>
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start"><div style="font-size:18px;font-weight:700;color:#3C6E71;flex:0 0 26px">4</div><div><div style="font-size:13.5px;font-weight:700;color:var(--bz-grey-900)">Discover</div><p style="font-size:12px;line-height:1.4;color:var(--bz-grey-600)">A senior conversation to confirm the problem, outcomes, sponsor, budget and timing; notes captured in HubSpot.</p></div></div>
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start"><div style="font-size:18px;font-weight:700;color:#3C6E71;flex:0 0 26px">5</div><div><div style="font-size:13.5px;font-weight:700;color:var(--bz-grey-900)">Propose</div><p style="font-size:12px;line-height:1.4;color:var(--bz-grey-600)">Claude Design drafts from the discovery notes; the MD tailors it; PandaDoc assembles, sends and tracks it.</p></div></div>
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start"><div style="font-size:18px;font-weight:700;color:#3C6E71;flex:0 0 26px">6</div><div><div style="font-size:13.5px;font-weight:700;color:var(--bz-grey-900)">Close</div><p style="font-size:12px;line-height:1.4;color:var(--bz-grey-600)">Handle questions, finalise scope and price within guardrails, and sign electronically in PandaDoc.</p></div></div>
+      <div class="card" style="display:flex;gap:16px;align-items:flex-start"><div style="font-size:18px;font-weight:700;color:#3C6E71;flex:0 0 26px">7</div><div><div style="font-size:13.5px;font-weight:700;color:var(--bz-grey-900)">Onboard &amp; expand</div><p style="font-size:12px;line-height:1.4;color:var(--bz-grey-600)">Hand to delivery, then look for the next need — cross-sell Governance Manager, assessments and repeat work.</p></div></div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Sales Playbook · Confidential</span><span>08</span></div>
+  </section>
+
+  <!-- ============ 9 · PROPOSALS / TOOLING ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#3C6E71;margin-bottom:12px">The proposal engine</div>
+    <h2 class="h2">Proposals: HubSpot · Claude Design · PandaDoc</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">The three tools work as one chain — the CRM holds the context, Claude Design writes the first draft, and PandaDoc turns it into a tracked, signable document. This is how 0.5 FTE produces proposals quickly.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px">
+      <div class="card" style="border-top:3px solid #3C6E71"><div style="font-size:14px;font-weight:700;color:var(--bz-grey-900)">HubSpot</div><p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">CRM, deals, meeting scheduler, sequences and discovery notes — the single source of truth.</p></div>
+      <div class="card" style="border-top:3px solid #153E5A"><div style="font-size:14px;font-weight:700;color:var(--bz-grey-900)">Claude Design</div><p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">Drafts the proposal narrative and structure from discovery notes and our templates.</p></div>
+      <div class="card" style="border-top:3px solid #6C793C"><div style="font-size:14px;font-weight:700;color:var(--bz-grey-900)">PandaDoc</div><p style="font-size:11.5px;line-height:1.4;color:var(--bz-grey-600);margin-top:4px">Assembles the branded proposal, pricing tables and e-signature; tracks opens and status.</p></div>
+    </div>
+
+    <div class="eyb" style="color:#3C6E71;margin-bottom:10px">The workflow — target: proposal out within 3 working days of discovery</div>
+    <table class="rtbl">
+      <thead><tr><th style="width:44px">#</th><th style="width:150px">Step</th><th>What happens</th></tr></thead>
+      <tbody>
+        <tr><td style="font-weight:700;color:#3C6E71">1</td><td style="font-weight:700;color:var(--bz-grey-900)">Capture</td><td>Discovery notes, scope and budget logged against the deal in HubSpot.</td></tr>
+        <tr><td style="font-weight:700;color:#3C6E71">2</td><td style="font-weight:700;color:var(--bz-grey-900)">Draft</td><td>Claude Design produces a first-draft proposal from the notes and the relevant template.</td></tr>
+        <tr><td style="font-weight:700;color:#3C6E71">3</td><td style="font-weight:700;color:var(--bz-grey-900)">Tailor</td><td>MD reviews, sharpens the value story, and confirms scope, approach and price.</td></tr>
+        <tr><td style="font-weight:700;color:#3C6E71">4</td><td style="font-weight:700;color:var(--bz-grey-900)">Assemble</td><td>Content moves into the PandaDoc template with pricing tables and terms.</td></tr>
+        <tr><td style="font-weight:700;color:#3C6E71">5</td><td style="font-weight:700;color:var(--bz-grey-900)">Send &amp; track</td><td>PandaDoc sends for e-signature; opens and status sync back to the HubSpot deal.</td></tr>
+        <tr><td style="font-weight:700;color:#3C6E71">6</td><td style="font-weight:700;color:var(--bz-grey-900)">Sign &amp; close</td><td>Signed document closes the deal won; delivery is notified and onboarding begins.</td></tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:16px;background:var(--bz-blue-100);border-left:4px solid #3C6E71;border-radius:0 6px 6px 0;padding:12px 18px">
+      <p style="font-size:12px;line-height:1.5;color:var(--bz-blue-800)">Maintain a small library of PandaDoc templates and Claude Design prompts per offer (advisory review, GM subscription, assessment package) so most proposals are assembled, not written from scratch.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Sales Playbook · Confidential</span><span>09</span></div>
+  </section>
+
+  <!-- ============ 10 · PRICING & GUARDRAILS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#3C6E71;margin-bottom:12px">Commercial discipline</div>
+    <h2 class="h2">Pricing &amp; commercial guardrails</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 18px">Consistent pricing protects margin and speeds proposals. These are the standing guardrails; anything outside them needs MD sign-off.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+      <div class="card" style="border-top:3px solid #3C6E71">
+        <div class="eyb" style="font-size:10px;color:#3C6E71;margin-bottom:9px">Rate card (excl GST)</div>
+        <table style="width:100%;border-collapse:collapse;font-size:11.5px;color:var(--bz-grey-700)">
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:4px 0">CEO / Managing Director</td><td style="padding:4px 0;text-align:right;font-weight:700">$259</td></tr>
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:4px 0">Senior Advisor (AUS)</td><td style="padding:4px 0;text-align:right;font-weight:700">$220</td></tr>
+          <tr style="border-bottom:1px solid var(--bz-grey-100)"><td style="padding:4px 0">Advisor (PH)</td><td style="padding:4px 0;text-align:right;font-weight:700">$200</td></tr>
+          <tr><td style="padding:4px 0">Junior Advisor</td><td style="padding:4px 0;text-align:right;font-weight:700">$123</td></tr>
+        </table>
+        <p style="font-size:10.5px;color:var(--bz-grey-500);margin-top:8px">Increase time-and-materials rates ~5% on CUAs. Rates reviewed annually.</p>
+      </div>
+      <div class="card" style="border-top:3px solid #153E5A">
+        <div class="eyb" style="font-size:10px;color:#153E5A;margin-bottom:9px">Deal sizing</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Target average advisory project: <strong style="color:var(--bz-grey-900)">$35K</strong> (up from $25K).</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">At least one large project (&gt;$50K) running at any time.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Assessments ($500–$5K) as low-risk entry points.</li>
+          <li style="padding:5px 0">Favour recurring GM subscription where it fits.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="card" style="border-top:3px solid var(--bz-green)">
+        <div class="eyb" style="font-size:10px;color:var(--bz-green);margin-bottom:9px">Guardrails</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Protect the 25% gross-profit floor on every engagement.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Fixed-price only with a clear scope; change requests are re-quoted.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Any discount beyond 10% needs MD approval.</li>
+          <li style="padding:5px 0">Standard payment terms; deposits on larger fixed-price work.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid #6C793C">
+        <div class="eyb" style="font-size:10px;color:#6C793C;margin-bottom:9px">Procurement routes</div>
+        <ul style="margin:0;padding:0;list-style:none;font-size:12px;line-height:1.4;color:var(--bz-grey-700)">
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Common Use Arrangements (CUAs) — honour panel rates and rules.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">WALGA panel — pursue membership for local-government access.</li>
+          <li style="padding:5px 0;border-bottom:1px solid var(--bz-grey-100)">Direct engagement below procurement thresholds.</li>
+          <li style="padding:5px 0">Check the buyer's route early — it shapes price and paperwork.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>FY27 Sales Playbook · Confidential</span><span>10</span></div>
+  </section>
+
+  <!-- ============ 11 · METRICS ============ -->
+  <section class="page sp sp-page sp-content" style="color:var(--bz-grey-800);font-size:14px;line-height:1.55">
+    <div class="eyb" style="color:#3C6E71;margin-bottom:12px">What we measure</div>
+    <h2 class="h2">Metrics, KPIs &amp; review</h2>
+    <p class="lead" style="max-width:880px;margin:0 0 16px">These numbers are the Managing Director's personal accountability. Sales is 0.5 FTE of Pat's time, and that time must produce — the commitments below are owned by Pat, reviewed by him weekly and reported to the Board monthly, whatever the level of inbound demand.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px">
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:21px;font-weight:700;line-height:1">&gt;$200K</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">adjusted pipeline &lt; 30 days</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:21px;font-weight:700;line-height:1">$35K</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">target average deal size</p></div>
+      <div style="background:var(--bz-blue-900);color:#fff;border-radius:8px;padding:14px 16px"><div style="font-size:21px;font-weight:700;line-height:1">±10%</div><p style="font-size:10.5px;color:#a9c0cc;margin-top:5px;line-height:1.3">revenue forecast accuracy</p></div>
+    </div>
+
+    <table class="rtbl" style="margin-bottom:16px">
+      <thead><tr><th>MD commitment</th><th style="width:170px">Target (non-negotiable)</th><th style="width:110px">Cadence</th></tr></thead>
+      <tbody>
+        <tr><td>Structured sales mornings from 8:30am</td><td>Every working day</td><td>Daily</td></tr>
+        <tr><td>Connected calls per campaign</td><td>&gt; 20 (regardless of inbound)</td><td>Per campaign</td></tr>
+        <tr><td>Proactive sales meetings</td><td>2 per week</td><td>Weekly</td></tr>
+        <tr><td>New business-development meetings</td><td>6 per month</td><td>Monthly</td></tr>
+        <tr><td>Adjusted pipeline closing &lt; 30 days</td><td>&gt; $200K</td><td>Ongoing</td></tr>
+        <tr><td>Average advisory deal size</td><td>$35K (≥1 &gt; $50K live)</td><td>Ongoing</td></tr>
+        <tr><td>Proposal turnaround from discovery</td><td>≤ 3 working days</td><td>Per deal</td></tr>
+      </tbody>
+    </table>
+
+    <div style="background:linear-gradient(135deg,#2f5a5c,#3C6E71);color:#fff;border-radius:10px;padding:16px 22px;break-inside:avoid">
+      <div class="eyb" style="color:rgba(255,255,255,.8);margin-bottom:6px">MD accountability</div>
+      <p style="margin:0;font-size:14px;line-height:1.45;font-weight:700;color:#fff;max-width:780px">Every sales commitment is tracked in HubSpot and Xero timesheets and put in front of the Board each month. If the numbers slip, it is visible and owned — protected sales time is the one thing the Managing Director cannot delegate.</p>
+    </div>
+
+    <div class="foot"><span style="font-weight:700;color:var(--bz-grey-700)">Blue Zoo</span><span>© 2026 Blue Zoo · FY27 Sales Playbook · Confidential</span><span>11</span></div>
+  </section>
+
+
+</x-import>
+</x-dc>
+</body>
+</html>

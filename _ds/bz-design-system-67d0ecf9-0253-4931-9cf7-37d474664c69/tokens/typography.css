@@ -1,0 +1,42 @@
+/* ============================================================
+   bluezoo — Typography tokens
+   Brand standard: Calibri. Shipped substitute: Carlito.
+   Scale derived from the brand guide's point sizes
+   (H1 14pt / H2 12pt / H3 11pt / Body 10pt / Caption 8pt),
+   re-expressed for screen at a comfortable web baseline.
+   ============================================================ */
+
+:root {
+  /* Families */
+  --font-sans: 'Carlito', 'Calibri', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-body: var(--font-sans);
+  --font-head: var(--font-sans);
+
+  /* Weights (Carlito ships 400 + 700; "Light" maps to 400) */
+  --fw-light:   400;  /* @kind font */
+  --fw-regular: 400;  /* @kind font */
+  --fw-bold:    700;  /* @kind font */
+
+  /* Type scale (rem, 16px root) */
+  --fs-caption: 0.75rem;   /* 12px — guide Caption  */
+  --fs-small:   0.875rem;  /* 14px                   */
+  --fs-body:    1rem;      /* 16px — guide Body      */
+  --fs-h3:      1.125rem;  /* 18px — guide Heading 3 */
+  --fs-h2:      1.375rem;  /* 22px — guide Heading 2 */
+  --fs-h1:      1.75rem;   /* 28px — guide Heading 1 */
+  --fs-display: 2.75rem;   /* 44px — marketing display */
+  --fs-hero:    3.75rem;   /* 60px — hero            */
+
+  /* Line heights */
+  --lh-tight:   1.15;  /* @kind other */
+  --lh-snug:    1.3;   /* @kind other */
+  --lh-normal:  1.55;  /* @kind other */
+  --lh-relaxed: 1.7;   /* @kind other */
+
+  /* Letter spacing — bluezoo wordmark sits slightly open */
+  --ls-tight:   -0.01em; /* @kind other */
+  --ls-normal:  0;       /* @kind other */
+  --ls-wide:    0.04em;  /* @kind other */
+  /* uppercase eyebrows / service-line labels */
+  --ls-eyebrow: 0.14em; /* @kind other */
+}
